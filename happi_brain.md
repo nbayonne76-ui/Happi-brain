@@ -370,5 +370,38 @@ Après chaque nouveau projet terminé, ajouter :
 
 ---
 
+---
+## 📰 Veille Tech — 2026-04-04
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic accidentally releases source code for Claude AI agent](https://www.bloomberg.com/news/articles/2026-04-01/anthropic-accidentally-releases-source-code-for-claude-ai-agent) | Bloomberg | #Anthropic #Claude |
+| [Claude Mythos : nouveau modèle Anthropic avec raisonnement avancé en préparation](https://siliconangle.com/2026/03/27/anthropic-launch-new-claude-mythos-model-advanced-reasoning-features/) | SiliconAngle | #Anthropic #LLM |
+| [Claude API : max_tokens 300k, résidence des données EU, fine-grained tool streaming GA](https://releasebot.io/updates/anthropic) | Releasebot / Anthropic | #Anthropic #API #RGPD |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV Community | #FastAPI #Next.js #SaaS #Docker |
+| [Vercel vs Hetzner in 2026: Which Is Actually Worth It for Solo Developers?](https://devtoolpicks.com/blog/vercel-vs-hetzner-2026-solo-developers) | DevToolPicks | #Vercel #SaaS |
+| [onyx — Open Source AI Chat Platform (23k★, +1212 today)](https://github.com/onyx-dot-app/onyx) | GitHub Trending Python | #chatbot #LLM |
+| [LightRAG — Simple and Fast Retrieval-Augmented Generation (32k★)](https://github.com/HKUDS/LightRAG) | GitHub Trending Python | #LLM #chatbot #RAG |
+| [microsoft/agent-framework — Build & orchestrate AI agents Python/.NET (8.6k★)](https://github.com/microsoft/agent-framework) | GitHub Trending Python | #LLM #SaaS |
+| [Mastra — TypeScript-first agent framework, 1M+ npm/mois, Y Combinator $13M](https://www.firecrawl.dev/blog/best-open-source-agent-frameworks) | Firecrawl Blog | #LLM #Next.js #SaaS |
+| [oh-my-openagent — Meilleur harness d'agents IA (48k★, +468 today)](https://github.com/code-yeongyu/oh-my-openagent) | GitHub Trending TS | #LLM #chatbot |
+| [Vapi.ai — Build Advanced Voice AI Agents](https://vapi.ai/) | Vapi | #VoiceAI #chatbot |
+| [React Native Speech Recognition in 2026: The Complete Guide](https://picovoice.ai/blog/react-native-speech-recognition/) | Picovoice | #ReactNative #VoiceAI #RGPD |
+| [The State of AI in 2026: From Chatbots to the Chorus](https://dev.to/maximus_prime_1/the-state-of-ai-in-2026-from-chatbots-to-the-chorus-a25) | DEV Community | #chatbot #LLM |
+| [Rapid Development with Next.js + FastAPI + Vercel + Neon Postgres](https://www.wolk.work/blog/posts/rapid-development-with-next-js-fastapi-vercel-neon-postgres) | Wolk | #FastAPI #Next.js #PostgreSQL #Vercel |
+| [just-bash — Bash for Agents by Vercel Labs (2.5k★)](https://github.com/vercel-labs/just-bash) | GitHub Trending TS | #Vercel #LLM |
+
+### 💡 Insights clés
+- **Claude Mythos arrive** : Anthropic finalise un nouveau modèle plus puissant qu'Opus — à surveiller pour migrer les projets H'appi dès la sortie GA.
+- **Claude API → 300k tokens + résidence EU** : La limite max_tokens passe à 300 000 tokens sur les Batches API, et la résidence des données en Europe est disponible via `inference_geo` — critique pour la conformité RGPD des clients H'appi.
+- **Dokploy = alternative low-cost à Railway** : Stack Next.js + FastAPI + Dokploy sur Hetzner VPS devient un choix populaire pour réduire les coûts infra par rapport à Railway/Vercel.
+- **onyx (23k★) explose** : Plateforme open source de chat IA complète avec LLM, RAG, connecteurs — architecture de référence à étudier pour les projets H'appi.
+- **LightRAG s'impose pour le RAG** : Approche plus rapide et simple que LangChain pour les bases de connaissance — à intégrer dans les chatbots clients à fort volume documentaire.
+- **Marché Voice AI = 27 Mds$ en 2026** : Excellent timing pour Happi Secretary — Vapi.ai reste la référence, et Mistral Voxtral TTS (<100ms, 3GB RAM) est à surveiller comme alternative à ElevenLabs.
+- **Mastra (TypeScript)** : Framework agent TypeScript-first avec 1.77M npm/mois — pertinent pour les projets Next.js H'appi intégrant de l'agentic AI.
+
+---
+
 *Dernière mise à jour : 2026-04-04*
 *Projets analysés : 27 repos GitHub (nbayonne76-ui)*
