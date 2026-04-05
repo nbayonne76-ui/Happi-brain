@@ -5,41 +5,64 @@
 ## Structure
 
 ```
-happi_brain.md          ← Cerveau principal (27 repos analysés, stack, patterns, clients)
+happi_brain.md          ← Cerveau principal (stack, patterns, clients, règles Claude)
 README.md               ← Ce fichier
 
-memory/
-  MEMORY_global.md      ← Index mémoire global (tous projets)
-  MEMORY_quality_tracking.md ← Index mémoire projet Quality Tracking
-  project_dropos.md     ← Détails projet DropOS
-  project_happi_foundry.md   ← Détails projet H'appi Foundry
+projects/               ← Fiche détaillée de chaque projet
+  sav-bot-meuble-de-france.md    ← Chatbot SAV Mobilier de France ⭐
+  innatural-chatbot.md           ← Chatbot e-commerce INnatural (cosmétiques)
+  happi-secretary.md             ← Secrétariat IA vocal 24h/24
+  happi-foundry.md               ← Playground Claude IA (interne)
+  dropos.md                      ← SaaS dropshipping DropOS
+  quality-tracking-app.md        ← App mobile suivi livraisons meubles
+  happi-website.md               ← Site vitrine H'appi
+  demos-clients.md               ← 18 démos HTML clients (multi-secteurs)
+  toptiercollection.md           ← Site e-commerce Top Tier Collection
+
+memory/                 ← Index mémoire Claude
+  MEMORY_global.md
+  MEMORY_quality_tracking.md
+  project_dropos.md
+  project_happi_foundry.md
 
 claude-config/
-  CLAUDE.md             ← Instructions globales Claude Code (chargé automatiquement)
+  CLAUDE.md             ← Instructions globales Claude Code
 ```
+
+## Projets chatbot
+
+| Projet | Client | Stack IA | Status |
+|--------|--------|----------|--------|
+| [SAV-BOT MDF](projects/sav-bot-meuble-de-france.md) | Mobilier de France | OpenAI GPT | Production ⭐ |
+| [INnatural Chatbot](projects/innatural-chatbot.md) | INnatural Stores | Claude | Production |
+| [Happi Secretary](projects/happi-secretary.md) | Multi-clients | Claude + Vapi | Production |
+
+## Plateformes & SaaS
+
+| Projet | Type | Status |
+|--------|------|--------|
+| [Happi Foundry](projects/happi-foundry.md) | Playground Claude IA | Production |
+| [DropOS](projects/dropos.md) | SaaS dropshipping | Planning/MVP |
+| [Quality Tracking App](projects/quality-tracking-app.md) | App mobile | Production |
+| [Top Tier Collection](projects/toptiercollection.md) | E-commerce | Active |
+| [H'appi Website](projects/happi-website.md) | Site vitrine | Live |
+
+## Démos clients (18 showcases HTML)
+
+Voir [projects/demos-clients.md](projects/demos-clients.md) — secteurs couverts :
+Meuble · Hôtellerie · Agroalimentaire · BTP · Industrie · Transport · Notariat · Finance · Sport · E-commerce · KYC
 
 ## Mise à jour automatique
 
-L'agent **Happi Brain — Veille Tech Quotidienne** tourne chaque jour à 9h00 (GMT+2) et ajoute une section veille tech dans `happi_brain.md`.
+L'agent **Happi Brain — Veille Tech Quotidienne** tourne chaque jour à **9h00 (GMT+2)** et ajoute une section veille tech dans `happi_brain.md`.
 
-Sources surveillées : HackerNews · DEV.to · GitHub Trending · The New Stack · InfoQ
+Sources : HackerNews · DEV.to · GitHub Trending · The New Stack · InfoQ
 
 ## Comment utiliser
 
-1. Clone ce repo dans ton environnement de dev
-2. Claude Code charge automatiquement `CLAUDE.md` depuis `~/CLAUDE.md`
-3. Après chaque nouveau projet H'appi terminé, dis à Claude : **"mets à jour le Happi Brain"**
-
-## Projets couverts
-
-- SAV-BOT Mobilier de France
-- INnatural Stores Chatbot
-- Happi Secretary (secrétariat vocal IA)
-- 18 démos clients HTML (hôtellerie, BTP, agroalimentaire, sport...)
-- Happi Foundry (playground Claude)
-- DropOS (SaaS dropshipping)
-- Quality Tracking App (React Native)
-- Top Tier Collection (e-commerce)
+1. Claude Code charge automatiquement `~/CLAUDE.md` → pointe vers ce brain
+2. Après chaque nouveau projet terminé, dis à Claude : **"mets à jour le Happi Brain"**
+3. Faire un `git pull` dans le repo local pour récupérer la veille du matin
 
 ---
-*Startup H'appi — happi-bot.com*
+*H'appi — happi-bot.com | Franco-égyptienne, chatbots IA sur-mesure*
