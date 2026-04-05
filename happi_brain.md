@@ -403,5 +403,36 @@ Après chaque nouveau projet terminé, ajouter :
 
 ---
 
-*Dernière mise à jour : 2026-04-04*
+---
+## 📰 Veille Tech — 2026-04-05
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Build GenAI Applications Locally With Docker Model Runner](https://thenewstack.io/build-genai-applications-locally-with-docker-model-runner/) | TheNewStack | #Docker #LLM |
+| [A Practical Guide To Building a RAG-Powered Chatbot](https://thenewstack.io/a-practical-guide-to-building-a-rag-powered-chatbot/) | TheNewStack | #RAG #chatbot |
+| [Frontend AI: Vercel Abstracts Model Chaos in One Interface](https://thenewstack.io/frontend-ai-vercel-abstracts-model-chaos-in-one-interface/) | TheNewStack | #Vercel #LLM |
+| [Choosing Your AI Orchestration Stack for 2026](https://thenewstack.io/choosing-your-ai-orchestration-stack-for-2026/) | TheNewStack | #LLM #SaaS |
+| [LLMs and AI Agents Evolving Like Programming Languages](https://thenewstack.io/llms-and-ai-agents-evolving-like-programming-languages/) | TheNewStack | #LLM #AI-agents |
+| [Building a Full-Stack AI Chatbot with FastAPI (Backend) and React (Frontend)](https://dev.to/vipascal99/building-a-full-stack-ai-chatbot-with-fastapi-backend-and-react-frontend-51ph) | DEV Community | #chatbot #FastAPI |
+| [RAG using LLMSmith and FastAPI](https://dev.to/dheerajgopi/rag-using-llmsmith-and-fastapi-1e6i) | DEV Community | #RAG #FastAPI |
+| [Building a RAG chatbot with TypeScript and Next.js](https://dev.to/emertechie/building-a-rag-chatbot-with-typescript-and-nextjs-53c6) | DEV Community | #RAG #chatbot #Next.js |
+| [From LangChain Demos to a Production-Ready FastAPI Backend](https://dev.to/hamluk/from-langchain-demos-to-a-production-ready-fastapi-backend-1c0a) | DEV Community | #FastAPI #LLM |
+| [Why we no longer use LangChain for building our AI agents](https://news.ycombinator.com/item?id=40739982) | HackerNews | #AI-agents #LLM |
+| [Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026)](https://news.ycombinator.com/item?id=47119871) | HackerNews | #LLM |
+| [LightRAG — Simple and Fast Retrieval-Augmented Generation](https://github.com/HKUDS/LightRAG) | GitHub Trending Python | #RAG #LLM #chatbot |
+| [onyx — Open Source AI Chat Platform](https://github.com/onyx-dot-app/onyx) | GitHub Trending Python | #chatbot #LLM #SaaS |
+| [microsoft/agent-framework — Build & orchestrate AI agents](https://github.com/microsoft/agent-framework) | GitHub Trending Python | #AI-agents #LLM |
+| [vercel-labs/just-bash — Bash for Agents](https://github.com/vercel-labs/just-bash) | GitHub Trending TypeScript | #AI-agents #Vercel |
+
+### 💡 Insights clés
+- **RAG s'impose comme standard de production** : LightRAG, onyx, et plusieurs guides DEV.to confirment que le RAG (Retrieval-Augmented Generation) est l'architecture incontournable pour les chatbots clients à fort volume documentaire — à intégrer en priorité dans les prochains projets H'appi.
+- **FastAPI + Next.js reste la stack de référence** : Confirmé par de multiples sources DEV.to et TheNewStack pour les backends IA en production — stack H'appi parfaitement alignée.
+- **Vercel AI Gateway** : Vercel abstrait désormais plus de 100 modèles LLM via une seule interface — pertinent pour les projets Next.js H'appi qui intègrent de l'IA générative côté frontend.
+- **Docker Model Runner** : Permet de tester des LLMs localement avant déploiement sur Railway/Vercel, réduisant les cycles de dev et les coûts de test — à adopter dans le workflow H'appi.
+- **Abandon de LangChain en production** : Tendance confirmée sur HackerNews — les équipes préfèrent des frameworks plus légers (LightRAG, FastAPI direct) pour les agents de production. À surveiller pour les nouveaux projets.
+- **microsoft/agent-framework (Python/.NET)** : Nouveau framework multi-agents Microsoft en trending — alternative sérieuse à explorer pour les architectures multi-agents complexes.
+- **Orchestration IA 2026** : TheNewStack recommande de choisir son stack d'orchestration maintenant (LangGraph, AutoGen, CrewAI) avant que le marché se consolide — décision architecturale critique pour H'appi.
+
+*Dernière mise à jour : 2026-04-05*
 *Projets analysés : 27 repos GitHub (nbayonne76-ui)*
