@@ -436,3 +436,36 @@ Après chaque nouveau projet terminé, ajouter :
 
 *Dernière mise à jour : 2026-04-05*
 *Projets analysés : 27 repos GitHub (nbayonne76-ui)*
+
+---
+## 📰 Veille Tech — 2026-04-06
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [I built a demo of what AI chat will look like when it's "free" and ad-supported](https://news.ycombinator.com/item?id=47205890) | HackerNews | #chatbot |
+| [The current hype around autonomous agents, and what actually works in production](https://news.ycombinator.com/item?id=44623207) | HackerNews | #LLM #chatbot |
+| [AI Chatbots vs AI Agents: What Developers Should Build in 2026](https://dev.to/the_bookmaster/ai-chatbots-vs-ai-agents-what-developers-should-build-in-2026-40jf) | DEV Community | #chatbot #LLM |
+| [10 AI Agents Powering Million-Dollar Businesses in 2026](https://dev.to/joinwithken/10-ai-agents-powering-million-dollar-businesses-in-2026-25mn) | DEV Community | #SaaS #LLM |
+| [Best Visual AI Agents in 2026: Real-Time & Multimodal Tools](https://dev.to/getstreamhq/best-visual-ai-agents-in-2026-real-time-multimodal-tools-44g6) | DEV Community | #chatbot #LLM #VoiceAI |
+| [onyx — Open Source AI Chat Platform](https://github.com/onyx-dot-app/onyx) | GitHub Trending Python | #chatbot #LLM |
+| [RAG-Anything: All-in-One RAG Framework](https://github.com/HKUDS/RAG-Anything) | GitHub Trending Python | #LLM #chatbot #RAG |
+| [NousResearch/hermes-agent — The agent that grows with you](https://github.com/NousResearch/hermes-agent) | GitHub Trending Python | #LLM #chatbot |
+| [microsoft/agent-framework — Build & orchestrate AI agents](https://github.com/microsoft/agent-framework) | GitHub Trending Python | #LLM |
+| [badlogic/pi-mono — AI agent toolkit: CLI + unified LLM API + Slack bot](https://github.com/badlogic/pi-mono) | GitHub Trending TypeScript | #LLM #chatbot |
+| [simstudioai/sim — Build, deploy and orchestrate AI agents](https://github.com/simstudioai/sim) | GitHub Trending TypeScript | #SaaS #LLM |
+| [Anthropic's rough week: leaked models, exposed source code, botched GitHub takedown](https://thenewstack.io/anthropic-claude-code-leak/) | TheNewStack | #Anthropic #Claude |
+| [5 Key Trends Shaping Agentic Development in 2026](https://thenewstack.io/5-key-trends-shaping-agentic-development-in-2026/) | TheNewStack | #LLM |
+| [6 agentic knowledge base patterns emerging in the wild](https://thenewstack.io/agentic-knowledge-base-patterns/) | TheNewStack | #LLM #chatbot |
+| [The hidden technical debt of agentic engineering](https://thenewstack.io/hidden-agentic-technical-debt/) | TheNewStack | #LLM |
+
+### 💡 Insights clés
+- **RAG-Anything (HKUDS)** : nouveau framework RAG all-in-one en trending Python — plus complet que LightRAG, supporte texte, image, audio, vidéo — à évaluer pour les chatbots H'appi à fort volume documentaire.
+- **Hermes Agent (NousResearch)** : agent "qui grandit avec l'utilisateur" via mémoire persistante — concept clé à intégrer dans les prochains chatbots H'appi pour améliorer la personnalisation.
+- **simstudioai/sim** : plateforme SaaS open source pour orchestrer des agents (deploy + monitor) — architecture de référence pour une future offre multi-agents H'appi.
+- **Anthropic / Claude** : semaine difficile (leak code source Claude Code) — aucun impact immédiat sur les SDK clients, mais à surveiller pour les prochaines updates Anthropic.
+- **Dette technique agentic** : TheNewStack alerte sur le coût caché des systèmes agents en prod (observabilité, tests, rollback) — anticiper dès la conception dans les projets H'appi.
+- **AI chat ad-supported** : modèle freemium publicitaire exploré sur HN — opportunité de pricing alternatif à explorer pour des offres H'appi grand public.
+- **pi-mono (TypeScript)** : toolkit agent unifié (CLI + API LLM + TUI + Slack bot) — candidat sérieux pour remplacer plusieurs outils internes H'appi en un seul framework.
+
+*Dernière mise à jour : 2026-04-06*
