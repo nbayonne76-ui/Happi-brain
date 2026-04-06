@@ -51,10 +51,24 @@ Hébergement → Vercel (domaine : happi-[client].vercel.app)
 
 ### Stack SaaS / Plateformes
 ```
-Frontend  → Next.js 14 + TypeScript + Tailwind
+Frontend  → Next.js 16 (App Router, Turbopack) + TypeScript + Tailwind CSS v4
 Backend   → FastAPI + PostgreSQL
-State     → Zustand (React Native) / Redux ou Context (web)
+State     → Zustand + persist middleware (web & mobile)
 Mobile    → React Native (Expo SDK 54)
+Animation → Framer Motion
+DnD       → @dnd-kit/core + @dnd-kit/sortable
+```
+
+### Stack Web Builder (happi-webcreator)
+```
+Framework → Next.js 16.2.2 + TypeScript + Tailwind CSS v4
+State     → Zustand + persist (projets en localStorage)
+DnD       → @dnd-kit/core + @dnd-kit/sortable (sections réordonnables)
+Animation → Framer Motion
+Export    → HTML standalone via Blob + URL.createObjectURL (zéro dépendance)
+Preview   → Route /preview/[id] (rendu propre sans chrome éditeur)
+Blocs     → 13 types : navbar, hero, features, stats, cta, pricing, faq,
+            testimonials, logowall, footer, text, image, divider
 ```
 
 ---
@@ -162,6 +176,25 @@ Ces projets sont des démos/présentations pour convaincre les clients. Stack : 
 
 ## 5. PLATEFORMES ET SAAS
 
+### Happi Web Creator (web builder SaaS)
+- **Repo** : `happi-webcreator`
+- **Type** : Éditeur de sites web no-code (inspiré Webflow/Framer)
+- **Stack** : Next.js 16 + Zustand + @dnd-kit + Framer Motion
+- **URL** : github.com/nbayonne76-ui/happi-webcreator
+- **Features clés** :
+  - 13 blocs configurables (navbar, hero, features, stats, pricing, faq, testimonials, etc.)
+  - Éditeur visuel : drag-and-drop sections, propriétés par panneau latéral
+  - Couleurs de fond par section (16 presets : dark/light/gradient) + textes adaptatifs auto
+  - Espacement vertical (5 niveaux) + largeur contenu (4 niveaux) par section
+  - Preview plein écran `/preview/[id]` avec switcher desktop/tablet/mobile
+  - Export HTML standalone (zéro dépendance, déployable Vercel en 1 clic)
+  - Undo/redo (20 étapes), gestion multi-pages, SEO par page
+  - Galerie de templates (6 catégories), générateur IA par prompt
+- **Leçons** :
+  - Pour DnD + Framer Motion sur le même canvas : utiliser @dnd-kit uniquement dans les Layers, éviter les conflits avec AnimatePresence
+  - Export HTML avec styles inline = plus robuste que Tailwind CDN pour déploiement client
+  - Le panneau SEO avec prévisualisation Google SERP est très apprécié
+
 ### Happi Foundry (playground IA interne)
 - **Repo** : `Happi-Foundry`
 - **Type** : Claude AI playground + gestion de prompts (inspiré Azure AI Foundry)
@@ -258,6 +291,27 @@ backend/
   alembic/      → migrations DB
   requirements.txt
 docker-compose.yml
+```
+
+### Pattern 4 : Web Builder no-code
+```
+src/
+  app/
+    dashboard/    → galerie projets + création
+    editor/[id]/  → éditeur visuel (Topbar + Sidebar + Canvas + PropertiesPanel)
+    preview/[id]/ → rendu propre sans chrome (utilisé aussi pour export)
+    templates/    → galerie templates
+    generate/     → générateur IA par prompt
+  components/
+    blocks/       → 1 fichier par type de bloc (HeroBlock, FeaturesBlock...)
+    editor/       → Topbar, Sidebar, Canvas, PropertiesPanel
+  lib/
+    blockStyles.ts → helpers bg/padding/width + couleurs adaptatives dark/light
+    defaults.ts    → props par défaut de chaque bloc + templates
+    exportHtml.ts  → génère HTML standalone avec styles inline
+  store/
+    useEditorStore.ts → Zustand (projets, blocs, pages, undo/redo, SEO)
+  types/index.ts  → Block, Page (+ seo), Project, Template...
 ```
 
 ### Pattern 3 : Secrétariat vocal
@@ -370,102 +424,41 @@ Après chaque nouveau projet terminé, ajouter :
 
 ---
 
----
-## 📰 Veille Tech — 2026-04-04
-> Mis à jour automatiquement par Happi Brain Agent
+## ⚠️ SEUIL DE MIGRATION — HAPPI BRAIN V2
 
-| Article | Source | Tag |
-|---------|--------|-----|
-| [Anthropic accidentally releases source code for Claude AI agent](https://www.bloomberg.com/news/articles/2026-04-01/anthropic-accidentally-releases-source-code-for-claude-ai-agent) | Bloomberg | #Anthropic #Claude |
-| [Claude Mythos : nouveau modèle Anthropic avec raisonnement avancé en préparation](https://siliconangle.com/2026/03/27/anthropic-launch-new-claude-mythos-model-advanced-reasoning-features/) | SiliconAngle | #Anthropic #LLM |
-| [Claude API : max_tokens 300k, résidence des données EU, fine-grained tool streaming GA](https://releasebot.io/updates/anthropic) | Releasebot / Anthropic | #Anthropic #API #RGPD |
-| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV Community | #FastAPI #Next.js #SaaS #Docker |
-| [Vercel vs Hetzner in 2026: Which Is Actually Worth It for Solo Developers?](https://devtoolpicks.com/blog/vercel-vs-hetzner-2026-solo-developers) | DevToolPicks | #Vercel #SaaS |
-| [onyx — Open Source AI Chat Platform (23k★, +1212 today)](https://github.com/onyx-dot-app/onyx) | GitHub Trending Python | #chatbot #LLM |
-| [LightRAG — Simple and Fast Retrieval-Augmented Generation (32k★)](https://github.com/HKUDS/LightRAG) | GitHub Trending Python | #LLM #chatbot #RAG |
-| [microsoft/agent-framework — Build & orchestrate AI agents Python/.NET (8.6k★)](https://github.com/microsoft/agent-framework) | GitHub Trending Python | #LLM #SaaS |
-| [Mastra — TypeScript-first agent framework, 1M+ npm/mois, Y Combinator $13M](https://www.firecrawl.dev/blog/best-open-source-agent-frameworks) | Firecrawl Blog | #LLM #Next.js #SaaS |
-| [oh-my-openagent — Meilleur harness d'agents IA (48k★, +468 today)](https://github.com/code-yeongyu/oh-my-openagent) | GitHub Trending TS | #LLM #chatbot |
-| [Vapi.ai — Build Advanced Voice AI Agents](https://vapi.ai/) | Vapi | #VoiceAI #chatbot |
-| [React Native Speech Recognition in 2026: The Complete Guide](https://picovoice.ai/blog/react-native-speech-recognition/) | Picovoice | #ReactNative #VoiceAI #RGPD |
-| [The State of AI in 2026: From Chatbots to the Chorus](https://dev.to/maximus_prime_1/the-state-of-ai-in-2026-from-chatbots-to-the-chorus-a25) | DEV Community | #chatbot #LLM |
-| [Rapid Development with Next.js + FastAPI + Vercel + Neon Postgres](https://www.wolk.work/blog/posts/rapid-development-with-next-js-fastapi-vercel-neon-postgres) | Wolk | #FastAPI #Next.js #PostgreSQL #Vercel |
-| [just-bash — Bash for Agents by Vercel Labs (2.5k★)](https://github.com/vercel-labs/just-bash) | GitHub Trending TS | #Vercel #LLM |
+**Projets actifs actuellement : 3 chatbots + 5 plateformes = 8 projets**
 
-### 💡 Insights clés
-- **Claude Mythos arrive** : Anthropic finalise un nouveau modèle plus puissant qu'Opus — à surveiller pour migrer les projets H'appi dès la sortie GA.
-- **Claude API → 300k tokens + résidence EU** : La limite max_tokens passe à 300 000 tokens sur les Batches API, et la résidence des données en Europe est disponible via `inference_geo` — critique pour la conformité RGPD des clients H'appi.
-- **Dokploy = alternative low-cost à Railway** : Stack Next.js + FastAPI + Dokploy sur Hetzner VPS devient un choix populaire pour réduire les coûts infra par rapport à Railway/Vercel.
-- **onyx (23k★) explose** : Plateforme open source de chat IA complète avec LLM, RAG, connecteurs — architecture de référence à étudier pour les projets H'appi.
-- **LightRAG s'impose pour le RAG** : Approche plus rapide et simple que LangChain pour les bases de connaissance — à intégrer dans les chatbots clients à fort volume documentaire.
-- **Marché Voice AI = 27 Mds$ en 2026** : Excellent timing pour Happi Secretary — Vapi.ai reste la référence, et Mistral Voxtral TTS (<100ms, 3GB RAM) est à surveiller comme alternative à ElevenLabs.
-- **Mastra (TypeScript)** : Framework agent TypeScript-first avec 1.77M npm/mois — pertinent pour les projets Next.js H'appi intégrant de l'agentic AI.
+> Quand ce chiffre dépasse **12 projets actifs**, migrer vers **Happi Brain V2 (Clean Room)**.
 
----
+### Pourquoi V2 à 12 projets ?
+Au-delà de 12 projets, ce fichier markdown devient trop volumineux pour être lu linéairement de façon efficace. La recherche sémantique devient indispensable.
 
----
-## 📰 Veille Tech — 2026-04-05
-> Mis à jour automatiquement par Happi Brain Agent
+### Architecture V2 (Clean Room)
+```
+happi-brain-v2/
+  api/           → FastAPI — CRUD entités + endpoint RAG
+  db/            → PostgreSQL + pgvector (recherche vectorielle)
+    projects/    → table structurée (stack, features, leçons)
+    patterns/    → patterns réutilisables indexés
+    tech_news/   → veille quotidienne vectorisée
+    clients/     → fiches clients avec secteur + use cases
+  agent/         → agent de veille (écrit en DB, pas en markdown)
+  mcp/           → serveur MCP → Claude l'interroge comme un outil
+```
 
-| Article | Source | Tag |
-|---------|--------|-----|
-| [Build GenAI Applications Locally With Docker Model Runner](https://thenewstack.io/build-genai-applications-locally-with-docker-model-runner/) | TheNewStack | #Docker #LLM |
-| [A Practical Guide To Building a RAG-Powered Chatbot](https://thenewstack.io/a-practical-guide-to-building-a-rag-powered-chatbot/) | TheNewStack | #RAG #chatbot |
-| [Frontend AI: Vercel Abstracts Model Chaos in One Interface](https://thenewstack.io/frontend-ai-vercel-abstracts-model-chaos-in-one-interface/) | TheNewStack | #Vercel #LLM |
-| [Choosing Your AI Orchestration Stack for 2026](https://thenewstack.io/choosing-your-ai-orchestration-stack-for-2026/) | TheNewStack | #LLM #SaaS |
-| [LLMs and AI Agents Evolving Like Programming Languages](https://thenewstack.io/llms-and-ai-agents-evolving-like-programming-languages/) | TheNewStack | #LLM #AI-agents |
-| [Building a Full-Stack AI Chatbot with FastAPI (Backend) and React (Frontend)](https://dev.to/vipascal99/building-a-full-stack-ai-chatbot-with-fastapi-backend-and-react-frontend-51ph) | DEV Community | #chatbot #FastAPI |
-| [RAG using LLMSmith and FastAPI](https://dev.to/dheerajgopi/rag-using-llmsmith-and-fastapi-1e6i) | DEV Community | #RAG #FastAPI |
-| [Building a RAG chatbot with TypeScript and Next.js](https://dev.to/emertechie/building-a-rag-chatbot-with-typescript-and-nextjs-53c6) | DEV Community | #RAG #chatbot #Next.js |
-| [From LangChain Demos to a Production-Ready FastAPI Backend](https://dev.to/hamluk/from-langchain-demos-to-a-production-ready-fastapi-backend-1c0a) | DEV Community | #FastAPI #LLM |
-| [Why we no longer use LangChain for building our AI agents](https://news.ycombinator.com/item?id=40739982) | HackerNews | #AI-agents #LLM |
-| [Show HN: AI Timeline – 171 LLMs from Transformer (2017) to GPT-5.3 (2026)](https://news.ycombinator.com/item?id=47119871) | HackerNews | #LLM |
-| [LightRAG — Simple and Fast Retrieval-Augmented Generation](https://github.com/HKUDS/LightRAG) | GitHub Trending Python | #RAG #LLM #chatbot |
-| [onyx — Open Source AI Chat Platform](https://github.com/onyx-dot-app/onyx) | GitHub Trending Python | #chatbot #LLM #SaaS |
-| [microsoft/agent-framework — Build & orchestrate AI agents](https://github.com/microsoft/agent-framework) | GitHub Trending Python | #AI-agents #LLM |
-| [vercel-labs/just-bash — Bash for Agents](https://github.com/vercel-labs/just-bash) | GitHub Trending TypeScript | #AI-agents #Vercel |
+### Ce que V2 apporte
+- Recherche sémantique : `search_brain("chatbot hôtellerie")` → résultats pertinents
+- Mise à jour par entité (upsert) plutôt qu'append
+- MCP server : Claude interroge le Brain comme un outil natif
+- Peut devenir un produit vendable aux clients H'appi ("mémoire IA de votre entreprise")
 
-### 💡 Insights clés
-- **RAG s'impose comme standard de production** : LightRAG, onyx, et plusieurs guides DEV.to confirment que le RAG (Retrieval-Augmented Generation) est l'architecture incontournable pour les chatbots clients à fort volume documentaire — à intégrer en priorité dans les prochains projets H'appi.
-- **FastAPI + Next.js reste la stack de référence** : Confirmé par de multiples sources DEV.to et TheNewStack pour les backends IA en production — stack H'appi parfaitement alignée.
-- **Vercel AI Gateway** : Vercel abstrait désormais plus de 100 modèles LLM via une seule interface — pertinent pour les projets Next.js H'appi qui intègrent de l'IA générative côté frontend.
-- **Docker Model Runner** : Permet de tester des LLMs localement avant déploiement sur Railway/Vercel, réduisant les cycles de dev et les coûts de test — à adopter dans le workflow H'appi.
-- **Abandon de LangChain en production** : Tendance confirmée sur HackerNews — les équipes préfèrent des frameworks plus légers (LightRAG, FastAPI direct) pour les agents de production. À surveiller pour les nouveaux projets.
-- **microsoft/agent-framework (Python/.NET)** : Nouveau framework multi-agents Microsoft en trending — alternative sérieuse à explorer pour les architectures multi-agents complexes.
-- **Orchestration IA 2026** : TheNewStack recommande de choisir son stack d'orchestration maintenant (LangGraph, AutoGen, CrewAI) avant que le marché se consolide — décision architecturale critique pour H'appi.
-
-*Dernière mise à jour : 2026-04-05*
-*Projets analysés : 27 repos GitHub (nbayonne76-ui)*
+### Comment migrer
+1. Créer le repo `happi-brain-v2` avec FastAPI + pgvector
+2. Importer tous les fichiers `projects/*.md` actuels via script d'ingestion
+3. Configurer le MCP server dans `~/.claude/settings.json`
+4. Mettre à jour l'agent de veille pour écrire en DB plutôt qu'en markdown
 
 ---
-## 📰 Veille Tech — 2026-04-06
-> Mis à jour automatiquement par Happi Brain Agent
-
-| Article | Source | Tag |
-|---------|--------|-----|
-| [I built a demo of what AI chat will look like when it's "free" and ad-supported](https://news.ycombinator.com/item?id=47205890) | HackerNews | #chatbot |
-| [The current hype around autonomous agents, and what actually works in production](https://news.ycombinator.com/item?id=44623207) | HackerNews | #LLM #chatbot |
-| [AI Chatbots vs AI Agents: What Developers Should Build in 2026](https://dev.to/the_bookmaster/ai-chatbots-vs-ai-agents-what-developers-should-build-in-2026-40jf) | DEV Community | #chatbot #LLM |
-| [10 AI Agents Powering Million-Dollar Businesses in 2026](https://dev.to/joinwithken/10-ai-agents-powering-million-dollar-businesses-in-2026-25mn) | DEV Community | #SaaS #LLM |
-| [Best Visual AI Agents in 2026: Real-Time & Multimodal Tools](https://dev.to/getstreamhq/best-visual-ai-agents-in-2026-real-time-multimodal-tools-44g6) | DEV Community | #chatbot #LLM #VoiceAI |
-| [onyx — Open Source AI Chat Platform](https://github.com/onyx-dot-app/onyx) | GitHub Trending Python | #chatbot #LLM |
-| [RAG-Anything: All-in-One RAG Framework](https://github.com/HKUDS/RAG-Anything) | GitHub Trending Python | #LLM #chatbot #RAG |
-| [NousResearch/hermes-agent — The agent that grows with you](https://github.com/NousResearch/hermes-agent) | GitHub Trending Python | #LLM #chatbot |
-| [microsoft/agent-framework — Build & orchestrate AI agents](https://github.com/microsoft/agent-framework) | GitHub Trending Python | #LLM |
-| [badlogic/pi-mono — AI agent toolkit: CLI + unified LLM API + Slack bot](https://github.com/badlogic/pi-mono) | GitHub Trending TypeScript | #LLM #chatbot |
-| [simstudioai/sim — Build, deploy and orchestrate AI agents](https://github.com/simstudioai/sim) | GitHub Trending TypeScript | #SaaS #LLM |
-| [Anthropic's rough week: leaked models, exposed source code, botched GitHub takedown](https://thenewstack.io/anthropic-claude-code-leak/) | TheNewStack | #Anthropic #Claude |
-| [5 Key Trends Shaping Agentic Development in 2026](https://thenewstack.io/5-key-trends-shaping-agentic-development-in-2026/) | TheNewStack | #LLM |
-| [6 agentic knowledge base patterns emerging in the wild](https://thenewstack.io/agentic-knowledge-base-patterns/) | TheNewStack | #LLM #chatbot |
-| [The hidden technical debt of agentic engineering](https://thenewstack.io/hidden-agentic-technical-debt/) | TheNewStack | #LLM |
-
-### 💡 Insights clés
-- **RAG-Anything (HKUDS)** : nouveau framework RAG all-in-one en trending Python — plus complet que LightRAG, supporte texte, image, audio, vidéo — à évaluer pour les chatbots H'appi à fort volume documentaire.
-- **Hermes Agent (NousResearch)** : agent "qui grandit avec l'utilisateur" via mémoire persistante — concept clé à intégrer dans les prochains chatbots H'appi pour améliorer la personnalisation.
-- **simstudioai/sim** : plateforme SaaS open source pour orchestrer des agents (deploy + monitor) — architecture de référence pour une future offre multi-agents H'appi.
-- **Anthropic / Claude** : semaine difficile (leak code source Claude Code) — aucun impact immédiat sur les SDK clients, mais à surveiller pour les prochaines updates Anthropic.
-- **Dette technique agentic** : TheNewStack alerte sur le coût caché des systèmes agents en prod (observabilité, tests, rollback) — anticiper dès la conception dans les projets H'appi.
-- **AI chat ad-supported** : modèle freemium publicitaire exploré sur HN — opportunité de pricing alternatif à explorer pour des offres H'appi grand public.
-- **pi-mono (TypeScript)** : toolkit agent unifié (CLI + API LLM + TUI + Slack bot) — candidat sérieux pour remplacer plusieurs outils internes H'appi en un seul framework.
 
 *Dernière mise à jour : 2026-04-06*
+*Projets analysés : 28 repos GitHub (nbayonne76-ui)*
