@@ -231,8 +231,11 @@ Ces projets sont des démos/présentations pour convaincre les clients. Stack : 
 ### H'appi Website (site vitrine)
 - **Repo** : `h-appi-website`
 - **Type** : Site corporate H'appi
-- **Stack** : Next.js + TypeScript
-- **Deploy** : h-appi-website.vercel.app
+- **Stack** : Next.js 14 + TypeScript + Tailwind CSS + Framer Motion + next-intl
+- **Deploy** : happi-bot.com (Vercel, master branch)
+- **i18n** : next-intl — FR/EN, fichiers `messages/fr.json` + `messages/en.json`
+- **Pages** : Home, Atelier, Cas d'usage, Blog, Quiz, Contact
+- **Voir section 12** pour le design system complet et le processus de refonte
 
 ### Microsoft Sales App
 - **Repo** : `microsoft-sales-app`
@@ -457,6 +460,160 @@ happi-brain-v2/
 2. Importer tous les fichiers `projects/*.md` actuels via script d'ingestion
 3. Configurer le MCP server dans `~/.claude/settings.json`
 4. Mettre à jour l'agent de veille pour écrire en DB plutôt qu'en markdown
+
+---
+
+---
+
+## 12. DESIGN SYSTEM & ANIMATION — happi-bot.com
+
+> Ce système a été développé et raffiné lors de la refonte complète du site vitrine H'appi (avril 2026).
+> Il est réutilisable sur tout projet Next.js nécessitant un rendu premium.
+
+### 12.1 Composants UI réutilisables (`components/ui/`)
+
+| Composant | Fichier | Usage |
+|-----------|---------|-------|
+| `FadeInUp` | `Animate.tsx` | Apparition scroll-triggered avec délai configurable |
+| `ScaleIn` | `Animate.tsx` | Scale 0.9→1 + opacité sur scroll |
+| `TiltCard` | `TiltCard.tsx` | Carte 3D perspective au hover (intensity configurable) |
+| `MagneticButton` | `MagneticButton.tsx` | Bouton attiré par le curseur (strength 0-1) |
+| `AnimatedMesh` | `AnimatedMesh.tsx` | Orbes flottants gradient animés (variant: hero/blue/purple) |
+
+### 12.2 Patterns Framer Motion éprouvés
+
+**Counter animé au scroll** (pour stats/métriques) :
+```tsx
+const raw = useMotionValue(0);
+const spring = useSpring(raw, { stiffness: 55, damping: 18 });
+const display = useTransform(spring, v => Math.round(v).toLocaleString());
+const inView = useInView(ref, { once: true, margin: '-60px' });
+useEffect(() => { if (inView) raw.set(targetValue); }, [inView]);
+```
+
+**AnimatePresence avec hauteur 0→auto** (accordéon) :
+```tsx
+<AnimatePresence>
+  {open && (
+    <motion.div
+      initial={{ height: 0, opacity: 0 }}
+      animate={{ height: 'auto', opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      transition={{ duration: 0.35, ease: 'easeInOut' }}
+    >
+      {content}
+    </motion.div>
+  )}
+</AnimatePresence>
+```
+
+**Stagger d'éléments** :
+```tsx
+// Utiliser transition.delay calculé sur l'index
+<motion.div
+  initial={{ opacity: 0, y: 16 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ delay: index * 0.08 }}
+>
+```
+
+**Chevron spring** (indicateur d'accordéon) :
+```tsx
+<motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ type: 'spring', stiffness: 300, damping: 24 }}>
+  <ChevronDown />
+</motion.div>
+```
+
+**Scroll interne chat (ne pas scroller la page)** :
+```tsx
+// ❌ Mauvais — scrolle toute la page
+bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+// ✅ Correct — scrolle uniquement le container
+const el = containerRef.current;
+if (el) el.scrollTop = el.scrollHeight;
+```
+
+### 12.3 Glassmorphism (classe CSS `glass-card`)
+```css
+/* À définir dans globals.css */
+.glass-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+}
+```
+
+### 12.4 Gradient border (carte premium)
+```tsx
+<div className="rounded-2xl p-px" style={{
+  background: 'linear-gradient(135deg, rgba(59,130,246,0.4), rgba(16,185,129,0.2))'
+}}>
+  <div className="bg-happi-darker rounded-2xl p-6">{content}</div>
+</div>
+```
+
+### 12.5 Les 10 outils IA de référence — inspiration design & UI
+
+Utilisés comme **référence visuelle et UX** pour la refonte des pages happi-bot.com.
+
+**Design IA** (UI generation, maquettage, prototypage) :
+| Outil | Spécialité |
+|-------|-----------|
+| Uizard | Génération de maquettes UI par prompt |
+| Loqo | Design IA produit / landing pages |
+| Playground | Génération d'images et assets visuels |
+| Canva | Design graphique + IA générative intégrée |
+| Galileo AI | Génération de composants UI complexes |
+
+**Builders IA** (création de sites web par IA) :
+| Outil | Spécialité |
+|-------|-----------|
+| Gamma | Présentations et pages web générées par IA |
+| Framer | Sites interactifs no-code + animations |
+| Webflow | Web design visuel avancé + CMS |
+| Durable | Site web généré en 30 secondes par IA |
+| Dora | Sites 3D et interactifs générés par IA |
+
+> Ce sont les benchmarks de qualité visuelle à viser sur toutes les pages H'appi.
+> Avant toute refonte de page, aller regarder ces outils pour s'inspirer du niveau de polish attendu.
+
+### 12.6 Méthodologie de refonte page en 5 phases
+
+Utilisée sur les pages **Atelier** et **Cas d'usage** (avril 2026), inspirée du niveau visuel des 10 outils ci-dessus :
+
+| Phase | Focus | Outils / techniques |
+|-------|-------|---------------------|
+| **1 — Hero & crédibilité** | Transformer le hero en manifeste avec preuves | `AnimatedMesh`, `FadeInUp` stagger, badge client réel (ex: "Mobilier de France · Live 2024") |
+| **2 — Métriques impactantes** | Remplacer les % abstraits par des chiffres business concrets | `AnimatedStat` (spring counter), `TiltCard`, before/after context pill |
+| **3 — Contenu animé** | Dynamiser accordéons, listes, features | `AnimatePresence` height 0→auto, stagger items, `motion.button` whileHover/whileTap, TiltCard sur mini-stats et actor cards |
+| **4 — Démo interactive** | Rendre le bot cliquable et vivant | `AnimatePresence` bubbles (slide from direction), `MagneticButton` CTA, spring reply buttons stagger, spring success banner |
+| **5 — Section résultats** | Clôturer avec des outcomes mesurés, nommés, prouvables | 3 `TiltCard` outcome cards, `AnimatedValue` spring scale-in, `AnimatePresence` reveal on scroll |
+
+### 12.7 Blog — Agrégateur RSS live
+
+- **Route** : `app/api/news/route.ts` — `export const revalidate = 3600`
+- **Mécanisme** : `Promise.allSettled` sur 15 feeds → dédup par URL → tri newest-first → cap 80
+- **Nettoyage** :
+  - `decodeEntities()` exécuté 2× (Medium double-encode `&amp;#x2019;`) — **toujours décoder AVANT de stripper les tags HTML**
+  - `cleanText()` : normalise `—`, `–`, ` - `, ` | `, ` · `, `--`, `...` → ponctuation propre
+  - `NON_LATIN_RE` : filtre les articles en cyrillique/arabe/CJK/hébreu/hindi/thaï
+- **Affichage** : `NewsSection.tsx` (tabs par source + compteurs) + `NewsCard.tsx` (link externe)
+- **Piège** : `scrollIntoView()` dans un chat scrolle la page entière → utiliser `scrollTop = scrollHeight` sur le container
+
+### 12.8 Couleurs de la charte happi-bot.com
+
+```
+happi-blue    → #3B82F6  (actions, liens, badges)
+happi-green   → #10B981  (succès, online, validation)
+happi-purple  → #8B5CF6  (accent secondaire)
+happi-amber   → #F59E0B  (avertissement, timing)
+happi-dark    → surface principale
+happi-darker  → fond profond
+happi-surface → cartes / panels
+happi-border  → bordures subtiles
+happi-muted   → texte secondaire
+gradient-text → classe utilitaire (blue → purple)
+```
 
 ---
 
