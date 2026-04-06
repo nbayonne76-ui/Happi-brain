@@ -428,10 +428,10 @@ Après chaque nouveau projet terminé, ajouter :
 
 **Projets actifs actuellement : 3 chatbots + 5 plateformes = 8 projets**
 
-> Quand ce chiffre dépasse **12 projets actifs**, migrer vers **Happi Brain V2 (Clean Room)**.
+> Quand ce chiffre dépasse **15 projets actifs**, migrer vers **Happi Brain V2 (Clean Room)**.
 
-### Pourquoi V2 à 12 projets ?
-Au-delà de 12 projets, ce fichier markdown devient trop volumineux pour être lu linéairement de façon efficace. La recherche sémantique devient indispensable.
+### Pourquoi V2 à 15 projets ?
+Au-delà de 15 projets, ce fichier markdown devient trop volumineux pour être lu linéairement de façon efficace. La recherche sémantique devient indispensable.
 
 ### Architecture V2 (Clean Room)
 ```
