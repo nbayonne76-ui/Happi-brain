@@ -651,3 +651,35 @@ gradient-text → classe utilitaire (blue → purple)
 - **Template FastAPI + Next.js + RAG** devient le standard SaaS IA en 2026 — notre stack de référence est confirmée. Intégrer RAG (pgvector) dès le prochain projet chatbot.
 - **Vercel + Railway = combo recommandé 2026** pour les projets full-stack IA : Vercel pour le frontend Next.js, Railway pour FastAPI + PostgreSQL — notre architecture est validée.
 - **onyx (25 k★) et hermes-agent (28 k★)** montrent la demande massive pour des chatbots multi-LLM open source — opportunité de positionnement H'appi sur des solutions custom face à ces outils génériques.
+
+---
+
+## 📰 Veille Tech — 2026-04-09
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Mythos Preview — modèle frontier Anthropic pour la cybersécurité (gated, $25/$125/M tokens)](https://whatllm.org/blog/new-ai-models-april-2026) | WhatLLM | #Claude #Anthropic |
+| [Claude Code source leak via npm — 513 000 lignes TypeScript exposées, architecture MCP révélée](https://thehackernews.com/2026/04/claude-code-tleaked-via-npm-packaging.html) | The Hacker News | #Claude #Anthropic |
+| [Claude Opus 4.6 #1 LMSYS Arena — Anthropic capte 40% du marché enterprise LLM (vs 27% OpenAI)](https://llm-stats.com/ai-news) | LLM Stats | #LLM #Claude |
+| [NousResearch/hermes-agent — "The agent that grows with you" (5 794★/jour)](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #LLM #agents |
+| [VoltAgent — Framework TypeScript open-source pour agents IA avec observabilité n8n-style](https://github.com/VoltAgent/voltagent) | GitHub Trending TS | #SaaS #LLM |
+| [mem0ai/mem0 — Mémoire universelle pour agents IA : +26% précision, -90% tokens, $24M levés](https://github.com/mem0ai/mem0) | GitHub Trending 🐍 | #LLM #chatbot |
+| [GitNexus — Knowledge graph RAG entièrement côté navigateur, zéro serveur (980★/jour)](https://github.com/abhigyanpatwari/GitNexus) | GitHub Trending TS | #LLM #RAG |
+| [seomachine — Workspace SEO propulsé par Claude pour créer du contenu optimisé (649★/jour)](https://github.com/TheCraigHewitt/seomachine) | GitHub Trending 🐍 | #Claude #SaaS |
+| [moeru-ai/airi — Companion vocal self-hosted avec chat temps réel et gaming (236★/jour)](https://github.com/moeru-ai/airi) | GitHub Trending TS | #VoiceAI |
+| [Voice AI en 2026 : marché $18.4B → $61.7B d'ici 2031, les acteurs qui façonnent l'industrie](https://www.assemblyai.com/blog/voice-ai-in-2026-series-1) | AssemblyAI | #VoiceAI |
+| [Construire un SaaS IA avec Next.js, FastAPI et Dokploy — alternative self-hosted à Vercel/Railway](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #NextJS #SaaS #Docker |
+| [AI Act 2026 — Ce qui change pour les chatbots d'entreprise dès août (sanctions jusqu'à 35M€)](https://www.a3web.fr/blog/ai-act-ce-que-le-reglement-europeen-sur-lia-va-changer-pour-votre-entreprise-des-aout-2026/) | A3 Web | #RGPD |
+| [Omnichannel AI 2026 — Les plateformes voice-only sont obsolètes, place au voice+chat+SMS+email](https://www.famulor.io/blog/omnichannel-ai-why-voice-only-platforms-are-obsolete-in-2026) | Famulor | #VoiceAI #chatbot |
+| [Mem0 Research Paper — Agents IA avec mémoire long-terme scalable en production (arXiv)](https://arxiv.org/abs/2504.19413) | arXiv | #LLM #chatbot |
+| [alibaba/page-agent — Agent GUI JavaScript pour contrôle web en langage naturel (218★/jour)](https://github.com/alibaba/page-agent) | GitHub Trending TS | #chatbot #LLM |
+
+### 💡 Insights clés
+- **Claude Mythos Preview (7 avril 2026)** : Nouveau modèle frontier Anthropic, une "step change" au-dessus de Claude Opus 4.6, spécialisé cybersécurité et raisonnement avancé. Accès gated à ~50 partenaires, pricing $25/$125 par million de tokens. À surveiller pour intégrer sur des projets H'appi haute valeur dès la GA.
+- **Claude Code source leak (31 mars 2026)** : 513 000 lignes TypeScript exposées via npm ont révélé l'architecture complète (MCP, tool-call loops, subagent spawning, context compaction). Mine d'or pour comprendre les patterns d'agents modernes — et vulnérabilité critique patchée le 6 avril. Mettre à jour Claude Code immédiatement.
+- **Mémoire persistante = standard 2026** : Mem0 (26% de gain de précision, -90% tokens, -91% latence) démontre que les chatbots sans mémoire sont une architecture du passé. Intégrer mem0 ou pgvector sur le prochain projet chatbot H'appi pour des conversations contextuelles long-terme.
+- **AI Act applicable le 2 août 2026** : Les chatbots = "risque limité" → obligation légale d'afficher "vous parlez à une IA" dans chaque conversation. Sanctions jusqu'à **35 millions €**. Ajouter ce bandeau/message d'accueil sur TOUS les projets clients H'appi avant la deadline. Pas optionnel.
+- **VoltAgent** (TypeScript, MIT, observabilité visuelle type n8n) : framework à évaluer pour les prochains agents H'appi en Next.js. Permet de débugger visuellement le flow des agents — un atout commercial fort à montrer aux clients.
+- **Voice AI en hypercroissance** : marché $18.4B → $61.7B d'ici 2031 (+22% CAGR). L'omnichannel (voice + chat + SMS + email) remplace les solutions voice-only — aligner la roadmap Happi Secretary sur cette convergence.
+- **Anthropic consolide le leadership enterprise** : 40% de l'API spend enterprise (vs 27% OpenAI, en baisse depuis 50% en 2023). Notre pari de baser tous les chatbots H'appi sur Claude est validé par le marché.
