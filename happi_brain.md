@@ -683,3 +683,35 @@ gradient-text → classe utilitaire (blue → purple)
 - **VoltAgent** (TypeScript, MIT, observabilité visuelle type n8n) : framework à évaluer pour les prochains agents H'appi en Next.js. Permet de débugger visuellement le flow des agents — un atout commercial fort à montrer aux clients.
 - **Voice AI en hypercroissance** : marché $18.4B → $61.7B d'ici 2031 (+22% CAGR). L'omnichannel (voice + chat + SMS + email) remplace les solutions voice-only — aligner la roadmap Happi Secretary sur cette convergence.
 - **Anthropic consolide le leadership enterprise** : 40% de l'API spend enterprise (vs 27% OpenAI, en baisse depuis 50% en 2023). Notre pari de baser tous les chatbots H'appi sur Claude est validé par le marché.
+
+---
+
+## 📰 Veille Tech — 2026-04-11
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Mythos Preview — Project Glasswing : 83.1% protection cybermenaces pour les 50 partenaires sélectionnés](https://whatllm.org/blog/new-ai-models-april-2026) | WhatLLM | #Claude #Anthropic |
+| [Will Claude Managed Agents Impact Legal Tech? — nouveaux secteurs verticaux pour les agents Anthropic](https://www.artificiallawyer.com/2026/04/09/will-claude-managed-agents-impact-legal-tech/) | Artificial Lawyer | #Claude #Anthropic |
+| [multica-ai/multica — Plateforme agents IA managés open-source "Turn coding agents into real teammates" (+1 506★/jour)](https://github.com/multica-ai/multica) | GitHub Trending TS | #LLM #agents #SaaS |
+| [rowboatlabs/rowboat — "Open-source AI coworker with memory" (+507★/jour)](https://github.com/rowboatlabs/rowboat) | GitHub Trending TS | #LLM #chatbot |
+| [NousResearch/hermes-agent — "The agent that grows with you" (+7 671★/jour)](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #LLM #agents |
+| [YishenTu/claudian — Plugin Obsidian intégrant Claude Code comme collaborateur IA (+570★/jour)](https://github.com/YishenTu/claudian) | GitHub Trending TS | #Claude #Anthropic |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy — self-host sans Vercel ni Railway](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #NextJS #SaaS #Docker |
+| [Build an AI Chatbot in 15 Min with Vercel AI SDK 2026](https://tech-insider.org/vercel-ai-sdk-tutorial-chatbot-nextjs-2026/) | Tech Insider | #NextJS #chatbot #Vercel |
+| [Built a FastAPI Backend for AI Agents in 2026 — Here's What Broke](https://medium.com/@rameshkannanyt0078/built-a-fastapi-backend-for-ai-agents-in-2026-heres-what-broke-fa6c5b4d2c25) | Medium | #FastAPI #LLM |
+| [unslothai/unsloth — Unsloth Studio : UI web pour entraîner & runner des LLMs open-source localement (60 964★)](https://github.com/unslothai/unsloth) | GitHub Trending 🐍 | #LLM |
+| [coleam00/Archon — Premier harness builder open-source pour agents IA coding (+756★/jour)](https://github.com/coleam00/Archon) | GitHub Trending TS | #LLM #agents |
+| [Goose (Block) — Agent IA open-source extensible pour automatiser les tâches engineering complexes](https://aitoolly.com/ai-news/article/2026-04-07-block-launches-goose-an-open-source-extensible-ai-agent-for-automated-engineering-tasks) | AIToolly | #LLM #agents |
+| [Voxtral TTS (Mistral) — 4B params, 9 langues, ~90ms time-to-first-audio, voice cloning zero-shot](https://www.bentoml.com/blog/exploring-the-world-of-open-source-text-to-speech-models) | BentoML | #VoiceAI |
+| [Gemma 4 (Google, avril 2026) — 4 modèles Apache 2.0, agentic workflows, alternative open-source à Claude Haiku](https://www.bentoml.com/blog/navigating-the-world-of-open-source-large-language-models) | BentoML | #LLM |
+| [n8n (183 510★) — Workflow automation avec native AI capabilities, 400+ intégrations (+253★/jour)](https://github.com/n8n-io/n8n) | GitHub Trending TS | #SaaS #LLM #chatbot |
+
+### 💡 Insights clés
+- **Claude Mythos Preview + Project Glasswing** : Anthropic a lancé un accès contrôlé à son modèle le plus puissant (93.9% SWE-bench, 94.6% GPQA Diamond) via un consortium de 12 géants tech (AWS, Apple, Google, Microsoft, NVIDIA…). Pricing annoncé : $25/$125/M tokens. À surveiller pour intégrer sur les projets H'appi haute valeur dès la GA publique — comparer alors avec claude-opus-4-6.
+- **Vague des managed agents open-source** : Multica (+1 506★/jour), Rowboat, Goose (Block) et Archon définissent un nouveau paradigme — les agents IA deviennent des "coéquipiers" assignables à des tâches, avec mémoire et compétences cumulatives. Fort signal pour la roadmap Happi Secretary et les bots SAV avancés : intégrer ce pattern d'agent persistant.
+- **Voxtral TTS (Mistral) à ~90ms** menace directement notre stack ElevenLabs/Deepgram : open-source, 9 langues, voice cloning zero-shot. À benchmarker face à ElevenLabs sur les projets voice H'appi. Si les performances sont équivalentes, adoption prioritaire pour réduire les coûts variables.
+- **FastAPI + Next.js + Dokploy** : alternative self-hosted à Railway/Vercel qui monte. Dokploy déploie Docker sur Hetzner VPS (coût ÷4 vs Railway). À évaluer pour les clients H'appi sensibles aux coûts d'infra ou souhaitant hébergement souverain (RGPD).
+- **Gemma 4 (Google, Apache 2.0)** : nouvelle option LLM open-source pour les clients exigeant un hébergement on-premise en France (Scaleway/Hetzner). À positionner comme alternative à Claude Haiku pour les projets où la data ne peut pas quitter l'infrastructure client.
+- **30% des appels API viennent désormais d'agents IA** : les backends FastAPI doivent gérer des patterns d'authentification et de rate-limiting spécifiques aux agents (rafales, sessions longues, retries exponentiels). Appliquer les leçons de l'article "What Broke" dès le prochain projet agent H'appi.
+- **n8n (183K★, AI natif)** : concurrent indirect à nos solutions custom mais aussi orchestrateur complémentaire. Évaluer n8n comme couche d'intégration CRM/webhook pour des clients qui veulent du no-code + notre chatbot en brique IA.
