@@ -715,3 +715,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **Gemma 4 (Google, Apache 2.0)** : nouvelle option LLM open-source pour les clients exigeant un hébergement on-premise en France (Scaleway/Hetzner). À positionner comme alternative à Claude Haiku pour les projets où la data ne peut pas quitter l'infrastructure client.
 - **30% des appels API viennent désormais d'agents IA** : les backends FastAPI doivent gérer des patterns d'authentification et de rate-limiting spécifiques aux agents (rafales, sessions longues, retries exponentiels). Appliquer les leçons de l'article "What Broke" dès le prochain projet agent H'appi.
 - **n8n (183K★, AI natif)** : concurrent indirect à nos solutions custom mais aussi orchestrateur complémentaire. Évaluer n8n comme couche d'intégration CRM/webhook pour des clients qui veulent du no-code + notre chatbot en brique IA.
+
+---
+## 📰 Veille Tech — 2026-04-12
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Managed Agents : Anthropic runs your agents for you](https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/) | The New Stack | #Claude #Anthropic |
+| [Claude Sonnet 4.6 — 1M context window beta + max_tokens 300k sur Batches API](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #Anthropic |
+| [ant CLI — client CLI officiel pour l'API Anthropic, intégration native Claude Code](https://platform.claude.com/docs/en/release-notes/overview) | Anthropic Docs | #Claude #Anthropic |
+| [Claude Managed Agents: complete guide to building production AI agents (2026)](https://www.the-ai-corner.com/p/claude-managed-agents-guide-2026) | The AI Corner | #Claude #Anthropic #SaaS |
+| [NousResearch/hermes-agent — "The agent that grows with you" (+6 438★/jour)](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #LLM #agents |
+| [OpenBMB/VoxCPM2 — TTS 2B params, 30 langues, 48kHz, Apache-2.0, voice cloning zero-shot (+1 084★/jour)](https://github.com/OpenBMB/VoxCPM/) | GitHub Trending 🐍 | #VoiceAI |
+| [multica-ai/multica — Open-source managed agents platform (+1 948★/jour)](https://github.com/multica-ai/multica) | GitHub Trending TS | #LLM #agents #SaaS |
+| [thedotmack/claude-mem — Plugin Claude Code : compression + injection contexte inter-sessions (+671★/jour)](https://github.com/thedotmack/claude-mem) | GitHub Trending TS | #Claude #Anthropic |
+| [coleam00/Archon — Harness builder open-source pour agents IA coding (+1 346★/jour)](https://github.com/coleam00/Archon) | GitHub Trending TS | #LLM #agents |
+| [The voice AI stack for building agents in 2026 — guide STT+LLM+TTS orchestration](https://www.assemblyai.com/blog/the-voice-ai-stack-for-building-agents) | AssemblyAI | #VoiceAI |
+| [VoxCPM2 : analyse des 5 fonctionnalités — Voice Design, Cloning, 30 langues](https://www.communeify.com/en/blog/voxcpm2-open-source-tts-voice-design-cloning-features-2026/) | Communeify | #VoiceAI |
+| [Build a Production-Ready FastAPI Backend in 2026: 5 Templates That Ship in Minutes](https://dev.to/ottoaria/build-a-production-ready-fastapi-backend-in-2026-5-templates-that-ship-in-minutes-1kfl) | DEV.to | #FastAPI #SaaS #Docker |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #NextJS #SaaS #Docker |
+| [The Complete GDPR Compliance Checklist for SaaS Developers (2026)](https://dev.to/felixkruger/the-complete-gdpr-compliance-checklist-for-saas-developers-2026-40o4) | DEV.to | #RGPD #SaaS |
+| [LLM API Pricing 2026 — Claude Opus -67%, contexte 1M tokens, DeepSeek à $0.14/M](https://costgoat.com/compare/llm-api) | CostGoat | #LLM |
+
+### 💡 Insights clés
+- **Claude Managed Agents (public beta, 8 avril 2026)** : Anthropic prend en charge l'infra d'exécution des agents — on définit task/tools/guardrails, Anthropic orchestre. Directement applicable sur les projets H'appi qui déploient des agents SAV ou secrétariat : évaluer si Claude Managed Agents remplace notre orchestration FastAPI custom pour les clients enterprise, ou si les deux coexistent (Managed pour les flux simples, FastAPI pour les workflows complexes RGPD).
+- **Claude Sonnet 4.6 + max_tokens 300k** : nouveau flagship Sonnet avec fenêtre de 1M tokens en beta et sortie 300k tokens sur la Batches API. Impact direct H'appi : les chatbots documentaires (analyse de contrats, FAQ longue) peuvent traiter des contextes massifs en une seule requête. Migrer depuis Sonnet 4.5 avant la deprecation du 30 avril 2026.
+- **VoxCPM2 (OpenBMB, Apache-2.0)** : TTS open-source 2B params, 30 langues, 48kHz, Voice Design depuis description texte + cloning zero-shot. Concurrent direct d'ElevenLabs pour les projets H'appi Voice. À benchmarker face à ElevenLabs et Voxtral sur latence et qualité — si acceptable, adoption prioritaire pour réduire les coûts variables et garantir la souveraineté data (hébergement on-premise Scaleway/Hetzner).
+- **thedotmack/claude-mem** : plugin Claude Code qui capture automatiquement les sessions de coding, compresse le contexte avec l'IA et l'injecte dans les sessions futures. Outil de productivité immédiat pour les développeurs H'appi sur les projets longs — à tester en interne cette semaine.
+- **RGPD "30-Day Exit" mandate (2026)** : nouvelle obligation UE forçant les SaaS US à permettre une migration fournisseur en 30 jours sans friction technique. Pour H'appi, c'est un argument commercial fort : notre stack souveraine (Scaleway/Hetzner + PostgreSQL exportable) est nativement conforme. À documenter dans les pitchs clients sensibles RGPD.
+- **ant CLI (Anthropic)** : client CLI pour l'API Claude avec versioning des ressources en YAML. Intégration native Claude Code — accélère les cycles dev/test pour les développeurs H'appi qui testent des prompts et agents avant déploiement.
