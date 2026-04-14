@@ -778,3 +778,30 @@ gradient-text → classe utilitaire (blue → purple)
 - **firecrawl (+108k★)** : Web scraping propre pour alimenter les RAG des agents IA — alternative sérieuse à nos pipelines Playwright custom. À intégrer dans les prochains chatbots H'appi qui indexent des sites clients (catalogues, bases documentaires, FAQs publiques).
 - **microsoft/markitdown (+105k★, +2.5k★/jour)** : outil Python de référence pour convertir PDF/Word/Excel/HTML en Markdown — idéal pour alimenter les pipelines RAG des chatbots H'appi documentaires. À intégrer dans la pipeline d'ingestion standard de tous les projets RAG dès maintenant.
 - **CNIL 2026 — IA en entreprise et santé** : la CNIL publiera cette année des guides sur les biais algorithmiques et l'IA au travail/santé. Les chatbots H'appi RH ou de santé devront anticiper ces recommandations — suivre le calendrier CNIL et prévoir un audit de conformité Q3 2026.
+
+---
+## 📰 Veille Tech — 2026-04-14
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [claude-mem — Plugin Claude Code qui capture et compresse automatiquement toutes les sessions de dev avec l'IA (+3.2k★/jour)](https://github.com/thedotmack/claude-mem) | GitHub Trending TypeScript | #Claude #Anthropic |
+| [NousResearch/hermes-agent — "The agent that grows with you" — nouveau framework agent Python explosif (+11.3k★/jour)](https://github.com/NousResearch/hermes-agent) | GitHub Trending Python | #LLM #chatbot |
+| [voicebox — Studio de synthèse vocale open-source (alternative low-cost à ElevenLabs)](https://github.com/jamiepine/voicebox) | GitHub Trending TypeScript | #VoiceAI |
+| [multica — Plateforme open-source de managed agents : assign tasks, track progress, compound skills](https://github.com/multica-ai/multica) | GitHub Trending TypeScript | #LLM #SaaS |
+| [Archon — Premier harness builder open-source pour l'IA coding : rend le dev IA déterministe et reproductible](https://github.com/coleam00/Archon) | GitHub Trending TypeScript | #LLM #SaaS |
+| [Flowise — Build AI Agents Visually — plateforme no-code/low-code pour agents IA (51k★)](https://github.com/FlowiseAI/Flowise) | GitHub Trending TypeScript | #chatbot #LLM |
+| [CopilotKit — The Frontend Stack for Agents & Generative UI (React / Next.js, 30k★)](https://github.com/CopilotKit/CopilotKit) | GitHub API TypeScript | #NextJs #LLM #chatbot |
+| [Dify — Production-ready platform for agentic workflow : orchestration LLM, RAG, automation no-code (137k★)](https://github.com/langgenius/dify) | GitHub API TypeScript | #chatbot #LLM #SaaS |
+| [MaxKB — Enterprise agents platform open-source avec base de connaissance intégrée (20k★)](https://github.com/1Panel-dev/MaxKB) | GitHub API Python | #chatbot #SaaS |
+| [Quivr — Opiniated RAG for integrating GenAI in your apps — focus produit, pas plomberie RAG (39k★)](https://github.com/QuivrHQ/quivr) | GitHub API Python | #LLM #chatbot |
+| [Composio — 1000+ toolkits pour construire des agents IA fonctionnels à grande échelle (27k★)](https://github.com/ComposioHQ/composio) | GitHub API TypeScript | #LLM #chatbot |
+| [FastGPT — Knowledge platform with RAG retrieval et orchestration visuelle de workflows IA (27k★)](https://github.com/labring/FastGPT) | GitHub API TypeScript | #chatbot #LLM |
+| [microsoft/markitdown — Convertit PDF/Word/Excel/HTML en Markdown pour pipelines RAG (107k★, +2.8k★/jour)](https://github.com/microsoft/markitdown) | GitHub Trending Python | #LLM #chatbot |
+
+### 💡 Insights clés
+- **claude-mem (+3.2k★/jour) — Mémoire automatique pour Claude Code** : plugin TypeScript qui capture tout ce que Claude fait pendant les sessions de dev et le compresse via IA. Utilisation immédiate pour l'équipe H'appi : activer claude-mem sur tous les projets clients pour générer automatiquement un journal de dev compressé → meilleure continuité entre sessions, onboarding dev accéléré.
+- **NousResearch/hermes-agent (+11.3k★/jour) — signal marché exceptionnel** : le plus gros gain de stars Python de la journée. Framework agent qui "grandit avec l'utilisateur". À surveiller en priorité comme alternative à LangGraph sur les prochains projets H'appi multi-agents — si la communauté confirme la qualité dans les 7 prochains jours, évaluation technique à planifier.
+- **voicebox (open-source) — alternative crédible à ElevenLabs** : studio de synthèse vocale open-source qui monte. Pour H'appi, cela ouvre la possibilité d'héberger le TTS en propre sur Railway/Hetzner — argument RGPD fort (pas de données vocales clients envoyées chez ElevenLabs) + réduction coûts pour les projets Voice AI à fort volume d'appels.
+- **CopilotKit (30k★) — standard émergent pour UI agentique React/Next.js** : framework frontend dédié à l'intégration d'agents dans des apps React. Directement compatible avec la stack H'appi (Next.js 14 + App Router). À intégrer dans le prochain projet chatbot avec interface web riche pour réduire le temps de développement UI agent.
+- **Dify (137k★) — plateforme de référence agentic workflow** : véritable concurrent à une implémentation custom FastAPI+LangChain. Pour H'appi, Dify peut servir de backend no-code pour les clients qui veulent gérer leurs propres workflows IA sans développeur — nouveau segment de marché à explorer (offre "self-hosted Dify" managée par H'appi).
