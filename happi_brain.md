@@ -805,3 +805,32 @@ gradient-text → classe utilitaire (blue → purple)
 - **voicebox (open-source) — alternative crédible à ElevenLabs** : studio de synthèse vocale open-source qui monte. Pour H'appi, cela ouvre la possibilité d'héberger le TTS en propre sur Railway/Hetzner — argument RGPD fort (pas de données vocales clients envoyées chez ElevenLabs) + réduction coûts pour les projets Voice AI à fort volume d'appels.
 - **CopilotKit (30k★) — standard émergent pour UI agentique React/Next.js** : framework frontend dédié à l'intégration d'agents dans des apps React. Directement compatible avec la stack H'appi (Next.js 14 + App Router). À intégrer dans le prochain projet chatbot avec interface web riche pour réduire le temps de développement UI agent.
 - **Dify (137k★) — plateforme de référence agentic workflow** : véritable concurrent à une implémentation custom FastAPI+LangChain. Pour H'appi, Dify peut servir de backend no-code pour les clients qui veulent gérer leurs propres workflows IA sans développeur — nouveau segment de marché à explorer (offre "self-hosted Dify" managée par H'appi).
+
+---
+## 📰 Veille Tech — 2026-04-15
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Sonnet 4.6 — nouveau flagship Anthropic : 1M token context (beta), coding + agents au top](https://releasebot.io/updates/anthropic/claude) | Anthropic | #Claude #Anthropic |
+| [Claude Mythos Preview — modèle cybersécurité Anthropic, accès restreint (Project Glasswing)](https://www.infoq.com/news/2026/04/anthropic-claude-mythos/) | InfoQ | #Claude #Anthropic |
+| [Claude Code Routines — tâches répétables automatisées intégrées au terminal IA](https://9to5mac.com/2026/04/14/anthropic-adds-repeatable-routines-feature-to-claude-code-heres-how-it-works/) | 9to5Mac | #Claude #Anthropic |
+| [VoiceAgentRAG (Salesforce) — architecture dual-agent qui réduit la latence RAG vocale de 316x (110ms → 0.35ms)](https://www.marktechpost.com/2026/03/30/salesforce-ai-research-releases-voiceagentrag-a-dual-agent-memory-router-that-cuts-voice-rag-retrieval-latency-by-316x/) | MarkTechPost | #VoiceAI #LLM |
+| [Expo Agent (beta) — builder d'apps React Native natives piloté par Claude Code](https://expo.dev/blog/expo-agent-beta) | Expo | #ReactNative #Claude |
+| [AI Act août 2026 — les chatbots doivent se déclarer IA dès le 1er message (obligation légale FR)](https://www.agentsia.fr/chatbot-rgpd-france-2026/) | Agentsia | #RGPD |
+| [Mistral Large 3 — EU data residency via La Plateforme, function calling fiable, RGPD-compatible](https://llm-stats.com/ai-news) | LLM Stats | #LLM #RGPD |
+| [DeepSeek R2 — 92.7% sur AIME 2025, pricing 70% sous les modèles occidentaux comparables](https://llm-stats.com/ai-news) | LLM Stats | #LLM |
+| [OmniRoute — AI gateway open-source multi-LLM : routing intelligent, load balancing, fallbacks, OpenAI-compatible](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TypeScript | #LLM #SaaS |
+| [vercel-labs/skills — framework open-source d'agent skills : `npx skills` pour composer des agents Vercel](https://github.com/vercel-labs/skills) | GitHub Trending TypeScript | #NextJs #SaaS |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy — retour d'expérience stack H'appi-compatible](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #NextJs #SaaS #Docker |
+| [ralph — agent loop autonome TypeScript : tourne jusqu'à completion totale du PRD (+374★/jour)](https://github.com/snarktank/ralph) | GitHub Trending TypeScript | #LLM #chatbot |
+| [Hume TADA open-source — framework vocal empathique (moteur EVI), alternative à ElevenLabs EVI](https://agentcrunch.ai/article/open-source-voice-framework) | AgentCrunch | #VoiceAI |
+| [Build Production-Ready FastAPI Backend 2026 — 5 templates auth/CRUD/Docker/SaaS prêts à déployer](https://dev.to/ottoaria/build-a-production-ready-fastapi-backend-in-2026-5-templates-that-ship-in-minutes-1kfl) | DEV.to | #FastAPI #Docker #SaaS |
+| [Anthropic confirme Claude restera sans publicité — incompatibilité structurelle pub/IA utile](https://releasebot.io/updates/anthropic) | Anthropic | #Claude #Anthropic |
+
+### 💡 Insights clés
+- **Claude Sonnet 4.6 avec 1M tokens context (beta) — migration immédiate recommandée** : le nouveau flagship Anthropic dépasse Claude Opus 4.6 sur SWE-bench (65.3%) et prend la tête du Chatbot Arena. Pour H'appi, migrer tous les projets chatbot vers Sonnet 4.6 en priorité — le context window 1M tokens ouvre la porte aux chatbots RAG sans chunking sur de très grands corpus documentaires (catalogues, contrats, FAQs longues).
+- **AI Act août 2026 — urgence réglementaire pour tous les chatbots H'appi** : à partir du 2 août 2026, chaque chatbot doit se déclarer explicitement IA dès le premier message. Action à planifier dès maintenant : audit de tous les bots clients actifs et ajout d'une mention légale standard en header de conversation. H'appi peut transformer cette contrainte en argument commercial (conformité clés-en-main incluse).
+- **VoiceAgentRAG 316x — le bottleneck latence RAG vocal est résolu** : l'architecture dual-agent de Salesforce ramène les temps de retrieval à 0.35ms sur cache. Directement applicable aux projets Voice AI H'appi (Vapi + Deepgram) qui subissaient des latences RAG > 100ms — intégrer ce pattern dans la prochaine itération du stack vocal.
+- **Expo Agent (Claude Code) — accélération mobile React Native majeure** : le builder d'apps natives piloté par Claude Code permet de passer d'un brief à une app iOS/Android déployable via EAS. Pour H'appi, cela réduit de 60-70% le temps de dev des dashboards mobiles clients sur les projets SaaS — à tester dès le prochain projet mobile.
+- **DeepSeek R2 -70% + Mistral Large 3 RGPD** : la pression tarifaire LLM s'intensifie. Pour H'appi, deux leviers : (1) proposer DeepSeek R2 comme option low-cost aux clients budget (avec hébergement Europe pour le RGPD), (2) positionner Mistral Large 3 comme choix premium RGPD-native pour les clients qui ne veulent pas envoyer leurs données hors UE.
