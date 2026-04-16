@@ -834,3 +834,26 @@ gradient-text → classe utilitaire (blue → purple)
 - **VoiceAgentRAG 316x — le bottleneck latence RAG vocal est résolu** : l'architecture dual-agent de Salesforce ramène les temps de retrieval à 0.35ms sur cache. Directement applicable aux projets Voice AI H'appi (Vapi + Deepgram) qui subissaient des latences RAG > 100ms — intégrer ce pattern dans la prochaine itération du stack vocal.
 - **Expo Agent (Claude Code) — accélération mobile React Native majeure** : le builder d'apps natives piloté par Claude Code permet de passer d'un brief à une app iOS/Android déployable via EAS. Pour H'appi, cela réduit de 60-70% le temps de dev des dashboards mobiles clients sur les projets SaaS — à tester dès le prochain projet mobile.
 - **DeepSeek R2 -70% + Mistral Large 3 RGPD** : la pression tarifaire LLM s'intensifie. Pour H'appi, deux leviers : (1) proposer DeepSeek R2 comme option low-cost aux clients budget (avec hébergement Europe pour le RGPD), (2) positionner Mistral Large 3 comme choix premium RGPD-native pour les clients qui ne veulent pas envoyer leurs données hors UE.
+
+---
+## 📰 Veille Tech — 2026-04-16
+| [claude-mem — Plugin mémoire persistante pour Claude Code (SQLite + Chroma, -90% tokens, 2 305★/jour)](https://github.com/thedotmack/claude-mem) | GitHub Trending TS | #Claude #Anthropic |
+| [voicebox — Studio synthèse vocale open source : voice cloning, 23 langues, FastAPI + React + Tauri](https://github.com/jamiepine/voicebox) | GitHub Trending TS | #VoiceAI |
+| [open-agents (Vercel Labs) — Template agents cloud Next.js + PostgreSQL + ElevenLabs + Vercel Workflows](https://github.com/vercel-labs/open-agents) | GitHub Trending TS | #NextJS #Vercel #PostgreSQL |
+| [postiz-app — SaaS open source full-stack (Next.js + PostgreSQL + Docker + Resend) avec AI intégré](https://github.com/gitroomhq/postiz-app) | GitHub Trending TS | #SaaS #NextJS #Docker |
+| [hermes-agent (NousResearch) — Agent auto-améliorant, 200+ modèles, MCP, multi-plateforme (5 571★/jour)](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #LLM #agents |
+| [GenericAgent — Agent auto-évolutif minimaliste (3 000 lignes) avec support Claude, Gemini, Kimi](https://github.com/lsdefine/GenericAgent) | GitHub Trending 🐍 | #LLM #agents #Claude |
+| [open-webui — Interface LLM self-hosted universelle (Ollama, OpenAI API, 213★/jour)](https://github.com/open-webui/open-webui) | GitHub Trending 🐍 | #LLM #chatbot |
+| [CowAgent — Assistant IA multi-LLM (Claude, OpenAI, Gemini, DeepSeek) + voice + images + Docker](https://github.com/zhayujie/CowAgent) | GitHub Trending 🐍 | #chatbot #Claude #VoiceAI |
+| [agentscope — Plateforme agents IA "you can see, understand and trust" (agentscope-ai, 106★/jour)](https://github.com/agentscope-ai/agentscope) | GitHub Trending 🐍 | #LLM #agents |
+| [presidio (Microsoft) — Détection et anonymisation PII open source pour conformité RGPD dans les chatbots](https://github.com/microsoft/presidio) | GitHub 🐍 | #RGPD |
+| [llama_index — Framework RAG leader (300+ connecteurs : PDF, SQL, APIs) pour chatbots documentaires](https://github.com/run-llama/llama_index) | GitHub 🐍 | #LLM #chatbot #RAG |
+
+### 💡 Insights clés
+- **claude-mem** (2 305★/jour) : Plugin essentiel pour les équipes utilisant Claude Code — réduit les tokens de 90% en maintenant la mémoire de projet entre sessions via SQLite + Chroma + recherche sémantique. À déployer immédiatement en interne chez H'appi pour gagner en continuité sur les longs projets clients.
+- **open-agents (Vercel Labs)** : Template de référence agents cloud — stack Next.js + PostgreSQL + Vercel Workflows + ElevenLabs, exactement la stack H'appi. Inclut voice input, auto-commit, auto-PR et sandbox isolation. Cloner comme base pour le prochain agent H'appi.
+- **voicebox** (18.5k★, 1 062★/jour) : Studio TTS local-first open source (FastAPI + React + TypeScript + Tauri) — voice cloning, 23 langues, 8 effets audio, REST API intégrable. Alternative on-premise aux coûts ElevenLabs pour les clients exigeant la confidentialité totale (médical, juridique, finance).
+- **hermes-agent** (5 571★/jour) : Agent auto-améliorant avec MCP, mémoire persistante multi-session, 5 plateformes (Telegram/Discord/WhatsApp/Slack/Signal), 200+ modèles. Pattern de référence pour les prochains agents H'appi multi-canaux : copier l'architecture gateway + skill crystallization.
+- **GenericAgent** : Preuve que 3 000 lignes suffisent pour un agent puissant avec self-evolution — Claude, Gemini, Kimi supportés. Approche minimaliste à adopter pour prototyper rapidement un agent H'appi avant de scaler.
+- **presidio (Microsoft)** : Détection et anonymisation des PII open source — à intégrer dans tous les projets H'appi loggant des conversations (obligation RGPD + AI Act, deadline août 2026). Important : pas de garantie d'exhaustivité, coupler avec des règles métier et un audit humain.
+- **RAG = baseline chatbot 2026** : llama_index (48k★, 300+ connecteurs) confirme que tout chatbot client doit désormais inclure RAG sur documents (PDF contrats, FAQ, fiches produits). Ajouter cette exigence dans la checklist projet section 9 et implémenter via pgvector dès le prochain projet.
