@@ -1107,3 +1107,29 @@ gradient-text → classe utilitaire (blue → purple)
 - **context-mode (98%) + cocoindex (incrémental) = infrastructure contexte agent 2026** : deux outils complémentaires — context-mode sandbox les résultats d'outils (réduction 98% tokens en développement), cocoindex ne retraite que les deltas en production (latence RAG divisée par 5-10). Pour H'appi : déployer context-mode en interne dès cette semaine (économies Claude Code immédiates), planifier cocoindex dans la prochaine itération des pipelines RAG clients.
 
 ---
+## 📰 Veille Tech — 2026-05-07
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/financial-services — Agents Claude pour services financiers : 11 agents spécialisés (pitch decks, KYC, réconciliation GL) via Managed Agents API](https://github.com/anthropics/financial-services) | GitHub Trending 🐍 | #Claude/Anthropic #LLM |
+| [onyx-dot-app/onyx — Plateforme IA open source 29k⭐ : RAG hybride, Voice Mode, agents custom, 50+ connecteurs, auto-hébergeable](https://github.com/onyx-dot-app/onyx) | GitHub Trending 🐍 | #chatbot #LLM #VoiceAI |
+| [kyutai-labs/pocket-tts — TTS 100M params sur CPU : <200ms latence, 6× temps réel M4, voice cloning, support natif Français](https://github.com/kyutai-labs/pocket-tts) | GitHub Trending 🐍 | #VoiceAI |
+| [Anthropic Python SDK v0.100.0 — Managed Agents multiagents & outcomes, webhooks, vault validation : multi-agents désormais API officielle](https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md) | Anthropic SDK | #Claude/Anthropic #LLM |
+| [vercel-labs/open-agents — Template open source officiel Vercel pour agents cloud : base production-ready à forker](https://github.com/vercel-labs/open-agents) | GitHub Trending TS | #Vercel #chatbot |
+| [InsForge/InsForge — Backend Postgres-natif pour coding agents : auth, storage, compute, hosting + AI gateway intégré](https://github.com/InsForge/InsForge) | GitHub Trending TS | #PostgreSQL #SaaS |
+| [payloadcms/payload — Framework Next.js fullstack open source : backend TypeScript + admin panel instant, App Router natif](https://github.com/payloadcms/payload) | GitHub Trending TS | #Next.js #SaaS |
+| [bytedance/deer-flow — SuperAgent long-horizon open source ByteDance : research, code, création, orchestration autonome](https://github.com/bytedance/deer-flow) | GitHub Trending 🐍 | #LLM |
+| [LearningCircuit/local-deep-research — ~95% SimpleQA avec LLMs locaux et cloud : 10+ moteurs de recherche, deep research offline](https://github.com/LearningCircuit/local-deep-research) | GitHub Trending 🐍 | #LLM |
+| [cheahjs/free-llm-api-resources — Liste exhaustive de ressources LLM gratuites accessibles via API](https://github.com/cheahjs/free-llm-api-resources) | GitHub Trending 🐍 | #LLM |
+| [modelcontextprotocol/servers — Serveurs MCP officiels : référence pour intégrations Claude avec outils externes](https://github.com/modelcontextprotocol/servers) | GitHub Trending TS | #LLM #Claude/Anthropic |
+| [Shubhamsaboo/awesome-llm-apps — 100+ apps IA & RAG production : agents, workflows, use cases réels](https://github.com/Shubhamsaboo/awesome-llm-apps) | GitHub Trending 🐍 | #LLM #chatbot |
+
+### 💡 Insights clés
+- **pocket-tts (Kyutai Labs) — le TTS CPU qu'H'appi attendait** : 100M paramètres, <200ms latence premier chunk, voice cloning sans GPU, support natif du Français. Pour H'appi : alternative crédible à ElevenLabs pour les clients RGPD-strict ou à budget serré — déploiement on-premise sur Railway sans coût d'API TTS récurrent. Test immédiat recommandé sur le prochain projet Voice.
+- **Anthropic SDK v0.100.0 — Managed Agents multiagents désormais API officielle** : les versions 0.98–0.100 introduisent Managed Agents API, OIDC federation, OAuth interactif et gestion des outcomes multi-agents. Pour H'appi : migrer les nouveaux projets sur ce pattern officiel plutôt que des orchestrations customs — réduit la dette technique et s'aligne sur la roadmap Anthropic long terme.
+- **anthropics/financial-services — la preuve de concept verticale d'Anthropic** : Anthropic publie un repo de référence avec 11 agents spécialisés finance (pitch decks, KYC, réconciliation GL), tous déployables via Managed Agents API. Pour H'appi : s'inspirer de l'architecture plugin/skill pour nos propres verticales (supply chain, CX, secrétariat IA) — même structure, mêmes patterns, gain de temps estimé 30–40% sur la conception.
+- **vercel-labs/open-agents + InsForge — infrastructure agent cloud qui se standardise** : Vercel propose un template officiel d'agents cloud, InsForge un backend Postgres complet avec AI gateway. Pour H'appi : la stack Railway + FastAPI + PostgreSQL reste compétitive, mais surveiller InsForge pour les projets SaaS client nécessitant une infrastructure agent clé en main hors Railway.
+- **onyx 29k⭐ — la barre qualité chatbot IA en 2026** : RAG hybride, voice mode, 50+ connecteurs, deep research multi-étapes, entièrement self-hosted. Pour H'appi : positionner nos chatbots sur la personnalisation radicale et l'intégration métier profonde (ce qu'Onyx ne fait pas), sans chercher à concurrencer les features génériques — notre avantage reste le sur-mesure, pas le volume.
+
+---
