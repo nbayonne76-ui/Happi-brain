@@ -1161,3 +1161,30 @@ gradient-text → classe utilitaire (blue → purple)
 - **Vercel + Railway hybrid = référence marché confirmée 2026** : tous les guides de déploiement SaaS IA 2026 convergent vers Next.js/Vercel (frontend edge) + Railway/Docker (backend long-running + base de données) comme stack de référence. La stack H'appi est exactement alignée. À documenter explicitement dans les pitchs techniques et les pages produit : "nous déployons sur le standard marché 2026, pas une architecture expérimentale" — argument de rassurance fort pour les DSI enterprise.
 
 ---
+## 📰 Veille Tech — 2026-05-10
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropic-sdk-python v0.100.0 — Managed Agents multiagents, webhooks & vault validation](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.100.0) | GitHub Releases 🐍 | #Claude #Anthropic |
+| [anthropic-sdk-python v0.97.0 — CMA Memory public beta : mémoire persistante native dans l'API](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.97.0) | GitHub Releases 🐍 | #Claude #Anthropic #LLM |
+| [anthropics/financial-services — Blueprint 11 agents Claude spécialisés finance (+3 281★/jour, 17.7k★)](https://github.com/anthropics/financial-services) | GitHub Trending 🐍 | #Claude #Anthropic #SaaS |
+| [datawhalechina/hello-agents — Tutorial complet construction agents IA de zéro (+1 197★/jour, 45.9k★)](https://github.com/datawhalechina/hello-agents) | GitHub Trending 🐍 | #LLM #chatbot |
+| [lsdefine/GenericAgent — Agent auto-évolutif : skill tree depuis seed 3.3K lignes, 6x moins de tokens (+538★/jour, 10.3k★)](https://github.com/lsdefine/GenericAgent) | GitHub Trending 🐍 | #LLM #chatbot |
+| [sgl-project/sglang — Framework serving LLM haute performance multimodal production-ready (+153★/jour, 27.6k★)](https://github.com/sgl-project/sglang) | GitHub Trending 🐍 | #LLM |
+| [hesreallyhim/awesome-claude-code — Ressources curated Claude Code : hooks, MCPs, workflows (+153★/jour, 43.2k★)](https://github.com/hesreallyhim/awesome-claude-code) | GitHub Trending 🐍 | #Claude |
+| [bytedance/UI-TARS-desktop — Stack agent multimodal open-source : modèles IA + infra agents intégrée (31.6k★)](https://github.com/bytedance/UI-TARS-desktop) | GitHub Trending TS | #LLM #chatbot |
+| [rohitg00/agentmemory — Mémoire persistante #1 benchmarks pour agents IA en production (3.6k★)](https://github.com/rohitg00/agentmemory) | GitHub Trending TS | #LLM #chatbot |
+| [rowboatlabs/rowboat — AI coworker open-source avec mémoire : alternative Dify orientée collaboration (13.9k★)](https://github.com/rowboatlabs/rowboat) | GitHub Trending TS | #LLM #SaaS #chatbot |
+| [CopilotKit/CopilotKit — Frontend Stack for Agents & Generative UI React + Angular (31.2k★)](https://github.com/CopilotKit/CopilotKit) | GitHub Trending TS | #React #chatbot |
+| [heygen-com/hyperframes — Write HTML, Render video : génération vidéo pour agents (16.6k★)](https://github.com/heygen-com/hyperframes) | GitHub Trending TS | #VoiceAI #chatbot |
+| [millionco/react-doctor — Détecteur d'anti-patterns React produits par agents IA (7.4k★)](https://github.com/millionco/react-doctor) | GitHub Trending TS | #React |
+
+### 💡 Insights clés
+- **CMA Memory public beta (SDK v0.97.0) — mémoire long-terme native dans l'API Anthropic** : Anthropic a mis en beta publique la mémoire persistante directement dans le SDK Python. Pour H'appi : nos chatbots peuvent désormais stocker et rappeler le contexte utilisateur long-terme via l'API officielle, sans construire de couche custom PostgreSQL dédiée. À évaluer immédiatement sur un projet client — si la performance est suffisante, cela simplifie drastiquement l'architecture des bots stateful et réduit le coût infra de chaque projet.
+- **Managed Agents multiagents + webhooks (v0.100.0, 6 mai 2026) — orchestration multi-agents native** : La coordination multi-agents est désormais de première classe dans le SDK Python officiel. Pour H'appi : construire des architectures "agents spécialisés" comme le blueprint financial-services directement avec l'API Anthropic — sans LangGraph ni framework tiers. Moins de dépendances, meilleure maintenabilité, support Anthropic garanti. À adopter pour tous les nouveaux projets agents H'appi dès maintenant.
+- **GenericAgent 6x moins de tokens : l'efficacité prime sur la complexité initiale** : Un agent auto-évolutif qui construit son propre skill tree à partir d'une seed de 3 300 lignes avec 6x moins de consommation de tokens. Pour H'appi : leçon architecturale directement applicable — commencer petit et laisser l'agent s'auto-équiper est plus efficace que pré-câbler tous les tools dès la phase 1. À appliquer dans nos agents secrétariat IA et supply chain : MVP minimal, skill tree évolutif.
+- **rowboat + agentmemory — duo émergent pour agents avec mémoire contextuelle en production** : Rowboat (AI coworker open-source, 13.9k★) combiné avec agentmemory (#1 benchmarks mémoire persistante) forme un stack pour agents contextuels robustes. Pour H'appi : rowboat est à évaluer comme alternative ou complément à Dify — API-first, open-source, mémoire intégrée. Benchmark à planifier sur notre use case secrétariat IA : gain potentiel de 20-30% sur la fidélité contextuelle long-terme.
+- **CopilotKit 31k★ — GenUI React : l'interface agent-native devient un standard de marché** : CopilotKit s'impose comme la référence frontend pour les agents et interfaces génératives en React. Pour H'appi : à intégrer dans les démos clients où l'interface doit s'adapter dynamiquement aux actions de l'agent — impact visuel fort en pitch commercial, différenciation nette par rapport aux chatbots widget classiques. Priorité sur les prochains prototypes clients Next.js.
+
+---
