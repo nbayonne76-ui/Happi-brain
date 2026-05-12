@@ -1217,3 +1217,30 @@ gradient-text → classe utilitaire (blue → purple)
 - **Voice AI 2026 : Vapi confirme 62M+ appels/mois à 0.05$/min — notre stack est validée** : Aucune plateforme ne domine tous les cas d'usage mais Vapi confirme fiabilité et pricing. Pour H'appi : notre choix Vapi est conforté. Pour les projets premium à forte exigence de naturalité : adopter le combo "gold standard" 2026 — Vapi (orchestration) + ElevenLabs sub-100ms (TTS) + Deepgram Nova-3 Multilingual (STT).
 
 ---
+## 📰 Veille Tech — 2026-05-12
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic × SpaceX Colossus 1 — 220 000 GPU, Claude Code rate limits x2](https://releasebot.io/updates/anthropic) | Releasebot / Anthropic | #Claude #Anthropic |
+| [Claude Managed Agents : Dreaming + Outcomes + Multiagent Orchestration (Code with Claude 2026)](https://letsdatascience.com/blog/anthropic-dreaming-claude-managed-agents-self-improving-may-6) | Let's Data Science | #Claude #LLM |
+| [Claude Security Tool — public beta : scan vulnérabilités code avec Opus 4.7](https://releasebot.io/updates/anthropic/claude) | Releasebot / Anthropic | #Claude #Anthropic |
+| [Claude × Microsoft 365 — Word, Excel, PowerPoint, Outlook intégrés natif](https://releasebot.io/updates/anthropic) | Releasebot / Anthropic | #Claude #SaaS |
+| [garrytan/gstack — Setup Claude Code avec 23 outils (+918★/jour, 94k★)](https://github.com/garrytan/gstack) | GitHub Trending TS | #Claude #Anthropic |
+| [HKUDS/AI-Trader — 100% Automated Agent-Native Trading (+801★/jour, 16k★)](https://github.com/HKUDS/AI-Trader) | GitHub Trending 🐍 | #LLM #chatbot |
+| [earendil-works/pi — AI agent toolkit, unified LLM API (+514★/jour, 48k★)](https://github.com/earendil-works/pi) | GitHub Trending TS | #LLM #chatbot |
+| [wanshuiyin/ARIS — Recherche ML autonome avec Claude + cross-model review loops (+186★/jour, 8.9k★)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | GitHub Trending 🐍 | #Claude #LLM |
+| [millionco/react-doctor — Agent IA qui détecte le mauvais code React (+212★/jour, 8.3k★)](https://github.com/millionco/react-doctor) | GitHub Trending TS | #Next.js #chatbot |
+| [romainsimon/paperasse — Agent IA spécialisé bureaucratie française (+110★/jour, 1.6k★)](https://github.com/romainsimon/paperasse) | GitHub Trending 🐍 | #chatbot #RGPD |
+| [jwadow/kiro-gateway — Proxy gratuit pour accéder aux modèles Claude (+76★/jour, 1.3k★)](https://github.com/jwadow/kiro-gateway) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [Voice AI Mai 2026 — Ce qui compose vraiment un agent vocal production](https://futureagi.substack.com/p/best-voice-ai-in-may-2026-what-actually) | FutureAGI Substack | #VoiceAI |
+| [Vapi vs ElevenLabs 2026 — Comparatif pricing & use cases production](https://www.goodcall.com/voice-ai/vapi-vs-elevenlabs) | GoodCall | #VoiceAI |
+| [Obligation transparence chatbot au 2 novembre 2026 — CNIL & AI Act : deadline dans 5 mois](https://www.agentsia.fr/chatbot-rgpd-france-2026/) | Agentsia.fr | #RGPD |
+
+### 💡 Insights clés
+- **Anthropic × SpaceX Colossus 1 : 220 000 GPUs → Claude Code doublé, API Opus +1 500%** : Anthropic a sécurisé la totalité de la facility Colossus 1 de SpaceX à Memphis (220k GPUs Nvidia). Conséquence directe : limites Claude Code doublées, API Opus augmentées de 1 500%. Pour H'appi : la contrainte de rate limiting sur nos agents longs (secrétariat IA, supply chain) disparaît en production. Mettre à jour les SLA clients et communiquer cette capacité comme argument de fiabilité dans les prochains devis.
+- **Claude Managed Agents "Dreaming" — agents auto-améliorants : architecture à adopter pour le secrétariat IA H'appi** : "Dreaming" permet à Claude de s'améliorer entre sessions en rejouant des scénarios passés. "Outcomes" mesure la qualité des décisions. "Multiagent Orchestration" gère des pipelines d'agents sans config manuelle. Pour H'appi : cette infrastructure est exactement ce qu'il faut pour un agent secrétariat qui apprend des préférences d'un dirigeant au fil du temps — à intégrer dès la prochaine version majeure de l'offre secrétariat IA H'appi.
+- **paperasse 🇫🇷 — Agent bureaucratie française viral (+110★/j) : H'appi a l'antériorité et l'expertise** : Le repo paperasse confirme l'appétit du marché pour des agents IA spécialisés sur les processus administratifs français (URSSAF, CERFA, RSE…). Pour H'appi : nous avons déjà la stack, la conformité RGPD et la connaissance du marché français. Action : formaliser une offre "Agent Administratif IA" dans le catalogue H'appi maintenant, avant saturation du segment. Argument différenciant fort : hébergement France + CNIL-ready à la livraison.
+- **Badge transparence chatbot obligatoire au 2 novembre 2026 — 5 mois pour être conforme** : L'AI Act impose la mention explicite "Réponse générée par une IA" sur tout chatbot grand public dès le 2 novembre 2026. Sanction : jusqu'à 7,5M€ ou 1% du CA mondial pour manquement à la transparence. Pour H'appi : deadline concrète à communiquer à chaque client en production. Plan d'action : (1) audit de tous les projets livrés, (2) intégration du badge dans le widget standard, (3) positionner cette conformité comme argument commercial différenciant dans chaque devis.
+
+---
