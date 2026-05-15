@@ -1244,3 +1244,28 @@ gradient-text → classe utilitaire (blue → purple)
 - **Badge transparence chatbot obligatoire au 2 novembre 2026 — 5 mois pour être conforme** : L'AI Act impose la mention explicite "Réponse générée par une IA" sur tout chatbot grand public dès le 2 novembre 2026. Sanction : jusqu'à 7,5M€ ou 1% du CA mondial pour manquement à la transparence. Pour H'appi : deadline concrète à communiquer à chaque client en production. Plan d'action : (1) audit de tous les projets livrés, (2) intégration du badge dans le widget standard, (3) positionner cette conformité comme argument commercial différenciant dans chaque devis.
 
 ---
+
+## 📰 Veille Tech — 2026-05-15
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [OpenBMB/VoxCPM2 — TTS Tokenizer-Free pour génération vocale multilingue et clonage vocal réaliste](https://github.com/OpenBMB/VoxCPM) | GitHub Trending 🐍 | #VoiceAI |
+| [rohitg00/agentmemory — Mémoire persistante pour agents IA codée sur benchmarks réels](https://github.com/rohitg00/agentmemory) | GitHub Trending TS | #LLM #chatbot |
+| [MervinPraison/PraisonAI — "24/7 AI Workforce" : agents autonomes auto-améliorants qui recherchent, planifient et exécutent](https://github.com/MervinPraison/PraisonAI) | GitHub Trending 🐍 | #chatbot #LLM |
+| [thesysdev/openui — Open Standard for Generative UI (interfaces générées par l'IA)](https://github.com/thesysdev/openui) | GitHub Trending TS | #Next.js #chatbot |
+| [cline/cline — Autonomous coding agent disponible en SDK, extension IDE ou CLI](https://github.com/cline/cline) | GitHub Trending TS | #chatbot #LLM |
+| [NousResearch/hermes-agent — "The agent that grows with you" : agent IA évolutif](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #chatbot #LLM |
+| [K-Dense-AI/scientific-agent-skills — Bibliothèque de skills agents prêts-à-l'emploi (recherche, ingénierie, finance)](https://github.com/K-Dense-AI/scientific-agent-skills) | GitHub Trending 🐍 | #chatbot #LLM |
+| [OthmanAdi/planning-with-files — Skill Claude Code : workflow planning en markdown persistant](https://github.com/OthmanAdi/planning-with-files) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [shiyu-coder/Kronos — Foundation Model pour le langage des marchés financiers](https://github.com/shiyu-coder/Kronos) | GitHub Trending 🐍 | #LLM |
+| [danielmiessler/Personal_AI_Infrastructure — Infrastructure IA agentique pour amplifier les capacités humaines](https://github.com/danielmiessler/Personal_AI_Infrastructure) | GitHub Trending TS | #LLM #SaaS |
+| [NVIDIA-AI-Blueprints/video-search-and-summarization — Agents vision GPU-accelerated pour analytics vidéo](https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization) | GitHub Trending 🐍 | #LLM |
+
+### 💡 Insights clés
+- **VoxCPM2 — TTS Tokenizer-Free viral : impact direct sur la stack Voice AI de H'appi** : OpenBMB publie VoxCPM2, un moteur TTS sans tokenizer capable de génération multilingue, de voice design créatif et de clonage vocal ultra-réaliste. Pour H'appi : notre stack voice repose sur ElevenLabs (TTS) + Deepgram (STT) + Vapi.ai. VoxCPM2 est une alternative open-source à surveiller de près pour les projets clients sensibles au coût ou nécessitant un hébergement France (RGPD). À benchmarker contre ElevenLabs en termes de latence et qualité avant intégration.
+- **agentmemory — La mémoire persistante devient un standard pour les agents IA en production** : Le repo agentmemory (trending TS) implémente une couche mémoire structurée basée sur des benchmarks réels. Pour H'appi : notre agent secrétariat IA manque encore d'une couche mémoire robuste entre sessions. Ce pattern — stocker les préférences, décisions, et contexte client dans PostgreSQL et les injecter dans chaque prompt — est exactement l'architecture à adopter pour différencier notre offre de la concurrence. Priorité : spike technique sur ce repo cette semaine.
+- **PraisonAI "24/7 AI Workforce" — menace concurrentielle directe à surveiller** : PraisonAI propose une workforce d'agents autonomes multi-tâches clé-en-main. C'est une offre packagée qui cible le même segment que H'appi (PME/ETI cherchant à automatiser). Pour H'appi : notre différenciation doit s'appuyer sur la personnalisation radicale, la conformité RGPD native et l'accompagnement humain — des points que PraisonAI, générique par design, ne peut pas matcher. Capitaliser sur cet argument dans les prochains pitchs commerciaux.
+- **openui "Open Standard for Generative UI" — les interfaces chatbot vont se standardiser** : thesysdev pousse un standard ouvert pour les UIs générées par IA. Si ce standard s'impose (Next.js compatible), les widgets chatbot H'appi pourraient adopter ce format pour accélérer la livraison client. À surveiller pour la roadmap Q3 2026 du widget H'appi standard.
+
+---
