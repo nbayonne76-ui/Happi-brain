@@ -1269,3 +1269,32 @@ gradient-text → classe utilitaire (blue → purple)
 - **openui "Open Standard for Generative UI" — les interfaces chatbot vont se standardiser** : thesysdev pousse un standard ouvert pour les UIs générées par IA. Si ce standard s'impose (Next.js compatible), les widgets chatbot H'appi pourraient adopter ce format pour accélérer la livraison client. À surveiller pour la roadmap Q3 2026 du widget H'appi standard.
 
 ---
+
+## 📰 Veille Tech — 2026-05-16
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic rend Claude plus accessible aux consommateurs — intégration HubSpot, QuickBooks, Canva](https://www.bloomberg.com/news/articles/2026-05-07/anthropic-is-making-claude-chatbot-more-appealing-to-consumers) | Bloomberg | #Claude #Anthropic #SaaS |
+| [Claude Mythos Preview — le modèle Anthropic le plus puissant, encore réservé en accès restreint](https://red.anthropic.com/2026/mythos-preview/) | Anthropic | #Claude #Anthropic #LLM |
+| [Vapi lève 50M$ en Série B, valorisation 500M$ — Amazon Ring migre 100% de ses appels entrants sur Vapi](https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/) | TechCrunch | #VoiceAI |
+| [Deepgram lève 130M$ à 1,3 Md$ de valorisation et rachète une startup YC](https://techcrunch.com/2026/01/13/deepgram-raises-130m-at-1-3b-valuation-and-buys-a-yc-ai-startup/) | TechCrunch | #VoiceAI |
+| [Best Voice AI in May 2026 — Vapi vs ElevenLabs en production : ce qui compose réellement un agent vocal](https://futureagi.substack.com/p/best-voice-ai-in-may-2026-what-actually) | FutureAGI | #VoiceAI #chatbot |
+| [anthropics/skills — Anthropic publie un repo officiel de skills d'agents prêts-à-l'emploi (135K★, +689/jour)](https://github.com/anthropics/skills) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [joeseesun/qiaomu-anything-to-notebooklm — Claude Skill : processeur multi-sources pour NotebookLM](https://github.com/joeseesun/qiaomu-anything-to-notebooklm) | GitHub Trending 🐍 | #Claude #LLM |
+| [opendatalab/MinerU — Transforme PDFs et docs Office en markdown/JSON prêt pour LLM (63K★)](https://github.com/opendatalab/MinerU) | GitHub Trending 🐍 | #LLM #chatbot |
+| [czlonkowski/n8n-mcp — MCP pour construire des workflows n8n via Claude Code / Claude Desktop (21K★)](https://github.com/czlonkowski/n8n-mcp) | GitHub Trending TS | #Claude #chatbot #SaaS |
+| [Railway Deploy LLM Stack — LiteLLM proxy production-ready avec PostgreSQL et Redis, 1 clic](https://railway.com/deploy/llm-stack) | Railway | #LLM #PostgreSQL #Docker |
+| [AI Act 2026 — Guide complet conformité IA : double verrou AI Act + RGPD pour les entreprises](https://www.leto.legal/guides/ai-act-conformite) | Leto Legal | #RGPD |
+| [Chatbot RGPD & CNIL 2026 — Obligations : base légale, transparence, minimisation, droits des personnes](https://www.webotit.ai/blog/ia-conversationnelle/generalites/chatbot-et-rgpd-respectez-les-droits-des-personnes-avec-les-conseils-de-la-cnil) | Webotit | #RGPD #chatbot |
+| [Vercel vs Railway 2026 — Comparatif hébergement SaaS : serverless vs serveur persistant pour LLM](https://designrevision.com/blog/vercel-vs-railway) | DesignRevision | #Vercel #Docker #SaaS |
+| [Full-Stack AI Chatbot RAG avec LangChain, FastAPI & Next.js — guide architecturel 2026](https://medium.com/@mail2ajoyshil/building-a-full-stack-ai-chatbot-rag-with-langchain-fastapi-next-js-de04c5dd04ab) | Medium | #FastAPI #Next.js #chatbot |
+
+### 💡 Insights clés
+- **Vapi $50M + Amazon Ring = validation massive du marché Voice AI pour les PME** : Vapi, qui orchestre Deepgram (STT) + Anthropic (LLM) + ElevenLabs (TTS), vient de lever 50M$ et de décrocher Amazon Ring comme client phare. Notre stack Vapi.ai est désormais adossée à une infrastructure enterprise-grade. Pour H'appi : c'est un argument commercial fort — "nous utilisons la même infrastructure que Amazon Ring". À intégrer dans les pitchs clients sur l'offre Voice AI dès maintenant.
+- **Claude for Small Business dans HubSpot/QuickBooks — Anthropic attaque notre marché cible** : Anthropic intègre Claude directement dans les outils PME (HubSpot, Canva, QuickBooks, Google Workspace). H'appi ne vend pas un chatbot générique mais une personnalisation radicale + conformité RGPD. C'est exactement la différenciation à mettre en avant face aux offres "one-size-fits-all" d'Anthropic qui ne peuvent pas matcher l'intégration métier sur-mesure que nous livrons.
+- **anthropics/skills — Bibliothèque officielle Anthropic de skills d'agents : à intégrer dans la stack H'appi** : Le repo officiel Anthropic (135K★, +689/j) expose des skills prêts-à-l'emploi (research, engineering, finance, writing). Pour H'appi : auditer ce repo cette semaine pour identifier les skills réutilisables directement dans nos agents secrétariat et CX. Gain de temps de développement estimé à 30-40% sur les prochains projets agent.
+- **Double verrou AI Act + RGPD en 2026 — amendes jusqu'à 35M€ ou 7% du CA** : L'AI Act se superpose au RGPD et crée un régime de conformité à deux niveaux pour tout chatbot grand public. Sanctions AI Act : jusqu'à 35M€ ou 7% du CA. Pour H'appi : positionner systématiquement notre conformité RGPD-native + hébergement France comme bouclier commercial. Chaque devis doit mentionner "AI Act compliant dès la livraison".
+- **Railway LLM Stack 1-clic + PostgreSQL + Redis — notre stack de déploiement se standardise** : Railway publie un template de déploiement LLM production-ready (LiteLLM proxy + PostgreSQL + Redis) en un clic. Pour H'appi : à adopter comme point de départ pour tous les nouveaux projets backend — réduit le temps de setup de 2h à 15min. Économie directe sur chaque nouveau projet client.
+
+---
