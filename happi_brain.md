@@ -1269,6 +1269,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **openui "Open Standard for Generative UI" — les interfaces chatbot vont se standardiser** : thesysdev pousse un standard ouvert pour les UIs générées par IA. Si ce standard s'impose (Next.js compatible), les widgets chatbot H'appi pourraient adopter ce format pour accélérer la livraison client. À surveiller pour la roadmap Q3 2026 du widget H'appi standard.
 
 ---
+## 📰 Veille Tech — 2026-05-17
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/skills — Repo officiel Agent Skills Claude : research, engineering, finance, writing (+900★/jour, 135 949★)](https://github.com/anthropics/skills) | GitHub Trending 🐍 | #Claude #Anthropic #agents |
+| [K-Dense-AI/scientific-agent-skills — Skills agents prêts à l'emploi : recherche, ingénierie, analyse, finance (+673★/jour, 23 383★)](https://github.com/K-Dense-AI/scientific-agent-skills) | GitHub Trending 🐍 | #LLM #agents |
+| [luongnv89/claude-howto — Guide visuel complet Claude Code : concepts de base à agents avancés (+165★/jour, 33 211★)](https://github.com/luongnv89/claude-howto) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [HKUDS/CLI-Anything — Rendre tout logiciel CLI natif pour les agents IA (+333★/jour, 35 169★)](https://github.com/HKUDS/CLI-Anything) | GitHub Trending 🐍 | #LLM #agents |
+| [dograh-hq/dograh — Plateforme Voice Agent open-source complète (+287★/jour, 1 370★)](https://github.com/dograh-hq/dograh) | GitHub Trending 🐍 | #VoiceAI |
+| [colbymchenry/codegraph — Knowledge graph de codebase pré-indexé pour Claude Code : moins de tokens, 100% local (+416★/jour, 2 768★)](https://github.com/colbymchenry/codegraph) | GitHub Trending TS | #Claude #LLM |
+| [anomalyco/opencode — L'agent de coding open-source de référence mondiale (#1 TS Trending, +473★/jour, 161 378★)](https://github.com/anomalyco/opencode) | GitHub Trending TS | #LLM #agents |
+| [czlonkowski/n8n-mcp — MCP pour Claude Desktop/Code : piloter des workflows n8n en langage naturel (+205★/jour, 21 016★)](https://github.com/czlonkowski/n8n-mcp) | GitHub Trending TS | #Claude #SaaS #MCP |
+| [tech-leads-club/agent-skills — Registry validé de skills pour agents IA pro : Claude Code, Cursor, Copilot (+44★/jour, 2 559★)](https://github.com/tech-leads-club/agent-skills) | GitHub Trending TS | #Claude #agents |
+| [n8n-io/n8n — Automation workflow fair-code avec IA native, 400+ intégrations (+156★/jour, 188 243★)](https://github.com/n8n-io/n8n) | GitHub Trending TS | #SaaS #LLM #chatbot |
+
+### 💡 Insights clés
+- **anthropics/skills (#1 Python Trending, 135k★, +900★/jour) — les Agent Skills sont désormais les primitives de l'écosystème Claude** : Anthropic maintient une vélocité exceptionnelle sur ce repo officiel (research, engineering, finance, writing). Pour H'appi : auditer le catalogue complet cette semaine — les skills research et writing sont directement intégrables dans les agents secrétariat et CX sans développement custom. Compatible nativement Claude Agent SDK v0.100.0. Gain estimé 30-40% sur la phase dev agent de chaque nouveau projet.
+- **codegraph (+416★/jour) — la troisième couche de mémoire Claude Code H'appi** : ce knowledge graph pré-indexé de codebase (moins de tokens, moins d'appels tools, 100% local) complète parfaitement le duo claude-mem (mémoire conversationnelle) + code-review-graph (mémoire structurelle) déjà dans notre stack. Pour H'appi : déployer les trois en tandem sur tous les projets longs clients — trio optimal pour la continuité de contexte sans surcoût API. À tester immédiatement sur le projet le plus actif.
+- **dograh — Voice Agent platform open-source en accélération (+287★/jour)** : premier repo dédié exclusivement à la plateforme Voice Agent complète atteignant cette vélocité. Pour H'appi : alternative self-hosted crédible à Vapi pour les clients RGPD-strict refusant d'envoyer leurs flux vocaux sur une infrastructure tierce (médical, juridique, finance). Benchmark à planifier juin 2026 sur latence et qualité FR.
+- **HKUDS/CLI-Anything — les agents IA intègrent les outils legacy via leur CLI** : framework Python exposant tout outil CLI comme un tool natif pour agents IA, sans API ni browser automation. Pour H'appi : applicable directement sur les projets supply chain ou secrétariat où l'agent doit interagir avec des ERP ou logiciels métier disposant d'une CLI — approche plus robuste que la scraping browser, moins risquée qu'une injection API non documentée.
+- **n8n (188k★) + n8n-mcp (21k★) = standard automation PME confirmé** : le duo confirme son statut d'infrastructure de référence pour les PME automatisant avec l'IA. Pour H'appi : systématiser dans tous les pitchs CRM, supply chain et secrétariat l'argument "votre agent H'appi orchestre vos workflows n8n existants — zéro migration, ROI semaine 1". Intégration native documentée, aucun développement custom requis.
+- **anomalyco/opencode (161k★, +473★/jour) confirme la commoditisation des agents de coding** : opencode reste #1 TS Trending avec une dynamique soutenue. Signal clair : H'appi doit capitaliser sur la spécialisation métier (SAV e-commerce, secrétariat médical, supply chain B2B), la conformité RGPD native et l'accompagnement humain — des avantages qu'aucun outil de coding générique open-source ne peut répliquer.
+
+---
 
 ## 📰 Veille Tech — 2026-05-16
 > Mis à jour automatiquement par Happi Brain Agent
