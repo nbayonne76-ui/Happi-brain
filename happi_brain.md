@@ -1323,3 +1323,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **Railway LLM Stack 1-clic + PostgreSQL + Redis — notre stack de déploiement se standardise** : Railway publie un template de déploiement LLM production-ready (LiteLLM proxy + PostgreSQL + Redis) en un clic. Pour H'appi : à adopter comme point de départ pour tous les nouveaux projets backend — réduit le temps de setup de 2h à 15min. Économie directe sur chaque nouveau projet client.
 
 ---
+
+## 📰 Veille Tech — 2026-05-18
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/skills — Repo officiel Anthropic de skills d'agents publics (+514 étoiles/jour, 136K★)](https://github.com/anthropics/skills) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [K-Dense-AI/scientific-agent-skills — Skills agents prêts-à-l'emploi : recherche, finance, rédaction (+762/jour)](https://github.com/K-Dense-AI/scientific-agent-skills) | GitHub Trending 🐍 | #LLM #agents |
+| [colbymchenry/codegraph — Knowledge graph pré-indexé pour Claude Code, Codex et Cursor (+857/jour)](https://github.com/colbymchenry/codegraph) | GitHub Trending TS | #Claude #LLM |
+| [langflow-ai/langflow — Builder visuel d'agents et workflows IA, production-ready (+155/jour, 148K★)](https://github.com/langflow-ai/langflow) | GitHub Trending 🐍 | #chatbot #LLM #agents |
+| [yichuan-w/LEANN — RAG 97% d'économie de stockage, privé et rapide (+146/jour)](https://github.com/yichuan-w/LEANN) | GitHub Trending 🐍 | #LLM #RAG #chatbot |
+| [dograh-hq/dograh — Plateforme open-source d'agents vocaux (+223/jour)](https://github.com/dograh-hq/dograh) | GitHub Trending 🌐 | #VoiceAI #chatbot |
+| [jamiepine/voicebox — Studio vocal IA open-source : clonage, dictée, création (+195/jour)](https://github.com/jamiepine/voicebox) | GitHub Trending TS | #VoiceAI |
+| [tech-leads-club/agent-skills — Registre sécurisé de skills pour Claude, Cursor, Copilot (+225/jour)](https://github.com/tech-leads-club/agent-skills) | GitHub Trending TS | #Claude #agents |
+| [NirDiamant/agents-towards-production — Tutoriels code-first agents GenAI production end-to-end (+172/jour)](https://github.com/NirDiamant/agents-towards-production) | GitHub Trending 🌐 | #LLM #agents |
+| [microsoft/ai-agents-for-beginners — 12 leçons pour construire des agents IA (+485/jour, 62K★)](https://github.com/microsoft/ai-agents-for-beginners) | GitHub Trending 🌐 | #LLM #agents |
+| [Shubhamsaboo/awesome-llm-apps — 100+ apps Agent & RAG clonables et personnalisables (+202/jour)](https://github.com/Shubhamsaboo/awesome-llm-apps) | GitHub Trending 🐍 | #LLM #RAG #chatbot |
+| [calcom/cal.diy — Infrastructure de scheduling open-source pour tous (+433/jour, 43K★)](https://github.com/calcom/cal.diy) | GitHub Trending TS | #SaaS |
+| [tinyhumansai/openhuman — Super intelligence IA personnelle, privée et locale (+1 690/jour)](https://github.com/tinyhumansai/openhuman) | GitHub Trending 🌐 | #LLM #agents |
+| [Anthropic SDK Python v0.102.0 — Cache Diagnostics Beta + BetaManagedAgents multiagents](https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md) | Anthropic SDK | #Claude #Anthropic |
+| [HKUDS/CLI-Anything — Rendre TOUS les logiciels natifs-agents via CLI (+238/jour, 36K★)](https://github.com/HKUDS/CLI-Anything) | GitHub Trending 🐍 | #agents #LLM |
+
+### 💡 Insights clés
+- **Explosion de l'économie des "Agent Skills" : 3 repos en tendance simultanément** — anthropics/skills (officiel), tech-leads-club/agent-skills et K-Dense-AI/scientific-agent-skills convergent vers un standard de skills modulaires réutilisables. Pour H'appi : adopter dès maintenant une architecture skill-based pour nos agents (secrétariat, CX, supply chain) — chaque skill devient un bloc métier réutilisable d'un projet à l'autre. Réduction estimée du temps de dev : 30-40% dès le 2e projet.
+- **Voice AI open-source s'accélère : dograh + voicebox en forte hausse** — Deux plateformes Voice AI open-source montent simultanément. dograh est une alternative potentielle à Vapi.ai pour les clients sensibles au prix ; voicebox pourrait réduire la dépendance à ElevenLabs pour le clonage vocal. Pour H'appi : évaluer dograh sur un projet pilote client budget-contraint pour valider la qualité vs. coût par rapport à notre stack Vapi actuelle.
+- **LEANN : RAG privé avec 97% d'économie de stockage — game changer RGPD** — Ce projet permet de faire du RAG sur n'importe quelle donnée locale sans infrastructure cloud coûteuse. Pour H'appi : solution idéale pour les clients dans les secteurs soumis à RGPD strict (santé, juridique, RH) qui refusent l'envoi de documents vers des APIs externes. À intégrer dans notre offre "RAG souverain hébergé en France".
+- **Anthropic SDK v0.102.0 : Cache Diagnostics Beta activable maintenant** — La nouvelle fonctionnalité de diagnostics de cache permet de visualiser les cache hits/misses en temps réel. Pour H'appi : activer cette beta sur tous les projets FastAPI + SDK Anthropic pour optimiser les coûts API. Le cache prompt réduit jusqu'à 90% les coûts sur les grands contextes système — essentiel pour nos chatbots à fort contexte métier.
+- **calcom/cal.diy +433 étoiles/jour — notre dépendance Cal.com devient un atout concurrentiel** — Le projet cal.diy confirme que Cal.com est en train de devenir l'infrastructure de scheduling de référence open-source. Pour H'appi : renforcer notre intégration Cal.com dans les pitchs clients secrétariat IA — "nous nous appuyons sur l'infrastructure de scheduling la plus adoptée au monde" est un argument de crédibilité fort.
+
+---
