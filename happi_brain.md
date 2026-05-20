@@ -1353,6 +1353,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **calcom/cal.diy +433 étoiles/jour — notre dépendance Cal.com devient un atout concurrentiel** — Le projet cal.diy confirme que Cal.com est en train de devenir l'infrastructure de scheduling de référence open-source. Pour H'appi : renforcer notre intégration Cal.com dans les pitchs clients secrétariat IA — "nous nous appuyons sur l'infrastructure de scheduling la plus adoptée au monde" est un argument de crédibilité fort.
 
 ---
+## 📰 Veille Tech — 2026-05-20
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/claude-plugins-official — Répertoire officiel Anthropic de plugins Claude Code haute qualité (+171★/jour, 20 388★)](https://github.com/anthropics/claude-plugins-official) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [anthropics/skills — Dépôt public des Agent Skills officiels Anthropic (+667★/jour, 137 821★)](https://github.com/anthropics/skills) | GitHub Trending 🐍 | #Claude #agents |
+| [HKUDS/CLI-Anything — Rendre TOUS les logiciels natifs-agents via hub CLI (+1 038★/jour, 38 012★)](https://github.com/HKUDS/CLI-Anything) | GitHub Trending 🐍 | #LLM #agents |
+| [Imbad0202/academic-research-skills — Workflow Claude Code complet : research → write → review → revise (+3 164★/jour, 14 632★)](https://github.com/Imbad0202/academic-research-skills) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [humanlayer/12-factor-agents — 12 principes production pour agents LLM : stateless reducer, context window, human-in-loop (+736★/jour, 21 310★)](https://github.com/humanlayer/12-factor-agents) | GitHub Trending TS | #LLM #SaaS |
+| [rohitg00/agentmemory — Mémoire persistante #1 benchmark pour agents IA coding en production (+1 609★/jour, 14 476★)](https://github.com/rohitg00/agentmemory) | GitHub Trending TS | #LLM #chatbot |
+| [colbymchenry/codegraph — Knowledge graph pré-indexé pour Claude Code, Codex et Cursor (+1 850★/jour, 7 098★)](https://github.com/colbymchenry/codegraph) | GitHub Trending TS | #Claude #LLM |
+| [tech-leads-club/agent-skills — Registre sécurisé et validé de skills pour agents IA pro : Claude Code, Cursor, Copilot (+399★/jour, 4 319★)](https://github.com/tech-leads-club/agent-skills) | GitHub Trending TS | #LLM #agents |
+| [rmyndharis/OpenWA — API Gateway WhatsApp open-source self-hosted, zéro dépendance Meta (+1 870★/jour, 4 285★)](https://github.com/rmyndharis/OpenWA) | GitHub Trending TS | #chatbot #SaaS |
+| [diegosouzapw/OmniRoute — AI gateway unifié 160+ providers LLM, compression et smart fallback (+115★/jour, 4 997★)](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [n8n v2.22.0 — Observational Memory system + MCP tools pour workflow AI, NVIDIA Nemotron intégré](https://github.com/n8n-io/n8n) | GitHub Trending TS | #SaaS #LLM |
+| [Anthropic SDK Python v0.103.0 — Self-hosted sandboxes CMA + sandbox helpers pour ManagedAgents](https://github.com/anthropics/anthropic-sdk-python/blob/main/CHANGELOG.md) | Anthropic SDK | #Claude #Anthropic |
+| [heygen-com/hyperframes — Write HTML, Render Video : pipeline vidéo conçu pour les agents IA (+344★/jour, 19 791★)](https://github.com/heygen-com/hyperframes) | GitHub Trending TS | #VoiceAI #chatbot |
+
+### 💡 Insights clés
+- **Anthropic SDK v0.103.0 — Self-Hosted Sandboxes : déploiement RGPD-compliant des agents managés** : La mise à jour majeure du SDK Python Anthropic introduit les sandboxes self-hosted dans le CMA (Claude Managed Agents), permettant d'exécuter des agents multi-étapes dans des environnements isolés on-premise ou Hetzner/Scaleway. Pour H'appi : upgrade obligatoire sur tous les projets FastAPI + SDK Anthropic — les clients médical, juridique et finance qui imposent la souveraineté des données peuvent désormais utiliser nos agents sans flux vers l'infrastructure Anthropic US. Combiné à Cache Diagnostics (v0.102.0), l'optimisation des coûts LLM devient mesurable.
+- **OpenWA +1 870★/jour — WhatsApp self-hosted : nouveau canal de livraison chatbot sans Meta API** : Signal d'adoption massif pour l'API WhatsApp open-source self-hosted. Pour H'appi : permet d'ajouter WhatsApp comme canal natif dans nos chatbots clients (SAV, secrétariat) sans coûts API Meta ni dépendance tierce. Déployable sur Railway avec docker-compose — intégration estimée <2 jours sur un projet existant FastAPI.
+- **OmniRoute — AI Gateway 160+ providers : découplage LLM sans refactoring** : Couche d'abstraction entre nos backends et tous les LLMs du marché (Claude, GPT, Mistral, modèles locaux). Pour H'appi : quand un client exige de changer de provider ou de tester des modèles open-source pour réduire les coûts, OmniRoute évite un refactoring complet. À intégrer dans la stack chatbot standard pour les contrats Enterprise avec clause de portabilité du modèle.
+- **n8n v2.22.0 — Observational Memory + MCP tools : argument commercial CRM fort** : n8n intègre nativement la mémoire observationnelle entre sessions et les MCP tools pour modifier des workflows via IA. Pour H'appi : argument commercial direct — "votre chatbot H'appi orchestre vos workflows HubSpot/Pipedrive/Zapier sans code custom". La démo de connexion chatbot → n8n → CRM peut se livrer en 1 journée sur un projet secrétariat existant.
+- **12-factor-agents + agentmemory : les deux primitives non-négociables de l'agent 2026** : La convergence simultanée des 12 principes production (stateless reducer, context window ownership, small focused agents) et de la mémoire persistante benchmark confirme le standard marché. Pour H'appi : auditer chaque projet agent actif contre les 12 facteurs avant livraison — les lacunes les plus fréquentes (context window non-maîtrisé, absence de mémoire inter-sessions, agents monolithiques) sont les causes #1 des incidents de production reportés. À intégrer dans la checklist de livraison section 9.
+
+---
 ## 📰 Veille Tech — 2026-05-19
 > Mis à jour automatiquement par Happi Brain Agent
 
