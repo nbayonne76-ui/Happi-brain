@@ -1407,3 +1407,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **agentmemory + agent-skills : deux primitives à 1 244★/jour identiques — la convergence du marché** : la hausse simultanée et identique (+1 244★/jour) de rohitg00/agentmemory et tech-leads-club/agent-skills le même jour est un signal de marché fort — mémoire persistante et skills réutilisables deviennent les deux primitives non-négociables de tout agent 2026. Pour H'appi : le prochain agent livré sans ces deux couches sera considéré sous-standard par les clients — les intégrer comme features baseline obligatoires dans tous les projets, au même titre que le RAG.
 
 ---
+
+## 📰 Veille Tech — 2026-05-21
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Managed Agents : MCP tunnels + sandboxes privés — les agents Claude peuvent maintenant opérer dans des réseaux privés sans exposition publique](https://9to5mac.com/2026/05/19/anthropic-enhances-claude-managed-agents-with-two-new-privacy-and-security-features/) | Anthropic / 9to5Mac | #Claude #agents |
+| [Claude Managed Agents : Dreaming + Multi-agent orchestration — un agent principal délègue à des spécialistes parallèles sur filesystem partagé](https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/) | Anthropic / 9to5Mac | #Claude #agents |
+| [Claude Finance : 10 agents IA pré-construits pour la finance (pitchbooks, KYC, clôture comptable) — disponibles en plugins Claude Code](https://www.anthropic.com/news/finance-agents) | Anthropic | #Claude #agents #SaaS |
+| [Code with Claude 2026 : Managed Agents, Proactive Workflows, Capability Curve — analyse complète des 5 nouveautés agents](https://www.infoq.com/news/2026/05/code-with-claude/) | InfoQ | #Claude #agents |
+| [Vapi atteint 500M$ de valorisation — Amazon Ring choisit Vapi parmi 40 concurrents pour router 100% de ses appels entrants](https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/) | TechCrunch | #VoiceAI |
+| [Deepgram lève 130M$ (valorisation 1.3B$) et rachète une startup YC — 1 300+ organisations utilisent ses modèles voix](https://techcrunch.com/2026/01/13/deepgram-raises-130m-at-1-3b-valuation-and-buys-a-yc-ai-startup/) | TechCrunch | #VoiceAI |
+| [Best Voice AI May 2026 : ce qui compose réellement un agent vocal en production — Vapi vs ElevenLabs vs Deepgram](https://futureagi.substack.com/p/best-voice-ai-in-may-2026-what-actually) | FutureAGI | #VoiceAI |
+| [FastAPI + Next.js 15 : The Full-Stack Nobody's Building — le duo Python/React domine pour les SaaS AI-adjacent en 2026](https://dev.to/alexmayhew-dev/fastapi-nextjs-15-the-full-stack-nobodys-building-1hl9) | DEV Community | #FastAPI #Next.js #SaaS |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy — alternative Vercel self-hosted avec déploiement Docker zéro downtime](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV Community | #FastAPI #Docker #SaaS |
+| [AI Act 2026 : Guide complet obligations entreprise — mentions obligatoires dès le 2 août 2026 pour tout système IA](https://www.rgpdkit.fr/blog/ai-act-2026-guide-obligations-entreprise) | RGPDKit | #RGPD |
+| [Chatbot RGPD et CNIL 2026 : règles à respecter — principe d'exactitude, base légale, durée de conservation](https://www.webotit.ai/blog/ia-conversationnelle/generalites/chatbot-et-rgpd-respectez-les-droits-des-personnes-avec-les-conseils-de-la-cnil) | Webotit.ai | #RGPD #chatbot |
+| [claude-plugins-official (20 959★) — Répertoire officiel Anthropic des plugins Claude Code haute qualité](https://github.com/anthropics/claude-plugins-official) | GitHub Trending 🐍 | #Claude #agents |
+| [12-factor-agents (21 470★) — Principes production LLM : idempotence, retry backoff, observabilité, sandboxing des actions irréversibles](https://github.com/humanlayer/12-factor-agents) | GitHub Trending TS | #LLM #agents |
+| [vllm (80 610★) — Moteur d'inférence LLM haute performance et mémoire efficiente, standard de facto pour le serving LLM open-source](https://github.com/vllm-project/vllm) | GitHub Trending 🐍 | #LLM |
+| [State of AI — May 2026 : les labs US dominent encore mais les labs chinois (DeepSeek, Alibaba) comblent l'écart sur le raisonnement et le code](https://press.airstreet.com/p/state-of-ai-may-2026) | Air Street Press | #LLM |
+
+### 💡 Insights clés
+- **Anthropic accélère sur la sécurité enterprise avec les MCP tunnels et sandboxes privés** : les agents Claude peuvent maintenant rester dans des réseaux privés sans exposer les MCP servers à l'internet public, et exécuter les outils dans l'infra du client. Pour H'appi : argument commercial décisif pour convaincre les clients grands comptes (banque, santé, juridique) encore réticents au SaaS cloud — "votre agent H'appi reste dans votre datacenter" devient techniquement possible dès aujourd'hui.
+- **Vapi confirme sa domination Voice AI — 500M$ de valorisation, Amazon Ring, sub-500ms** : le choix d'Amazon Ring parmi 40 concurrents valide définitivement Vapi comme la référence production pour la téléphonie IA. Pour H'appi : continuer de positionner Vapi comme différenciateur dans les devis Happi Secretary. La série B de 50M$ garantit la pérennité de la plateforme — risque vendor lock-in acceptable.
+- **AI Act : deadline critique au 2 août 2026 — les chatbots H'appi doivent afficher leur origine IA** : l'obligation de mentionner explicitement l'origine artificielle des réponses entre en vigueur dans 73 jours. Pour H'appi : auditer tous les chatbots clients actuellement en production (SAV-BOT, INnatural, Secretary) et ajouter un bandeau ou mention claire "Réponse générée par IA" avant la date limite pour éviter jusqu'à 4% du CA mondial d'amende.
+- **FastAPI + Next.js 15 + Dokploy : la stack SaaS AI indie de référence en 2026** : Dokploy s'impose comme alternative Vercel self-hosted pour les clients qui refusent le cloud US — build Docker auto, zéro downtime, "Vercel-like DX à coût marginal". Pour H'appi : évaluer Dokploy comme option de déploiement alternative à Railway/Vercel pour les clients RGPD sensibles souhaitant héberger sur leur propre VPS Hetzner/Scaleway.
+- **Claude Sonnet 4.6 benchmark #1 sur ClawBench (33.3%) — le meilleur modèle pour les tâches web en production** : H'appi fait le bon choix en utilisant Sonnet 4.6 comme modèle défaut. Ce benchmark sur 153 tâches de vrais sites en production confirme la supériorité sur GPT-5.5 pour les use cases de navigation et d'action web — pertinent pour les futurs agents H'appi capables d'interagir avec les back-offices clients.
+
+---
