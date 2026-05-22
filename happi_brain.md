@@ -1437,3 +1437,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **Claude Sonnet 4.6 benchmark #1 sur ClawBench (33.3%) — le meilleur modèle pour les tâches web en production** : H'appi fait le bon choix en utilisant Sonnet 4.6 comme modèle défaut. Ce benchmark sur 153 tâches de vrais sites en production confirme la supériorité sur GPT-5.5 pour les use cases de navigation et d'action web — pertinent pour les futurs agents H'appi capables d'interagir avec les back-offices clients.
 
 ---
+
+## 📰 Veille Tech — 2026-05-22
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude for Small Business : workflows IA pré-construits dans HubSpot, QuickBooks, PayPal et Docusign](https://www.anthropic.com/news/claude-for-small-business) | Anthropic | #Claude #SaaS #chatbot |
+| [Claude for Legal : 20+ connecteurs MCP juridiques et 12 plugins pratique pour cabinets et équipes in-house](https://www.artificiallawyer.com/2026/05/12/claude-for-legal-launches-may-reshape-the-legal-tech-world/) | Artificial Lawyer | #Claude #chatbot |
+| [PwC déploie Claude Code à l'échelle mondiale — 30 000 professionnels certifiés, Centre d'Excellence Anthropic/PwC](https://www.anthropic.com/news/pwc-expanded-partnership) | Anthropic | #Claude #SaaS |
+| [Vapi lève 50M$ Série B — 1 milliard d'appels franchis, 2,7M d'agents créés par 1M de développeurs](https://www.globenewswire.com/news-release/2026/05/12/3292882/0/en/vapi-raises-50m-series-b-as-it-reaches-1-billion-calls-powering-the-next-generation-of-enterprise-voice-ai.html) | GlobeNewswire | #VoiceAI |
+| [Choisir le bon LLM pour agents vocaux 2026 : Claude Sonnet 4.6 vs GPT-5.4 vs Gemini 3.1 Flash — benchmark comparatif](https://softcery.com/lab/ai-voice-agents-choosing-the-right-llm) | Softcery | #VoiceAI #Claude |
+| [Deutsche Telekom Magenta AI Call Assistant — traduction live + résumé conversation directement dans l'infrastructure réseau vocal](https://masterofcode.com/blog/voice-ai-trends) | Master of Code | #VoiceAI |
+| [forge — Framework Python self-hosted pour LLM tool-calling et workflows agentiques (398★)](https://github.com/antoinezambelli/forge) | GitHub Trending 🐍 | #LLM #FastAPI |
+| [OpenWA — Gateway WhatsApp open-source self-hosted pour intégrer WhatsApp à ses agents chatbot](https://github.com/rmyndharis/OpenWA) | GitHub Trending TS | #chatbot #SaaS |
+| [codegraph — Knowledge graph pré-indexé pour Claude Code, Cursor et Codex : contextualisation codebase instantanée](https://github.com/colbymchenry/codegraph) | GitHub Trending TS | #Claude #LLM |
+| [CLI-Anything — Rendre tous les logiciels "Agent-Native" via une couche CLI universelle (656★/jour)](https://github.com/HKUDS/CLI-Anything) | GitHub Trending 🐍 | #LLM #agents |
+| [FastAPI + Next.js 15 : la stack full-stack que personne ne construit mais que tout SaaS AI devrait utiliser](https://dev.to/alexmayhew-dev/fastapi-nextjs-15-the-full-stack-nobodys-building-1hl9) | DEV Community | #FastAPI #Next.js #SaaS |
+| [AI SaaS avec Next.js + FastAPI + Dokploy — alternative self-hosted à Vercel, déploiement Docker zéro downtime](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV Community | #FastAPI #Docker #SaaS |
+| [AI Act Digital Omnibus — accord politique du 7 mai 2026 : simplification EU mais obligations de transparence IA maintenues en août 2026](https://www.globalpolicywatch.com/2026/02/eu-regulators-issue-opinion-on-revisions-of-gdpr-and-other-data-laws/) | Global Policy Watch | #RGPD |
+| [CNIL recommandations RGPD pour systèmes IA — base légale, exactitude, durée de conservation appliquées aux chatbots](https://www.cnil.fr/en/ai-system-development-cnils-recommendations-to-comply-gdpr) | CNIL | #RGPD #chatbot |
+| [stitch-skills (Google Labs) — Bibliothèque de skills agents compatible Claude Code, Gemini CLI et Cursor](https://github.com/google-labs-code/stitch-skills) | GitHub Trending TS | #Claude #agents |
+
+### 💡 Insights clés
+- **Claude for Small Business + Legal : Anthropic attaque directement les segments H'appi** : les workflows HubSpot, QuickBooks et les 20+ MCP légaux sont des solutions génériques clés en main. Pour H'appi : accélérer la différenciation "sur-mesure sectoriel" — notre valeur reste la personnalisation profonde (ton de marque, base de connaissance métier, intégration ERP) et l'accompagnement humain que ces offres packagées ne fournissent pas.
+- **Vapi franchit 1 milliard d'appels et lève 50M$ — la stack vocale H'appi est sur le bon cheval** : la Série B avec Peak XV, Microsoft M12 et Kleiner Perkins garantit la pérennité de Vapi pour 3-5 ans. Pour H'appi : aucun changement de stack vocal — renforcer le positionnement "powered by Vapi" dans les devis Happi Secretary comme signal enterprise, et profiter des nouvelles fonctionnalités annoncées (multi-agent orchestration vocale).
+- **Claude Sonnet 4.6 classé parmi les meilleurs LLM pour agents vocaux 2026** : le benchmark comparatif place Sonnet 4.6 en tête sur la compréhension contextuelle longue et le français naturel. Pour H'appi : argument technique direct à glisser dans les propositions commerciales Happi Secretary — "nous utilisons le LLM benchmarké #1 pour les agents vocaux en production".
+- **OpenWA self-hosted : nouvelle verticale chatbot WhatsApp RGPD-compliant accessible** : un gateway WhatsApp open-source mature ouvre la possibilité de déployer des chatbots H'appi sur WhatsApp Business hébergé en France, sans dépendre de Meta Cloud API. Pour H'appi : évaluer pour un nouveau produit "Happi WhatsApp Bot" — les PME françaises demandent WhatsApp depuis 2025, c'est un segment non encore adressé par la stack actuelle.
+- **AI Act Digital Omnibus confirmé — deadline transparence IA au 2 août 2026 inchangée** : malgré la simplification réglementaire, l'obligation de mentionner explicitement l'origine artificielle des réponses reste en vigueur dans 72 jours. Pour H'appi : lancer l'audit de conformité de tous les chatbots en production (SAV-BOT, INnatural, Secretary) avant fin juin — 1 mois de marge technique pour intégrer les bandeaux "Réponse générée par IA" avant la deadline légale (jusqu'à 4% du CA mondial d'amende en cas de manquement).
+
+---
