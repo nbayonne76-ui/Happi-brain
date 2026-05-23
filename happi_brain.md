@@ -1467,3 +1467,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act Digital Omnibus confirmé — deadline transparence IA au 2 août 2026 inchangée** : malgré la simplification réglementaire, l'obligation de mentionner explicitement l'origine artificielle des réponses reste en vigueur dans 72 jours. Pour H'appi : lancer l'audit de conformité de tous les chatbots en production (SAV-BOT, INnatural, Secretary) avant fin juin — 1 mois de marge technique pour intégrer les bandeaux "Réponse générée par IA" avant la deadline légale (jusqu'à 4% du CA mondial d'amende en cas de manquement).
 
 ---
+
+## 📰 Veille Tech — 2026-05-23
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Andrej Karpathy rejoint Anthropic pour le pré-entraînement de Claude — "les prochaines années à la frontière des LLMs seront particulièrement formatrices"](https://winbuzzer.com/2026/05/19/andrej-karpathy-joins-anthropic-claude-pre-training-push-xcxwbn/) | WinBuzzer | #Claude #LLM |
+| [Claude nouvelle Constitution — Anthropic publie le document d'alignement de valeurs qui guide Claude en production](https://www.anthropic.com/news/claude-new-constitution) | Anthropic | #Claude |
+| [Claude API Cache Diagnostics en bêta publique — diagnostiquer les cache miss via diagnostics.previous_message_id et optimiser les coûts de prompt caching](https://releasebot.io/updates/anthropic) | Releasebot / Anthropic | #Claude |
+| [RAGFlow — moteur RAG open-source leader : fusion RAG + agents pour une couche de contexte supérieure pour les LLMs en production](https://github.com/infiniflow/ragflow) | GitHub | #LLM #chatbot |
+| [activepieces (22 361★) — AI Agents, MCPs et AI Workflow Automation TypeScript open-source : automatiser les workflows IA sans code](https://github.com/activepieces/activepieces) | GitHub Trending TS | #SaaS #agents |
+| [hermes-agent (163 483★, +1 743★/jour) — "The agent that grows with you" — NousResearch publie son framework agent phare](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #LLM #agents |
+| [Mastra — framework TypeScript opinionated avec RAG, observabilité et support MCP intégré nativement](https://github.com/mastra-ai/mastra) | GitHub | #LLM #Next.js |
+| [repomix (25 407★) — Pack tout votre repo en 1 fichier AI-friendly pour Claude, ChatGPT, DeepSeek et Perplexity](https://github.com/yamadashy/repomix) | GitHub Trending TS | #Claude #LLM |
+| [Understand-Anything (19 194★, +1 393★/jour) — Transformez n'importe quelle codebase en knowledge graph interactif, compatible Claude Code, Cursor et Copilot](https://github.com/Lum1104/Understand-Anything) | GitHub Trending TS | #Claude #LLM |
+| [Railway Next.js + FastAPI Full-Stack Starter officiel — monorepo production avec PostgreSQL, Redis et background workers, async flow intégré](https://railway.com/deploy/nextjs-fastapi-full-stack-starter) | Railway | #FastAPI #Docker #SaaS |
+| [SaaS Hosting 2026 : Vercel vs Railway vs Render — benchmark complet pour déployer un SaaS Next.js avec auth, PostgreSQL et Stripe](https://designrevision.com/blog/saas-hosting-compared) | DesignRevision | #SaaS #Vercel #Railway |
+| [Deepgram Voice Agent sub-400ms self-hosted — bundle Nova-3 + LLM routing + TTS en one-shot, option auto-hébergée pour clients RGPD-sensibles](https://deepgram.com/learn/best-voice-ai-agents-2026-buyers-guide) | Deepgram | #VoiceAI |
+| [CNIL programme de travail 2026 — accompagnement professionnels IA : guides, audits, conformité RGPD pour systèmes IA en production](https://www.cnil.fr/fr/accompagnement-des-professionnels-le-programme-de-travail-de-la-cnil-pour-2026) | CNIL | #RGPD |
+
+### 💡 Insights clés
+- **Andrej Karpathy chez Anthropic — signal de confiance maximal sur Claude** : l'un des chercheurs LLM les plus respectés au monde (ex-OpenAI, ex-Tesla AI) rejoint Anthropic pour le pré-entraînement. Pour H'appi : aucun changement de stratégie nécessaire — c'est une validation externe forte du choix Claude comme LLM de référence. À mentionner dans les pitchs clients pour renforcer la crédibilité de la stack.
+- **Railway Full-Stack Starter officiel valide exactement notre stack** : le template monorepo officiel Railway (Next.js + FastAPI + PostgreSQL + Redis + background workers) est sorti le 3 avril 2026 — c'est blueprint-for-free pour nos nouveaux projets. Pour H'appi : adopter ce starter comme base de tous les futurs projets chatbot full-stack plutôt que de repartir de zéro, et contribuer nos patterns (bot-personality.json, webhook CRM, qualification 3 phases) par-dessus.
+- **RAGFlow + Mastra : deux primitives RAG open-source à intégrer dans la stack** : RAGFlow expose un moteur RAG production-grade (chunking, reranking, agent loop) et Mastra apporte RAG + MCP + observabilité dans un framework TypeScript opinionated. Pour H'appi : évaluer RAGFlow comme couche RAG standard pour les bases de connaissance clients (produits, FAQ, procédures), en remplacement des RAG custom que nous construisons projet par projet — gain estimé : 2-3 jours de dev par chatbot.
+- **Deepgram Voice Agent self-hosted sub-400ms : carte RGPD à jouer pour grands comptes** : le bundle Nova-3 + TTS + LLM routing peut s'auto-héberger sur Scaleway/Hetzner France, garantissant zéro flux vocal en dehors de l'UE. Pour H'appi : argument décisif pour les clients médical, juridique et financier qui bloquaient sur Deepgram cloud US — planifier un benchmark Deepgram self-hosted vs Vapi sur la qualité FR et la latence avant fin juin 2026.
+- **AI Act deadline : J-71 — l'audit de conformité ne peut plus attendre** : toutes les obligations de transparence IA entrent en vigueur dans 71 jours (2 août 2026). Pour H'appi : la CNIL publie son programme d'accompagnement 2026 — utiliser leurs guides officiels pour structurer l'audit des chatbots en production (SAV-BOT, INnatural, Secretary) et générer une preuve documentaire de conformité avant la deadline.
+
+---
