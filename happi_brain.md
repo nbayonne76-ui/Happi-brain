@@ -1495,3 +1495,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act deadline : J-71 — l'audit de conformité ne peut plus attendre** : toutes les obligations de transparence IA entrent en vigueur dans 71 jours (2 août 2026). Pour H'appi : la CNIL publie son programme d'accompagnement 2026 — utiliser leurs guides officiels pour structurer l'audit des chatbots en production (SAV-BOT, INnatural, Secretary) et générer une preuve documentaire de conformité avant la deadline.
 
 ---
+
+---
+## 📰 Veille Tech — 2026-05-24
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude for Small Business — intégration native HubSpot, Canva, QuickBooks, DocuSign, Microsoft 365 avec workflows prêts à l'emploi](https://www.anthropic.com/news) | Anthropic | #chatbot #SaaS |
+| [Claude Managed Agents GA — dreaming, orchestration multi-agents, webhooks et outcomes disponibles en API](https://releasebot.io/updates/anthropic) | Anthropic | #LLM #Claude |
+| [MCP 2026 Roadmap — adoption universelle (Anthropic, OpenAI, Google, Microsoft), gouvernance formelle, enterprise readiness](https://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/) | MCP Blog | #LLM #SaaS |
+| [anthropics/claude-plugins-official (+2 193★/jour) — répertoire officiel Anthropic des plugins Claude Code haute qualité](https://github.com/anthropics/claude-plugins-official) | GitHub Trending 🐍 | #Claude |
+| [ElevenLabs Conversational AI 2.0 — tarifs réduits -50% (0,10$/min), nouveau positionnement voice-first](https://www.startuphub.ai/ai-news/artificial-intelligence/2026/elevenlabs-gives-chat-agents-a-voice) | StartupHub.ai | #VoiceAI |
+| [Deepgram Voice Agent sub-400ms self-hosted — Nova-3 + Flux Multilingual + LLM routing + TTS, hébergeable France (RGPD)](https://deepgram.com/learn/best-voice-ai-agents-2026-buyers-guide) | Deepgram | #VoiceAI #RGPD |
+| [Vapi vs ElevenLabs 2026 — benchmark complet : latence, pricing, compliance, intégration LLM](https://www.retellai.com/blog/vapi-vs-elevenlabs) | Retell AI | #VoiceAI |
+| [Full-Stack AI Agent Template — FastAPI + Next.js 15 + WebSocket streaming + 6 frameworks (PydanticAI, LangChain, CrewAI, LangGraph…)](https://github.com/vstorm-co/full-stack-ai-agent-template) | GitHub | #FastAPI #Next.js #SaaS |
+| [pydantic/pydantic-ai (17 249★) — framework agent Python opinionated façon Pydantic, compatible FastAPI](https://github.com/pydantic/pydantic-ai) | GitHub Trending 🐍 | #FastAPI #LLM |
+| [OpenPipe/ART (9 810★) — Agent Reinforcement Trainer : entraîner des agents multi-étapes pour tâches réelles via GRPO](https://github.com/OpenPipe/ART) | GitHub Trending 🐍 | #LLM #agents |
+| [Expo SDK 54 + Vercel AI SDK v4.3 — streaming Claude natif en React Native, universal React Server Components](https://expo.dev/blog/how-to-run-ai-models-with-react-native-executorch) | Expo | #React Native |
+| [Chatbot et RGPD 2026 : le chatbot doit s'identifier comme IA dès le 1er message — obligation AI Act août 2026](https://www.agentsia.fr/chatbot-rgpd-france-2026/) | Agentsia | #RGPD |
+| [CNIL recommandations RGPD pour systèmes IA — privacy by design obligatoire, AIPD si profilage ou données sensibles](https://www.cnil.fr/fr/developpement-des-systemes-dia-les-recommandations-de-la-cnil-pour-respecter-le-rgpd) | CNIL | #RGPD |
+| [multica (32 081★) — plateforme open-source managed agents : transformer des coding agents en véritables coéquipiers](https://github.com/multica-ai/multica) | GitHub Trending TS | #SaaS #agents |
+
+### 💡 Insights clés
+- **Claude for Small Business + MCP omniprésent = opportunité de positionnement H'appi** : Anthropic cible directement les PME avec des intégrations HubSpot, Canva, QuickBooks prêtes à l'emploi — c'est le même segment que H'appi. Pour se différencier, insister sur la personnalisation radicale (bot-personality.json, qualification 3 phases, multilingue) que Claude for Small Business ne propose pas. Le MCP devenu standard universel (Anthropic, OpenAI, Google, Microsoft) valide l'architecture V2 Brain (serveur MCP) — anticiper cette migration.
+- **ElevenLabs -50% sur la Conversational AI + Deepgram self-hosted : stack vocale plus accessible** : ElevenLabs à 0,10$/min rend Happi Secretary compétitif à des budgets encore plus bas. Deepgram self-hosted sur Scaleway/Hetzner France devient l'argument RGPD clé pour décrocher des clients médical, juridique et notarial — planifier un benchmark qualité FR avant fin juin 2026.
+- **AI Act J-72 : le chatbot doit se déclarer IA dès le 1er message — audit urgent** : obligation en vigueur le 2 août 2026. Pour H'appi : auditer SAV-BOT, INnatural Stores et Happi Secretary pour vérifier que chaque bot s'identifie explicitement comme IA et que les mentions légales sont en place. Utiliser les guides CNIL pour produire une documentation de conformité — cela devient aussi un argument commercial différenciant face aux concurrents non-conformes.
+- **Full-Stack AI Agent Template (FastAPI + Next.js 15) — 6 frameworks en 1 starter** : le template open-source vstorm-co supporte PydanticAI, LangChain, CrewAI, LangGraph et DeepAgents avec WebSocket streaming intégré. Pour H'appi : évaluer comme base pour les prochains chatbots full-stack plutôt que de repartir de zéro — gain estimé 1-2 jours de setup par projet.
+- **React Native + Vercel AI SDK v4.3 : streaming Claude natif en mobile** : Expo SDK 54 + Vercel AI SDK permettent d'intégrer Claude avec streaming dans Quality Tracking App ou tout futur projet mobile. Pour H'appi : mettre à jour la stack mobile standard (section 2) pour inclure `ai` v4.3+ comme client Claude sur mobile.
+
+---
