@@ -1525,3 +1525,32 @@ gradient-text → classe utilitaire (blue → purple)
 - **React Native + Vercel AI SDK v4.3 : streaming Claude natif en mobile** : Expo SDK 54 + Vercel AI SDK permettent d'intégrer Claude avec streaming dans Quality Tracking App ou tout futur projet mobile. Pour H'appi : mettre à jour la stack mobile standard (section 2) pour inclure `ai` v4.3+ comme client Claude sur mobile.
 
 ---
+
+---
+## 📰 Veille Tech — 2026-05-25
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Vapi lève 50M$ à 500M$ de valorisation — Amazon Ring a choisi Vapi parmi 40 concurrents, 1 milliard d'appels traités](https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/) | TechCrunch | #VoiceAI |
+| [ElevenLabs 500M$ ARR + IBM watsonx — expansion enterprise et intégration voice-first pour agents IA](https://www.startuphub.ai/ai-news/artificial-intelligence/2026/elevenlabs-gives-chat-agents-a-voice) | StartupHub.ai | #VoiceAI |
+| [Claude Managed Agents GA + mémoire "dreaming" — les agents Claude écrivent des notes persistantes pour les futurs agents](https://releasebot.io/updates/anthropic) | Anthropic/Releasebot | #Claude #LLM |
+| [Anthropic Claude for Small Business — HubSpot, QuickBooks, Canva, Microsoft 365 intégrés nativement avec workflows PME](https://www.bloomberg.com/news/articles/2026-05-07/anthropic-is-making-claude-chatbot-more-appealing-to-consumers) | Bloomberg | #Claude #SaaS |
+| [anthropics/claude-plugins-official (+1 173★/jour) — répertoire officiel Anthropic des plugins Claude Code haute qualité](https://github.com/anthropics/claude-plugins-official) | GitHub Trending 🐍 | #Claude |
+| [anthropics/knowledge-work-plugins (+550★/jour) — plugins open-source pour knowledge workers (Claude Cowork)](https://github.com/anthropics/knowledge-work-plugins) | GitHub Trending 🐍 | #Claude #LLM |
+| [ai-engineering-from-scratch (+1 853★/jour) — guide complet AI engineering : apprendre, construire, shipper des agents IA](https://github.com/rohitg00/ai-engineering-from-scratch) | GitHub Trending 🐍 | #LLM #agents |
+| [honcho — bibliothèque mémoire pour agents IA stateful, persistance des sessions conversationnelles](https://github.com/plastic-labs/honcho) | GitHub Trending 🐍 | #chatbot #agents |
+| [How to build production-ready AI agents with RAG and FastAPI](https://thenewstack.io/how-to-build-production-ready-ai-agents-with-rag-and-fastapi/) | The New Stack | #FastAPI #LLM |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy — retour d'expérience complet](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #Next.js #SaaS |
+| [trigger.dev (15 072★) — plateforme managed agents IA et workflows, deploy from GitHub sans config serveur](https://github.com/triggerdotdev/trigger.dev) | GitHub Trending TS | #SaaS #agents |
+| [AI Agents & GDPR 2026 : Compliance Checklist — DPIA obligatoire, consentement explicite, résidence données EU](https://technovapartners.com/en/insights/security-gdpr-enterprise-ai-agents) | Technova | #RGPD |
+| [Vercel vs Railway vs Render : déployer des applications IA en 2026 — benchmark complet pour SaaS IA](https://remery.ai/blog/vercel-vs-railway-vs-render-ai-deployment) | Remery.ai | #Railway #Vercel #Docker |
+
+### 💡 Insights clés
+- **Vapi $500M valorisation + 1 milliard d'appels : H'appi Secretary sur la bonne plateforme** — Amazon Ring a évalué 40 concurrents avant de choisir Vapi pour 100% de ses appels entrants. C'est une validation externe forte de notre choix technique pour Happi Secretary. Argument pitch à utiliser : "H'appi Secretary tourne sur la même infra vocale qu'Amazon Ring". Vapi traite 1 à 5 millions d'appels/jour — la scalabilité est prouvée en production.
+- **Claude Managed Agents + mémoire "dreaming" : persistance conversationnelle native à explorer** — Les agents Claude peuvent désormais écrire des notes qui sont partagées avec les futurs agents sur le même code ou le même contexte. Pour H'appi : évaluer cette primitive dans SAV-BOT (historique client récurrent évitant les re-saisies) et Happi Secretary (contexte appelants VIP persistant entre sessions) — cela remplace un système mémoire custom et reste dans la stack Anthropic SDK.
+- **Claude for Small Business = PME génériques, H'appi = PME sur-mesure** — Anthropic intègre Claude dans HubSpot, QuickBooks, Canva et Microsoft 365 pour les PME. C'est exactement notre segment cible. Notre réponse commerciale : personnalisation radicale (bot-personality.json, qualification 3 phases, multilingue, hébergement France RGPD) que Claude for Small Business ne peut pas offrir. À intégrer dans les slides de vente comme différenciateur clé.
+- **FastAPI + Next.js confirmé stack dominante pour SaaS IA en 2026** — Templates officiels (Railway, Vercel), benchmarks NestJS vs FastAPI et retours d'expérience DEV.to convergent tous : notre stack est mainstream. Avantage pratique : facilité de recrutement freelance, maintenance long-terme, et réassurance clients sur la pérennité technologique.
+- **AI Act J-70 — DPIA et identification IA obligatoires au 2 août 2026** — Obligation légale : tout chatbot doit se déclarer comme IA dès le 1er message, et une DPIA est requise si profilage ou données sensibles. Délai : 70 jours. Action urgente : auditer SAV-BOT, INnatural Stores et Happi Secretary. Les amendes AI Act atteignent 35M€ ou 7% du CA mondial — la non-conformité est un risque commercial direct.
+
+---
