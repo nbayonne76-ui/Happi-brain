@@ -1554,3 +1554,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act J-70 — DPIA et identification IA obligatoires au 2 août 2026** — Obligation légale : tout chatbot doit se déclarer comme IA dès le 1er message, et une DPIA est requise si profilage ou données sensibles. Délai : 70 jours. Action urgente : auditer SAV-BOT, INnatural Stores et Happi Secretary. Les amendes AI Act atteignent 35M€ ou 7% du CA mondial — la non-conformité est un risque commercial direct.
 
 ---
+
+## 📰 Veille Tech — 2026-05-26
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Opus 4.7 : 87.6% SWE-Bench Verified (+13pts vs 4.6), vision 3x plus haute résolution — même prix](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #LLM |
+| [Anthropic : Claude Managed Agents avec MCP tunnels + sandboxes auto-hébergés (bêta publique 19 mai)](https://9to5mac.com/2026/05/19/anthropic-enhances-claude-managed-agents-with-two-new-privacy-and-security-features/) | 9to5Mac | #Claude #Anthropic |
+| [Claude for Small Business — intégrations HubSpot, PayPal, Canva, QuickBooks, Microsoft 365](https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features) | MindStudio | #Claude #SaaS |
+| [Vapi lève $50M (Série B, valorisation $500M) après 1 milliard d'appels traités](https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/) | TechCrunch | #VoiceAI |
+| [Amazon Ring choisit Vapi après évaluation de 40 concurrents — 100% du trafic entrant migré](https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/) | TechCrunch | #VoiceAI |
+| [ElevenLabs atteint $500M ARR : latence <300ms, 96 langues, voix clonée en 30 secondes](https://enterprisedna.co/resources/news/vapi-50m-series-b-voice-ai-enterprise-2026/) | Enterprise DNA | #VoiceAI |
+| [AI red teaming agents : compresse des semaines de tests adversariaux en quelques heures](https://www.helpnetsecurity.com/2026/05/21/ai-red-teaming-agents-research/) | Help Net Security | #LLM #agents |
+| [anthropics/knowledge-work-plugins (+15 973★) — plugins open-source Claude pour les knowledge workers](https://github.com/anthropics/knowledge-work-plugins) | GitHub Trending 🐍 | #Claude |
+| [moeru-ai/airi (+39 893★) — companion IA self-hosted avec voice chat temps réel et capacités gaming](https://github.com/moeru-ai/airi) | GitHub Trending TS | #VoiceAI #chatbot |
+| [multica-ai/multica (+33 138★) — plateforme open-source managed agents pour agents autonomes](https://github.com/multica-ai/multica) | GitHub Trending TS | #agents #SaaS |
+| [How I built an AI SaaS with Next.js, FastAPI and Dokploy — retour d'expérience complet](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #Next.js #SaaS |
+| [AI Act + GDPR 2026 : chatbots en dual-framework — DPIA obligatoire si traitement à grande échelle](https://technovapartners.com/en/insights/security-gdpr-enterprise-ai-agents) | Technova | #RGPD |
+| [SubQ : architecture non-transformer, context 12M tokens, $29M seed — concurrent direct aux LLMs actuels](https://press.airstreet.com/p/state-of-ai-may-2026) | Air Street Press | #LLM |
+
+### 💡 Insights clés
+- **Claude Opus 4.7 disponible : mettre à jour la stack H'appi** — +13 points sur SWE-Bench vs Opus 4.6, vision 3x plus haute résolution au même prix. Action : mettre à jour la section 8 pour pointer vers `claude-opus-4-7` sur les tâches d'analyse post-appel et de code complexe. Sonnet 4.6 reste le défaut pour les chatbots conversationnels standard.
+- **MCP tunnels + sandboxes auto-hébergés = argument RGPD béton pour les prospects enterprise** — Claude Managed Agents permet désormais aux entreprises de garder données et exécution des outils dans leur propre périmètre de sécurité. Cible prioritaire : cabinets notariaux (Monassier), juridiques (Arc), et clients finance/santé. Pitch : "Agent IA Claude sans que vos données quittent votre datacenter."
+- **Vapi $500M + Amazon Ring : notre stack vocale est validée au niveau Fortune 500** — Amazon Ring a évalué 40 fournisseurs voice AI avant de choisir Vapi. Happi Secretary tourne sur la même infrastructure. Argument commercial direct à insérer dans les slides Happi Secretary.
+- **AI Act J-67 : deadline du 2 août 2026 approche dangereusement** — Dans 67 jours, obligation légale que tout chatbot se déclare comme IA dès le premier message + DPIA requise si données personnelles à grande échelle. Amendes jusqu'à 35M€ ou 7% CA mondial. Action urgente : audit de conformité sur SAV-BOT, INnatural Stores et Happi Secretary — priorité P0.
+- **FastAPI + Next.js = stack confirmée mainstream, boilerplates prêts disponibles** — Multiples retours DEV.to et guides 2026 convergent : la stack H'appi est la référence indie SaaS IA. Avantage recrutement (freelances Python/TS facilement sourcés) et réassurance clients sur la pérennité. À utiliser comme preuve de solidité technique dans les propositions commerciales.
+
+---
