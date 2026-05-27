@@ -1555,6 +1555,33 @@ gradient-text → classe utilitaire (blue → purple)
 
 ---
 
+## 📰 Veille Tech — 2026-05-27
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [dograh-hq/dograh — Plateforme Voice AI open-source self-hostée (alternative Vapi/Retell), Python+TS+Docker, 3.3k★](https://github.com/dograh-hq/dograh) | GitHub Trending 🐍 | #VoiceAI #Docker |
+| [anthropics/knowledge-work-plugins — Plugins Claude open-source pour les knowledge workers (1 718★ aujourd'hui)](https://github.com/anthropics/knowledge-work-plugins) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [thedotmack/claude-mem — Framework mémoire Claude : capture sessions + compression IA pour injection contexte futur (78k★)](https://github.com/thedotmack/claude-mem) | GitHub Trending TS | #Claude #LLM |
+| [asgeirtj/system_prompts_leaks — System prompts extraits de Claude Opus 4.7, 4.6, Sonnet 4.6 et ChatGPT 5.5 (40k★)](https://github.com/asgeirtj/system_prompts_leaks) | GitHub API | #Claude #Anthropic |
+| [microsoft/agent-governance-toolkit — Toolkit gouvernance d'agents IA : policy enforcement + sécurité multi-agents (282★ auj.)](https://github.com/microsoft/agent-governance-toolkit) | GitHub Trending 🐍 | #LLM #RGPD |
+| [n4ze3m/dialoqbase — Créez des chatbots RAG facilement : multi-LLM, auto-hébergé, 1.7k★](https://github.com/n4ze3m/dialoqbase) | GitHub API | #chatbot #LLM |
+| [NangoHQ/nango — Build des intégrations produit avec l'IA : +860★ en 1 jour, 9k★ total](https://github.com/NangoHQ/nango) | GitHub Trending TS | #SaaS #LLM |
+| [jina-ai/langchain-serve — LangChain apps en production via Jina & FastAPI, 1.6k★](https://github.com/jina-ai/langchain-serve) | GitHub API | #FastAPI #LLM |
+| [alpic-ai/skybridge — Framework TypeScript full-stack pour MCP Apps + ChatGPT Apps, type-safe, React-powered](https://github.com/alpic-ai/skybridge) | GitHub Trending TS | #Next.js #SaaS |
+| [NousResearch/hermes-agent — Agent framework "qui grandit avec vous", 1 502★ aujourd'hui](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #LLM #agents |
+| [modelscope/FunASR — Toolkit STT industriel 170x realtime, 42★ auj. — alternative Deepgram open-source](https://github.com/modelscope/FunASR) | GitHub Trending 🐍 | #VoiceAI |
+| [twentyhq/twenty — CRM open-source (alternative Salesforce) conçu pour l'IA, 47k★ total](https://github.com/twentyhq/twenty) | GitHub Trending TS | #SaaS |
+
+### 💡 Insights clés
+- **Dograh : concurrent open-source de Vapi à surveiller pour le pitch RGPD** — Alternative self-hostée à Vapi/Retell avec builder drag-and-drop, Twilio/Vonage intégré, Python+TS+Docker. 3.3k stars. Pour les clients exigeant un hébergement 100% France (notaires, santé), Dograh peut devenir un argument : "Happi Secretary peut tourner entièrement dans votre datacenter". À évaluer comme option enterprise RGPD-first.
+- **claude-mem : mémoire de session Claude à intégrer dans SAV-BOT et Happi Secretary** — Le framework capture les données de session avec compression IA et les injecte dans les prochaines conversations. Cas d'usage direct : historique appelants VIP dans Happi Secretary (évite re-qualification à chaque appel), et mémoire commandes dans SAV-BOT pour les clients récurrents. Remplacerait notre système mémoire custom et resterait dans la stack Anthropic SDK.
+- **System prompts Claude publiés (Opus 4.7, 4.6, Sonnet 4.6) : opportunité d'optimisation** — Les instructions système internes d'Anthropic sont désormais publiques (40k stars). Analyser ces prompts pour identifier les patterns de sécurité, de refus et de structuration utilisés par Anthropic — directement applicable à nos propres system prompts chatbots clients.
+- **Microsoft Agent Governance Toolkit + AI Act J-66 : urgence conformité** — Microsoft publie un toolkit open-source pour enforcer des politiques de gouvernance sur agents IA autonomes. Timing critique avec la deadline AI Act au 2 août 2026 (66 jours). Action P0 : auditer SAV-BOT, INnatural et Happi Secretary avec ce toolkit avant la date butoir.
+- **FastAPI + LangChain + Next.js : stack H'appi validée par le marché** — langchain-serve, skybridge et nango convergent tous sur notre stack standard. Le marché valide FastAPI comme référence production IA en 2026. Argument de réassurance tech à inclure dans les propositions commerciales.
+
+---
+
 ## 📰 Veille Tech — 2026-05-26
 > Mis à jour automatiquement par Happi Brain Agent
 
