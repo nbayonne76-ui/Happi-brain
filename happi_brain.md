@@ -1582,6 +1582,36 @@ gradient-text → classe utilitaire (blue → purple)
 
 ---
 
+## 📰 Veille Tech — 2026-05-28
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Managed Agents : Dreaming + Multiagent Orchestration — agents qui apprennent de leurs sessions passées](https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/) | 9to5Mac | #Claude #Anthropic |
+| [Code with Claude 2026 — 5 nouvelles features : dreaming, orchestration multi-agents, outcomes, webhooks, sandbox](https://www.mindstudio.ai/blog/code-with-claude-2026-new-agent-features) | MindStudio | #Claude #agents |
+| [Claude for Small Business : intégrations natives HubSpot, QuickBooks, PayPal, Canva, Microsoft 365](https://blog.mean.ceo/anthropic-claude-news-may-2026/) | Mean.CEO | #Claude #SaaS |
+| [OpenAI GPT-Realtime-2 via API — raisonnement GPT-5 dans un modèle vocal temps réel pour développeurs](https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/) | TechCrunch | #VoiceAI |
+| [dograh (+3 465★) — plateforme voice AI self-hosted, alternative open-source à Vapi et Retell](https://github.com/dograh-hq/dograh) | GitHub Trending 🐍 | #VoiceAI |
+| [Next.js 16.2 : dev server 400% plus rapide, Turbopack bundler par défaut (remplace Webpack)](https://tech-insider.org/nextjs-tutorial-full-stack-app-2026/) | Tech Insider | #Next.js |
+| [Next.js security release Mai 2026 — 13 advisories corrigés : XSS, SSRF, cache poisoning, middleware bypass](https://vercel.com/changelog/next-js-may-2026-security-release) | Vercel | #Next.js |
+| [Railway vs Vercel : $41/mo vs $1 010/mo pour la même app Next.js — benchmark complet](https://www.13labs.au/compare/railway-vs-vercel) | 13Labs | #Railway #Vercel |
+| [La révolution agentique : LangGraph + MCP + Gemini 3.5 Flash — patterns d'orchestration production-ready](https://atalupadhyay.wordpress.com/2026/05/24/the-agentic-revolution-building-with-gemini-3-5-flash-langgraph-and-mcp/) | Atal Upadhyay | #LLM #agents #MCP |
+| [langfuse (+28 101★) — plateforme open-source LLM observability : métriques, evals, gestion de prompts](https://github.com/langfuse/langfuse) | GitHub Trending TS | #LLM #SaaS |
+| [twenty (+47 475★) — alternative open-source à Salesforce conçue pour l'IA](https://github.com/twentyhq/twenty) | GitHub Trending TS | #SaaS #CRM |
+| [vllm (+81 215★) — moteur d'inférence LLM haute performance, standard pour auto-hébergement](https://github.com/vllm-project/vllm) | GitHub Trending 🐍 | #LLM |
+| [AI Act + RGPD : dès le 2 août 2026 tout chatbot doit se déclarer IA explicitement — amendes 35M€](https://www.donneespersonnelles.fr/actualite-ia-2026) | DonnéesPersonnelles.fr | #RGPD |
+| [Chatbot RGPD conforme hébergé en France : Mistral + Ollama comme alternatives souveraines à ChatGPT](https://www.cedricsantiago.com/blog/chatbot-rgpd-conforme-france) | Cédric Santiago | #RGPD |
+| [Dify : plateforme RAG open-source avec workflow visuel + ingestion documents, prod-ready](https://www.firecrawl.dev/blog/best-open-source-rag-frameworks) | Firecrawl | #LLM #RAG |
+
+### 💡 Insights clés
+- **Claude Dreaming : mémoire inter-sessions pour agents — fonctionnalité clé pour Happi Secretary V2** — Les agents Claude écrivent des notes entre sessions, apprennent des erreurs passées et reconnaissent les patterns récurrents. Pour Happi Secretary, cela ouvre la voie à la reconnaissance avancée des appelants habituels et à l'apprentissage continu des préférences client. À inscrire dans la roadmap V2.
+- **Next.js 16.2 security release : mise à jour urgente sur tous les projets H'appi** — 13 vulnérabilités corrigées dont XSS, SSRF et cache poisoning. happi-bot.com, Happi Web Creator et Happi Foundry doivent être mis à jour. Commande : `npm install next@latest`.
+- **Railway 26× moins cher que Vercel pour Next.js full-stack** — $41/mo vs $1 010/mo selon le benchmark 13Labs. Argument commercial fort pour les clients qui hésitent sur les coûts d'hébergement : H'appi livre sur Railway avec économies massives sans sacrifice de performance.
+- **dograh : alternative self-hosted à Vapi pour les clients RGPD-sensitifs** — Projet trending en Python : voice AI auto-hébergée (alternative à Vapi/Retell). Pertinent pour les prospects Finance/Santé/Notariat qui refusent les données vocales sur serveurs américains. À évaluer en option pour les clients sensibles.
+- **AI Act J-65 : obligation de déclaration IA au 2 août 2026** — Dans 65 jours, tout chatbot H'appi doit afficher explicitement son caractère artificiel dès le premier message. Action P0 : ajouter un bandeau/disclaimer sur SAV-BOT, INnatural Stores et Happi Secretary. Amendes jusqu'à 35M€ ou 7% CA mondial.
+
+---
+
 ## 📰 Veille Tech — 2026-05-26
 > Mis à jour automatiquement par Happi Brain Agent
 
