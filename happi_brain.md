@@ -1639,3 +1639,30 @@ gradient-text → classe utilitaire (blue → purple)
 - **FastAPI + Next.js = stack confirmée mainstream, boilerplates prêts disponibles** — Multiples retours DEV.to et guides 2026 convergent : la stack H'appi est la référence indie SaaS IA. Avantage recrutement (freelances Python/TS facilement sourcés) et réassurance clients sur la pérennité. À utiliser comme preuve de solidité technique dans les propositions commerciales.
 
 ---
+
+## 📰 Veille Tech — 2026-05-30
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/claude-code (+395★) — outil de coding agentique en terminal, comprend les codebases et exécute des tâches en langage naturel](https://github.com/anthropics/claude-code) | GitHub Trending 🐍 | #Claude #agents |
+| [anthropics/skills (+945★) — bibliothèque publique de skills pour agents Claude](https://github.com/anthropics/skills) | GitHub Trending 🐍 | #Claude #agents |
+| [OpenBMB/VoxCPM (+1 815★) — TTS sans tokenizer, multilinguisme natif, clonage de voix en quelques secondes](https://github.com/OpenBMB/VoxCPM) | GitHub Trending 🐍 | #VoiceAI |
+| [OpenMOSS/MOSS-TTS (+355★) — génération voix et sons réels open-source, conçu pour scénarios du monde réel](https://github.com/OpenMOSS/MOSS-TTS) | GitHub Trending 🐍 | #VoiceAI |
+| [microsoft/markitdown (+1 873★) — convertit PDF, Word, Excel, images en Markdown LLM-ready](https://github.com/microsoft/markitdown) | GitHub Trending 🐍 | #LLM #RAG |
+| [opendatalab/MinerU (+150★) — transforme documents complexes en Markdown/JSON pour workflows agentiques](https://github.com/opendatalab/MinerU) | GitHub Trending 🐍 | #LLM #RAG |
+| [fastapi/fastapi (+44★) — FastAPI en trending : valide définitivement le choix H'appi comme référence prod IA](https://github.com/fastapi/fastapi) | GitHub Trending 🐍 | #FastAPI |
+| [EveryInc/compound-engineering-plugin (+353★) — plugin officiel Claude Code pour Cursor, Codex et Windsurf](https://github.com/EveryInc/compound-engineering-plugin) | GitHub Trending TS | #Claude #agents |
+| [twentyhq/twenty (+578★) — alternative open-source à Salesforce conçue nativement pour les agents IA](https://github.com/twentyhq/twenty) | GitHub Trending TS | #SaaS #CRM |
+| [millionco/react-doctor (+148★) — agent IA qui détecte automatiquement les mauvais patterns React/Next.js](https://github.com/millionco/react-doctor) | GitHub Trending TS | #React #agents |
+| [moeru-ai/airi (+55★) — companion IA self-hosted avec voice chat temps réel et capacités gaming](https://github.com/moeru-ai/airi) | GitHub Trending TS | #VoiceAI #chatbot |
+| [iOfficeAI/AionUi (+137★) — app cowork IA locale open-source, multi-assistants CLI 24/7](https://github.com/iOfficeAI/AionUi) | GitHub Trending TS | #SaaS |
+
+### 💡 Insights clés
+- **VoxCPM + MOSS-TTS : explosion des TTS open-source haut de gamme** — Deux projets TTS en top trending Python (1 815★ et 355★/j). VoxCPM supporte le multilinguisme sans tokenizer et le clonage de voix ; MOSS-TTS génère sons et voix pour scénarios réels. Alternatives crédibles à ElevenLabs pour les clients RGPD-sensitifs (hébergement EU possible). À évaluer pour Happi Secretary V2 sur les projets Finance/Notariat/Santé.
+- **microsoft/markitdown + MinerU : pipeline RAG client simplifié** — Deux outils de parsing de documents en trending simultanément. markitdown (Microsoft, 1 873★/j) et MinerU transforment PDF/Word/Excel en Markdown/JSON directement ingérables par les LLMs. À intégrer dans Happi Secretary et SAV-BOT pour permettre aux clients d'uploader leurs propres bases de connaissance sans dev custom.
+- **anthropics/claude-code + anthropics/skills trending simultanément** — L'écosystème d'agents Claude se structure publiquement avec une bibliothèque de skills officielle. Les Happi Brain Skills (agent de veille, agent de commit) préfigurent exactement ce modèle. Signal fort : investir dans les skills Claude est un pari sur l'architecture IA dominante de 2026.
+- **twenty (578★/j) — CRM open-source IA pour les prospects RGPD-sensitifs** — Alternative à Salesforce avec API GraphQL + webhooks natifs conçue pour les agents IA. Option pertinente pour les prospects Finance/Notariat/Santé qui refusent HubSpot/Pipedrive (données hébergées US). À positionner comme alternative souveraine dans les offres H'appi CRM.
+- **react-doctor : premier agent IA spécialisé qualité de code React** — Signal que l'outillage dev IA se spécialise par framework. À surveiller pour intégration dans le pipeline CI/CD H'appi (auto-review Next.js avant chaque PR). Couplé à compound-engineering-plugin pour Claude Code, cela forme un stack dev IA complet pour les projets Next.js H'appi.
+
+---
