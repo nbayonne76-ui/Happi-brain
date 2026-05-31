@@ -1666,3 +1666,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **react-doctor : premier agent IA spécialisé qualité de code React** — Signal que l'outillage dev IA se spécialise par framework. À surveiller pour intégration dans le pipeline CI/CD H'appi (auto-review Next.js avant chaque PR). Couplé à compound-engineering-plugin pour Claude Code, cela forme un stack dev IA complet pour les projets Next.js H'appi.
 
 ---
+
+## 📰 Veille Tech — 2026-05-31
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Opus 4.8 : améliorations coding, agentic skills et raisonnement — même tarif](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #LLM |
+| [Anthropic lève $65B (Série H) — valorisée $965B, $47B ARR run-rate](https://www.anthropic.com/news/series-h) | Anthropic | #Claude #Anthropic |
+| [Claude for Legal : entrée officielle d'Anthropic sur le marché juridique](https://www.artificiallawyer.com/2026/05/12/claude-for-legal-launches-may-reshape-the-legal-tech-world/) | Artificial Lawyer | #Claude #SaaS |
+| [PwC × Anthropic : 30 000 professionnels certifiés Claude, Centre d'Excellence conjoint](https://www.anthropic.com/news/pwc-expanded-partnership) | Anthropic | #Claude #SaaS |
+| [Claude Managed Agents "dreaming" : mémoire inter-sessions, les agents apprennent entre les appels](https://simonwillison.net/2026/May/6/code-w-claude-2026/) | Simon Willison | #Claude #agents |
+| [Code with Claude 2026 : MCP tunnels + sandboxes auto-hébergés AWS pour agents enterprise](https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/) | MIT Technology Review | #Claude #agents |
+| [GDPR-Compliant Chatbot Step-by-Step Guide 2026 — base légale, DPIA, retention policy](https://quickchat.ai/post/gdpr-compliant-chatbot-guide) | Quickchat AI | #RGPD |
+| [AI Agents & GDPR 2026 : 73% des implémentations européennes non-conformes, DPIA obligatoire](https://technovapartners.com/en/insights/security-gdpr-enterprise-ai-agents) | Technova Partners | #RGPD |
+| [anomalyco/opencode (+379★) — coding agent open-source TypeScript, alternative à Claude Code](https://github.com/anomalyco/opencode) | GitHub Trending TS | #LLM #agents |
+| [cursor/plugins (+205★) — spécification officielle et plugins Cursor open-source](https://github.com/cursor/plugins) | GitHub Trending TS | #agents |
+| [harry0703/MoneyPrinterTurbo (+2 768★) — génération vidéos courtes one-click avec LLM](https://github.com/harry0703/MoneyPrinterTurbo) | GitHub Trending 🐍 | #LLM |
+| [Railway vs Vercel 2026 : Railway gagne pour le full-stack SaaS, Vercel reste roi du frontend](https://thesoftwarescout.com/vercel-vs-railway-2026-which-developer-platform-should-you-choose/) | The Software Scout | #Railway #Vercel |
+| [1 million d'APIs IA exposées scannées : 90+ instances vulnérables dans gouvernement, finance, marketing](https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html) | The Hacker News | #LLM |
+
+### 💡 Insights clés
+- **Claude Opus 4.8 + $65B Série H : l'écosystème Anthropic est la meilleure mise long terme pour H'appi** — Anthropic est désormais valorisée $965B avec $47B ARR. Opus 4.8 améliore coding, agentic skills et raisonnement par rapport à 4.7. Action : mettre à jour `claude-opus-4-8` dans Happi Secretary et Happi Foundry pour les tâches d'analyse post-appel et de code complexe. Sonnet 4.6 reste le défaut pour les chatbots conversationnels.
+- **Claude for Legal + PwC : lancer une offre H'appi ciblée notariat/juridique dès juin** — Anthropic entre officiellement sur le marché légal avec une offre dédiée. PwC forme 30 000 professionnels. Les cabinets Monassier et Arc sont des cibles H'appi parfaites. Pitch à affiner : "Claude for Legal implémenté, personnalisé et maintenu par H'appi — sans les coûts d'un grand cabinet de conseil."
+- **Claude "dreaming" : roadmap Happi Secretary V2 à mettre à jour** — Les agents Claude écrivent des notes entre sessions pour consolider leurs apprentissages. Pour Happi Secretary, cela permet la reconnaissance avancée des appelants récurrents (VIP, clients difficiles, préférences horaires). À inscrire en priorité P1 dans la roadmap V2, après l'upgrade Opus 4.8.
+- **73% des agents IA européens non-conformes RGPD — audit P0 avant le 2 août 2026 (J-63)** — DPIA obligatoire dès lors que le chatbot traite des données personnelles à grande échelle. Checklist urgente : (1) base légale explicite, (2) consentement granulaire par fonction IA, (3) bandeau "Vous parlez à une IA" dès le 1er message, (4) retention policy documentée. Cible : SAV-BOT, INnatural Stores et Happi Secretary avant la deadline AI Act.
+- **APIs IA exposées : hardener la sécurité des déploiements H'appi** — 90+ instances d'APIs IA vulnérables identifiées dans des secteurs critiques. Action préventive : audit des endpoints FastAPI exposés (auth JWT, rate limiting, logs d'accès) sur tous les projets en production Railway. Utiliser les sandboxes auto-hébergés Claude pour isoler les agents à accès sensibles.
+
+---
