@@ -1694,3 +1694,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **APIs IA exposées : hardener la sécurité des déploiements H'appi** — 90+ instances d'APIs IA vulnérables identifiées dans des secteurs critiques. Action préventive : audit des endpoints FastAPI exposés (auth JWT, rate limiting, logs d'accès) sur tous les projets en production Railway. Utiliser les sandboxes auto-hébergés Claude pour isoler les agents à accès sensibles.
 
 ---
+
+## 📰 Veille Tech — 2026-06-01
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Opus 4.8 : 4× moins de failles de code non signalées, fiabilité et sécurité accrues](https://fortune.com/2026/05/29/anthropic-raises-65-billion-at-record-965-billion-valuation-promises-mythos-ai-model-in-wide-release-in-coming-weeks-releases-claude-opus-4-8/) | Fortune | #Claude #LLM |
+| [Anthropic facture les agents Claude séparément dès le 15 juin — crédits dédiés Agent SDK](https://www.infoworld.com/article/4171274/anthropic-puts-claude-agents-on-a-meter-across-its-subscriptions.html) | InfoWorld | #Claude #SaaS |
+| [Claude for Small Business — connecteurs et workflows prêts à l'emploi pour PME](https://www.anthropic.com/news/claude-for-small-business) | Anthropic | #Claude #SaaS |
+| [awesome-ai-agents-2026 — 300+ frameworks, outils et ressources agents IA référencés](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026) | GitHub | #LLM #agents |
+| [Gartner : 40% des apps enterprise embarqueront des agents IA d'ici fin 2026](https://eitt.academy/knowledge-base/ai-agents-2026-guide-from-llm-to-multi-agent-systems/) | EITT Academy | #LLM #SaaS |
+| [jamwithai/production-agentic-rag-course (+33★) — pipeline RAG agentique prêt pour la production](https://github.com/jamwithai/production-agentic-rag-course) | GitHub Trending 🐍 | #LLM #RAG |
+| [supermemoryai/supermemory (23 527★) — Memory API ultra-rapide et scalable pour l'ère des agents IA](https://github.com/supermemoryai/supermemory) | GitHub Trending TS | #LLM #agents |
+| [firecrawl/open-lovable (26 636★) — clone n'importe quel site en app React moderne en quelques secondes](https://github.com/firecrawl/open-lovable) | GitHub Trending TS | #React #SaaS |
+| [mattpocock/sandcastle (5 578★) — orchestration d'agents codeurs sandboxés en TypeScript](https://github.com/mattpocock/sandcastle) | GitHub Trending TS | #agents #LLM |
+| [microsoft/markitdown (135 924★, +2 798/j) — convertit PDF/Word/Excel/images en Markdown LLM-ready](https://github.com/microsoft/markitdown) | GitHub Trending 🐍 | #LLM #RAG |
+| [FastAPI + Next.js 15 : le full-stack IA que personne ne documente mais que tout le monde utilise](https://dev.to/alexmayhew-dev/fastapi-nextjs-15-the-full-stack-nobodys-building-1hl9) | DEV.to | #FastAPI #Next.js |
+| [Best Voice AI Platforms 2026 : Vapi vs Deepgram vs Retell AI vs ElevenLabs — comparatif complet](https://callnovo.ai/blog/best-voice-ai-platforms-2026/) | Callnovo | #VoiceAI |
+| [ElevenLabs déploiement on-premise enterprise (avril 2026) — hébergement EU souverain possible](https://www.retellai.com/blog/vapi-vs-elevenlabs) | Retell AI | #VoiceAI #RGPD |
+
+### 💡 Insights clés
+- **ALERTE FACTURATION : agents Claude sur crédits dédiés dès le 15 juin** — Anthropic sépare les usages programmatiques (Agent SDK, GitHub Actions, Happi Brain Agent) du chat standard, facturés à la consommation API. Impact direct sur les projets H'appi à forte utilisation agentique. Action immédiate : auditer la consommation tokens dans Happi Foundry et estimer le budget mensuel par projet avant le 15 juin.
+- **supermemory + markitdown : la stack RAG H'appi s'améliore sans dev custom** — `supermemory` fournit une Memory API persistante pour que les agents se souviennent entre sessions (parfait pour Happi Secretary V2 : reconnaître les appelants récurrents, mémoriser leurs préférences). `markitdown` simplifie l'ingestion de bases de connaissance clients (PDF, Word, Excel) sans pipeline ETL custom. Ces deux outils réduisent de 60%+ le temps de setup d'un nouveau chatbot RAG.
+- **firecrawl/open-lovable : feature "import de site" à évaluer pour Happi Web Creator** — 26 636★ en TypeScript. Cloner n'importe quel site en React app moderne en quelques secondes. À benchmarker comme fonctionnalité premium pour happi-webcreator : "Importez votre site existant et éditez-le visuellement." Différenciateur fort vs Webflow/Framer.
+- **ElevenLabs on-premise : débloquer les clients Finance/Santé/Notariat** — La TTS ElevenLabs peut désormais être déployée on-premise pour les clients enterprise (déployable en EU). Argument commercial décisif pour les cabinets Monassier/Arc et les clients agroalimentaires (Labeyrie, Saint-Jean) qui exigent que les données audio restent dans leur datacenter. À proposer dans l'offre Happi Secretary Enterprise comme option "Voice RGPD-souverain".
+- **Gartner 40% + 300 frameworks : la fenêtre de marché H'appi est maintenant** — 40% des apps enterprise embarqueront des agents IA d'ici fin 2026. Le catalogue de 300+ frameworks confirme que le marché cherche encore sa solution de référence. H'appi doit se positionner comme la solution "agents IA clé en main RGPD-compliant" pendant que les grands acteurs sont encore en mode expérimentation.
+
+---
