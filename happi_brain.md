@@ -1722,3 +1722,32 @@ gradient-text → classe utilitaire (blue → purple)
 - **Gartner 40% + 300 frameworks : la fenêtre de marché H'appi est maintenant** — 40% des apps enterprise embarqueront des agents IA d'ici fin 2026. Le catalogue de 300+ frameworks confirme que le marché cherche encore sa solution de référence. H'appi doit se positionner comme la solution "agents IA clé en main RGPD-compliant" pendant que les grands acteurs sont encore en mode expérimentation.
 
 ---
+
+## 📰 Veille Tech — 2026-06-02
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [PatterAI/Patter — SDK Voice AI open-source, alternative Vapi/Retell, Twilio+Telnyx+Plivo (414★, MIT)](https://github.com/PatterAI/Patter) | GitHub 🐍 | #VoiceAI |
+| [aden-hive/hive — Multi-Agent Harness for Production AI : Claude natif, self-improving, human-in-the-loop (10 477★)](https://github.com/aden-hive/hive) | GitHub 🐍 | #LLM #agents #Claude |
+| [lemony-ai/cascadeflow — Optimisation coût/latence/qualité dans les agent loops : Claude+GPT+vLLM (2 432★)](https://github.com/lemony-ai/cascadeflow) | GitHub 🐍 | #LLM #agents |
+| [PrefectHQ/fastmcp — The fast, Pythonic way to build MCP servers and clients (25 432★)](https://github.com/PrefectHQ/fastmcp) | GitHub 🐍 | #Claude #MCP |
+| [mcp-use/mcp-use — Fullstack MCP framework pour Claude & ChatGPT — apps + servers (10 022★)](https://github.com/mcp-use/mcp-use) | GitHub TS | #Claude #MCP |
+| [sipyourdrink-ltd/bernstein — Orchestration multi-agent audit-grade : HMAC chain, signed cards, air-gap (542★)](https://github.com/sipyourdrink-ltd/bernstein) | GitHub 🐍 | #RGPD #agents |
+| [vstorm-co/pydantic-deepagents — Agents Claude Code-style en Python : docker-sandbox, subagents, MCP (831★)](https://github.com/vstorm-co/pydantic-deepagents) | GitHub 🐍 | #Claude #agents |
+| [mobile-next/mobile-mcp — MCP Server pour automation mobile iOS/Android réels + émulateurs (5 087★)](https://github.com/mobile-next/mobile-mcp) | GitHub TS | #ReactNative |
+| [griptape-ai/griptape — Framework Python modulaire pour AI agents avec tools, memory, RAG (2 534★)](https://github.com/griptape-ai/griptape) | GitHub 🐍 | #LLM #FastAPI |
+| [i-am-bee/beeai-framework — Production-ready AI agents Python & TypeScript (3 278★)](https://github.com/i-am-bee/beeai-framework) | GitHub 🐍 | #LLM #SaaS |
+| [Windy3f3f3f3f/claude-code-from-scratch — Recréer Claude Code en ~4 000 lignes, 11 chapitres (1 323★)](https://github.com/Windy3f3f3f3f/claude-code-from-scratch) | GitHub 🐍 | #Claude |
+| [can1357/oh-my-pi — AI coding agent terminal : LSP, browser, subagents, Claude natif (9 648★)](https://github.com/can1357/oh-my-pi) | GitHub TS | #Claude #agents |
+| [OpenOSINT/OpenOSINT — Agent OSINT IA : 9 outils, CLI, MCP server, Claude + GPT-4 (423★)](https://github.com/OpenOSINT/OpenOSINT) | GitHub 🐍 | #LLM #agents |
+
+### 💡 Insights clés
+- **PatterAI/Patter (MIT, 414★) — alternative open-source à Vapi à surveiller pour Happi Secretary** : SDK Python+TypeScript permettant de donner un numéro de téléphone à un agent IA en 4 lignes via Twilio, Telnyx ou Plivo. Déploiement on-premise possible → avantage RGPD fort (audio reste dans l'infra client). À évaluer comme fallback si les coûts Vapi augmentent avec la montée en volume d'appels. MCP natif + latence < 500ms annoncée — même cible que Vapi.
+- **fastmcp (25 432★) + mcp-use (10 022★) : l'écosystème MCP s'impose comme bus d'intégration IA de référence** — fastmcp simplifie la création de MCP servers en Python (exactement le serveur prévu pour Happi Brain V2). mcp-use unifie la couche client Claude/ChatGPT avec UI, gateway et inspector intégrés. Action concrète : démarrer le MCP server Happi Brain V2 avec fastmcp — exposer `search_project`, `get_pattern`, `get_client_info` nativement depuis Claude Code.
+- **sipyourdrink-ltd/bernstein (542★) — orchestration multi-agent avec audit trail inviolable** : chaque action de chaque agent est signée HMAC et chainée — journal d'audit légalement vérifiable. Signal crucial pour les clients H'appi en Finance/Notariat/Juridique (Monassier, Cabinet Arc) soumis à des obligations de traçabilité légale. Argument commercial fort : "chatbots auditables clé en main" face aux concurrents génériques.
+- **lemony-ai/cascadeflow (2 432★) — réduire les coûts Claude de 30 à 70% sans changer le code métier** : le framework route automatiquement vers le modèle le moins cher capable de traiter chaque requête (Haiku → Sonnet → Opus selon complexité). Intégrer dès maintenant sur SAV-BOT : questions simples → Haiku ($0.8/M tokens), analyses complexes → Sonnet 4.6. Impact estimé : -40% sur la facture Anthropic mensuelle à volume constant.
+- **mobile-next/mobile-mcp (5 087★) — contrôle MCP d'apps mobiles iOS/Android** : un agent Claude peut piloter une app React Native comme un utilisateur humain (tap, scroll, screenshot, assertions). Pour H'appi : (1) automatiser les tests de la Quality Tracking App Mobilier de France, (2) ouvrir la voie à des agents mobiles autonomes pour les livreurs (créer un ticket défaut depuis l'app sans intervention humaine).
+- **Les frameworks agents convergent vers les mêmes primitives** : aden-hive/hive, griptape, beeai-framework et pydantic-deepagents alignent tous sur tools + memory + subagents + human-in-the-loop. H'appi doit standardiser sa dépendance agent avant de multiplier les projets. **Recommandation** : griptape (Python, FastAPI-compatible, 2 534★ stables) comme base + pydantic-deepagents pour les agents Claude Code-style sur les projets engineering internes.
+
+---
