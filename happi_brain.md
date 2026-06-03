@@ -1751,3 +1751,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **Les frameworks agents convergent vers les mêmes primitives** : aden-hive/hive, griptape, beeai-framework et pydantic-deepagents alignent tous sur tools + memory + subagents + human-in-the-loop. H'appi doit standardiser sa dépendance agent avant de multiplier les projets. **Recommandation** : griptape (Python, FastAPI-compatible, 2 534★ stables) comme base + pydantic-deepagents pour les agents Claude Code-style sur les projets engineering internes.
 
 ---
+
+## 📰 Veille Tech — 2026-06-03
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Opus 4.8 : Dynamic Workflows, Effort Control, Fast Mode 3× moins cher](https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/) | TechCrunch | #Claude #LLM |
+| [Claude Opus 4.8 — seul modèle à finir tous les cas Super-Agent, SWE-Bench 69.2%, honnêteté renforcée](https://thenewstack.io/claude-opus-48-release/) | The New Stack | #Claude #LLM |
+| [Claude Platform on AWS : Messages API + Files API + IAM auth sur infra Anthropic managée](https://platform.claude.com/docs/en/release-notes/overview) | Anthropic | #Claude #Deploy |
+| [chopratejas/headroom (+1 265★/j) — Compression tokens LLM 60-95%, lib + proxy + MCP server](https://github.com/chopratejas/headroom) | GitHub 🐍 | #LLM |
+| [microsoft/markitdown (+3 618★/j, 141K★) — Convertit PDF/Word/Excel/images en Markdown LLM-ready](https://github.com/microsoft/markitdown) | GitHub 🐍 | #LLM #RAG |
+| [supermemoryai/supermemory (+680★/j, 24K★) — Memory API ultra-rapide et scalable pour l'ère des agents IA](https://github.com/supermemoryai/supermemory) | GitHub TS | #LLM #agents |
+| [nanocoai/nanoclaw (29K★) — Agent léger multi-plateforme : WhatsApp, Telegram, Slack, Discord, Gmail + mémoire](https://github.com/nanocoai/nanoclaw) | GitHub TS | #chatbot #LLM |
+| [ElevenLabs v3 GA : tags audio expressifs [excited][whispers], <100ms, 11 000+ voix, 70+ langues](https://elevenlabs.io/) | ElevenLabs | #VoiceAI |
+| [Vapi 2026 : 62M appels/mois, SLA 99.99%, 14+ providers — orchestration IA téléphonie de référence](https://www.goodcall.com/voice-ai/vapi-vs-elevenlabs) | GoodCall | #VoiceAI |
+| [AI Act pleinement applicable le 2 août 2026 : amendes 35M€ ou 7% CA, labelling chatbot obligatoire](https://www.leto.legal/guides/ai-act-conformite) | Leto Legal | #RGPD #AIAct |
+| [CNIL publie ses recommandations RGPD pour le développement des systèmes IA (mars 2026)](https://www.cnil.fr/fr/developpement-des-systemes-dia-les-recommandations-de-la-cnil-pour-respecter-le-rgpd) | CNIL | #RGPD |
+| [ROI chatbot IA 2026 : $3.50 par $1 investi en moyenne, jusqu'à 8×, 80% résolution autonome (Zendesk)](https://aetherlink.ai/en/blog/ai-chatbot-roi-2026-enterprise-trends-compliance-guide-eindhoven) | AetherLink | #SaaS #chatbot |
+| [Claude : +306% de visites en 1 trimestre (203M→824M) — croissance la plus rapide parmi les LLM](https://momenticmarketing.com/blog/top-ai-chatbots) | Momentic | #Claude #SaaS |
+| [Deploy AI-Powered SaaS App on Railway — guide officiel FastAPI + PostgreSQL + Docker](https://docs.railway.com/guides/deploy-ai-saas) | Railway Docs | #Railway #Docker |
+| [FastAPI + Next.js 15 : le full-stack que personne ne documente mais que tout le monde utilise en 2026](https://dev.to/alexmayhew-dev/fastapi-nextjs-15-the-full-stack-nobodys-building-1hl9) | DEV.to | #FastAPI #Next.js |
+
+### 💡 Insights clés
+- **URGENCE CONFORMITÉ — AI Act applicable le 2 août 2026 (J-60)** : Labelling obligatoire dès qu'un chatbot ressemble à un humain, amendes jusqu'à €35M ou 7% du CA global. Action immédiate H'appi : (1) ajouter une déclaration "Cet assistant est un agent IA" dans l'UI de tous les chatbots clients, (2) créer un template DPA RGPD+AI Act standard pour les nouveaux contrats, (3) vérifier hébergements FR/EU (Scaleway, Hetzner, Railway EU). Secteurs prioritaires : Cabinet Arc, Groupe Monassier, Audit Expert.
+- **Claude Opus 4.8 + Dynamic Workflows = upgrade stratégique pour Happi Secretary** : Dynamic Workflows permettent à Claude de gérer des tâches longues en autonomie — idéal pour les analyses post-appel complexes (résumé multi-appels, détection tendances, rapport hebdo client). Fast Mode 3× moins cher à 2.5× la vitesse : migrer les analyses simples sur Fast Mode = ~-50% sur la facture Anthropic. Modèle à jour section 8 : `claude-opus-4-8` pour tâches complexes.
+- **headroom (60-95% compression tokens) = économies directes sur SAV-BOT et tous les chatbots H'appi** : Le middleware compresse le contexte envoyé à Claude sans dégrader la qualité des réponses. Sur SAV-BOT avec ses longs historiques + base de connaissance produits, cela peut diviser la facture API par 3 à 5×. À intégrer comme couche dans `claudeService.py` sur tous les nouveaux projets.
+- **supermemory (Memory API) : la pièce manquante pour Happi Secretary V2** : API persistante permettant aux agents de se souvenir entre sessions — reconnaître un appelant récurrent, mémoriser ses préférences, rappeler ses tickets passés. Compatible FastAPI, remplace un pgvector custom pour la mémoire épisodique. Priorité d'évaluation pour Brain V2.
+- **ROI 3.5× à 8× et 80% résolution autonome : argument commercial H'appi à quantifier par secteur** : Les benchmarks Zendesk 2026 donnent des chiffres béton pour convertir les prospects. Action : construire un calculateur ROI par secteur (€ économisés sur support/an vs coût mensuel chatbot) à intégrer dans les propositions commerciales. Exemple : 5 agents call center à 2 500€/mois → chatbot H'appi 500€/mois + 80% d'appels gérés = ROI positif dès le mois 1.
+
+---
