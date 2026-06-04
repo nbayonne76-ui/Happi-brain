@@ -1781,3 +1781,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **ROI 3.5× à 8× et 80% résolution autonome : argument commercial H'appi à quantifier par secteur** : Les benchmarks Zendesk 2026 donnent des chiffres béton pour convertir les prospects. Action : construire un calculateur ROI par secteur (€ économisés sur support/an vs coût mensuel chatbot) à intégrer dans les propositions commerciales. Exemple : 5 agents call center à 2 500€/mois → chatbot H'appi 500€/mois + 80% d'appels gérés = ROI positif dès le mois 1.
 
 ---
+
+## 📰 Veille Tech — 2026-06-04
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Managed Agents : sandbox configurable + MCP privés, agent loop chez Anthropic](https://www.anthropic.com/news) | Anthropic | #Claude #agents |
+| [MCP Roadmap 2026 : 97M downloads SDK/mois, 10 000+ serveurs publics, spec RC stateless](https://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/) | MCP Blog | #MCP #LLM |
+| [MCP : problèmes de production (scaling, sessions, SSO enterprise) enfin résolus](https://thenewstack.io/model-context-protocol-roadmap-2026/) | The New Stack | #MCP #SaaS |
+| [Retell AI 2026 : 30M appels/mois, pricing $0.07–0.31/min, G2 Best Agentic AI Software](https://www.retellai.com/blog/ai-voice-agent-pricing-full-cost-breakdown-platform-comparison-roi-analysis) | Retell AI | #VoiceAI |
+| [Meilleurs LLMs pour agents vocaux 2026 : Claude Sonnet 4.6 vs GPT-5.4 vs Gemini](https://softcery.com/lab/ai-voice-agents-choosing-the-right-llm) | Softcery | #VoiceAI #Claude |
+| [Vercel vs Railway pour SaaS 2026 : Next.js edge vs full-stack PostgreSQL + Docker](https://designrevision.com/blog/vercel-vs-railway) | DesignRevision | #Railway #Vercel |
+| [React Native + IA : éviter les pièges backend quand on ajoute des features IA (Expo)](https://blog.codeminer42.com/thinking-about-adding-ai-to-your-expo-react-native-app-read-this-first/) | CodeMiner42 | #ReactNative |
+| [NousResearch/hermes-agent — "The agent that grows with you" — trending GitHub Python](https://github.com/NousResearch/hermes-agent) | GitHub 🐍 | #LLM #agents |
+| [Open-LLM-VTuber — LLM interactif vocal avec avatar Live2D, multi-plateforme](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) | GitHub 🐍 | #VoiceAI #LLM |
+| [lfnovo/open-notebook — Open Source NotebookLM avec RAG et flexibilité étendue](https://github.com/lfnovo/open-notebook) | GitHub TS | #LLM #RAG |
+| [EU AI Act Article 50 : guide pratique des règles de transparence pour les chatbots](https://artificialintelligenceact.eu/transparency-rules-article-50/) | AI Act EU | #RGPD #AIAct |
+| [FastAPI dépasse Django et Flask : 40% d'adoption chez les devs Python en 2026](https://quartzdevs.com/resources/best-backend-frameworks-2026-top-server-side-tools) | QuartzDevs | #FastAPI |
+| [Build AI SaaS avec Next.js + FastAPI + Dokploy : retour d'expérience complet](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #SaaS |
+| [Claude Security : scans automatiques de codebase + suggestions de patches pour Enterprise](https://releasebot.io/updates/anthropic) | Releasebot | #Claude #SaaS |
+| [koala73/worldmonitor — Dashboard intelligence globale en temps réel, agrégation IA](https://github.com/koala73/worldmonitor) | GitHub TS | #SaaS #LLM |
+
+### 💡 Insights clés
+- **MCP devient le standard incontournable pour les chatbots en production** : 97M de téléchargements SDK/mois et 10 000+ serveurs publics montrent que MCP est passé du prototype à la production. La spec RC (juillet 2026) règle les problèmes de scaling horizontal et SSO enterprise. H'appi doit prioriser l'architecture Brain V2 avec un serveur MCP natif : chaque client pourra connecter son CRM, calendrier et base de connaissance directement à son chatbot.
+- **Claude Sonnet 4.6 = meilleur LLM pour agents vocaux en 2026 selon Softcery** : Benchmark confirme que Claude Sonnet 4.6 domine sur la latence, le français naturel et la compréhension contexte long. Happi Secretary utilise déjà ce modèle — le figer comme défaut obligatoire pour tous les nouveaux projets vocaux clients et le documenter dans la section 8.
+- **Retell AI pricing granulaire : modèle de coût à intégrer dans les devis H'appi** : Coût réel d'un agent vocal = $0.07–0.31/min, soit ~€4–18/heure de conversation. Pour un client avec 100 appels/jour × 3 min → coût infra €350–1 600/mois. Le pricing Maintenance Pro (100–500€/mois) doit refléter cette réalité — prévoir un palier "Maintenance Voice" avec volumétrie d'appels incluse.
+- **FastAPI #1 framework Python (40% part de marché) : avantage H'appi validé par l'industrie** : Le choix FastAPI est désormais l'évidence parmi les DSI et freelances Python, ce qui simplifie les recrutements, les audits techniques clients et les appels d'offres. À mettre en avant dans les propositions commerciales B2B.
+- **React Native + IA : audit sécurité à déclencher sur Quality Tracking App** : L'article CodeMiner42 pointe les pièges classiques (clés API exposées, pas de rate-limiting, absence de cache). Avant la livraison finale à Mobilier de France, auditer la gestion des appels IA dans l'app mobile (AsyncStorage, JWT refresh, environnements secrets).
+
+---
