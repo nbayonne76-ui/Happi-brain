@@ -1811,3 +1811,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **React Native + IA : audit sécurité à déclencher sur Quality Tracking App** : L'article CodeMiner42 pointe les pièges classiques (clés API exposées, pas de rate-limiting, absence de cache). Avant la livraison finale à Mobilier de France, auditer la gestion des appels IA dans l'app mobile (AsyncStorage, JWT refresh, environnements secrets).
 
 ---
+
+## 📰 Veille Tech — 2026-06-05
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Opus 4.8 : Dynamic Workflows — orchestration de centaines d'agents en arrière-plan](https://www.anthropic.com/news) | Anthropic | #Claude #agents |
+| [Anthropic IPO : valorisation $965Mds, candidature bourse — crédibilité Claude renforcée](https://www.washingtonpost.com/technology/2026/06/01/anthropic-maker-claude-files-with-sec-go-public-an-ipo/) | Washington Post | #Claude #Anthropic |
+| [Claude Managed Agents sur AWS : webhooks multiagents + sandboxes self-hosted disponibles](https://releasebot.io/updates/anthropic) | Releasebot | #Claude #SaaS |
+| [Vapi lève $50M Serie B — 1 milliard d'appels traités, $500M valorisation, Amazon Ring client](https://enterprisedna.co/resources/news/vapi-50m-series-b-voice-ai-enterprise-2026/) | Enterprise DNA | #VoiceAI |
+| [Vapi vs ElevenLabs 2026 : benchmark complet pricing, latence et qualité voix](https://www.goodcall.com/voice-ai/vapi-vs-elevenlabs) | GoodCall | #VoiceAI |
+| [ElevenLabs $500M ARR — IBM intègre ElevenLabs dans watsonx pour l'enterprise](https://www.startuphub.ai/ai-news/artificial-intelligence/2026/elevenlabs-gives-chat-agents-a-voice) | StartupHub.ai | #VoiceAI |
+| [Best AI Agent Frameworks 2026 : LangGraph, Claude Agent SDK, LlamaIndex — comparatif production](https://alicelabs.ai/en/insights/best-ai-agent-frameworks-2026) | AliceLabs | #LLM #agents |
+| [supermemoryai/supermemory — Memory API ultra-scalable pour agents IA (+469 étoiles auj.)](https://github.com/supermemoryai/supermemory) | GitHub TS | #LLM #chatbot |
+| [langgenius/dify — Plateforme agentic workflow prête pour la production (+160 étoiles auj.)](https://github.com/langgenius/dify) | GitHub TS | #chatbot #SaaS |
+| [chopratejas/headroom — Compression tokens LLM 60-95% : même précision, coût réduit](https://github.com/chopratejas/headroom) | GitHub Python | #LLM |
+| [NousResearch/hermes-agent — "The agent that grows with you" (+1913 étoiles auj.)](https://github.com/NousResearch/hermes-agent) | GitHub Python | #LLM #agents |
+| [AI Act 2026 : guide obligations conformité entreprise — double verrou RGPD + AI Act](https://www.rgpdkit.fr/blog/ai-act-2026-guide-obligations-entreprise) | RGPDKit | #RGPD #AIAct |
+| [Chatbot RGPD & CNIL 2026 : mention IA obligatoire, hallucinations = violation article 5](https://www.webotit.ai/blog/ia-conversationnelle/generalites/chatbot-et-rgpd-respectez-les-droits-des-personnes-avec-les-conseils-de-la-cnil) | Webotit | #RGPD |
+| [Build AI SaaS avec Next.js + FastAPI + Dokploy : guide déploiement VPS complet](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #SaaS |
+| [Streaming ChatGPT-style en production : FastAPI SSE + Next.js useChat — architecture 4 couches](https://ranjankumar.in/building-chatgpt-style-streaming-in-react-fastapi-next-js-production-guide) | RanjanKumar | #FastAPI |
+
+### 💡 Insights clés
+- **Anthropic IPO à $965Mds : argument commercial béton pour H'appi** — L'entrée en bourse d'Anthropic transforme Claude en choix technologique "safe" pour les DSI français. Les clients B2B cherchant un chatbot peuvent désormais s'appuyer sur un fournisseur de niveau NYSE. À intégrer dans les propositions commerciales comme signal de pérennité et de solidité financière.
+- **Claude Opus 4.8 + Dynamic Workflows = chatbots multi-agents sans surcoût infra** — L'orchestration de "dizaines à centaines d'agents en arrière-plan" est désormais native dans l'API Claude. Pour H'appi, c'est la brique manquante pour des chatbots SAV totalement autonomes : un agent principal route vers des sous-agents spécialisés (tickets P0, réservations Cal.com, escalations humaines) sans architecture custom. À évaluer pour Happi Secretary V2.
+- **Vapi Series B $50M + Amazon Ring : le choix Happi Secretary est le bon** — Vapi est devenu le standard de l'industrie Voice AI (1 milliard d'appels, choisi par Amazon Ring face à 40 concurrents). La prochaine proposition commerciale Happi Secretary doit mettre en avant ce partenariat : "Nous utilisons la plateforme Voice AI choisie par Amazon, adoptée par 80 000 développeurs dans le monde".
+- **supermemoryai/supermemory trending (+469 étoiles) : mémoire persistante sans pgvector custom** — Cette Memory API ultra-scalable est directement applicable à Happi Secretary V2 pour mémoriser les appelants récurrents entre sessions (préférences, tickets passés, historique). Remplace un développement pgvector/Redis complexe par un simple endpoint API. Évaluation prioritaire confirmée pour Brain V2.
+- **AI Act 2026 + RGPD : mise en conformité urgente des chatbots déployés** — Tout chatbot client H'appi doit afficher explicitement "Réponse générée par une IA" (AI Act Article 50) et contrôler les hallucinations sous peine de violer l'article 5 du RGPD. Action immédiate : ajouter un bandeau de transparence IA dans le widget embeddable template et auditer les déploiements existants (INnatural, SAV-BOT, Secretary).
+
+---
