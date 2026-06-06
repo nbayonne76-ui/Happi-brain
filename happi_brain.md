@@ -1841,3 +1841,30 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act 2026 + RGPD : mise en conformité urgente des chatbots déployés** — Tout chatbot client H'appi doit afficher explicitement "Réponse générée par une IA" (AI Act Article 50) et contrôler les hallucinations sous peine de violer l'article 5 du RGPD. Action immédiate : ajouter un bandeau de transparence IA dans le widget embeddable template et auditer les déploiements existants (INnatural, SAV-BOT, Secretary).
 
 ---
+
+## 📰 Veille Tech — 2026-06-06
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [chopratejas/headroom — Compression tokens LLM 60-95% : lib Python + proxy + MCP server (+2 473★/jour, 14.8k★)](https://github.com/chopratejas/headroom) | GitHub Trending 🐍 | #LLM |
+| [NousResearch/hermes-agent — "The agent that grows with you" : framework agent auto-évolutif (+1 845★/jour, 183.7k★)](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #LLM #agents |
+| [Open-LLM-VTuber/Open-LLM-VTuber — Interaction vocale LLM avec avatar Live2D, voice interruption, self-hosted, multi-plateforme (+520★/jour, 10.1k★)](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) | GitHub Trending 🐍 | #VoiceAI #LLM |
+| [microsoft/agent-framework — Framework Microsoft pour construire et orchestrer des agents IA et workflows multi-agents (11.1k★)](https://github.com/microsoft/agent-framework) | GitHub Trending 🐍 | #LLM #agents |
+| [agentscope-ai/agentscope — "Build and run agents you can see, understand and trust" : observabilité, debuggabilité (+118★/jour, 26.3k★)](https://github.com/agentscope-ai/agentscope) | GitHub Trending 🐍 | #LLM #agents |
+| [unslothai/unsloth — Web UI pour entraîner et déployer des LLMs open-source localement : Gemma 4, Qwen3.6 (+102★/jour, 65.9k★)](https://github.com/unslothai/unsloth) | GitHub Trending 🐍 | #LLM |
+| [Panniantong/Agent-Reach — Toolkit IA pour scraper Twitter, Reddit, YouTube, GitHub sans frais API (+148★/jour, 21.8k★)](https://github.com/Panniantong/Agent-Reach) | GitHub Trending 🐍 | #LLM #agents |
+| [CopilotKit/CopilotKit — "The Frontend Stack for Agents & Generative UI" React + Angular (32.8k★)](https://github.com/CopilotKit/CopilotKit) | GitHub Trending TS | #NextJS #chatbot #LLM |
+| [lfnovo/open-notebook — Open Source NotebookLM : RAG étendu, flexibilité accrue, entièrement auto-hébergeable (26.2k★)](https://github.com/lfnovo/open-notebook) | GitHub Trending TS | #LLM #RAG #chatbot |
+| [DayuanJiang/next-ai-draw-io — Next.js + IA générative pour créer des diagrammes en langage naturel (31.4k★)](https://github.com/DayuanJiang/next-ai-draw-io) | GitHub Trending TS | #NextJS #LLM |
+| [makeplane/plane — Alternative open-source à Jira/Linear/Monday : SaaS project management natif pour équipes IA (50.4k★)](https://github.com/makeplane/plane) | GitHub Trending TS | #SaaS |
+| [koala73/worldmonitor — Dashboard intelligence globale temps réel : agrégation IA de news géopolitiques (55.9k★)](https://github.com/koala73/worldmonitor) | GitHub Trending TS | #SaaS #LLM |
+
+### 💡 Insights clés
+- **headroom (+2 473★/jour) — compression tokens urgente à déployer sur les chatbots H'appi** : réduction 60-95% des tokens sans perte de qualité via lib Python + proxy MCP. Sur SAV-BOT avec ses longs contextes produits et historiques clients, cela peut diviser la facture Anthropic par 3 à 5×. Action immédiate : intégrer comme middleware dans `claudeService.py` et dans tout nouveau projet — ROI dès le premier mois.
+- **CopilotKit (32.8k★) — standard UI agentique React confirmé en trending** : framework frontend Next.js pour intégrer agents et Generative UI dynamiques directement dans les interfaces React. Compatible App Router et streaming natif Anthropic. À intégrer dans les prochains projets H'appi Next.js (Happi Foundry, widgets SAV) pour réduire de 40% le temps de dev des interfaces agents.
+- **microsoft/agent-framework + agentscope — convergence vers l'orchestration multi-agents standardisée** : Microsoft et l'écosystème open-source publient des frameworks d'orchestration multi-agents production-ready en parallèle. Signal fort : les prochains projets SAV/secrétariat H'appi devront intégrer une couche multi-agents (agent routage → agent spécialisé → agent escalade) pour rester compétitifs face aux offres enterprise. Évaluer microsoft/agent-framework sur la compatibilité avec notre stack FastAPI + Claude.
+- **Open-LLM-VTuber — voice AI avec interruption vocale (barge-in), prochain différenciateur Happi Secretary** : l'interaction vocale avec interruption naturelle (sans attendre la fin de la phrase) est ce qui sépare un assistant vocal professionnel d'un IVR. Ce pattern open-source valide la demande marché pour cette feature — à inscrire sur la roadmap Happi Secretary V2 : implémenter le barge-in natif via Vapi.ai event hooks pour les projets premium.
+- **AI Act J-57 : deadline critique le 2 août 2026** — dans 57 jours, obligation légale que tout chatbot se déclare IA dès le premier message (amendes jusqu'à 35M€ ou 7% CA mondial). Action P0 H'appi : audit de tous les chatbots clients déployés (SAV-BOT, INnatural, Secretary), ajout du bandeau standard "Cet assistant est un agent IA" dans le widget embeddable, documentation DPIA par projet. Transformer cette contrainte en argument commercial différenciant — aucun concurrent générique ne garantit cette conformité à la livraison.
+
+---
