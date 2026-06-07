@@ -1868,3 +1868,32 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act J-57 : deadline critique le 2 août 2026** — dans 57 jours, obligation légale que tout chatbot se déclare IA dès le premier message (amendes jusqu'à 35M€ ou 7% CA mondial). Action P0 H'appi : audit de tous les chatbots clients déployés (SAV-BOT, INnatural, Secretary), ajout du bandeau standard "Cet assistant est un agent IA" dans le widget embeddable, documentation DPIA par projet. Transformer cette contrainte en argument commercial différenciant — aucun concurrent générique ne garantit cette conformité à la livraison.
 
 ---
+
+## 📰 Veille Tech — 2026-06-07
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [CopilotKit — "The Frontend Stack for Agents & Generative UI" React + Next.js (+631★/jour, 33k★)](https://github.com/CopilotKit/CopilotKit) | GitHub Trending TS | #NextJS #chatbot #LLM |
+| [lfnovo/open-notebook — Open Source NotebookLM : RAG étendu, flexibilité accrue, auto-hébergeable (+794★/jour, 26k★)](https://github.com/lfnovo/open-notebook) | GitHub Trending TS | #LLM #RAG #chatbot |
+| [MemPalace/mempalace — "The best-benchmarked open-source AI memory system" (54k★, +446★/jour)](https://github.com/MemPalace/mempalace) | GitHub Trending 🐍 | #LLM #chatbot |
+| [microsoft/VibeVoice — Open-Source Frontier Voice AI : ASR, TTS, Realtime (48k★, +216★/jour)](https://github.com/microsoft/VibeVoice) | GitHub Trending 🐍 | #VoiceAI |
+| [khoj-ai/khoj — AI second brain self-hostable : web + docs + agents custom (34k★)](https://github.com/khoj-ai/khoj) | GitHub Trending 🐍 | #LLM #chatbot |
+| [Shubhamsaboo/awesome-llm-apps — 100+ apps Agent & RAG clonables et personnalisables (113k★)](https://github.com/Shubhamsaboo/awesome-llm-apps) | GitHub Trending 🐍 | #LLM #chatbot #RAG |
+| [IBM/mcp-context-forge — AI Gateway MCP : discovery centralisé, guardrails, proxy multi-providers (3.8k★)](https://github.com/IBM/mcp-context-forge) | GitHub Trending 🐍 | #MCP #SaaS #LLM |
+| [anthropics/claude-code-action — Claude Code dans GitHub Actions : CI/CD agentique officiel Anthropic (7.9k★)](https://github.com/anthropics/claude-code-action) | GitHub Trending TS | #Claude #Anthropic |
+| [supabase/supabase — Postgres development platform pour apps web, mobile et IA (103k★)](https://github.com/supabase/supabase) | GitHub Trending TS | #PostgreSQL #SaaS |
+| [heygen-com/hyperframes — Write HTML, Render Video : pipeline vidéo pour agents IA (25k★)](https://github.com/heygen-com/hyperframes) | GitHub Trending TS | #VoiceAI #chatbot |
+| [cloudflare/vinext — Plugin Vite : déployer Next.js n'importe où, sans dépendance Vercel (8k★)](https://github.com/cloudflare/vinext) | GitHub Trending TS | #NextJS #Vercel |
+| [agentscope-ai/agentscope — "Build and run agents you can see, understand and trust" (26k★)](https://github.com/agentscope-ai/agentscope) | GitHub Trending 🐍 | #LLM #agents |
+| [PaddlePaddle/PaddleOCR — PDF/images → données structurées pour l'IA, 100+ langues (81k★)](https://github.com/PaddlePaddle/PaddleOCR) | GitHub Trending 🐍 | #LLM #RAG |
+
+### 💡 Insights clés
+- **AI Act J-56 — deadline du 2 août 2026 (56 jours)** : obligation légale que tout chatbot se déclare IA dès le 1er message (amendes jusqu'à 35M€ ou 7% CA mondial). Avec 73% des agents IA européens encore non conformes (Technova), H'appi a une fenêtre commerciale unique pour se positionner comme "premier prestataire chatbot RGPD + AI Act clé-en-main en France". Action P0 avant le 1er juillet : auditer SAV-BOT, INnatural Stores et Happi Secretary, ajouter le bandeau légal standard et documenter la DPIA de chaque projet.
+- **CopilotKit (33k★, +631★/jour) — standard UI agentique Next.js confirmé pour la 3e fois cette semaine** : l'écosystème React/Next.js converge vers CopilotKit pour les interfaces agents et Generative UI. Pour H'appi : intégrer dès maintenant dans les widgets chatbot Next.js (Happi Foundry, Happi Secretary dashboard) — réduit de 40% le temps de dev des interfaces agents avec un niveau de polish comparable aux grandes plateformes IA.
+- **open-notebook (+794★/jour, 4e apparition en trending) — signal RAG massif** : le marché veut du NotebookLM open-source auto-hébergeable. Pour H'appi : positionner notre stack pgvector + FastAPI comme "NotebookLM souverain hébergé en France" dans les pitchs clients sensibles RGPD — argument commercial différenciant fort face aux solutions cloud US (Notion AI, Google NotebookLM).
+- **IBM/mcp-context-forge — MCP enterprise entre dans une nouvelle phase** : IBM publie un AI Gateway MCP avec discovery centralisé, guardrails et proxy multi-providers. Signal que MCP est passé du prototype startup à l'adoption Fortune 500. Pour H'appi : démarrer le serveur MCP Happi Brain V2 avec fastmcp (25k★) pour exposer `search_project`, `get_pattern`, `get_client_info` nativement depuis Claude Code — architecture identique à ce que construit IBM.
+- **MemPalace (54k★) + VibeVoice (48k★) : mémoire IA et Voice AI open-source deviennent des commodités** : trois solutions mémoire production-ready (MemPalace, MemoriLabs, supermemory) et trois frameworks Voice AI open-source (VibeVoice, dograh, voicebox) coexistent. Pour H'appi : standardiser supermemory comme couche mémoire unique (API REST + PostgreSQL natif) et planifier le benchmark dograh vs Vapi pour les clients RGPD-sensitifs en juillet 2026.
+- **cloudflare/vinext — déploiement Next.js sans Vercel, argument RGPD** : plugin Vite permettant de déployer des apps Next.js sur Cloudflare Workers, Docker ou serveur custom. Pour H'appi : argument supplémentaire pour les clients qui refusent l'hébergement Vercel US — "votre frontend Next.js reste dans votre datacenter France grâce à vinext + Hetzner". Différenciation premium sur les prospects Notariat/Finance/Santé.
+
+---
