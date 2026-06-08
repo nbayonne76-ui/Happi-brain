@@ -1897,3 +1897,32 @@ gradient-text → classe utilitaire (blue → purple)
 - **cloudflare/vinext — déploiement Next.js sans Vercel, argument RGPD** : plugin Vite permettant de déployer des apps Next.js sur Cloudflare Workers, Docker ou serveur custom. Pour H'appi : argument supplémentaire pour les clients qui refusent l'hébergement Vercel US — "votre frontend Next.js reste dans votre datacenter France grâce à vinext + Hetzner". Différenciation premium sur les prospects Notariat/Finance/Santé.
 
 ---
+## 📰 Veille Tech — 2026-06-08
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [NousResearch/hermes-agent — "The agent that grows with you" (186k★)](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #LLM #agents |
+| [MemPalace/mempalace — Benchmark #1 mémoire open-source pour agents IA (54k★)](https://github.com/MemPalace/mempalace) | GitHub Trending 🐍 | #LLM #chatbot |
+| [microsoft/VibeVoice — Voice AI open-source frontier : ASR, TTS, Realtime (48k★)](https://github.com/microsoft/VibeVoice) | GitHub Trending 🐍 | #VoiceAI |
+| [luongnv89/claude-howto — Guide visuel Claude Code avec templates agents (35k★)](https://github.com/luongnv89/claude-howto) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [khoj-ai/khoj — Second cerveau IA self-hostable : web + docs + agents (34k★)](https://github.com/khoj-ai/khoj) | GitHub Trending 🐍 | #LLM #chatbot |
+| [AstrBotDevs/AstrBot — Framework agent multi-plateformes IM + Docker (34k★)](https://github.com/AstrBotDevs/AstrBot) | GitHub Trending 🐍 | #LLM #chatbot #Docker |
+| [zjunlp/LightMem — ICLR 2026 : mémoire légère et efficace pour agents LLM (914★)](https://github.com/zjunlp/LightMem) | GitHub Search | #LLM #RAG |
+| [CopilotKit/CopilotKit — Frontend stack agents & Generative UI React/Next.js (33k★)](https://github.com/CopilotKit/CopilotKit) | GitHub Trending TS | #LLM #chatbot #NextJS |
+| [cline/cline — Agent de coding autonome : SDK, extension IDE ou CLI (62k★)](https://github.com/cline/cline) | GitHub Trending TS | #LLM #agents |
+| [simstudioai/sim — Orchestration agents Claude natif + Next.js + PostgreSQL (28k★)](https://github.com/simstudioai/sim) | GitHub Search | #LLM #chatbot #NextJS #Anthropic |
+| [lfnovo/open-notebook — Implémentation open-source de NotebookLM (27k★)](https://github.com/lfnovo/open-notebook) | GitHub Trending TS | #LLM #RAG |
+| [heygen-com/hyperframes — Write HTML, Render Video : pipeline vidéo pour agents IA (25k★)](https://github.com/heygen-com/hyperframes) | GitHub Trending TS | #VoiceAI #chatbot |
+| [1Panel-dev/MaxKB — Plateforme agent enterprise : pgvector + RAG + Docker (21k★)](https://github.com/1Panel-dev/MaxKB) | GitHub Search | #LLM #chatbot #PostgreSQL #RAG |
+| [baptisteArno/typebot.io — Chatbot builder puissant auto-hébergeable (9k★)](https://github.com/baptisteArno/typebot.io) | GitHub Search | #chatbot #NextJS |
+| [cgoinglove/better-chatbot — Chatbot MCP + Voice AI + Vercel intégré (1k★)](https://github.com/cgoinglove/better-chatbot) | GitHub Search | #chatbot #NextJS #VoiceAI #Vercel |
+
+### 💡 Insights clés
+- **NousResearch/hermes-agent (186k★!) — l'agent "adaptatif" devient le nouveau standard** : le projet le plus étoilé de tout GitHub trending aujourd'hui incarne le concept d'agent qui apprend et grandit avec l'usage. Pour H'appi : argument commercial prime — "votre chatbot H'appi apprend votre business au fil du temps" — différenciant fort face aux chatbots statiques des concurrents B2B. À intégrer dans le pitch deck Q3 2026.
+- **4 solutions mémoire agent en trending simultanément (MemPalace 54k★, LightMem ICLR 2026, memanto, honcho)** : la mémoire persistante devient une feature standard attendue dans tout chatbot professionnel. Pour H'appi : standardiser LightMem + pgvector dans Happi Foundry dès juillet — architecture légère, PostgreSQL-native, paper ICLR 2026 comme caution scientifique pour les clients exigeants.
+- **simstudioai/sim (28k★, Claude natif, Next.js + PostgreSQL)** : plateforme open-source d'orchestration multi-agents avec notre stack exacte. Pour H'appi : évaluer sim comme base de Happi Foundry v2 — évite 3-4 mois de dev ground-up et donne accès à une communauté active de 3k forks. À décider en atelier technique juillet 2026.
+- **MaxKB (21k★, pgvector + RAG enterprise, topics : pgvector + docker + mcp-server)** : confirme que PostgreSQL + pgvector est la stack RAG mainstream pour les chatbots enterprise. Pour H'appi : pitch "zéro vendor lock-in, hébergé sur votre PostgreSQL existant" — argument massif pour les DSI banque/assurance/santé qui refusent les bases exotiques.
+- **cline/cline (62k★) devient un SDK modulaire autonome** : l'agent coding le plus étoilé de GitHub se modularise. Pour H'appi : intégrer cline-sdk dans le pipeline Happi pour automatiser la génération de widgets et d'intégrations API clients — réduction estimée 30% du temps de livraison par projet.
+
+---
