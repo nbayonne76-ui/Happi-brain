@@ -1926,3 +1926,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **cline/cline (62k★) devient un SDK modulaire autonome** : l'agent coding le plus étoilé de GitHub se modularise. Pour H'appi : intégrer cline-sdk dans le pipeline Happi pour automatiser la génération de widgets et d'intégrations API clients — réduction estimée 30% du temps de livraison par projet.
 
 ---
+
+## 📰 Veille Tech — 2026-06-09
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [mvanhorn/last30days-skill — Agent skill qui recherche n'importe quel sujet sur Reddit, X, YouTube, HN, Polymarket et le web (+3 558★/jour, 35.4k★)](https://github.com/mvanhorn/last30days-skill) | GitHub Trending 🐍 | #LLM #agents |
+| [RyanCodrai/turbovec — Index vectoriel ultra-rapide (TurboQuant + Rust + Python) pour RAG (+1 729★/jour, 9.4k★)](https://github.com/RyanCodrai/turbovec) | GitHub Trending 🐍 | #LLM #RAG |
+| [langchain-ai/deepagents — "The batteries-included agent harness" LangChain (24.2k★)](https://github.com/langchain-ai/deepagents) | GitHub Trending 🐍 | #LLM #agents |
+| [google/skills — Agent Skills officielles Google pour produits Google (12.6k★, +461★/jour)](https://github.com/google/skills) | GitHub Trending 🐍 | #LLM #agents |
+| [Panniantong/Agent-Reach — Toolkit vision internet pour agents IA : Twitter, Reddit, YouTube, GitHub sans frais API (+679★/jour, 24.7k★)](https://github.com/Panniantong/Agent-Reach) | GitHub Trending 🐍 | #LLM #agents |
+| [MemPalace/mempalace — Benchmark #1 mémoire open-source pour agents IA (55k★, +170★/jour)](https://github.com/MemPalace/mempalace) | GitHub Trending 🐍 | #LLM #chatbot |
+| [luongnv89/claude-howto — Guide visuel Claude Code : concepts de base aux agents avancés (36k★, +312★/jour)](https://github.com/luongnv89/claude-howto) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [LibreChat — Alternative ChatGPT self-hosted avec MCP natif, agents, code interpreter, Docker (38.7k★)](https://github.com/danny-avila/LibreChat) | GitHub Trending TS | #LLM #chatbot #Docker |
+| [CopilotKit — "The Frontend Stack for Agents & Generative UI" React + Next.js (34.3k★)](https://github.com/CopilotKit/CopilotKit) | GitHub Trending TS | #NextJS #chatbot #LLM |
+| [lfnovo/open-notebook — Implémentation open-source de NotebookLM avec RAG étendu (28.1k★)](https://github.com/lfnovo/open-notebook) | GitHub Trending TS | #LLM #RAG #chatbot |
+| [twentyhq/twenty — "The open alternative to Salesforce, designed for AI" (49.5k★)](https://github.com/twentyhq/twenty) | GitHub Trending TS | #SaaS #LLM |
+| [danielmiessler/Personal_AI_Infrastructure — Infrastructure agentique pour amplification des capacités humaines (15.6k★)](https://github.com/danielmiessler/Personal_AI_Infrastructure) | GitHub Trending TS | #LLM #agents |
+| [777genius/agent-teams-ai — Système multi-agents kanban : 200+ modèles, 75+ providers LLM (1.2k★)](https://github.com/777genius/agent-teams-ai) | GitHub Trending TS | #LLM #agents #chatbot |
+
+### 💡 Insights clés
+- **mvanhorn/last30days-skill (+3 558★/jour!) — explosion virale : l'agent de veille comme produit standard** : cet outil donne à n'importe quel agent IA la capacité de rechercher et analyser n'importe quel sujet sur Reddit, X, YouTube, HN, Polymarket et le web en temps réel. C'est exactement la mission de Happi Brain Agent. Pour H'appi : intégrer ce pattern comme base de Happi Brain V2 — passer d'un agent de fetch manuel à un vrai agent de veille autonome avec skill modulaire. Roadmap : remplacer les WebFetch hardcodés par des appels à last30days-skill + enrichissement pgvector.
+- **LibreChat (38.7k★) — frontend chatbot RGPD-ready clé-en-main** : alternative ChatGPT 100% self-hostable avec MCP natif, agents autonomes, code interpreter et support Docker complet. Pour H'appi : présenter LibreChat comme base UI pour les clients qui veulent une expérience ChatGPT-like hébergée sur leur infrastructure France (Hetzner/OVH). Évite 2-3 mois de dev frontend — H'appi apporte la valeur sur le backend FastAPI + Claude + RAG métier.
+- **twentyhq/twenty (49.5k★) — CRM open-source "designed for AI" arrive en trending** : alternative à Salesforce avec agents IA natifs et architecture data-first. Pour H'appi : adopter Twenty comme CRM interne pour tracker prospects, clients et projets avec agents IA embarqués — remplace les feuilles de calcul et Notion. Bonus : Twenty est PostgreSQL-native, compatible avec notre stack pgvector.
+- **langchain-ai/deepagents + google/skills — standardisation des "skills" agent** : LangChain et Google publient chacun leur harness de "skills" modulaires pour agents. Signal fort que l'architecture agent devient skills-first (vs monolithique). Pour H'appi : anticiper en découpant les prochains agents en skills réutilisables : `skill_recherche_produit`, `skill_escalade_humain`, `skill_qualification_lead` — compatibles LangChain et directement vendables comme modules à d'autres intégrateurs.
+- **AI Act J-55 — deadline du 2 août 2026 (55 jours)** : le compte à rebours continue. Avec LibreChat et Twenty tous deux conçus "RGPD-first" en trending simultanément, le marché envoie un signal clair : la conformité devient un critère de sélection technique, pas seulement légal. Pour H'appi : intégrer dans toute proposition commerciale un tableau "Conformité AI Act / RGPD" avec checklist verte — différenciation visible dès la slide 2 du pitch.
+
+---
