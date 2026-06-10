@@ -1954,3 +1954,25 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act J-55 — deadline du 2 août 2026 (55 jours)** : le compte à rebours continue. Avec LibreChat et Twenty tous deux conçus "RGPD-first" en trending simultanément, le marché envoie un signal clair : la conformité devient un critère de sélection technique, pas seulement légal. Pour H'appi : intégrer dans toute proposition commerciale un tableau "Conformité AI Act / RGPD" avec checklist verte — différenciation visible dès la slide 2 du pitch.
 
 ---
+
+## 📰 Veille Tech — 2026-06-10
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/knowledge-work-plugins — 11 plugins Claude pour rôles métier : Sales, Support, Legal, Marketing, Finance avec MCP natif (20k★)](https://github.com/anthropics/knowledge-work-plugins) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [NVIDIA/SkillSpector — Scanner sécurité pour skills d'agents IA : 64 patterns, 16 catégories, 26.1% des skills vulnérables (1.9k★)](https://github.com/NVIDIA/SkillSpector) | GitHub Trending 🐍 | #LLM #agents #sécurité |
+| [Andyyyy64/whichllm — Benchmark hardware-aware : trouve le LLM local optimal selon ta config GPU/CPU/VRAM (4.2k★)](https://github.com/Andyyyy64/whichllm) | GitHub Trending 🐍 | #LLM |
+| [wonderwhy-er/DesktopCommanderMCP — MCP server Claude : terminal, filesystem, Docker isolation, Python/Node exec en mémoire (6.1k★)](https://github.com/wonderwhy-er/DesktopCommanderMCP) | GitHub Trending TS | #Claude #MCP #Docker |
+| [luongnv89/asm — Universal skill manager pour 19 agents IA (Claude Code, Cursor, Windsurf...) : TUI unifiée + security scanning (499★)](https://github.com/luongnv89/asm) | GitHub Trending TS | #LLM #agents |
+| [notadev-iamaura/OneRAG — Framework RAG production-ready FastAPI/Python : config 1-ligne pour 6 Vector DBs + Claude, OpenAI, Gemini, Ollama (124★)](https://github.com/notadev-iamaura/OneRAG) | GitHub API | #FastAPI #LLM #RAG #Claude |
+| [badhope/DATA-AI — Plateforme agent IA single-process : FastAPI backend + React 19 + streaming chat + multi-agent + RAG + memory (21★)](https://github.com/badhope/DATA-AI) | GitHub API | #FastAPI #LLM #agents #chatbot |
+
+### 💡 Insights clés
+- **anthropics/knowledge-work-plugins (20k★) — Anthropic lance les plugins métier pour Claude** : 11 plugins open-source spécialisés par rôle (Sales, Support, Legal, Marketing, Finance, Data...) avec MCP natif et intégration HubSpot, Slack, Linear, Figma, Snowflake. Architecture markdown + JSON — aucun code requis, personnalisable par toute équipe. Pour H'appi : ce repository EST notre architecture cible pour les déploiements enterprise. Proposer aux clients un "Claude métier on-premise" basé sur ce template — H'appi apporte le MCP FastAPI + pgvector + RGPD, Anthropic fournit le framework. Time-to-market divisé par 3 sur les projets Support et Sales.
+- **NVIDIA/SkillSpector — La sécurité des agents devient un prérequis** : NVIDIA publie un scanner qui révèle que 26.1% des skills d'agents contiennent des vulnérabilités et 5.2% sont probablement malveillants. Avec 64 patterns détectés (prompt injection, data exfiltration, privilege escalation), c'est un signal fort que le marché va exiger des audits de sécurité agent. Pour H'appi : intégrer SkillSpector dans le pipeline CI/CD de tous les projets agents — devenir "le seul prestataire chatbot avec audit sécurité certifié NVIDIA" est un argument commercial fort pour les clients banque/santé/legal.
+- **wonderwhy-er/DesktopCommanderMCP (6.1k★) — MCP + Docker isolation = l'agent autonome safe** : ce MCP server donne à Claude terminal + filesystem + Docker isolation + exécution Python/Node en mémoire. L'isolation Docker est la clé : un agent peut exécuter du code client sans risque. Pour H'appi : packager ce pattern dans l'offre "Happi Dev Agent" — un agent qui reçoit une tâche de dev, l'exécute dans un conteneur Docker isolé et retourne le résultat. Nouveau use case à proposer aux DSI.
+- **notadev-iamaura/OneRAG + badhope/DATA-AI — FastAPI + RAG : le pattern converge** : deux projets indépendants arrivent à la même architecture (FastAPI + Vector DB + LLM swappable dont Claude). Confirmation que notre stack technique est le standard émergent. Pour H'appi : publier un template FastAPI + Claude + pgvector sur GitHub pour attirer les dev-clients en inbound — chaque star sur ce repo est un prospect qualifié.
+- **AI Act J-54 — deadline du 2 août 2026 (54 jours)** : avec les knowledge-work-plugins Anthropic qui incluent des connecteurs Legal/Finance/Healthcare, la conformité IA devient un feature, pas un frein. Pour H'appi : positionner la prochaine proposition commerciale autour du thème "Votre Claude métier, conforme AI Act dès le jour 1" — utiliser anthropics/knowledge-work-plugins comme preuve de concept live lors des démos.
+
+---
