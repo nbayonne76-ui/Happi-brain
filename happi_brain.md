@@ -1976,3 +1976,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act J-54 — deadline du 2 août 2026 (54 jours)** : avec les knowledge-work-plugins Anthropic qui incluent des connecteurs Legal/Finance/Healthcare, la conformité IA devient un feature, pas un frein. Pour H'appi : positionner la prochaine proposition commerciale autour du thème "Votre Claude métier, conforme AI Act dès le jour 1" — utiliser anthropics/knowledge-work-plugins comme preuve de concept live lors des démos.
 
 ---
+
+## 📰 Veille Tech — 2026-06-11
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Fable 5 lancé le 9 juin — nouveau modèle "Mythos" au-dessus d'Opus](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #Anthropic |
+| [Anthropic IPO : $65B Series H, valorisation $965B, dépôt S-1 SEC](https://releasebot.io/updates/anthropic) | Releasebot | #Claude #Anthropic |
+| [Claude Managed Agents : cron scheduling + CLI tools + vault-stored secrets](https://releasebot.io/updates/anthropic/claude-code) | Releasebot | #Claude #Anthropic #agents |
+| [Claude intégré à Apple Foundation Models (iOS/macOS/visionOS 27)](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #Anthropic #VoiceAI |
+| [Claude écrit 80%+ de son propre code — Anthropic alerte sur l'auto-amélioration](https://uk.finance.yahoo.com/news/anthropic-says-something-unsettling-happening-103500529.html) | Yahoo Finance | #Claude #Anthropic |
+| [BerriAI/litellm (49k★) — SDK Python unifié pour 100+ LLMs en format OpenAI](https://github.com/BerriAI/litellm) | GitHub Trending 🐍 | #LLM #FastAPI |
+| [Fission-AI/OpenSpec — Spec-driven development (SDD) pour assistants IA coding](https://github.com/Fission-AI/OpenSpec) | GitHub Trending TS | #LLM #agents |
+| [activeloopai/hivemind — "One brain for all your agents" (mémoire multi-agents)](https://github.com/activeloopai/hivemind) | GitHub Trending TS | #LLM #agents |
+| [Railway : template deploy Next.js + Vercel AI SDK en un clic](https://railway.com/deploy/nextjs-ai-sdk) | Railway | #NextJS #Railway |
+| [Vercel vs Railway vs Render : comparatif déploiement apps IA 2026](https://remery.ai/blog/vercel-vs-railway-vs-render-ai-deployment) | Remery | #Vercel #Railway #Docker |
+| [AI Act : applicabilité totale au 2 août 2026 — obligations Articles 10+ actives](https://rgpd.com/ai-act/) | RGPD.com | #RGPD #AIAct |
+| [LLM en industries réglementées — GDPR/HIPAA/SOC2 Playbook 2026](https://www.truefoundry.com/blog/llm-deployment-in-regulated-industries-hipaa-soc2-and-gdpr-playbook-for-2026) | TrueFoundry | #RGPD #LLM |
+| [Top 10 AI Voice Agents 2026 : Synthflow, ElevenLabs, Retell AI (40+ langues)](https://www.robylon.ai/blog/top-10-ai-voice-agents-in-2026) | Robylon | #VoiceAI |
+| [Gartner : 40% des apps enterprise avec agents IA d'ici fin 2026 (vs 5% en 2025)](https://www.chatbot.com/blog/best-ai-agents/) | Chatbot.com | #LLM #agents #SaaS |
+| [awesome-ai-agents-2026 — 300+ agents, frameworks, benchmarks & comparatifs](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026) | GitHub | #LLM #agents |
+
+### 💡 Insights clés
+- **Claude Fable 5 + Managed Agents : nouvelle infrastructure H'appi** : Anthropic lance Claude Fable 5 (classe "Mythos", au-dessus d'Opus) et les Managed Agents avec cron scheduling, vault-stored secrets et browser integration. Pour H'appi : Happi Brain V2 peut devenir un Managed Agent natif — veille automatique planifiée, accès APIs clients via vault (zéro credentials exposées), browsing intégré. Migration à planifier dès Q3 2026.
+- **Anthropic IPO à $965B — crédibilité maximale pour les intégrateurs Claude** : Anthropic dépose un S-1 après une levée de $65B. Quand le fournisseur principal entre en bourse, les DSI grands comptes valident Claude comme infrastructure pérenne. Pour H'appi : mettre à jour le pitch deck avec "Powered by Claude (Anthropic — IPO 2026, $965B)" — signal de solidité que les comités d'investissement et DPO attendent.
+- **AI Act J-52 : 2 août 2026 = conformité obligatoire** : Article 10 (traçabilité données d'entraînement), transparence, documentation technique — tout s'active le 2 août. Les clients enterprise demanderont SOC 2, ISO 42001, DPA. Pour H'appi : livrer une "Happi Compliance Card" (1 page) dans chaque proposition dès maintenant — framing : "H'appi = seul partenaire chatbot conforme AI Act avant la deadline". Avantage concurrentiel immédiat sur les intégrateurs non préparés.
+- **Voice AI 2026 : Synthflow + ElevenLabs dominent, marché sans code** : Les voice agents gèrent des millions d'appels/jour (qualification leads, booking, support vocal multilingue 40+ langues). Pour H'appi : lancer l'offre "Happi Voice" — ElevenLabs TTS + Claude reasoning + FastAPI backend. Verticales cibles : cliniques médicales, agences immobilières, e-commerce francophone. ROI mesurable dès J+30.
+- **Gartner 40% enterprise + agents IA d'ici fin 2026 (vs 5% en 2025)** : La fenêtre commerciale se ferme — dans 6 mois, avoir des agents IA sera la norme, pas la différenciation. Pour H'appi : accélérer la production de 3 cas clients publiés avec ROI chiffré avant septembre 2026. Chaque démo validée ce trimestre vaut double.
+
+---
