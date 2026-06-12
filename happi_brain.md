@@ -2006,3 +2006,30 @@ gradient-text → classe utilitaire (blue → purple)
 - **Gartner 40% enterprise + agents IA d'ici fin 2026 (vs 5% en 2025)** : La fenêtre commerciale se ferme — dans 6 mois, avoir des agents IA sera la norme, pas la différenciation. Pour H'appi : accélérer la production de 3 cas clients publiés avec ROI chiffré avant septembre 2026. Chaque démo validée ce trimestre vaut double.
 
 ---
+
+## 📰 Veille Tech — 2026-06-12
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/claude-agent-sdk-python — SDK officiel Python pour agents Claude, en Trending GitHub aujourd'hui](https://github.com/anthropics/claude-agent-sdk-python) | GitHub Trending 🐍 | #Claude #Anthropic #agents |
+| [PatterAI/Patter (543★) — Voice AI SDK open-source, alternative Vapi/Retell : give your AI agent a phone number in 4 lines, Twilio/Telnyx/Plivo, MIT](https://github.com/PatterAI/Patter) | GitHub Search | #VoiceAI #chatbot |
+| [huggingface/speech-to-speech (4 873★) — Build local voice agents with open-source models, STT+TTS+LLM pipeline clé-en-main](https://github.com/huggingface/speech-to-speech) | GitHub Search | #VoiceAI #LLM |
+| [modelscope/FunASR — Speech recognition industriel : 170x temps réel, 50+ langues, diarisation, détection émotion, streaming](https://github.com/modelscope/FunASR) | GitHub Trending 🐍 | #VoiceAI |
+| [morettt/my-neuro (1 264★) — AI companion desktop avec voice cloning, mémoire longue durée, réponse <1s, Live2D](https://github.com/morettt/my-neuro) | GitHub Search | #VoiceAI #chatbot #LLM |
+| [onyx-dot-app/onyx (38.7k★) — Open Source AI Chat platform : tous LLMs, agents autonomes, code interpreter, RAG intégré](https://github.com/onyx-dot-app/onyx) | GitHub Trending 🐍 | #chatbot #LLM |
+| [waybarrios/vllm-mlx (1 325★) — Serveur compatible Claude+OpenAI pour Apple Silicon : MCP tool calling, multimodal, 400+ tok/s](https://github.com/waybarrios/vllm-mlx) | GitHub Search | #Claude #MCP #LLM |
+| [JSONbored/awesome-claude (262★) — Registre curé agents Claude : MCP servers, skills, hooks, commands, jobs — mis à jour quotidiennement](https://github.com/JSONbored/awesome-claude) | GitHub Search | #Claude #Anthropic #MCP |
+| [karpathy/autoresearch (208★/jour) — AI agents qui font de la recherche autonome sur GPU unique : nanochat training automatisé](https://github.com/karpathy/autoresearch) | GitHub Trending 🐍 | #LLM #agents |
+| [anomalyco/opencode (566★/jour) — The open source coding agent en TypeScript : alternative à Claude Code](https://github.com/anomalyco/opencode) | GitHub Trending TS | #LLM #agents |
+| [mksglu/context-mode (202★/jour) — Optimisation fenêtre contextuelle agents IA : réduction 98% de la consommation tokens](https://github.com/mksglu/context-mode) | GitHub Trending TS | #LLM #agents |
+| [triggerdotdev/trigger.dev — Build and deploy fully-managed AI agents & workflows : SaaS infra pour agents autonomes](https://github.com/triggerdotdev/trigger.dev) | GitHub Trending TS | #SaaS #agents #Docker |
+
+### 💡 Insights clés
+- **Voice AI : explosion simultanée de 4 projets le même jour** — PatterAI/Patter (alternative Vapi/Retell open-source), HuggingFace speech-to-speech, FunASR industriel et my-neuro convergent tous vers le même pattern : voice agent local, open-source, sub-seconde. Le marché Voice AI bascule de "SaaS propriétaire cher" vers "stack maîtrisable". Pour H'appi : lancer **Happi Voice** avant que ces outils deviennent des commodités — stack recommandée : FunASR (STT) + Claude (reasoning) + ElevenLabs (TTS) + FastAPI backend. Verticales prioritaires : support client téléphonique, prise de RDV médicale, qualification leads immobilier francophone.
+- **anthropics/claude-agent-sdk-python en Trending — la masse critique développeurs** : le SDK officiel Python pour agents Claude apparaît en Trending le jour même où la veille précédente signalait l'IPO Anthropic. Signal que les équipes dev adoptent massivement en ce moment précis. Pour H'appi : publier cette semaine un template GitHub "Happi Agent Starter" basé sur ce SDK + FastAPI + pgvector — chaque star = prospect qualifié entrant. Timing optimal.
+- **Context-mode (98% réduction tokens) — l'optimisation devient opérationnelle** : avec des agents Claude qui tournent en continu (Happi Brain, agents clients), la consommation tokens est un coût direct. context-mode propose une compression intelligente de la fenêtre contextuelle. Pour H'appi : intégrer ce middleware dans les déploiements clients à fort volume (support continu, agents 24/7) — réduire la facture Anthropic de 50-80% = argument commercial fort face aux concurrents non optimisés.
+- **trigger.dev + onyx-dot-app/onyx — l'infrastructure SaaS agent se standardise** : trigger.dev (orchestration agents managed) et onyx (frontend chatbot full-featured) arrivent ensemble en trending. Ces deux projets couvrent exactement les deux couches que H'appi construit sur mesure. Pour H'appi : évaluer onyx comme UI blanche pour les clients qui veulent une expérience ChatGPT-like hébergée (évite 2 mois de dev frontend) — H'appi apporte la valeur sur le backend métier + RGPD.
+- **AI Act J-51 — deadline du 2 août 2026 (51 jours)** : avec PatterAI/Patter et onyx qui sont tous deux MIT licensed et self-hostable, la conformité RGPD par architecture (données on-premise, pas de cloud tiers) devient un argument technique concret. Pour H'appi : ajouter dans chaque proposition un slide "Architecture RGPD by design" avec le diagramme stack locale — différenciation immédiate face aux concurrents qui s'appuient sur des SaaS Voice tiers (Vapi, Retell) sans DPA clair.
+
+---
