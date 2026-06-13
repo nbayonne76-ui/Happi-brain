@@ -2033,3 +2033,32 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act J-51 — deadline du 2 août 2026 (51 jours)** : avec PatterAI/Patter et onyx qui sont tous deux MIT licensed et self-hostable, la conformité RGPD par architecture (données on-premise, pas de cloud tiers) devient un argument technique concret. Pour H'appi : ajouter dans chaque proposition un slide "Architecture RGPD by design" avec le diagramme stack locale — différenciation immédiate face aux concurrents qui s'appuient sur des SaaS Voice tiers (Vapi, Retell) sans DPA clair.
 
 ---
+
+## 📰 Veille Tech — 2026-06-13
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/skills — Dépôt officiel "Agent Skills" Anthropic : bibliothèque de compétences agents Claude (459★ auj., 150k★)](https://github.com/anthropics/skills) | GitHub Trending 🐍 | #Claude #Anthropic #agents |
+| [NVIDIA/SkillSpector — Scanner sécurité agent skills : 26.1% vulnérables, 64 patterns détectés (813★ auj.)](https://github.com/NVIDIA/SkillSpector) | GitHub Trending 🐍 | #LLM #agents #sécurité |
+| [anomalyco/opencode — Coding agent open-source TypeScript : alternative Claude Code (525★ auj., 173k★)](https://github.com/anomalyco/opencode) | GitHub Trending TS | #LLM #agents |
+| [supermemoryai/supermemory — Memory & context engine pour apps IA, déploiement local (124★ auj., 26k★)](https://github.com/supermemoryai/supermemory) | GitHub Trending TS | #LLM #agents #chatbot |
+| [karpathy/autoresearch — Agents IA pour recherche autonome sur single-GPU (207★ auj.)](https://github.com/karpathy/autoresearch) | GitHub Trending 🐍 | #LLM #agents |
+| [BerriAI/litellm — Gateway unifié 100+ LLMs avec cost tracking et load-balancing (118★ auj., 50k★)](https://github.com/BerriAI/litellm) | GitHub Trending 🐍 | #LLM #FastAPI |
+| [Claude croît de +306% en un trimestre : 203M → 824M visites/mois, croissance la plus rapide des IA](https://momenticmarketing.com/blog/top-ai-chatbots) | Momentic Marketing | #Claude #Anthropic #SaaS |
+| [Claude Fable 5 & Opus 4.8 — Fable 5 : 95% SWE-bench, Opus 4.8 : 88.6%, workflows parallel-subagents](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #Anthropic |
+| [AI Voice 2026 — ElevenLabs sub-100ms, Vapi 62M calls/mois, Deepgram : état complet du stack Voice Agent](https://www.youngju.dev/blog/culture/2026-05-14-ai-voice-2026-elevenlabs-openai-realtime-cartesia-vapi-sesame-deepgram-comparison-deep-dive.en) | Chaos and Order | #VoiceAI |
+| [Expo raises $45M Series B + Expo Agent powered by Claude Code : mobile AI agent React Native prod-ready](https://www.prnewswire.com/news-releases/expo-raises-45m-series-b-and-launches-expo-agent-to-close-the-gap-from-idea-to-production-ready-mobile-apps-302744423.html) | PR Newswire | #ReactNative #Claude |
+| [PostgreSQL devient le substrat AI agent 2026 : pgvector HNSW, 4 couches mémoire en 1 DB](https://www.softwareseni.com/how-postgres-became-the-ai-agent-substrate-for-memory-branching-and-modern-hosting/) | SoftwareSeni | #PostgreSQL #LLM |
+| [RGPD : amendes IA dépassent €5.88B — conformité chatbots devient priorité réglementaire n°1](https://sitegpt.ai/blog/gdpr-compliant-chatbot-platforms) | SiteGPT | #RGPD #chatbot |
+| [AI Agent RGPD Compliance 2026 — Checklist 12 points : DPIA, DPA, transparence IA obligatoires](https://technovapartners.com/en/insights/security-gdpr-enterprise-ai-agents) | Technova Partners | #RGPD #LLM |
+| [How I built an AI SaaS with Next.js, FastAPI and Dokploy — architecture complète production 2026](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #NextJS #SaaS |
+
+### 💡 Insights clés
+- **anthropics/skills + Expo Agent : l'agent devient le produit** — Anthropic publie un dépôt officiel "Agent Skills" (459 étoiles en une seule journée) et Expo lance un agent mobile propulsé par Claude Code. Ce double signal confirme que les applications du futur ne sont plus des apps mais des agents composables. Pour H'appi : restructurer l'offre autour de "Happi Skills" — composants agents réutilisables par verticale (Support, Sales, Prise de RDV, Voice) livrables en semaines plutôt qu'en mois.
+- **NVIDIA/SkillSpector : 26.1% des agent skills sont vulnérables — l'audit devient vendable** — Quand NVIDIA publie un scanner qui révèle qu'1 skill sur 4 est vulnérable (prompt injection, data exfiltration, privilege escalation), les DSI vont l'inscrire dans leurs specs techniques. Pour H'appi : intégrer SkillSpector dans le pipeline CI/CD et livrer un "Happi Security Report" (1 page) avec chaque déploiement — différenciation immédiate pour les secteurs régulés (banque, santé, legal) avant que les concurrents ne réagissent.
+- **Claude +306% en Q1 2026 + Fable 5 : le timing commercial est maintenant** — Claude atteint 824M visites/mois (+306% en un trimestre) et sort Fable 5 (95% SWE-bench) le même mois. L'adoption massive génère une demande d'intégrateurs spécialisés que le marché ne couvre pas encore. Pour H'appi : créer avant fin juin une landing page "Partenaire intégrateur Claude certifié" avec au moins un cas client chiffré — capturer l'inbound pendant la fenêtre d'opportunité.
+- **PostgreSQL HNSW + pgvector : la stack H'appi est le standard 2026** — Les équipes AI d'entreprise effacent leurs stacks multi-DB pour consolider sur PostgreSQL (pgvector HNSW). Notre choix initial d'une base PostgreSQL unique pour SQL + vecteurs + mémoire est maintenant validé comme best practice industrie. Pour H'appi : publier un article technique "Comment H'appi gère la mémoire agent avec PostgreSQL + pgvector" — SEO ciblé + crédibilité + attirer les décideurs techniques qui cherchent ce pattern.
+- **AI Act J-50 — deadline 2 août 2026 (50 jours)** — Avec les amendes RGPD qui dépassent €5.88B et la checklist DPIA/DPA/transparence IA devenue obligatoire, chaque prospect est en mode urgence conformité. Pour H'appi : publier immédiatement le badge "AI Act Ready" sur happi-bot.com et ajouter un slide dédié dans chaque proposition — le délai de 50 jours crée une pression d'achat que seul un partenaire préparé peut transformer en signature rapide.
+
+---
