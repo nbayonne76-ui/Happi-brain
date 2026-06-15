@@ -2092,3 +2092,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **Railway one-click + Docker + Vercel AI SDK : time-to-ship client < 24h maintenant possible** — Railway propose un template Vercel AI Chatbot avec Redis + Postgres + HTTPS automatique en one-click. Pour H'appi : standardiser ce pipeline, documenter le "Happi Deploy Kit" et garantir contractuellement un déploiement en moins d'une journée ouvrable — argument de closing puissant face aux agences qui promettent 6 semaines.
 
 ---
+
+## 📰 Veille Tech — 2026-06-15
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Fable 5 & Mythos 5 : directive export-control US suspend l'accès mondial (12 juin 2026)](https://www.anthropic.com/news) | Anthropic | #Claude #Anthropic |
+| [TCS + DXC + Anthropic : Claude déployé dans les banques et industries régulées](https://blog.mean.ceo/anthropic-claude-news-june-2026/) | Mean CEO Blog | #Claude #Anthropic #SaaS |
+| [Claude : 20+ connecteurs MCP légaux + 12 plugins — law firms et équipes in-house](https://releasebot.io/updates/anthropic) | Releasebot | #Claude #LLM #agents |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy — retour d'expérience complet](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #NextJS #SaaS |
+| [Build Your Own Voice Assistant App with React Native + OpenAI Whisper in a Weekend](https://medium.com/react-native-journal/build-your-own-voice-assistant-app-with-react-native-openai-whisper-in-a-weekend-d7b60a1bdfb3) | Medium | #VoiceAI #ReactNative |
+| [Full On-Device Voice AI Stack React Native : Wake Word + STT + TTS + Speaker ID + VAD](https://medium.com/@frymanofer/built-a-full-on-device-voice-ai-stack-for-react-native-wake-word-stt-tts-speaker-5a2403a06d16) | Medium | #VoiceAI #ReactNative |
+| [React Native Speech Recognition 2026 : Complete Guide — Picovoice, Porcupine, Cheetah](https://picovoice.ai/blog/react-native-speech-recognition/) | Picovoice | #VoiceAI #ReactNative |
+| [The Best Platforms to Deploy AI Apps in 2026 — Railway blog officiel](https://blog.railway.com/p/best-platforms-deploy-ai-apps-2026) | Railway Blog | #Railway #Docker #SaaS |
+| [Railway vs Cloudflare vs Vercel : lequel choisir pour votre stack AI en 2026 ?](https://northflank.com/blog/railway-vs-cloudflare-vs-vercel) | Northflank | #Railway #Vercel #Docker |
+| [Deploy AI Chatbot with Streaming Responses — SSE + Next.js + Railway Guide officiel](https://docs.railway.com/guides/ai-chatbot-streaming) | Railway Docs | #Railway #chatbot #SaaS |
+| [Chatbot et RGPD en France 2026 : la conformité complète](https://www.agentsia.fr/chatbot-rgpd-france-2026/) | Agentsia.fr | #RGPD #chatbot |
+| [IA conversationnelle & protection des données : nouveaux enjeux RGPD sites web 2026](https://www.farman-communication.com/ia-conversationnelle-et-protection-des-donnees-nouveaux-enjeux-rgpd-pour-les-sites-web-en-2026/) | Farman Communication | #RGPD #chatbot |
+| [NVIDIA/SkillSpector — Security scanner for AI agent skills (964★ aujourd'hui)](https://github.com/NVIDIA/SkillSpector) | GitHub Trending 🐍 | #LLM #agents |
+| [andrewyng/aisuite — Unified interface for generative AI providers (Andrew Ng)](https://github.com/andrewyng/aisuite) | GitHub Trending 🐍 | #LLM #chatbot |
+| [lfnovo/open-notebook — Open Source NotebookLM avec plus de flexibilité (431★ aujourd'hui)](https://github.com/lfnovo/open-notebook) | GitHub Trending TS | #LLM #SaaS |
+
+### 💡 Insights clés
+- **Export-control US sur Claude Fable 5 & Mythos 5 — stratégie multi-modèle obligatoire pour H'appi** — Le 12 juin 2026, le gouvernement américain a suspendu l'accès aux deux derniers modèles Claude via une directive export-control. Pour H'appi : documenter une stratégie de fallback (Opus 4.8, open-source via aisuite d'Andrew Ng) dans chaque proposition — la résilience multi-modèles devient un argument de fiabilité et de souveraineté numérique face aux clients sensibles.
+- **TCS + DXC intègrent Claude dans les banques et compagnies aériennes — segment réglementé à cibler** — Les grands intégrateurs positionnent Claude dans les industries régulées. Pour H'appi : construire une offre verticale "Secteur Régulé" (banque, santé, RH, juridique) combinant RGPD + AI Act Ready + Claude — se différencier des intégrateurs généralistes par la spécialisation et la conformité documentée.
+- **Voice AI on-device React Native : la stack off-cloud mature en 2026** — Des développeurs publient des stacks Voice AI complètes fonctionnant entièrement on-device (Wake Word + STT + TTS + Speaker ID + VAD), sans envoyer de donnée dans le cloud. Pour H'appi : intégrer une offre Voice confidentielle dans le catalogue — les secteurs santé, juridique et RH vont exiger du traitement local pour être RGPD-conformes.
+- **Railway = meilleure plateforme deploy AI apps 2026 (consensus officiel)** — Railway se positionne via son blog officiel comme la référence pour les chatbots streaming avec SSE, Redis et Postgres intégrés en one-click. Pour H'appi : standardiser Railway + Next.js + SSE dans le Happi Deploy Kit — "déploiement production en moins de 24h" devient une promesse crédible et différenciante.
+- **AI Act J-47 (2 août 2026) : mention IA obligatoire pour tous les chatbots français** — Tout chatbot doit informer l'utilisateur qu'il interagit avec une IA. Agentsia.fr et Farman Communication ont publié des guides francophones complets. Pour H'appi : inclure systématiquement la mention "Ce service est géré par un assistant virtuel IA" dans chaque livraison + proposer un audit RGPD + AI Act comme service additionnel payant.
+
+---
