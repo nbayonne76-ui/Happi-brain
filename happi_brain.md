@@ -2152,3 +2152,30 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act J-46 (2 août 2026) : guide PME publié — H'appi peut vendre la conformité comme un service** — Fragments Studio et Sigma.fr publient des guides AI Act opérationnels pour les PME françaises. Pour H'appi : lancer un "Happi AI Act Readiness Audit" payant (checklist 15 points, rapport PDF, badge conformité) — les PME cherchent un expert pour les accompagner sur la réglementation, et H'appi peut se positionner comme le partenaire de confiance avant la deadline du 2 août.
 
 ---
+
+## 📰 Veille Tech — 2026-06-17
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Feds freaked over Fable 5 after 'fix this code', not jailbreak, say researchers](https://news.ycombinator.com/item?id=48552687) | HackerNews | #Claude #Anthropic |
+| [Amazon's Jassy Alerted White House to Anthropic Fable 5 Security Flaws, Triggering Export Ban](https://mlq.ai/news/amazons-jassy-alerted-white-house-to-anthropic-fable-5-security-flaws-triggering-export-ban/) | MLQ News | #Claude #Anthropic |
+| [When a Government Pulls an AI Model : Fable 5 et Mythos 5 — ce que la suspension signifie pour les équipes sécurité](https://snyk.io/blog/fable-mythos-suspension-security-takeaways/) | Snyk Blog | #Claude #Anthropic #LLM |
+| [Mastra empowers web devs to build AI agents in TypeScript](https://thenewstack.io/mastra-empowers-web-devs-to-build-ai-agents-in-typescript/) | The New Stack | #LLM #agents |
+| [vllm-project/vllm — moteur d'inférence LLM haute performance, faible empreinte mémoire (83 122★, +124 aujourd'hui)](https://github.com/vllm-project/vllm) | GitHub Trending 🐍 | #LLM |
+| [OpenBMB/VoxCPM — TTS multilingue tokenizer-free avec voice design créatif (30 268★, +408 aujourd'hui)](https://github.com/OpenBMB/VoxCPM) | GitHub Trending 🐍 | #VoiceAI |
+| [rmyndharis/OpenWA — Gateway WhatsApp API self-hosted et open source (+185 aujourd'hui)](https://github.com/rmyndharis/OpenWA) | GitHub Trending TS | #chatbot |
+| [diegosouzapw/OmniRoute — AI gateway gratuit, 160+ providers, compression de tokens, multi-modal (+107 aujourd'hui)](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [earendil-works/pi — Toolkit agent IA : API LLM unifiée, agent loop, TUI, CLI de coding agent (+326 aujourd'hui)](https://github.com/earendil-works/pi) | GitHub Trending TS | #LLM #agents |
+| [Vercel vs Railway (2026) : Serverless vs Full-Stack Hosting — quelle plateforme pour votre SaaS ?](https://www.buildmvpfast.com/compare/vercel-vs-railway) | BuildMVPFast | #Vercel #Railway #Docker #SaaS |
+| [Claude Updates by Anthropic — juin 2026 : Files API, Skills, MCP connector, prompt caching](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #Anthropic |
+| [AI Act Article 50 : la Commission européenne publie ses lignes directrices sur la transparence IA (consultation close le 3 juin)](https://www.donneespersonnelles.fr/actualite-ia-2026) | DonneesPersonnelles.fr | #RGPD #AIAct |
+| [IA générative & RGPD : 7 obligations à connaître pour les chatbots d'entreprise](https://yousign.com/fr-fr/blog/ia-generative-et-rgpd) | Yousign | #RGPD #chatbot |
+
+### 💡 Insights clés
+- **L'affaire Fable 5 s'aggrave : Amazon/Jassy au cœur du déclencheur de l'export-control** — De nouvelles révélations montrent que c'est Amazon (concurrent direct d'Anthropic sur l'inférence cloud) qui a alerté la Maison Blanche, et que le "jailbreak" n'était qu'un simple "fix this code". Pour H'appi : la dimension politique/concurrentielle de l'affaire renforce l'argument multi-modèle — documenter clairement dans les contrats clients quels modèles sont utilisés et pourquoi, pour anticiper d'éventuelles restrictions futures sur d'autres fournisseurs.
+- **Mastra (TypeScript) mature comme alternative à LangChain pour les agents IA** — The New Stack confirme la montée de frameworks d'agents 100% TypeScript. Pour H'appi : évaluer Mastra comme option pour les projets où le client veut tout garder dans l'écosystème Next.js/Node — réduit la complexité d'avoir un backend Python séparé juste pour l'orchestration LLM, accélère la livraison sur les stacks JS-only.
+- **OpenWA + OmniRoute + pi : la chaîne self-hosted (canal WhatsApp, gateway multi-provider, agent loop) est maintenant accessible en open source** — Ces trois projets GitHub Trending permettent de construire un chatbot WhatsApp avec routage multi-LLM sans dépendre d'un seul fournisseur ni payer des frais API par message. Pour H'appi : packager une offre "Happi WhatsApp" basée sur OpenWA + OmniRoute pour les PME françaises (commerce, santé, RH) qui veulent un canal WhatsApp à coût maîtrisé.
+- **AI Act Article 50 : les lignes directrices officielles de la Commission européenne sont en consultation depuis mai 2026** — Avant la deadline du 2 août, la Commission précise les obligations de transparence (signaler explicitement le caractère artificiel d'un système IA conversationnel). Pour H'appi : mettre à jour le "Happi AI Act Readiness Audit" avec les références officielles de l'article 50 — un audit basé sur le texte légal et non sur des blogs tiers est un argument de crédibilité supplémentaire face aux PME clientes.
+
+---
