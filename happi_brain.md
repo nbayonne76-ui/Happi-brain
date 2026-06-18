@@ -2179,3 +2179,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act Article 50 : les lignes directrices officielles de la Commission européenne sont en consultation depuis mai 2026** — Avant la deadline du 2 août, la Commission précise les obligations de transparence (signaler explicitement le caractère artificiel d'un système IA conversationnel). Pour H'appi : mettre à jour le "Happi AI Act Readiness Audit" avec les références officielles de l'article 50 — un audit basé sur le texte légal et non sur des blogs tiers est un argument de crédibilité supplémentaire face aux PME clientes.
 
 ---
+
+## 📰 Veille Tech — 2026-06-18
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Partner Program : Anthropic construit un écosystème d'intégrateurs autour de ses modèles](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/06/16/claude-partner-program-creates-an-ecosystem-around-anthropics-ai-models/) | Washington Post | #Claude #Anthropic #SaaS |
+| [Claude désormais disponible via Apple Foundation Models (iOS/macOS/visionOS 27) et Microsoft 365 Copilot (Excel/PowerPoint)](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #Anthropic |
+| [Claude Code : nouveau mode "ultracode" — effort xhigh automatique selon la complexité de la tâche](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #agents |
+| [Opus 4.8 : 4x moins d'erreurs de code laissées passer sans signalement vs Opus 4.7](https://releasebot.io/updates/anthropic) | Releasebot | #Claude #Anthropic |
+| [anthropics/skills — dépôt officiel Agent Skills d'Anthropic, 152 289★ (+519 aujourd'hui)](https://github.com/anthropics/skills) | GitHub Trending 🐍 | #Claude #LLM #agents |
+| [callstackincubator/ai — exécution LLM on-device pour React Native, compatible Vercel AI SDK](https://github.com/callstackincubator/ai) | GitHub Trending | #VoiceAI #ReactNative #Vercel |
+| [FastAPI vs Next.js : quel backend choisir pour une AI SaaS en 2026 ?](https://hassanr.com/blogs/fastapi-vs-nextjs-ai-saas-backend-2026.html) | Hassan Raza | #FastAPI #NextJS #SaaS |
+| [RocketChat/Rocket.Chat — CommsOS sécurisé pour opérations critiques, 45 637★ (+22 aujourd'hui)](https://github.com/RocketChat/Rocket.Chat) | GitHub Trending TS | #chatbot |
+| [continuedev/continue — agent de coding open-source, 33 992★ (+49 aujourd'hui)](https://github.com/continuedev/continue) | GitHub Trending TS | #LLM #agents |
+| [langfuse/langfuse — plateforme d'observabilité open-source pour applications LLM, 29 307★ (+71 aujourd'hui)](https://github.com/langfuse/langfuse) | GitHub Trending TS | #LLM #SaaS |
+| [infiniflow/ragflow — moteur RAG open-source combiné à des capacités agent, 83 076★ (+105 aujourd'hui)](https://github.com/infiniflow/ragflow) | GitHub Trending 🐍 | #LLM #SaaS |
+| [AI Act Article 50 : consultation européenne close le 3 juin — deadline du 2 août confirmée, amendes jusqu'à 35M€](https://www.donneespersonnelles.fr/actualite-ia-2026) | DonneesPersonnelles.fr | #RGPD #AIAct |
+| [ChatGPT/IA générative & RGPD : AIPD obligatoire pour les chatbots traitant des données sensibles ou à grande échelle](https://www.leto.legal/guides/intelligence-artificielle-chatgpt-et-rgpd) | Leto Legal | #RGPD #chatbot |
+
+### 💡 Insights clés
+- **Claude Partner Program : la fenêtre "intégrateur certifié" s'officialise — H'appi doit candidater maintenant** — Le Washington Post confirme qu'Anthropic structure un écosystème de partenaires autour de ses modèles, après le lancement déjà identifié des intégrateurs TCS/DXC. Pour H'appi : soumettre une candidature au programme partenaire avant qu'il ne se referme aux petites structures — être listé "Claude Partner" sur une landing devient un argument de crédibilité immédiat face aux PME.
+- **Claude disponible sur Apple Foundation Models + Microsoft 365 Copilot : la distribution explose, l'intégration devient le vrai métier** — Claude n'est plus seulement une API à appeler, c'est un modèle disponible nativement dans l'OS (iOS/macOS 27) et dans Excel/PowerPoint. Pour H'appi : repositionner l'offre non plus comme "on installe un chatbot" mais comme "on connecte vos outils existants à l'IA déjà présente sur vos appareils" — réduit la friction de vente auprès des PME qui ont déjà ces outils.
+- **Opus 4.8 quatre fois plus fiable sur la revue de code : argument de confiance technique pour les développements H'appi** — Anthropic communique sur la baisse drastique des erreurs silencieuses dans le code généré. Pour H'appi : mentionner ce chiffre dans les propositions commerciales techniques pour rassurer les clients sur la fiabilité du code livré par les agents IA utilisés en interne.
+- **callstackincubator/ai : le LLM on-device en React Native devient un produit mûr, pas juste une preuve de concept** — Compatible nativement avec le Vercel AI SDK, ce projet permet de faire tourner des modèles directement sur le téléphone, sans appel réseau. Pour H'appi : packager une offre "Voice/Chat 100% on-device" pour les secteurs santé/RH/juridique où aucune donnée ne doit transiter par un serveur tiers — argument RGPD imparable.
+- **AIPD obligatoire pour les chatbots IA générative à grande échelle : un nouveau service facturable pour H'appi** — Leto Legal précise les critères déclenchant l'obligation d'analyse d'impact (IA générative, données sensibles, grande échelle). Pour H'appi : ajouter une "AIPD chatbot" en option payante systématique dès qu'un projet client coche un de ces critères — transforme une contrainte réglementaire en ligne de revenu récurrente.
+
+---
