@@ -2207,3 +2207,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **AIPD obligatoire pour les chatbots IA générative à grande échelle : un nouveau service facturable pour H'appi** — Leto Legal précise les critères déclenchant l'obligation d'analyse d'impact (IA générative, données sensibles, grande échelle). Pour H'appi : ajouter une "AIPD chatbot" en option payante systématique dès qu'un projet client coche un de ces critères — transforme une contrainte réglementaire en ligne de revenu récurrente.
 
 ---
+
+## 📰 Veille Tech — 2026-06-19
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic dépose une demande d'introduction en bourse (IPO confidentielle)](https://www.cbsnews.com/news/anthropic-ipo-confidential-filing-claude-ai/) | CBS News | #Anthropic #Claude |
+| [Claude Sonnet 4 et Claude Opus 4 officiellement retirés le 15 juin 2026](https://platform.claude.com/docs/en/about-claude/model-deprecations) | Claude API Docs | #Claude #Anthropic |
+| [Claude ajoute l'accès aux connecteurs MCP gérés en entreprise, démarrage avec Okta — provisioning zero-touch](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #SaaS |
+| [Claude lance en beta publique les "Managed Agents" : automatisation par cron, secrets en vault, accès navigateur sécurisé](https://releasebot.io/updates/anthropic) | Releasebot | #Claude #agents #SaaS |
+| [Scan de 1 million de services IA exposés : credentials et logique métier de chatbots LLM en accès libre](https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html) | The Hacker News | #chatbot #LLM #RGPD |
+| [ElevenLabs atteint 500M$ d'ARR (vs 330M$ en déc. 2025), levée de 500M$ menée par Sequoia](https://www.assemblyai.com/blog/voice-ai-in-2026-series-1) | AssemblyAI / VoiceAISpace | #VoiceAI #SaaS |
+| [Retell étend son offre voice-only vers l'omnicanal (voix, chat, email, SMS) pour les centres d'appels](https://newmarketpitch.com/blogs/news/conversational-ai-funding-analysis) | New Market Pitch | #VoiceAI #chatbot #SaaS |
+| [livekit/agents — framework open-source pour agents voice AI temps réel, 11 048★ (+19 aujourd'hui)](https://github.com/livekit/agents) | GitHub Trending 🐍 | #VoiceAI #agents |
+| [crewAIInc/crewAI — framework d'orchestration d'agents IA autonomes, 53 940★ (+105 aujourd'hui)](https://github.com/crewAIInc/crewAI) | GitHub Trending 🐍 | #LLM #agents |
+| [modelcontextprotocol/servers — dépôt officiel des serveurs MCP, 87 431★ (+53 aujourd'hui)](https://github.com/modelcontextprotocol/servers) | GitHub Trending TS | #Claude #LLM |
+| [supabase/supabase — plateforme Postgres pour apps web/mobile/IA, 104 511★ (+82 aujourd'hui)](https://github.com/supabase/supabase) | GitHub Trending TS | #PostgreSQL #SaaS |
+| [Vercel vs Railway 2026 : quelle plateforme choisir pour déployer une stack Next.js/FastAPI ?](https://thesoftwarescout.com/vercel-vs-railway-2026-which-developer-platform-should-you-choose/) | The Software Scout | #Vercel #Railway #FastAPI #NextJS |
+| [RGPD + AI Act en 2026 : le DPA devient obligatoire pour toute IA conversationnelle intégrée à un site web](https://yousign.com/fr-fr/blog/ia-generative-et-rgpd) | Yousign | #RGPD #AIAct #chatbot |
+
+### 💡 Insights clés
+- **Anthropic dépose une demande d'IPO confidentielle : le marché de l'IA générative entre dans une phase de maturité financière** — Cette annonce (CBS News) confirme qu'Anthropic structure son modèle économique pour un horizon public. Pour H'appi : anticiper une pression accrue sur les prix d'API à moyen terme et sécuriser des contrats pluriannuels avec les clients pour lisser ce risque tarifaire.
+- **Retrait de Sonnet 4 et Opus 4 le 15 juin : vérifier immédiatement les intégrations clients encore sur ces modèles** — Releasebot confirme la dépréciation effective. Pour H'appi : auditer en urgence le portefeuille clients pour identifier toute intégration encore pointée sur Sonnet 4/Opus 4 et migrer vers Sonnet 4.6/Opus 4.8 avant interruption de service.
+- **Managed Agents Claude en beta publique : Anthropic propose nativement ce que H'appi vend déjà en sur-mesure** — L'automatisation cron avec secrets en vault et accès navigateur sécurisé rapproche l'offre native d'Anthropic des agents métier que H'appi construit pour ses clients PME. Pour H'appi : se différencier sur l'intégration verticale (workflows métier spécifiques, support, conformité RGPD locale) plutôt que sur l'infrastructure d'agent brute, qui devient une commodité.
+- **1 million de services IA exposés scannés : un argument commercial fort sur la sécurité des chatbots H'appi** — The Hacker News documente des credentials et logiques métier de chatbots accessibles publiquement (ex. instances Flowise mal configurées). Pour H'appi : intégrer un audit de sécurité (durcissement des endpoints, gestion des secrets) comme livrable standard de tout déploiement chatbot, et s'en servir comme argument différenciant face aux solutions no-code mal sécurisées.
+- **ElevenLabs à 500M$ d'ARR : la Voice AI confirme sa traction commerciale, fenêtre d'opportunité pour une offre packagée H'appi** — La croissance d'ElevenLabs et l'extension omnicanal de Retell montrent que le marché Voice AI/centres d'appels est en forte expansion. Pour H'appi : packager une offre "Voice AI omnicanal" (téléphonie + chat + email) pour les PME, en s'appuyant sur des frameworks open-source comme livekit/agents pour réduire les coûts de développement.
+
+---
