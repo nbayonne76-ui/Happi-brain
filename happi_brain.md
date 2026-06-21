@@ -2263,3 +2263,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **Bland (50M$) et VoiceRun (5,5M$) : la Voice AI enterprise continue d'attirer des financements importants malgré un contexte de levées plus sélectif** — Deux levées coup sur coup en juin confirment que le marché Voice AI B2B reste en forte traction, avec un accent sur le déploiement à l'échelle pour Voice Run et l'expansion vers les secteurs régulés pour Bland. Pour H'appi : prioriser une offre Voice AI packagée pour les secteurs réglementés (santé, RH, juridique) où la demande de fiabilité à l'échelle est la plus forte.
 
 ---
+
+## 📰 Veille Tech — 2026-06-21
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic devient la startup IA la plus valorisée, dépassant OpenAI](https://news.ycombinator.com/item?id=48336233) | HackerNews | #Claude #Anthropic |
+| [Anthropic annonce des partenariats avec TCS et DXC pour déployer Claude dans les secteurs régulés (banques, compagnies aériennes)](https://www.anthropic.com/news) | Anthropic Newsroom | #Claude #SaaS #RGPD |
+| [Workload Identity Federation (WIF) : Anthropic remplace les clés API statiques par des identifiants temporaires pour les comptes Enterprise](https://www.anthropic.com/news) | Anthropic Newsroom | #Claude #SaaS |
+| [Vercel lance "eve", un framework open-source qui traite les agents IA comme de simples répertoires de fichiers](https://thenewstack.io/) | The New Stack | #Vercel #agents |
+| [Next.js tourne désormais dans ChatGPT : Vercel apporte le web dynamique au chat IA](https://thenewstack.io/next-js-in-chatgpt-vercel-brings-the-dynamic-web-to-ai-chat/) | The New Stack | #Vercel #chatbot |
+| [Vapi atteint 500M$ de valorisation après avoir été choisi par Amazon Ring face à 40 concurrents Voice AI](https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/) | TechCrunch | #VoiceAI #SaaS |
+| [AethexAI lève 3M$ en pre-seed pour une Voice AI multilingue (anglais, français, arabe) construite sur un modèle et une couche d'orchestration propriétaires](https://techcrunch.com/2026/06/03/these-two-founders-left-goldman-and-meta-to-build-voice-ai-for-markets-everyone-else-overlooked/) | TechCrunch | #VoiceAI |
+| [La Commission européenne ouvre une consultation publique jusqu'au 23 juin 2026 sur la classification des IA à haut risque (Article 6 de l'AI Act)](https://www.donneespersonnelles.fr/actualite-ia-2026) | DonneesPersonnelles.fr | #RGPD #AIAct |
+| [La CNIL publie de nouvelles fiches IA précisant l'application du RGPD aux modèles et les conditions d'annotation des données d'entraînement](https://www.cnil.fr/fr/ia-et-rgpd-la-cnil-publie-ses-nouvelles-recommandations-pour-accompagner-une-innovation-responsable) | CNIL | #RGPD |
+| [onyx-dot-app/onyx — plateforme de chat IA open-source compatible avec plusieurs modèles de langage](https://github.com/onyx-dot-app/onyx) | GitHub Trending 🐍 | #chatbot #LLM |
+| [jamiepine/voicebox — studio vocal IA open-source pour cloner, dicter et créer de la voix](https://github.com/jamiepine/voicebox) | GitHub Trending TS | #VoiceAI |
+| [twentyhq/twenty — alternative open-source à Salesforce conçue dès le départ pour l'IA](https://github.com/twentyhq/twenty) | GitHub Trending TS | #SaaS |
+| [Building a Full-Stack AI Chatbot with FastAPI (Backend) and React (Frontend)](https://dev.to/vipascal99/building-a-full-stack-ai-chatbot-with-fastapi-backend-and-react-frontend-51ph) | DEV.to | #chatbot #FastAPI |
+
+### 💡 Insights clés
+- **Anthropic dépasse OpenAI en valorisation tout en multipliant les partenariats sectoriels (TCS, DXC) vers les banques et compagnies aériennes** — Le mouvement confirme la stratégie d'Anthropic de pénétrer les secteurs très régulés via des intégrateurs, exactement le terrain où H'appi positionne ses chatbots sur-mesure RGPD. Pour H'appi : capitaliser sur la crédibilité accrue de Claude auprès des grandes entreprises régulées pour vendre des déploiements "powered by Claude" aux PME du même secteur, sans attendre une offre packagée directe d'Anthropic sur ce segment.
+- **Workload Identity Federation : Anthropic pousse les clients Enterprise à abandonner les clés API statiques pour des identifiants temporaires** — Cette évolution réduit le risque de fuite de credentials mais impose une mise à jour de l'intégration technique. Pour H'appi : anticiper la migration vers WIF dans les futurs contrats Enterprise et en faire un argument de sécurité différenciant face aux solutions concurrentes qui utilisent encore des clés API statiques.
+- **AethexAI (Voice AI multilingue FR/EN/AR) confirme la demande pour des assistants vocaux capables de gérer dialectes et marchés locaux mal desservis** — Cette levée pre-seed cible précisément les marchés francophones et arabophones que les géants Voice AI américains négligent. Pour H'appi : c'est un signal direct de marché pour une offre Voice AI française/multilingue adaptée aux PME, créneau encore peu disputé par les leaders (Bland, Vapi, ElevenLabs) focalisés sur l'anglophone.
+- **Vapi choisi par Amazon Ring face à 40 concurrents : la Voice AI enterprise se consolide autour de quelques plateformes dominantes** — La sélection par un acteur grand public de l'envergure d'Amazon Ring valide la maturité du marché Voice AI mais accélère aussi la concentration. Pour H'appi : se différencier sur l'intégration verticale et le support local plutôt que de concurrencer frontalement ces plateformes sur l'infrastructure brute.
+- **Consultation européenne sur la classification des IA à haut risque (deadline 23 juin) + nouvelles fiches CNIL sur l'annotation des données d'entraînement** — Ces deux chantiers réglementaires parallèles vont préciser concrètement quelles obligations s'appliquent aux chatbots IA selon leur usage. Pour H'appi : suivre l'issue de la consultation pour ajuster le discours de conformité client, et utiliser les nouvelles fiches CNIL comme référence directe dans la documentation RGPD livrée aux clients.
+
+---
