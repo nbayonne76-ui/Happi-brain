@@ -2291,3 +2291,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **Consultation européenne sur la classification des IA à haut risque (deadline 23 juin) + nouvelles fiches CNIL sur l'annotation des données d'entraînement** — Ces deux chantiers réglementaires parallèles vont préciser concrètement quelles obligations s'appliquent aux chatbots IA selon leur usage. Pour H'appi : suivre l'issue de la consultation pour ajuster le discours de conformité client, et utiliser les nouvelles fiches CNIL comme référence directe dans la documentation RGPD livrée aux clients.
 
 ---
+
+## 📰 Veille Tech — 2026-06-22
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic's Claude Platform arrive en disponibilité générale sur AWS, avec accès direct aux mêmes API que via Anthropic](https://thenewstack.io/anthropics-claude-platform-comes-to-aws/) | The New Stack | #Claude #Anthropic |
+| [Cursor, Claude Code et Codex fusionnent vers une même pile d'outils de codage IA, sans plan coordonné entre éditeurs](https://thenewstack.io/ai-coding-tool-stack/) | The New Stack | #Claude #LLM |
+| [Retell AI lance "Retell Guardrails" : une couche programmable qui bloque des sujets sensibles et détecte/rédige les PII en temps réel dans les logs vocaux](https://www.retellai.com/blog/best-voice-ai-providers) | Retell AI (Voice AI) | #VoiceAI #RGPD |
+| [bytedance/deer-flow — harness "SuperAgent" long-horizon capable de chercher, coder et créer de façon autonome](https://github.com/bytedance/deer-flow) | GitHub Trending 🐍 | #agents #LLM |
+| [topoteretes/cognee — plateforme open-source de mémoire IA donnant aux agents une mémoire persistante long-terme](https://github.com/topoteretes/cognee) | GitHub Trending 🐍 | #LLM #chatbot |
+| [mukul975/Anthropic-Cybersecurity-Skills — compétences cybersécurité structurées pour agents IA, mappées aux frameworks de sécurité majeurs](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [FlowiseAI/Flowise — outil low-code pour construire des agents IA visuellement, toujours en forte traction sur le trending TypeScript](https://github.com/FlowiseAI/Flowise) | GitHub Trending TS | #chatbot #LLM |
+| [firecrawl/firecrawl — API de scraping web à grande échelle pensée pour alimenter des agents IA en données](https://github.com/firecrawl/firecrawl) | GitHub Trending TS | #LLM |
+| [tashfeenahmed/freellmapi — proxy compatible OpenAI combinant les quotas gratuits de plusieurs fournisseurs LLM avec routage et failover intelligents](https://github.com/tashfeenahmed/freellmapi) | GitHub Trending TS | #LLM #SaaS |
+| [FastAPI + Next.js 15 : la stack full-stack que personne ne construit encore, malgré ses avantages pour les apps IA](https://dev.to/alexmayhewdev/fastapi-nextjs-15-the-full-stack-nobodys-building-1hl9) | DEV.to | #FastAPI #chatbot |
+| [Comment j'ai construit un SaaS IA avec Next.js, FastAPI et Dokploy](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #SaaS #FastAPI |
+| [Streamer les réponses IA dans Next.js : Claude, OpenAI et le Vercel AI SDK](https://dev.to/whoffagents/streaming-ai-responses-in-nextjs-claude-openai-and-the-vercel-ai-sdk-1gm3) | DEV.to | #Claude #chatbot |
+| [J'ai construit une app Next.js prête pour la production avec Claude Code — leçons apprises](https://dev.to/julykk/i-built-a-production-ready-nextjs-app-using-claude-code-heres-what-i-learned-3e0c) | DEV.to | #Claude #chatbot |
+
+### 💡 Insights clés
+- **Retell Guardrails (détection et rédaction PII en temps réel dans les logs vocaux) : la conformité RGPD devient une fonctionnalité produit attendue, pas un service à part** — Retell intègre nativement le blocage de sujets sensibles et la rédaction de données personnelles dans son infrastructure Voice AI. Pour H'appi : packager une couche équivalente de filtrage/rédaction PII dans les chatbots texte et vocaux livrés aux clients français, comme standard non négociable plutôt que comme option payante — c'est désormais l'attendu du marché.
+- **Claude Platform en GA sur AWS : Anthropic multiplie les points d'accès (direct, Bedrock, AWS) pour capter les clients Enterprise déjà sur AWS** — Cette disponibilité élargie facilite l'intégration de Claude pour les clients H'appi déjà hébergés chez AWS, en plus des options Scaleway/Hetzner. Pour H'appi : conserver la flexibilité multi-hébergeur dans l'architecture (Claude via API directe, Bedrock ou AWS selon la contrainte de souveraineté du client) sans verrouiller un seul canal d'accès.
+- **La fusion de facto entre Cursor, Claude Code et Codex en une seule pile d'outils de codage IA confirme la consolidation de la couche "agent de développement"** — Les frontières entre éditeurs IA et agents de code s'effacent, ce qui accélère la productivité de développement mais banalise l'outillage. Pour H'appi : continuer à différencier sur le produit final livré au client (chatbot métier intégré) plutôt que sur la rapidité de développement interne, qui devient un avantage de moins en moins défendable face à la concurrence outillée de la même façon.
+- **deer-flow (SuperAgent long-horizon) et cognee (mémoire persistante pour agents) : la mémoire long-terme et l'autonomie multi-étapes deviennent les briques open-source à surveiller pour les chatbots H'appi de nouvelle génération** — Ces deux projets trending confirment que la prochaine vague de différenciation chatbot porte sur la persistance de contexte et l'autonomie d'exécution, pas seulement la génération de réponses. Pour H'appi : évaluer cognee comme brique de mémoire long-terme pour les chatbots SAV/secrétariat nécessitant un suivi client dans la durée (au-delà d'une session).
+- **freellmapi (proxy multi-fournisseurs LLM avec failover) renforce l'argument de robustesse multi-provider après l'épisode de suspension Fable 5/Mythos 5** — Ce projet open-source illustre une tendance à se prémunir contre la dépendance à un seul fournisseur LLM en routant intelligemment entre quotas gratuits et fournisseurs. Pour H'appi : s'inspirer de ce pattern de failover pour la clause de repli multi-provider déjà identifiée comme nécessaire dans les contrats Enterprise.
+
+---
