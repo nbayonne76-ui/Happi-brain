@@ -2319,3 +2319,29 @@ gradient-text → classe utilitaire (blue → purple)
 - **freellmapi (proxy multi-fournisseurs LLM avec failover) renforce l'argument de robustesse multi-provider après l'épisode de suspension Fable 5/Mythos 5** — Ce projet open-source illustre une tendance à se prémunir contre la dépendance à un seul fournisseur LLM en routant intelligemment entre quotas gratuits et fournisseurs. Pour H'appi : s'inspirer de ce pattern de failover pour la clause de repli multi-provider déjà identifiée comme nécessaire dans les contrats Enterprise.
 
 ---
+## 📰 Veille Tech — 2026-06-23
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [jamiepine/voicebox — studio vocal IA open-source : cloner une voix, dicter, créer du contenu audio](https://github.com/jamiepine/voicebox) | GitHub Trending TS | #VoiceAI |
+| [vectorize-io/hindsight — "Agent Memory That Learns", brique de mémoire agentique qui s'améliore avec l'usage](https://github.com/vectorize-io/hindsight) | GitHub Trending 🐍 | #LLM #chatbot |
+| [unclecode/crawl4ai — scraper web open-source pensé pour nourrir des LLM en données structurées](https://github.com/unclecode/crawl4ai) | GitHub Trending 🐍 | #LLM |
+| [twentyhq/twenty — alternative open-source à Salesforce conçue nativement pour l'IA, toujours en tête du trending TypeScript](https://github.com/twentyhq/twenty) | GitHub Trending TS | #SaaS #chatbot |
+| [Micron et Anthropic annoncent un accord stratégique sur l'infrastructure mémoire/stockage pour l'IA, avec investissement de Micron dans la Series H d'Anthropic](https://investors.micron.com/news-releases/news-release-details/micron-and-anthropic-announce-strategic-agreement-scale-next) | Micron Investor News | #Claude #Anthropic |
+| [Anthropic dépose un dossier confidentiel d'introduction en bourse (IPO), avec une valorisation visée et $47Md de revenu annualisé porté par les abonnements Claude](https://www.cbsnews.com/news/anthropic-ipo-confidential-filing-claude-ai/) | CBS News | #Claude #Anthropic |
+| [Anthropic scinde les abonnements Claude : ce qui change pour les indie hackers à partir du 15 juin](https://devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026) | DevToolPicks | #Claude #SaaS |
+| [La CNIL publie de nouvelles recommandations IA/RGPD pour accompagner une innovation responsable](https://www.cnil.fr/fr/ia-et-rgpd-la-cnil-publie-ses-nouvelles-recommandations-pour-accompagner-une-innovation-responsable) | CNIL | #RGPD |
+| [AI Act 2026 : le paquet omnibus numérique allège les obligations pour la majorité des entreprises, application complète prévue le 2 août 2026](https://www.donneespersonnelles.fr/actualite-ia-2026) | DonnéesPersonnelles.fr | #RGPD |
+| [Railway vs Vercel en 2026 : pattern dominant — frontend Next.js sur Vercel, backend + base de données sur Railway pour le coût et la DX](https://docs.railway.com/platform/compare-to-vercel) | Railway Docs | #Vercel #Railway #SaaS |
+| [Designing a Production-Grade AI Chat Service with FastAPI : garder un chatbot rapide, scalable et facile à étendre](https://dev.to/masteringbackend/designing-a-production-grade-ai-chat-service-with-fastapi-8o2) | DEV.to | #FastAPI #chatbot |
+| [Building a Full-Stack AI Chatbot with FastAPI (Backend) and React (Frontend)](https://dev.to/vipascal99/building-a-full-stack-ai-chatbot-with-fastapi-backend-and-react-frontend-51ph) | DEV.to | #FastAPI #chatbot |
+
+### 💡 Insights clés
+- **Micron investit dans la Series H d'Anthropic et l'IPO confidentielle se confirme : Anthropic consolide son assise financière (47 Md$ de revenu annualisé) pendant que les abonnements Claude se segmentent (split du 15 juin pour les indie hackers)** — Pour H'appi : anticiper une possible évolution tarifaire ou de quotas côté API Claude liée à cette restructuration commerciale, et vérifier régulièrement les conditions des crédits Agent SDK utilisés en interne.
+- **hindsight (mémoire d'agent qui apprend) confirme, après cognee hier, que la mémoire long-terme agentique est désormais une catégorie à part entière de l'écosystème open-source** — Deux briques mémoire trending en deux jours signalent une consolidation rapide de ce segment. Pour H'appi : comparer cognee et hindsight avant de choisir une brique de mémoire persistante pour les chatbots SAV/secrétariat à suivi client dans la durée, plutôt que d'en adopter une par défaut.
+- **voicebox (studio vocal IA open-source) illustre la démocratisation des outils de clonage/dictée vocale, un signal direct pour l'offre Voice AI d'H'appi** — Ce type d'outil grand public abaisse la barrière technique pour des concurrents low-cost sur le vocal. Pour H'appi : continuer à différencier sur l'intégration métier (SAV, secrétariat) et la conformité RGPD plutôt que sur la brique de synthèse/clonage vocal elle-même, qui devient commoditisée.
+- **Le paquet omnibus numérique de l'AI Act allège les obligations pour la majorité des entreprises, avec application complète au 2 août 2026 et la CNIL qui publie de nouvelles recommandations IA/RGPD** — Cet allègement réglementaire ne dispense pas les chatbots du RGPD dès qu'une donnée personnelle transite par un prompt. Pour H'appi : utiliser cette clarification CNIL comme argument commercial rassurant auprès des clients PME, tout en maintenant le niveau d'exigence RGPD déjà en place (rédaction PII, hébergement souverain).
+- **Le pattern "Vercel pour le frontend Next.js + Railway pour le backend/DB" se confirme comme standard 2026 pour les stacks SaaS légères** — Cette répartition coût/performance correspond exactement à l'architecture déjà recommandée pour les petits clients H'appi. Pour H'appi : formaliser ce pattern comme option de déploiement par défaut dans les devis clients SaaS, en complément des offres Scaleway/Hetzner pour les clients à contrainte de souveraineté forte.
+
+---
