@@ -2345,3 +2345,30 @@ gradient-text → classe utilitaire (blue → purple)
 - **Le pattern "Vercel pour le frontend Next.js + Railway pour le backend/DB" se confirme comme standard 2026 pour les stacks SaaS légères** — Cette répartition coût/performance correspond exactement à l'architecture déjà recommandée pour les petits clients H'appi. Pour H'appi : formaliser ce pattern comme option de déploiement par défaut dans les devis clients SaaS, en complément des offres Scaleway/Hetzner pour les clients à contrainte de souveraineté forte.
 
 ---
+## 📰 Veille Tech — 2026-06-24
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic fait sortir Claude Cowork de la preview et l'amène directement en disponibilité générale Enterprise](https://thenewstack.io/anthropic-takes-claude-cowork-out-of-preview-and-straight-into-the-enterprise/) | The New Stack | #Claude #SaaS |
+| [Anthropic double gratuitement les limites d'usage de Claude Cowork (5h) du 5 juin au 5 juillet 2026](https://thenewstack.io/anthropic-claude-cowork-promotion/) | The New Stack | #Claude #SaaS |
+| [Anthropic va laisser ses "managed agents" rêver — orchestration multi-agents axée résultats avec pilotage minimal](https://thenewstack.io/anthropic-managed-agents-dreaming-outcomes/) | The New Stack | #Claude #LLM |
+| [Claude atteint 10,3% de part de marché des assistants IA, ChatGPT tombe sous 50% pour la première fois face à Gemini et Claude](https://www.buildfastwithai.com/blogs/ai-news-today-june-22-2026) | BuildFastWithAI | #Claude #LLM |
+| [Sesame (startup conversationnelle fondée par des ex-Oculus) lance son app iOS publique avec 4 agents vocaux à personnalité et mémoire propres](https://techcrunch.com/2026/05/28/sesame-the-conversational-ai-startup-from-oculus-founders-launches-its-ios-app/) | TechCrunch | #VoiceAI #chatbot |
+| [AethexAI lève 3M$ en pré-seed pour combler le manque de Voice AI en Afrique/Moyen-Orient, déjà 17 000 appels/jour traités](https://techcrunch.com/2026/06/03/these-two-founders-left-goldman-and-meta-to-build-voice-ai-for-markets-everyone-else-overlooked/) | TechCrunch | #VoiceAI #SaaS |
+| [La CNIL publie ses nouvelles fiches IA précisant l'application du RGPD aux modèles, les impératifs de sécurité et l'annotation des données d'entraînement](https://www.cnil.fr/fr/ia-finalisation-recommandations-developpement-des-systemes-ia) | CNIL | #RGPD |
+| [La CNIL se prépare à devenir autorité de surveillance de marché au titre de l'AI Act, en plus de son rôle de protection des données](https://www.cnil.fr/fr/developpement-des-systemes-dia-les-recommandations-de-la-cnil-pour-respecter-le-rgpd) | CNIL | #RGPD |
+| [anthropics/claude-plugins-official — répertoire officiel et géré par Anthropic de plugins Claude Code de haute qualité](https://github.com/anthropics/claude-plugins-official) | GitHub Trending 🐍 | #Claude |
+| [aws/agent-toolkit-for-aws — serveurs MCP, skills et plugins officiels AWS pour construire des agents IA sur AWS](https://github.com/aws/agent-toolkit-for-aws) | GitHub Trending 🐍 | #LLM |
+| [ZhuLinsen/daily_stock_analysis — analyse boursière multi-marché pilotée par LLM avec dashboards de décision et notifications automatiques](https://github.com/ZhuLinsen/daily_stock_analysis) | GitHub Trending 🐍 | #LLM |
+| [garrytan/gstack — setup Claude Code complet de Garry Tan : 23 outils jouant les rôles CEO, Designer, Eng Manager, Release Manager, QA](https://github.com/garrytan/gstack) | GitHub Trending TS | #Claude |
+| [Railway vs Vercel (2026) : quand migrer son frontend, et ce que Vercel ne peut pas remplacer (pas de conteneurs Docker en prod)](https://dev.to/thedevopsguy/railway-vs-vercel-when-to-migrate-your-frontend-4bo6) | DEV.to | #Vercel #Railway #Docker |
+
+### 💡 Insights clés
+- **Claude Cowork passe en disponibilité générale Enterprise avec des limites doublées gratuitement jusqu'au 5 juillet : Anthropic pousse fort sur l'adoption no-code en entreprise** — Pour H'appi, c'est un signal que les clients Enterprise vont s'habituer à déléguer des tâches à des agents Claude sans coder, ce qui peut ouvrir une porte d'entrée commerciale (proposer des chatbots H'appi comme extension métier de Cowork) plutôt qu'une menace de désintermédiation.
+- **Claude franchit 10,3% de part de marché des assistants IA pendant que ChatGPT tombe sous 50% pour la première fois : la bascule vers un paysage multi-modèles s'accélère** — Pour H'appi : l'argument "agnostique LLM avec Claude par défaut" reste pertinent commercialement, la diversification du marché renforçant la légitimité de proposer plusieurs fournisseurs selon le client plutôt qu'un choix unique.
+- **Sesame (4 agents vocaux à mémoire et personnalité propres) et AethexAI (Voice AI pour marchés sous-desservis, 17k appels/jour) confirment que la Voice AI conversationnelle à forte personnalité/mémoire devient un standard d'expérience attendu, pas un gadget** — Pour H'appi : enrichir l'offre Voice AI (SAV, secrétariat) avec une mémoire de conversation persistante et une personnalité de marque cohérente plutôt qu'une voix générique, pour rester compétitif face à ces nouveaux entrants spécialisés.
+- **La CNIL publie ses fiches IA définitives sur l'application du RGPD aux modèles (sécurité, annotation des données d'entraînement) et se prépare à devenir autorité de surveillance de marché au titre de l'AI Act, cumulant les deux casquettes** — Pour H'appi : ces fiches CNIL deviennent la référence à citer explicitement dans la documentation de conformité fournie aux clients, et anticiper un contrôle combiné RGPD + AI Act par le même régulateur français à moyen terme.
+- **L'article Railway vs Vercel confirme que Vercel doit rester une cible frontend pure (pas de conteneurs Docker en prod) tandis que Railway gère nativement PostgreSQL/Redis et les workers** — Cela valide la recommandation déjà formulée par H'appi (Next.js sur Vercel + backend/DB sur Railway) et donne un argument technique précis (absence de support Docker en prod côté Vercel) à utiliser dans les devis pour justifier l'architecture hybride auprès des clients techniques.
+
+---
