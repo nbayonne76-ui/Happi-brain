@@ -2372,3 +2372,25 @@ gradient-text → classe utilitaire (blue → purple)
 - **L'article Railway vs Vercel confirme que Vercel doit rester une cible frontend pure (pas de conteneurs Docker en prod) tandis que Railway gère nativement PostgreSQL/Redis et les workers** — Cela valide la recommandation déjà formulée par H'appi (Next.js sur Vercel + backend/DB sur Railway) et donne un argument technique précis (absence de support Docker en prod côté Vercel) à utiliser dans les devis pour justifier l'architecture hybride auprès des clients techniques.
 
 ---
+## 📰 Veille Tech — 2026-06-25
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic accuse Alibaba d'avoir "illicitement" accédé à ses modèles Claude via des milliers de comptes frauduleux ciblant le code et le raisonnement agentique](https://www.bloomberg.com/news/articles/2026-06-24/anthropic-accuses-alibaba-of-illicitly-accessing-its-ai-models) | Bloomberg | #Claude #Anthropic |
+| [Anthropic lance Claude Tag : un coéquipier IA persistant et partagé dans Slack, qui mémorise le contexte des canaux et agit de façon autonome](https://thenewstack.io/anthropic-claude-tag-slack/) | The New Stack | #Claude #chatbot #SaaS |
+| [Claude Tag remplace l'app "Claude in Slack" — fenêtre de migration de 30 jours pour les admins, bascule complète au 3 août 2026](https://venturebeat.com/technology/anthropic-launches-claude-tag-replacing-its-slack-app-with-a-persistent-ai-teammate-that-learns-monitors-and-works-autonomously) | VentureBeat | #Claude #chatbot |
+| [La CNIL publie ses recommandations sur la base légale de l'intérêt légitime pour le développement de systèmes d'IA](https://www.cnil.fr/fr/recommandations-developpement-ia-interet-legitime) | CNIL | #RGPD |
+| [tashfeenahmed/freellmapi reste en tête du trending TypeScript : proxy compatible OpenAI qui cumule les quotas gratuits de plusieurs fournisseurs LLM avec routage et failover](https://github.com/tashfeenahmed/freellmapi) | GitHub Trending TS | #LLM |
+| [nocodb/nocodb — alternative open-source et auto-hébergeable à Airtable, toujours en tête du trending TypeScript](https://github.com/nocodb/nocodb) | GitHub Trending TS | #SaaS |
+| [BerriAI/litellm — SDK/proxy Python unifié pour 100+ API LLM avec cost tracking et load-balancing, de retour dans le trending Python](https://github.com/BerriAI/litellm) | GitHub Trending 🐍 | #LLM #FastAPI |
+
+### 💡 Insights clés
+- **Anthropic accuse Alibaba (lab Qwen) d'avoir orchestré un accès frauduleux massif à Claude pour cibler ses capacités de code et de raisonnement agentique** — Pour H'appi : ce type d'incident renforce l'argument de sécurité/conformité dans les propositions commerciales (traçabilité des accès API, clés scoped/rotatives) et confirme que la robustesse anti-abus des fournisseurs LLM devient un critère de choix à part entière, pas seulement la qualité du modèle.
+- **Claude Tag transforme Claude en coéquipier persistant dans Slack (mémoire de canal, action autonome, migration forcée avant le 3 août 2026)** — Ce pattern "assistant qui accumule du contexte métier au fil du temps sans être resollicité à chaque fois" est exactement la promesse différenciante que doivent porter les chatbots H'appi (SAV, secrétariat) face aux bots stateless. À citer comme référence produit Anthropic dans les pitchs : "même logique que Claude Tag, appliquée à votre métier."
+- **La CNIL clarifie l'intérêt légitime comme base légale possible pour entraîner/développer des systèmes d'IA sur données personnelles** — Pour H'appi : documenter explicitement la base légale retenue (consentement vs intérêt légitime) dans chaque projet chatbot traitant des données clients, et ajouter cette clarification CNIL aux argumentaires de conformité déjà fournis aux clients PME.
+- **freellmapi (anti-dépendance multi-LLM) et litellm (gateway unifié 100+ LLM) cohabitent en haut du trending : la résilience multi-fournisseur s'installe comme standard d'architecture, pas comme exception post-incident** — Pour H'appi : formaliser un pattern de gateway LLM par défaut (Claude en primaire, fallback configurable) dans l'architecture de référence proposée aux clients Enterprise, plutôt que de le traiter au cas par cas après un incident fournisseur.
+- **nocodb (alternative open-source à Airtable) confirme la demande pour des couches de données no-code self-hostables** — Pour H'appi : option intéressante comme back-office léger pour les clients PME qui veulent gérer eux-mêmes le contenu de leur chatbot (FAQ, base de connaissance) sans dépendre d'un outil SaaS tiers payant à chaque utilisateur additionnel.
+
+---
+---
