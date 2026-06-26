@@ -2393,4 +2393,30 @@ gradient-text → classe utilitaire (blue → purple)
 - **nocodb (alternative open-source à Airtable) confirme la demande pour des couches de données no-code self-hostables** — Pour H'appi : option intéressante comme back-office léger pour les clients PME qui veulent gérer eux-mêmes le contenu de leur chatbot (FAQ, base de connaissance) sans dépendre d'un outil SaaS tiers payant à chaque utilisateur additionnel.
 
 ---
+## 📰 Veille Tech — 2026-06-26
+> Mis à jour automatiquement par Happi Brain Agent
+> ⚠️ HackerNews, DEV.to et The New Stack RSS étaient bloqués par la politique réseau de l'environnement (403 sur le proxy de sortie) — veille basée uniquement sur GitHub Trending aujourd'hui.
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic-Cybersecurity-Skills — skills de cybersécurité structurés mappés aux frameworks majeurs pour agents IA](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [MinerU — transforme PDF et documents Office complexes en markdown/JSON prêt pour LLM](https://github.com/opendatalab/MinerU) | GitHub Trending 🐍 | #LLM |
+| [free-llm-api-resources — compilation de ressources d'inférence LLM gratuites accessibles via API](https://github.com/cheahjs/free-llm-api-resources) | GitHub Trending 🐍 | #LLM |
+| [NVIDIA-NeMo/Speech — framework IA générative scalable pour LLM, multimodal et Voice AI](https://github.com/NVIDIA-NeMo/Speech) | GitHub Trending 🐍 | #LLM #VoiceAI |
+| [llama_index — plateforme leader d'agents documentaires et d'OCR pour applications LLM](https://github.com/run-llama/llama_index) | GitHub Trending 🐍 | #LLM |
+| [open-seo (every-app) — alternative open-source à Semrush et Ahrefs](https://github.com/every-app/open-seo) | GitHub Trending TS | #SaaS |
+| [gstack (garrytan) — setup Claude Code avec 23 outils opinionés (CEO, Designer, Engineering Manager, QA...)](https://github.com/garrytan/gstack) | GitHub Trending TS | #Claude #chatbot |
+| [voicebox (jamiepine) — studio vocal IA open-source : clonage, dictée, création](https://github.com/jamiepine/voicebox) | GitHub Trending TS | #VoiceAI |
+| [mulmoclaude (receptron) — client Claude Code multi-modal](https://github.com/receptron/mulmoclaude) | GitHub Trending TS | #Claude |
+| [Claude-Code-Agent-Monitor (hoangsonww) — dashboard de monitoring temps réel pour Claude Code avec analytics de session](https://github.com/hoangsonww/Claude-Code-Agent-Monitor) | GitHub Trending TS | #Claude |
+| [compound-engineering-plugin (EveryInc) — plugin officiel "Compound Engineering" pour Claude Code, Codex, Cursor et autres](https://github.com/EveryInc/compound-engineering-plugin) | GitHub Trending TS | #Claude |
+
+### 💡 Insights clés
+- **L'écosystème d'outils tiers construits autour de Claude Code explose (gstack, mulmoclaude, Claude-Code-Agent-Monitor, compound-engineering-plugin tous dans le top trending TypeScript du jour)** — Pour H'appi : signal fort que Claude Code devient une plateforme à part entière avec son propre écosystème de plugins/monitoring, ce qui légitime de proposer du tooling Claude Code packagé (monitoring, plugins métier) comme service complémentaire aux chatbots livrés aux clients.
+- **MinerU et llama_index confirment que la conversion de documents (PDF, Office) en contenu "LLM-ready" et l'indexation documentaire restent un besoin central des applications LLM** — Pour H'appi : ce pattern correspond directement aux chatbots de base de connaissance (FAQ, documentation interne) vendus aux clients PME — vérifier que le pipeline d'ingestion documentaire actuel s'appuie sur des briques équivalentes ou à défaut évaluer MinerU pour les documents PDF complexes.
+- **voicebox (studio vocal IA open-source) et NVIDIA-NeMo/Speech (framework Voice AI scalable) confirment la dynamique d'outillage open-source autour de la Voice AI, en complément des entrants spécialisés (Sesame, AethexAI) déjà identifiés** — Pour H'appi : surveiller ces briques open-source comme alternative de coût pour les futurs projets Voice AI plutôt que de dépendre uniquement de fournisseurs propriétaires.
+- **free-llm-api-resources reste en tête du trending Python, dans la continuité de freellmapi/litellm déjà identifiés hier** — confirme que la résilience multi-fournisseur LLM (fallback, quotas gratuits cumulés) est une tendance de fond et non un pic ponctuel ; à conserver dans l'architecture de référence H'appi.
+- **Coupure réseau partielle des sources de veille (HackerNews, DEV.to, The New Stack bloqués par la politique d'environnement)** — à signaler : si ces blocages persistent demain, envisager une source de repli (ex. flux RSS via un proxy autorisé ou agrégateur alternatif) pour ne pas dépendre uniquement de GitHub Trending.
+
+---
 ---
