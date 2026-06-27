@@ -2419,4 +2419,28 @@ gradient-text → classe utilitaire (blue → purple)
 - **Coupure réseau partielle des sources de veille (HackerNews, DEV.to, The New Stack bloqués par la politique d'environnement)** — à signaler : si ces blocages persistent demain, envisager une source de repli (ex. flux RSS via un proxy autorisé ou agrégateur alternatif) pour ne pas dépendre uniquement de GitHub Trending.
 
 ---
+## 📰 Veille Tech — 2026-06-27
+> Mis à jour automatiquement par Happi Brain Agent
+> ⚠️ Pour le 2e jour consécutif, HackerNews, DEV.to et The New Stack RSS sont bloqués par la politique réseau de l'environnement (403 sur le proxy de sortie, y compris sur les endpoints de repli HN Algolia et thenewstack.io en direct) — veille basée uniquement sur GitHub Trending aujourd'hui.
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [opendatalab/MinerU — reste en tête du trending Python : conversion PDF/Office complexes en markdown/JSON prêt pour workflows agentiques](https://github.com/opendatalab/MinerU) | GitHub Trending 🐍 | #LLM |
+| [aws/agent-toolkit-for-aws — serveurs MCP, skills et plugins officiels AWS pour construire des agents IA sur l'infra AWS](https://github.com/aws/agent-toolkit-for-aws) | GitHub Trending 🐍 | #LLM #SaaS |
+| [vllm-project/vllm — moteur d'inférence et de serving LLM à haut débit et économe en mémoire, de retour dans le trending Python](https://github.com/vllm-project/vllm) | GitHub Trending 🐍 | #LLM |
+| [Panniantong/Agent-Reach — donne aux agents IA des capacités de navigation web pour rechercher et analyser Twitter, Reddit, YouTube, GitHub](https://github.com/Panniantong/Agent-Reach) | GitHub Trending 🐍 | #LLM #chatbot |
+| [ZhuLinsen/daily_stock_analysis — système d'analyse boursière piloté par LLM avec données multi-sources et notifications automatisées](https://github.com/ZhuLinsen/daily_stock_analysis) | GitHub Trending 🐍 | #LLM #SaaS |
+| [garrytan/gstack — setup Claude Code avec 23 outils opinionés, toujours en tête du trending TypeScript](https://github.com/garrytan/gstack) | GitHub Trending TS | #Claude #chatbot |
+| [every-app/open-seo — alternative open-source aux plateformes SEO commerciales (Semrush, Ahrefs), toujours en tête du trending TypeScript](https://github.com/every-app/open-seo) | GitHub Trending TS | #SaaS |
+| [stablyai/orca — environnement de développement d'agents pour exécuter des agents de code en parallèle sur desktop et mobile](https://github.com/stablyai/orca) | GitHub Trending TS | #LLM #chatbot |
+| [anomalyco/opencode — agent de codage open-source](https://github.com/anomalyco/opencode) | GitHub Trending TS | #LLM #chatbot |
+
+### 💡 Insights clés
+- **MinerU et vllm dominent à nouveau le trending Python (3e jour pour MinerU, retour de vllm)** — Pour H'appi : confirme que l'ingestion documentaire LLM-ready (PDF/Office → markdown) et l'inférence LLM auto-hébergée à fort débit restent des briques d'infrastructure de référence ; vllm est à évaluer si H'appi envisage un jour de self-host un modèle open-weight en complément de Claude pour réduire les coûts d'inférence à fort volume.
+- **aws/agent-toolkit-for-aws (serveurs MCP officiels AWS) signale que les grands clouders standardisent désormais l'agentic AI via MCP côté infrastructure, pas seulement côté IDE** — Pour H'appi : argument supplémentaire pour positionner les chatbots livrés comme compatibles MCP nativement, facilitant leur intégration future dans l'écosystème agentique des clients qui migrent vers ces toolkits cloud.
+- **gstack et opencode confirment, pour le 2e jour, que l'écosystème d'outillage autour des agents de code (Claude Code et alternatives open-source) continue de s'étoffer** — Pour H'appi : tendance stable à suivre plutôt qu'un pic isolé ; pas d'action immédiate mais à recroiser avec une éventuelle offre de tooling packagé pour clients développeurs.
+- **Agent-Reach et orca illustrent la montée des agents IA "actifs" (navigation web autonome, exécution parallèle de tâches) au-delà du simple chat conversationnel** — Pour H'appi : ce pattern d'agent qui exécute des actions multi-étapes de façon autonome est directement transposable aux chatbots SAV/secrétariat (ex. recherche d'info client en autonomie avant de répondre), à garder comme axe de différenciation produit.
+- **Blocage réseau persistant pour le 2e jour consécutif (HackerNews, DEV.to, The New Stack, y compris les endpoints de repli testés) — recommandation : vérifier/ajuster la politique réseau de l'environnement de veille pour débloquer ces domaines, sinon la veille restera structurellement limitée à GitHub Trending.**
+
+---
 ---
