@@ -2443,4 +2443,34 @@ gradient-text → classe utilitaire (blue → purple)
 - **Blocage réseau persistant pour le 2e jour consécutif (HackerNews, DEV.to, The New Stack, y compris les endpoints de repli testés) — recommandation : vérifier/ajuster la politique réseau de l'environnement de veille pour débloquer ces domaines, sinon la veille restera structurellement limitée à GitHub Trending.**
 
 ---
+## 📰 Veille Tech — 2026-06-28
+> Mis à jour automatiquement par Happi Brain Agent
+> ⚠️ Pour le 3e jour consécutif, HackerNews, DEV.to et The New Stack RSS sont bloqués par la politique réseau de l'environnement (403, y compris sur les endpoints de repli HN Algolia et dev.to sans paramètre `per_page`) — veille basée uniquement sur GitHub Trending aujourd'hui.
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/skills — dépôt officiel Anthropic pour les Agent Skills, fait son entrée dans le trending Python](https://github.com/anthropics/skills) | GitHub Trending 🐍 | #Claude #LLM |
+| [topoteretes/cognee — plateforme de mémoire IA open-source pour agents avec graphe de connaissances persistant](https://github.com/topoteretes/cognee) | GitHub Trending 🐍 | #LLM #chatbot |
+| [moorcheh-ai/memanto — système de mémoire dédié aux agents IA](https://github.com/moorcheh-ai/memanto) | GitHub Trending 🐍 | #LLM #chatbot |
+| [comet-ml/opik — plateforme de debug, évaluation et monitoring pour applications LLM et workflows agentiques](https://github.com/comet-ml/opik) | GitHub Trending 🐍 | #LLM #SaaS |
+| [luongnv89/claude-howto — guide visuel de Claude Code, des fondamentaux au développement d'agents avancés](https://github.com/luongnv89/claude-howto) | GitHub Trending 🐍 | #Claude |
+| [opendatalab/MinerU — toujours en tête du trending Python (4e jour), conversion PDF/Office en markdown/JSON prêt pour workflows agentiques](https://github.com/opendatalab/MinerU) | GitHub Trending 🐍 | #LLM |
+| [aws/agent-toolkit-for-aws — serveurs MCP et skills officiels AWS, toujours présent (3e jour)](https://github.com/aws/agent-toolkit-for-aws) | GitHub Trending 🐍 | #LLM #SaaS |
+| [CherryHQ/cherry-studio — studio de productivité IA avec chat intelligent et agents autonomes connectés aux LLM frontier](https://github.com/CherryHQ/cherry-studio) | GitHub Trending TS | #chatbot #LLM |
+| [logto-io/logto — infrastructure d'authentification et d'autorisation pour SaaS et apps IA, basée sur OIDC/OAuth](https://github.com/logto-io/logto) | GitHub Trending TS | #SaaS |
+| [TencentCloud/TencentDB-Agent-Memory — mémoire long-terme entièrement locale pour agents IA](https://github.com/TencentCloud/TencentDB-Agent-Memory) | GitHub Trending TS | #LLM #chatbot |
+| [alibaba/page-agent — agent GUI in-page pilotant des interfaces web en langage naturel](https://github.com/alibaba/page-agent) | GitHub Trending TS | #LLM #chatbot |
+| [garrytan/gstack — setup Claude Code avec 23 outils opinionés, toujours en tête du trending TypeScript (3e jour)](https://github.com/garrytan/gstack) | GitHub Trending TS | #Claude #chatbot |
+| [anomalyco/opencode — agent de codage open-source, toujours présent (3e jour)](https://github.com/anomalyco/opencode) | GitHub Trending TS | #LLM #chatbot |
+| [tashfeenahmed/freellmapi — proxy compatible OpenAI mutualisant les quotas gratuits de 16 fournisseurs LLM](https://github.com/tashfeenahmed/freellmapi) | GitHub Trending TS | #LLM |
+
+### 💡 Insights clés
+- **Vague inédite de projets de "mémoire d'agent" persistante (cognee, memanto, TencentDB-Agent-Memory, et MemPalace hier) apparus simultanément dans le trending** — Pour H'appi : signal fort que la mémoire long-terme (contexte client, historique multi-session) devient une brique d'infrastructure standardisée pour les agents IA ; à évaluer comme amélioration produit pour les chatbots SAV/secrétariat qui doivent se souvenir des clients récurrents sans tout repasser par le prompt à chaque session.
+- **anthropics/skills entre directement dans le trending Python — Anthropic structure officiellement le concept d'"Agent Skills"** — Pour H'appi : à surveiller en priorité puisque les chatbots H'appi sont construits sur Claude ; les Skills pourraient devenir un format standard pour packager des compétences métier réutilisables (ex. un "skill" de prise de RDV ou de FAQ produit) plutôt que des prompts ad hoc.
+- **comet-ml/opik (observabilité/évaluation LLM) confirme la maturation de l'outillage LLMOps autour du monitoring qualité** — Pour H'appi : pertinent pour suivre en production la qualité des réponses des chatbots livrés aux clients (dérive de réponse, hallucinations) ; à évaluer comme brique de monitoring interne.
+- **logto-io/logto positionne l'auth comme infrastructure partagée SaaS + IA (OIDC/OAuth)** — Pour H'appi : à garder en tête pour la partie back-office/auth des futurs chatbots SaaS multi-clients nécessitant une gestion d'identité robuste.
+- **MinerU (4e jour), aws/agent-toolkit-for-aws, gstack et opencode (3e jour) confirment des tendances de fond plutôt que des pics isolés** — pas d'action immédiate, mais à recroiser avec la roadmap produit (ingestion documentaire, compatibilité MCP, tooling Claude Code).
+- **Blocage réseau persistant pour le 3e jour consécutif (HackerNews, DEV.to, The New Stack) — la veille reste structurellement limitée à GitHub Trending ; recommandation maintenue de débloquer ces domaines dans la politique réseau de l'environnement.**
+
+---
 ---
