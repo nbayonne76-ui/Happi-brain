@@ -2474,3 +2474,31 @@ gradient-text → classe utilitaire (blue → purple)
 
 ---
 ---
+
+---
+## 📰 Veille Tech — 2026-07-01
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Tag : Anthropic intègre Claude dans Slack comme coéquipier permanent — Karpathy y voit "la 3e révolution UX des LLM"](https://quasa.io/media/claude-tag-anthropic-turns-ai-into-a-persistent-teammate-in-slack-and-andrej-karpathy-calls-it-the-third-major-llm-ux-revolution) | Web | #Claude #chatbot |
+| [Nouvelle Constitution de Claude publiée par Anthropic — valeurs et comportements fondamentaux documentés](https://www.anthropic.com/news/claude-new-constitution) | Anthropic | #Claude #LLM |
+| [Californie × Anthropic : Claude disponible aux agences d'État à -50%, formation gratuite des agents publics](https://www.bloomberg.com/news/articles/2026-05-07/anthropic-is-making-claude-chatbot-more-appealing-to-consumers) | Bloomberg | #Claude #SaaS |
+| [FastAPI vs Next.js : quel backend pour un AI SaaS en 2026 ? — comparaison de référence](https://hassanr.com/blogs/fastapi-vs-nextjs-ai-saas-backend-2026.html) | hassanr.com | #FastAPI #Next.js #SaaS |
+| [J'ai construit un AI SaaS avec Next.js, FastAPI et Dokploy — retour d'expérience production](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #Next.js #SaaS |
+| [TypeScript devient le langage n°1 sur GitHub — l'IA en est le moteur principal](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/) | GitHub Blog | #LLM #SaaS |
+| [SpaceXAI Voice APIs désormais dans Vercel AI Gateway — latence sub-seconde via WebSocket](https://www.basenor.com/blogs/news/spacexai-voice-apis-now-in-vercel-ai-gateway-7-things-to-know) | basenor.com | #VoiceAI #Vercel |
+| [Construire un chatbot IA en 15 min avec Vercel AI SDK [2026] — guide Next.js streaming](https://tech-insider.org/vercel-ai-sdk-tutorial-chatbot-nextjs-2026/) | tech-insider.org | #chatbot #Vercel #Next.js |
+| [Docker + Vercel AI SDK : déployer des agents Chat UI en containers production-ready](https://www.docker.com/blog/launch-chat-ui-agent-docker-vercel-ai-sdk/) | Docker Blog | #Docker #chatbot |
+| [Déployer un AI Chatbot avec streaming SSE sur Railway — guide officiel](https://docs.railway.com/guides/ai-chatbot-streaming) | Railway Docs | #Railway #chatbot |
+| [Railway vs Vercel : comparaison technique 2026 et guide de migration](https://docs.railway.com/platform/compare-to-vercel) | Railway Docs | #Railway #Vercel |
+| [AI Act : application complète le 2 août 2026 — sanctions jusqu'à 20M€ ou 4% CA mondial](https://www.leto.legal/guides/ai-act-conformite) | leto.legal | #RGPD |
+| [Chatbot IA et RGPD : Guide de Conformité 2026 — obligations CNIL pour chatbots](https://heeya.fr/blog/chatbot-rgpd-guide-conformite-cnil) | Heeya | #chatbot #RGPD |
+| [awesome-ai-agents-2026 : 300+ agents IA, frameworks et outils recensés](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026) | GitHub | #LLM #chatbot |
+
+### 💡 Insights clés
+- **Claude Tag fait entrer Claude dans les workflows d'équipe asynchrones (Slack) en tant que membre permanent avec mémoire org-wide** — Pour H'appi : signal fort que Claude devient une infrastructure d'équipe, pas seulement un chatbot client. À positionner comme argument commercial pour les offres de secrétariat IA et chatbot interne, où l'intégration Slack est une attente croissante des PME françaises.
+- **L'AI Act entre en application complète le 2 août 2026 — fenêtre de 32 jours pour se mettre en conformité** — Pour H'appi : les chatbots livrés aux clients doivent afficher explicitement l'interaction avec une IA (message d'accueil) et avoir une DPA signée. Avantage concurrentiel majeur si H'appi propose une checklist de conformité AI Act + RGPD clé en main en tant qu'argument commercial différenciant.
+- **L'architecture FastAPI + Next.js est confirmée comme le standard de référence pour l'AI SaaS production en 2026** — Pour H'appi : la stack de référence H'appi est parfaitement alignée avec les meilleures pratiques du marché. L'émergence de Dokploy (alternatif à Railway/Vercel) mérite une évaluation rapide pour réduire les coûts d'hébergement client.
+- **Voice AI sub-seconde intégrée directement dans Vercel AI Gateway via WebSocket** — Pour H'appi : la stack voix Vapi.ai/ElevenLabs/Deepgram existante pourrait être concurrencée par des solutions natives Next.js/Vercel d'ici 6-12 mois. À suivre pour simplifier potentiellement la stack voix et réduire le nombre de fournisseurs tiers.
+- **TypeScript dépasse Python comme langage n°1 sur GitHub, porté par l'explosion des projets IA** — Tendance de fond qui confirme le bon choix de Next.js/TypeScript côté frontend et renforce la pertinence de la stack hybride Python (FastAPI) + TypeScript (Next.js) adoptée par H'appi.
