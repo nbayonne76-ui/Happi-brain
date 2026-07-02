@@ -2502,3 +2502,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **L'architecture FastAPI + Next.js est confirmée comme le standard de référence pour l'AI SaaS production en 2026** — Pour H'appi : la stack de référence H'appi est parfaitement alignée avec les meilleures pratiques du marché. L'émergence de Dokploy (alternatif à Railway/Vercel) mérite une évaluation rapide pour réduire les coûts d'hébergement client.
 - **Voice AI sub-seconde intégrée directement dans Vercel AI Gateway via WebSocket** — Pour H'appi : la stack voix Vapi.ai/ElevenLabs/Deepgram existante pourrait être concurrencée par des solutions natives Next.js/Vercel d'ici 6-12 mois. À suivre pour simplifier potentiellement la stack voix et réduire le nombre de fournisseurs tiers.
 - **TypeScript dépasse Python comme langage n°1 sur GitHub, porté par l'explosion des projets IA** — Tendance de fond qui confirme le bon choix de Next.js/TypeScript côté frontend et renforce la pertinence de la stack hybride Python (FastAPI) + TypeScript (Next.js) adoptée par H'appi.
+
+---
+## 📰 Veille Tech — 2026-07-02
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Sonnet 5 lancé — modèle le plus agentique, contexte 1M tokens, default sur Claude Code, tarif promo $2/$10/Mtok jusqu'au 31 août](https://releasebot.io/updates/anthropic/claude) | Anthropic | #Claude #LLM |
+| [Trump Administration lève les restrictions sur Claude Fable 5 & Mythos 5 — accès élargi aux modèles frontier Anthropic](https://www.washingtonpost.com/business/2026/07/01/anthropic-fable-mythos-trump-claude/466d3a52-755c-11f1-b665-5f8be87f3787_story.html) | Washington Post | #Claude |
+| [Claude disponible sur Microsoft Azure Foundry — accès enterprise natif avec data residency US et gouvernance Azure](https://aiweekly.co/ai-news-today/anthropic-news) | AI Weekly | #Claude #SaaS |
+| [State of AI Agents (LangChain) : 57% des équipes ont des agents en production, observabilité à 89%, EU AI Act cité comme risque n°1](https://www.langchain.com/state-of-agent-engineering) | LangChain | #LLM #SaaS |
+| [Deepgram — Top Voice AI Agents Buyer's Guide 2026 : 11 plateformes comparées (Vapi, ElevenLabs, Retell AI...)](https://deepgram.com/learn/best-voice-ai-agents-2026-buyers-guide) | Deepgram | #VoiceAI |
+| [Vapi vs ElevenLabs 2026 — quelle plateforme Voice AI pour construire des agents vocaux en production ?](https://www.retellai.com/blog/vapi-vs-elevenlabs) | Retell AI | #VoiceAI |
+| [OmniRoute — gateway IA gratuit unifiant 231+ providers (50+ gratuits), connecte Claude Code, Cursor, Cline sur un seul endpoint OpenAI-compatible](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #chatbot |
+| [langchain-ai/deepagents — harness d'agents IA "batteries-included" (25k+ stars, trending Python)](https://github.com/langchain-ai/deepagents) | GitHub Trending 🐍 | #LLM #chatbot |
+| [google/agents-cli — CLI officiel Google Cloud pour créer, évaluer et déployer des agents IA sur Google Cloud](https://github.com/google/agents-cli) | GitHub Trending 🐍 | #LLM |
+| [vstorm-co/full-stack-ai-agent-template — template FastAPI + Next.js avec RAG, streaming, auth et 20+ intégrations prêt production](https://github.com/vstorm-co/full-stack-ai-agent-template) | GitHub | #FastAPI #Next.js #LLM |
+| [Railway — les meilleures plateformes pour déployer des apps IA en 2026 : Redis + Postgres intégrés, timeouts longs pour inference](https://blog.railway.com/p/best-platforms-deploy-ai-apps-2026) | Railway Blog | #Railway #chatbot |
+| [Northflank : Railway vs Cloudflare vs Vercel 2026 — quel cloud pour quelle stack IA en production ?](https://northflank.com/blog/railway-vs-cloudflare-vs-vercel) | Northflank | #Railway #Vercel |
+| [AI Act : application complète le 2 août 2026 — sanctions jusqu'à 35M€ ou 7% CA pour IA interdites, 7,5M€ pour manquements de transparence](https://www.leto.legal/guides/ai-act-conformite) | leto.legal | #RGPD |
+| [CNIL : recommandations officielles pour développer des systèmes IA conformes RGPD — checklist pratique](https://www.cnil.fr/fr/developpement-des-systemes-dia-les-recommandations-de-la-cnil-pour-respecter-le-rgpd) | CNIL | #RGPD |
+
+### 💡 Insights clés
+- **Claude Sonnet 5 devient le modèle agentique de référence avec contexte 1M tokens à 40-60% moins cher qu'Opus 4.8** — Pour H'appi : migration recommandée pour les chatbots en production ; le contexte 1M tokens permet d'ingérer de larges bases documentaires clients sans découpage RAG complexe, réduisant latence et complexité d'implémentation.
+- **URGENCE — AI Act en application complète dans 31 jours (2 août 2026)** — Pour H'appi : fenêtre critique pour s'assurer que chaque chatbot livré affiche explicitement l'interaction avec une IA dès l'accueil, que les DPA clients sont signées et que la politique de rétention des données est documentée. Argument commercial fort : proposer une checklist conformité AI Act + RGPD clé en main différencie H'appi face aux agences qui ignorent ces obligations.
+- **57% des entreprises ont des agents IA en production (LangChain) — l'observabilité adoptée par 89% devient une attente standard** — Pour H'appi : les clients matures vont demander des dashboards de monitoring qualité des réponses. À anticiper avec comet-ml/opik ou une brique LLMOps légère dans les prochains projets.
+- **OmniRoute unifie 231+ providers LLM derrière un endpoint OpenAI-compatible** — Pour H'appi : solution de résilience pour les chatbots critiques — permet de basculer Claude → GPT → Gemini en cas de panne ou dépassement de quota sans refactoring backend. À évaluer comme couche de routing dans la stack de référence.
+- **Vapi reste le choix n°1 pour l'orchestration voix full-stack en 2026, avec Claude désormais supporté comme LLM swappable dans le pipeline** — Confirmation que la stack H'appi (Vapi + Claude + ElevenLabs/Deepgram) est parfaitement alignée avec le marché. ElevenLabs Flash v2.5 atteint une latence sub-100ms — à tester pour améliorer la fluidité des chatbots vocaux existants.
+- **Railway recommandé sur Vercel pour les apps IA avec inference longue** — Pour H'appi : les timeouts serverless Vercel (max 300s) sont incompatibles avec les agents multi-steps ou les inférences lentes. Railway avec Postgres + Redis intégrés reste le meilleur choix pour les chatbots avec historique de conversation persistant en production.
+- **Blocage réseau persistant (HackerNews, DEV.to, The New Stack) — 4e jour consécutif** — La veille reste structurellement limitée à GitHub Trending + WebSearch. Recommandation maintenue de débloquer ces domaines dans la politique réseau de l'environnement remote.
