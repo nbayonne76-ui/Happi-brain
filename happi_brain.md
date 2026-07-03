@@ -2532,3 +2532,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **Vapi reste le choix n°1 pour l'orchestration voix full-stack en 2026, avec Claude désormais supporté comme LLM swappable dans le pipeline** — Confirmation que la stack H'appi (Vapi + Claude + ElevenLabs/Deepgram) est parfaitement alignée avec le marché. ElevenLabs Flash v2.5 atteint une latence sub-100ms — à tester pour améliorer la fluidité des chatbots vocaux existants.
 - **Railway recommandé sur Vercel pour les apps IA avec inference longue** — Pour H'appi : les timeouts serverless Vercel (max 300s) sont incompatibles avec les agents multi-steps ou les inférences lentes. Railway avec Postgres + Redis intégrés reste le meilleur choix pour les chatbots avec historique de conversation persistant en production.
 - **Blocage réseau persistant (HackerNews, DEV.to, The New Stack) — 4e jour consécutif** — La veille reste structurellement limitée à GitHub Trending + WebSearch. Recommandation maintenue de débloquer ces domaines dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-03
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Science lancé — workbench IA pour chercheurs avec 60+ connecteurs (génomique, protéomique, cheminformatique), beta Claude Pro/Team/Enterprise](https://www.anthropic.com/news/claude-science-ai-workbench) | Anthropic | #Claude #LLM |
+| [Fable 5 de retour globalement — export controls levées le 1er juillet, disponible sur Claude.ai, Claude Code et Claude Cowork](https://9to5google.com/2026/07/01/anthropic-fable-5-returns-to-claude/) | 9to5Google | #Claude |
+| [Claude Apps Gateway pour Amazon Bedrock & Google Cloud — SSO entreprise, RBAC, cost tracking et spend caps pour Claude Code](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude #SaaS |
+| [AI Act Article 50 — deadline Code of Practice 22 juillet passée, amendes jusqu'à 15M€ ou 3% CA mondiale actives dès le 2 août](https://www.techtimes.com/articles/318822/20260622/eu-ai-act-chatbot-disclosure-deepfake-labeling-july-22-signatory-deadline.htm) | TechTimes | #RGPD |
+| [EU AI Act & Chatbots : Guide de Conformité 2026 — obligation disclosure Article 50, marquage AI-Generated Content reporté au 2 décembre (Digital Omnibus)](https://heeya.fr/en/blog/eu-ai-act-chatbot-compliance-2026) | Heeya | #chatbot #RGPD |
+| [Vapi vs ElevenLabs 2026 — Vapi traite 62M appels/mois (SLA 99.99%), ElevenLabs ajoute full conversational avec 96 langues et latence sub-300ms](https://www.retellai.com/blog/vapi-vs-elevenlabs) | Retell AI | #VoiceAI |
+| [Vercel Sandbox peut désormais exécuter des containers Docker — agents buildent des images sans toucher l'hôte](https://vercel.com/changelog/run-docker-containers-inside-vercel-sandbox) | Vercel | #Docker #Vercel |
+| [Railway — Deploy Next.js + AI SDK : template streaming + scale-to-zero + Postgres managé en réseau privé](https://railway.com/deploy/nextjs-ai-sdk) | Railway | #Railway #Next.js |
+| [MLflow — Building Production-Ready AI Agents in 2026 : patterns d'architecture, evals, observabilité](https://mlflow.org/articles/building-production-ready-ai-agents-in-2026/) | MLflow | #LLM |
+| [O'Reilly — The AI Agents Stack 2026 Edition : MCP comme standard de protocole, 57% des équipes en production](https://www.oreilly.com/radar/the-ai-agents-stack-2026-edition/) | O'Reilly | #LLM #chatbot |
+| [browser-use/video-use (🔥 +554 stars) — éditer des vidéos avec des coding agents Python](https://github.com/browser-use/video-use) | GitHub Trending 🐍 | #LLM |
+| [usestrix/strix (🔥 +2137 stars) — outil open-source de pen-testing IA pour détecter les vulnérabilités applicatives](https://github.com/usestrix/strix) | GitHub Trending 🐍 | #LLM |
+| [logto-io/logto (🔥 +361 stars) — auth & authorization open-source pour apps SaaS et IA, multi-tenant](https://github.com/logto-io/logto) | GitHub Trending TS | #SaaS |
+| [firecrawl (🔥 +535 stars) — API pour search, scrape et interaction web à grande échelle pour agents IA](https://github.com/firecrawl/firecrawl) | GitHub Trending TS | #LLM #chatbot |
+
+### 💡 Insights clés
+- **Claude Science inaugure le modèle "workbench vertical spécialisé" — IA pré-configurée par domaine métier avec des connecteurs sectoriels** — Pour H'appi : ce pattern est directement transposable aux PME françaises. Prochaine opportunité commerciale : chatbots "métier pré-connectés" (RH, juridique, supply chain) avec des intégrations sectorielles pré-configurées (Sage, Cegid, SAP B1) comme argument différenciant face aux chatbots génériques.
+- **URGENCE AI Act J-30 — Article 50 actif le 2 août, marquage contenu IA reporté au 2 décembre (Digital Omnibus)** — Pour H'appi : action immédiate requise — chaque chatbot livré doit afficher dès la première interaction "Vous interagissez avec une IA". La bonne nouvelle : le marquage AI-generated content (deepfakes, textes synthétiques) est reporté à décembre, réduisant la charge de conformité immédiate. Priorité : mettre à jour les templates d'onboarding de tous les bots en production.
+- **Fable 5 accessible globalement sans restriction depuis le 1er juillet** — Pour H'appi : le modèle frontier Anthropic le plus puissant est maintenant proposable aux clients Enterprise français pour des cas d'usage de raisonnement complexe, d'analyse de contrats ou de traitement de grandes bases documentaires (contexte 2M tokens).
+- **Vercel Sandbox + Docker : les agents peuvent maintenant builder et tester des containers sans infra dédiée** — Pour H'appi : simplification du workflow de démonstration client. Les prototypes de chatbots conteneurisés peuvent être buildés et testés directement dans l'environnement de staging Vercel, sans besoin d'un VPS Railway dédié pour les phases de démo.
+- **Vapi (62M appels/mois) + ElevenLabs sub-300ms conversationnel confirment la maturité de la stack voix H'appi** — ElevenLabs Conversational AI devient une alternative sérieuse à la stack 3 couches actuelle (Vapi + ElevenLabs + Deepgram) pour les cas d'usage simples : 1 seul provider, 96 langues, clonage vocal 30 secondes. À évaluer pour les prochains mandats voice AI afin de réduire les coûts d'intégration.
