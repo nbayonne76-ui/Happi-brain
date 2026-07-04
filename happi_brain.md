@@ -2560,3 +2560,31 @@ gradient-text → classe utilitaire (blue → purple)
 - **Fable 5 accessible globalement sans restriction depuis le 1er juillet** — Pour H'appi : le modèle frontier Anthropic le plus puissant est maintenant proposable aux clients Enterprise français pour des cas d'usage de raisonnement complexe, d'analyse de contrats ou de traitement de grandes bases documentaires (contexte 2M tokens).
 - **Vercel Sandbox + Docker : les agents peuvent maintenant builder et tester des containers sans infra dédiée** — Pour H'appi : simplification du workflow de démonstration client. Les prototypes de chatbots conteneurisés peuvent être buildés et testés directement dans l'environnement de staging Vercel, sans besoin d'un VPS Railway dédié pour les phases de démo.
 - **Vapi (62M appels/mois) + ElevenLabs sub-300ms conversationnel confirment la maturité de la stack voix H'appi** — ElevenLabs Conversational AI devient une alternative sérieuse à la stack 3 couches actuelle (Vapi + ElevenLabs + Deepgram) pour les cas d'usage simples : 1 seul provider, 96 langues, clonage vocal 30 secondes. À évaluer pour les prochains mandats voice AI afin de réduire les coûts d'intégration.
+
+---
+## 📰 Veille Tech — 2026-07-04
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Sonnet 5 lancé — modèle le plus agentique d'Anthropic, contexte 1M tokens, $2/$10/Mtok promo jusqu'au 31 août](https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/) | TechCrunch | #Claude #LLM |
+| [Claude reçoit une nouvelle Constitution — Anthropic publie sa charte de valeurs et principes directeurs du modèle](https://www.anthropic.com/news/claude-new-constitution) | Anthropic | #Claude |
+| [langflow-ai/langflow (🔥 +531 stars) — outil low-code pour builder et déployer des agents IA et workflows en production](https://github.com/langflow-ai/langflow) | GitHub Trending 🐍 | #LLM #chatbot |
+| [huggingface/speech-to-speech (🔥 +162 stars) — framework open-source pour agents vocaux locaux avec modèles open-source](https://github.com/huggingface/speech-to-speech) | GitHub Trending 🐍 | #VoiceAI |
+| [alibaba/page-agent (🔥 +1110 stars) — GUI agent JavaScript pour contrôler des interfaces web en langage naturel](https://github.com/alibaba/page-agent) | GitHub Trending TS | #LLM |
+| [stablyai/orca (🔥 +703 stars) — ADE (Agent Development Environment) pour orchestrer une flotte d'agents parallèles](https://github.com/stablyai/orca) | GitHub Trending TS | #LLM |
+| [facebook/astryx (🔥 +885 stars) — design system open-source entièrement personnalisable et "agent-ready"](https://github.com/facebook/astryx) | GitHub Trending TS | #chatbot #LLM |
+| [DEV.to — How I built an AI SaaS with Next.js, FastAPI and Dokploy — retour d'expérience complet en production](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #Next.js #SaaS |
+| [DEV.to — FastAPI + Next.js 15 : The Full-Stack Nobody's Building — guide architecture pour IA SaaS scalable](https://dev.to/alexmayhew-dev/fastapi-nextjs-15-the-full-stack-nobodys-building-1hl9) | DEV.to | #FastAPI #Next.js |
+| [Vapi valorisé $500M après avoir remporté Amazon Ring face à 40 concurrents — validation marché Voice AI](https://techcrunch.com/2026/05/12/vapi-hits-500m-valuation-as-amazon-ring-chose-its-ai-platform-over-40-rivals/) | TechCrunch | #VoiceAI |
+| [ElevenLabs 2026 : de générateur TTS à stack audio complète — création, conversation, enterprise controls](https://blog.mean.ceo/elevenlabs-news-july-2026/) | Mean CEO Blog | #VoiceAI |
+| [Chatbot IA et RGPD 2026 — Guide de conformité CNIL : obligations Article 50 AI Act, checklist pratique](https://heeya.fr/blog/chatbot-rgpd-guide-conformite-cnil) | Heeya | #chatbot #RGPD |
+| [Railway vs Vercel pour apps IA 2026 — Railway recommandé pour backends IA (timeouts longs, Postgres/Redis privés)](https://docs.railway.com/platform/compare-to-vercel) | Railway Docs | #Railway #Vercel |
+
+### 💡 Insights clés
+- **URGENT — Claude Sonnet 5 à $2/$10/Mtok promo jusqu'au 31 août, puis $3/$15** — Pour H'appi : migrer les chatbots en production depuis Sonnet 4.6 maintenant = économies immédiates + meilleure performance agentique. Le contexte 1M tokens supprime le besoin de chunking RAG complexe pour la plupart des bases documentaires clients (manuels, FAQs, catalogues). Deadline promo : 27 jours.
+- **La guerre IA bascule du chat vers les agents** (TechCrunch/TechRadar) — les 3 leaders (OpenAI, Google, Anthropic) positionnent tous leurs modèles sur l'agentique autonome. Pour H'appi : mettre à jour les pitchs commerciaux de "chatbot intelligent" vers "agent IA autonome" — les prospects PME comprennent mieux la valeur quand on parle d'automatisation d'actions vs simple Q&A.
+- **Vapi $500M après Amazon Ring — validation marché Voice AI irréfutable** — Pour H'appi : argument commercial fort pour les prospects hésitants sur le Voice AI. Si Amazon Ring (millions d'utilisateurs) a choisi Vapi face à 40 alternatives, la plateforme est enterprise-ready. Réutiliser cette référence dans les devis Voice AI.
+- **AI Act J-29 — Article 50 actif le 2 août, deadline critique** — Pour H'appi : chaque chatbot livré ou en cours doit afficher "Vous interagissez avec une IA" dès la première interaction. La checklist Heeya/CNIL est un outil concret pour auditer rapidement les bots en production. Transformer cette contrainte en argument commercial : proposer un audit conformité AI Act + RGPD inclus dans chaque livraison.
+- **alibaba/page-agent (+1110 stars/jour) : les GUI agents browser-native explosent** — Pour H'appi : signal fort que les prochains mandats incluront des agents capables de naviguer des interfaces web métier (ERP, CRM legacy) sans API dédiée. À intégrer dans la roadmap produit pour proposer des automatisations "browser-native" complémentaires aux chatbots conversationnels.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 5e jour consécutif** — Veille limitée à GitHub Trending + WebSearch. Recommandation maintenue de débloquer ces domaines dans la politique réseau de l'environnement remote.
