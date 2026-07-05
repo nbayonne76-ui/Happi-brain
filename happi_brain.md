@@ -617,8 +617,103 @@ gradient-text → classe utilitaire (blue → purple)
 
 ---
 
-*Dernière mise à jour : 2026-04-07*
+*Dernière mise à jour : 2026-07-06*
 *Projets analysés : 28 repos GitHub (nbayonne76-ui)*
+
+---
+
+## 13. ENVIRONNEMENT DE DÉVELOPPEMENT — WSL2 Ubuntu (2026-07-06)
+
+> Audit complet réalisé le 2026-07-06. À re-vérifier à chaque nouvelle machine ou migration.
+
+### 13.1 Core Tools installés
+
+| Outil | Version | Rôle |
+|-------|---------|------|
+| Node.js | v24.13.0 | Runtime JS/TS |
+| npm | 11.6.2 | Package manager |
+| pnpm | 10.33.0 | Package manager alternatif |
+| Python | 3.11.14 | Backend FastAPI |
+| pip | 26.0 | Package manager Python |
+| Git | 2.43.0 | Versioning |
+| PostgreSQL | 16.11 | Base de données (port 5432, actif) |
+| TypeScript | 6.0.2 (global) | Typage statique |
+| tsx | 4.21.0 | TypeScript runner direct |
+
+### 13.2 CLIs Déploiement
+
+| CLI | Version | Usage |
+|-----|---------|-------|
+| Expo CLI | 57.0.4 | React Native / mobile |
+| Vercel CLI | 50.44.0 | Deploy frontend Next.js |
+| Railway CLI | 4.36.1 | Deploy backend FastAPI |
+| Vite | 8.1.3 | Build uk-erp-tender-tracker |
+
+### 13.3 Stack Python — packages globaux
+
+```
+fastapi==0.115.0       # API REST
+uvicorn==0.30.6        # Serveur ASGI
+sqlalchemy==2.0.49     # ORM
+alembic==1.18.4        # Migrations DB
+pydantic==2.12.5       # Validation données
+anthropic==0.116.0     # SDK Claude (mis à jour 0.34 → 0.116)
+passlib==1.7.4         # Hachage mots de passe
+bcrypt==3.2.2          # Chiffrement
+httpx==0.27.2          # HTTP async client
+python-multipart       # Upload fichiers
+python-jose==3.5.0     # JWT tokens (installé le 2026-07-06)
+```
+
+> ⚠️ **python-jose** était absent — installé le 2026-07-06. Obligatoire pour l'auth JWT dans tous les backends.
+> ⚠️ **anthropic SDK** mis à jour de 0.34.2 → 0.116.0. Toujours mettre à jour avant un nouveau projet.
+
+### 13.4 Extensions VS Code — liste complète (30 extensions)
+
+#### Déjà en place (avant audit)
+- `anthropic.claude-code` — Claude Code CLI
+- `bradlc.vscode-tailwindcss` — Tailwind IntelliSense
+- `christian-kohler.path-intellisense` — Autocomplétion chemins
+- `codium.codium` — CodiumAI
+- `cweijan.vscode-postgresql-client2` — Client PostgreSQL
+- `dbaeumer.vscode-eslint` — ESLint
+- `dsznajder.es7-react-js-snippets` — Snippets React/TS
+- `eamodio.gitlens` — Git avancé
+- `esbenp.prettier-vscode` — Formatting
+- `formulahendry.auto-rename-tag` — Renommage HTML/JSX
+- `juanlb.claude-commit` — Commit IA
+- `ms-azuretools.vscode-docker` — Docker
+- `ms-python.python` + `pylance` + `debugpy` — Python complet
+- `rangav.vscode-thunder-client` — Test API REST
+- `redhat.vscode-yaml` — YAML / docker-compose
+- `usernamehw.errorlens` — Erreurs inline
+
+#### Ajoutées le 2026-07-06 (audit)
+- `msjsdiag.vscode-react-native` — **React Native / Expo** (debug mobile)
+- `mikestead.dotenv` — **.env** syntax highlighting
+- `lokalise.i18n-ally` — **next-intl** gestion traductions FR/EN inline
+- `ritwickdey.liveserver` — **Live Server** pour les démos HTML statiques
+- `mhutchie.git-graph` — Visualisation graphe Git
+- `yzhang.markdown-all-in-one` — Édition `.md` (Happi Brain)
+- `formulahendry.auto-close-tag` — Fermeture automatique balises
+- `aaron-bond.better-comments` — Commentaires colorés TODO/FIXME
+- `prisma.prisma` — Prisma ORM (microsoft-sales-app)
+
+### 13.5 Bugs corrigés — h-appi-website (2026-07-06)
+
+Trois bugs de build Next.js corrigés lors de l'audit :
+
+1. **`decimal.js` ESM vide** — `decimal.mjs` était 0 byte → `rm -rf node_modules/decimal.js && npm install decimal.js`
+2. **`resend` ESM vide** — `dist/index.mjs` était 0 byte → `rm -rf node_modules/resend && npm install resend@6.9.2`
+3. **CSS Modules invalide** — `dropos.module.css` utilisait `.class, :global(.class)` dans la même règle → séparé en règles distinctes + bloc `:global { }` correctement formé
+
+> **Leçon** : Les fichiers `.mjs` vides dans `node_modules` sont un signe de téléchargement corrompu. Toujours `rm -rf node_modules/<package> && npm install <package>` plutôt qu'un `npm install` global qui ne réinstalle pas ce qui est déjà présent.
+
+### 13.6 Point en attente — Docker WSL2
+
+Docker Desktop est installé sur Windows mais l'intégration WSL2 n'est pas activée.
+→ **Docker Desktop → Settings → Resources → WSL Integration → activer "Ubuntu"**
+Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 
 ---
 
