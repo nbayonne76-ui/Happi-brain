@@ -2588,3 +2588,33 @@ gradient-text → classe utilitaire (blue → purple)
 - **AI Act J-29 — Article 50 actif le 2 août, deadline critique** — Pour H'appi : chaque chatbot livré ou en cours doit afficher "Vous interagissez avec une IA" dès la première interaction. La checklist Heeya/CNIL est un outil concret pour auditer rapidement les bots en production. Transformer cette contrainte en argument commercial : proposer un audit conformité AI Act + RGPD inclus dans chaque livraison.
 - **alibaba/page-agent (+1110 stars/jour) : les GUI agents browser-native explosent** — Pour H'appi : signal fort que les prochains mandats incluront des agents capables de naviguer des interfaces web métier (ERP, CRM legacy) sans API dédiée. À intégrer dans la roadmap produit pour proposer des automatisations "browser-native" complémentaires aux chatbots conversationnels.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 5e jour consécutif** — Veille limitée à GitHub Trending + WebSearch. Recommandation maintenue de débloquer ces domaines dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-05
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Science Beta — workbench multi-agents pour scientifiques : coordinating agent → sub-agents spécialisés → reviewer agent](https://www.anthropic.com/news/claude-science-ai-workbench) | Anthropic | #Claude #LLM |
+| [Claude Fable 5 restauré mondialement au 1er juillet + framework industrie de scoring jailbreak (Anthropic/Amazon/Microsoft/Google)](https://releasebot.io/updates/anthropic/claude) | Releasebot | #Claude |
+| [Claude Enterprise — spend alerts, model-level entitlements, analytics admin avancées](https://blog.mean.ceo/anthropic-claude-news-july-2026/) | Mean CEO Blog | #Claude #SaaS |
+| [AI Act application COMPLÈTE le 2 août 2026 — chatbots = risque limité, obligation de transparence totale (Article 50)](https://www.leto.legal/guides/ai-act-conformite) | Leto Legal | #chatbot #RGPD |
+| [ElevenLabs juillet 2026 — sendMultimodalMessage (images pendant les calls), audio_duration_secs, recording_quality](https://releasebot.io/updates/eleven-labs) | Releasebot | #VoiceAI |
+| [Vapi — 62M appels/mois, 99,99% SLA, $0.05/min orchestration + 14 providers](https://www.retellai.com/blog/vapi-vs-elevenlabs) | Retell AI | #VoiceAI |
+| [Railway PostgreSQL 18 HA Cluster AI-ready — pgvector natif, pg_cron, PostGIS, failover auto](https://railway.com/deploy/postgresql-18-ha-cluster-ai-and-gis-read) | Railway | #Railway #PostgreSQL |
+| [FastAPI vs Next.js pour AI SaaS 2026 — FastAPI gagne sur les pipelines IA longs, Next.js sur le DX full-stack](https://hassanr.com/blogs/fastapi-vs-nextjs-ai-saas-backend-2026.html) | Hassan Raza | #FastAPI #Next.js #SaaS |
+| [Vercel AI SDK 6.0 — couche API unifiée pour 25+ providers IA (switch en 2 lignes)](https://tech-insider.org/vercel-ai-sdk-tutorial-chatbot-nextjs-2026/) | Tech Insider | #Vercel #chatbot |
+| [anthropics/claude-code (🔥 +357 stars) — outil agentique de coding en terminal, comprend le codebase](https://github.com/anthropics/claude-code) | GitHub Trending 🐍 | #Claude |
+| [google/adk-python — toolkit Python code-first pour builder, évaluer et déployer des agents IA sophistiqués](https://github.com/google/adk-python) | GitHub Trending 🐍 | #LLM |
+| [huggingface/speech-to-speech (🔥 +118 stars) — framework local pour agents vocaux open-source](https://github.com/huggingface/speech-to-speech) | GitHub Trending 🐍 | #VoiceAI |
+| [alibaba/page-agent (🔥 +742 stars) — GUI agent JavaScript, contrôle d'interfaces web en langage naturel](https://github.com/alibaba/page-agent) | GitHub Trending TS | #LLM #chatbot |
+| [ruvnet/ruflo (🔥 +145 stars) — swarms multi-agents avec mémoire adaptative et intégration RAG](https://github.com/ruvnet/ruflo) | GitHub Trending TS | #LLM |
+| [facebook/astryx (🔥 +903 stars) — design system "agent-ready" open-source entièrement personnalisable](https://github.com/facebook/astryx) | GitHub Trending TS | #chatbot #LLM |
+
+### 💡 Insights clés
+- **Claude Science = architecture multi-agents de référence pour H'appi** — La structure coordinating agent → domain sub-agents spécialisés → reviewer agent (lancée par Anthropic le 1er juillet) est exactement le pattern à adopter pour les chatbots complexes multi-domaines (ex : bot support avec modules facturation, technique, commercial). Documenter ce pattern dans les best practices H'appi et le proposer comme upgrade aux clients existants.
+- **AI Act J-28 : application TOTALE le 2 août — deadline non-négociable** — Contrairement aux phases précédentes, l'Article 50 oblige désormais TOUT chatbot (même à risque limité) à déclarer explicitement "Vous interagissez avec une IA" dès la première interaction. Sanctions jusqu'à 7,5M€ / 1% CA pour manquement de transparence. Pour H'appi : auditer en urgence tous les bots en production, transformer l'obligation en argument commercial ("conformité AI Act + RGPD incluse dans chaque livraison H'appi").
+- **ElevenLabs multimodal : les agents vocaux deviennent visuels** — Le nouveau hook sendMultimodalMessage permet d'envoyer des images pendant un appel conversationnel. Pour H'appi : anticiper les mandats "voice + vision" dès maintenant (ex : agent support client qui analyse une photo du produit défectueux pendant l'appel vocal). Avantage concurrentiel fort sur les agences qui proposent encore du voice-only.
+- **Railway PostgreSQL 18 + pgvector natif = stack RAG simplifiée** — Plus besoin d'un vector store séparé (Pinecone, Weaviate) pour les projets RAG déployés sur Railway. pgvector + pg_cron pour les refresh d'embeddings + failover HA = production-ready. Pour H'appi : adopter Railway PostgreSQL 18 comme stack par défaut pour tous les nouveaux projets chatbot avec RAG.
+- **alibaba/page-agent +742 stars/jour (2e jour consécutif en trending TS)** — Les GUI agents browser-native s'imposent comme la prochaine vague après les chatbots. Signal fort pour H'appi : positionner une offre "automatisation d'interface métier" (ERP, CRM legacy sans API) en tier supérieur des mandats. Différenciation vs simple chatbot Q&A.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 6e jour consécutif** — Veille limitée à GitHub Trending + WebSearch. Recommandation maintenue de débloquer ces domaines dans la politique réseau de l'environnement remote.
