@@ -2713,3 +2713,29 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **Railway PostgreSQL 18 + pgvector natif = stack RAG simplifiée** — Plus besoin d'un vector store séparé (Pinecone, Weaviate) pour les projets RAG déployés sur Railway. pgvector + pg_cron pour les refresh d'embeddings + failover HA = production-ready. Pour H'appi : adopter Railway PostgreSQL 18 comme stack par défaut pour tous les nouveaux projets chatbot avec RAG.
 - **alibaba/page-agent +742 stars/jour (2e jour consécutif en trending TS)** — Les GUI agents browser-native s'imposent comme la prochaine vague après les chatbots. Signal fort pour H'appi : positionner une offre "automatisation d'interface métier" (ERP, CRM legacy sans API) en tier supérieur des mandats. Différenciation vs simple chatbot Q&A.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 6e jour consécutif** — Veille limitée à GitHub Trending + WebSearch. Recommandation maintenue de débloquer ces domaines dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-06
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [bradautomates/claude-video (🔥 +368 stars) — Claude peut regarder n'importe quelle vidéo : extraction de frames + transcription](https://github.com/bradautomates/claude-video) | GitHub Trending 🐍 | #Claude #LLM |
+| [alirezarezvani/claude-skills (🔥 +392 stars) — 330+ skills et 30+ agents prêts à l'emploi pour Claude Code](https://github.com/alirezarezvani/claude-skills) | GitHub Trending 🐍 | #Claude |
+| [anthropics/claude-code (🔥 +156 stars) — outil agentique de coding en terminal, comprend le codebase complet](https://github.com/anthropics/claude-code) | GitHub Trending 🐍 | #Claude |
+| [hesreallyhim/awesome-claude-code (🔥 +148 stars) — collection curatée de ressources, skills et plugins pour Claude Code](https://github.com/hesreallyhim/awesome-claude-code) | GitHub Trending 🐍 | #Claude |
+| [usestrix/strix (🔥 +1 114 stars) — outil open-source de pentest IA pour trouver et corriger les vulnérabilités app](https://github.com/usestrix/strix) | GitHub Trending 🐍 | #SaaS #LLM |
+| [TauricResearch/TradingAgents (🔥 +257 stars) — framework multi-agents LLM pour le trading financier autonome](https://github.com/TauricResearch/TradingAgents) | GitHub Trending 🐍 | #LLM |
+| [huggingface/speech-to-speech (🔥 +78 stars) — agents vocaux locaux open-source avec modèles HuggingFace](https://github.com/huggingface/speech-to-speech) | GitHub Trending 🐍 | #VoiceAI |
+| [alibaba/page-agent (🔥 +805 stars — 3e jour consécutif) — GUI agent JavaScript, contrôle d'interfaces web en langage naturel](https://github.com/alibaba/page-agent) | GitHub Trending TS | #LLM #chatbot |
+| [diegosouzapw/OmniRoute (🔥 +475 stars) — AI gateway multi-provider LLM avec token optimization et smart fallback](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [ChromeDevTools/chrome-devtools-mcp (🔥 +252 stars) — Chrome DevTools exposé comme outil MCP pour les coding agents](https://github.com/ChromeDevTools/chrome-devtools-mcp) | GitHub Trending TS | #LLM |
+| [can1357/oh-my-pi (🔥 +155 stars) — agent IA coding terminal : edits hash-anchorés, LSP, Python, browser, subagents](https://github.com/can1357/oh-my-pi) | GitHub Trending TS | #LLM |
+
+### 💡 Insights clés
+- **bradautomates/claude-video : Claude "regarde" désormais les vidéos** — Extraction de frames + transcription ouvre un segment inédit pour H'appi : bots support qui analysent une vidéo de panne envoyée par l'utilisateur, bots formation qui répondent à partir de tutoriels vidéo clients, agents QA visuel. À intégrer dans la roadmap comme use-case premium multimodal.
+- **alirezarezvani/claude-skills +392 stars : bibliothèque de 330+ skills Claude standardisée** — Source directe de composants réutilisables pour accélérer les développements H'appi. Plus besoin de coder from scratch les skills courants (recherche web, reformatting, génération de rapports). À auditer et intégrer dans le kit de développement interne.
+- **alibaba/page-agent 3e jour consécutif trending (+805 stars/jour)** — La tendance GUI agents se confirme définitivement. Pour H'appi : le pitch "agent IA qui navigue vos outils métier (ERP, CRM legacy) sans API" est maintenant validé par le marché. À positionner comme offre premium distincte du chatbot conversationnel. Préparer une démo-concept pour les prochains pitchs.
+- **diegosouzapw/OmniRoute +475 stars : AI gateway multi-LLM avec smart fallback** — Pour H'appi : adopter une couche de routing IA sur les projets clients = fallback automatique si Anthropic/Claude est indisponible + optimisation des coûts (modèle léger pour classification, modèle puissant pour génération). Infrastructure de résilience à intégrer dans l'architecture standard.
+- **usestrix/strix +1 114 stars : pentest IA automatisé open-source** — Signal fort : la sécurité des apps IA devient mainstream. Pour H'appi : utiliser cet outil pour auditer les chatbots avant livraison et en faire un argument commercial : "chatbot H'appi audité par outils de sécurité IA spécialisés — conformité AI Act + RGPD garantie".
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack, Anthropic, Vercel, Railway) — 7e jour consécutif** — Veille limitée à GitHub Trending uniquement. Recommandation maintenue de débloquer ces domaines dans la politique réseau de l'environnement remote.
