@@ -2739,3 +2739,31 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **diegosouzapw/OmniRoute +475 stars : AI gateway multi-LLM avec smart fallback** — Pour H'appi : adopter une couche de routing IA sur les projets clients = fallback automatique si Anthropic/Claude est indisponible + optimisation des coûts (modèle léger pour classification, modèle puissant pour génération). Infrastructure de résilience à intégrer dans l'architecture standard.
 - **usestrix/strix +1 114 stars : pentest IA automatisé open-source** — Signal fort : la sécurité des apps IA devient mainstream. Pour H'appi : utiliser cet outil pour auditer les chatbots avant livraison et en faire un argument commercial : "chatbot H'appi audité par outils de sécurité IA spécialisés — conformité AI Act + RGPD garantie".
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack, Anthropic, Vercel, Railway) — 7e jour consécutif** — Veille limitée à GitHub Trending uniquement. Recommandation maintenue de débloquer ces domaines dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-07
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Sonnet 5 lancé — modèle le plus agentique, proche d'Opus 4.8, prix réduit jusqu'au 31/08](https://www.anthropic.com/news) | Anthropic | #Claude #LLM |
+| [Claude Tag — Claude intégré dans Slack comme coéquipier persistant (Karpathy : "3e révolution LLM UX")](https://quasa.io/media/claude-tag-anthropic-turns-ai-into-a-persistent-teammate-in-slack-and-andrej-karpathy-calls-it-the-third-major-llm-ux-revolution) | WebSearch | #Claude #chatbot |
+| [Anthropic dépasse OpenAI : devient la startup IA la plus valorisée au monde](https://news.ycombinator.com/item?id=48336233) | HackerNews | #Claude #LLM |
+| [AI Act Art. 50 : obligation légale de déclarer l'IA aux utilisateurs dès le 2 août 2026](https://www.levanteapp.com/blog/chatbots-rgpd-2026) | WebSearch | #RGPD |
+| [Voice AI 2026 : latence < 300ms atteinte, 42 % des entreprises déploient des agents vocaux](https://flowful.ai/blog/voice-agents-2026/) | WebSearch | #VoiceAI |
+| [Guide GDPR Voice Agents B2B 2026 : conformité des agents vocaux IA (DACH)](https://ainora.lt/blog/ai-voice-agent-gdpr-compliance-guide) | WebSearch | #VoiceAI #RGPD |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy (alternative open-source à Railway/Heroku)](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #Next.js #SaaS #Docker |
+| [Micro-SaaS Hosting 2026 : Vercel vs Railway vs Render vs Fly.io — comparatif complet](https://f3fundit.com/micro-saas-hosting-infrastructure-vercel-vs-railway-vs-render-vs-fly-io-2026/) | WebSearch | #SaaS #Vercel #Railway |
+| [firecrawl/firecrawl (🔥 +867 stars) — API de scraping web at scale pour alimenter les LLMs](https://github.com/firecrawl/firecrawl) | GitHub Trending TS | #LLM #SaaS |
+| [diegosouzapw/OmniRoute (🔥 +749 stars) — AI gateway 231+ providers, token compression, smart fallback](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [karakeep-app/karakeep (🔥 +199 stars) — bookmark app self-hostable avec auto-tagging IA](https://github.com/karakeep-app/karakeep) | GitHub Trending TS | #SaaS #LLM |
+| [mvanhorn/last30days-skill — outil IA de recherche cross-platform : Reddit, X, YouTube, HN](https://github.com/mvanhorn/last30days-skill) | GitHub Trending 🐍 | #LLM #chatbot |
+| [CVE-2026-42271 : RCE non authentifié dans LiteLLM AI Gateway via endpoints MCP (CISA KEV)](https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html) | The Hacker News | #LLM |
+
+### 💡 Insights clés
+- **Claude Sonnet 5 — migration immédiate recommandée pour H'appi** — Lancé le 30 juin, le modèle est agentique au niveau Opus 4.8 précédent, avec tarif réduit jusqu'au 31/08. À adopter comme modèle par défaut sur tous les projets. Tester les capacités autonomes (planification, outils, navigation) pour les mandats complexes — c'est le standard que les clients vont comparer.
+- **Claude Tag Slack : nouvel angle commercial pour les offres Enterprise H'appi** — Anthropic positionne Claude comme coéquipier async persistant dans les flux Slack d'équipe. Pour H'appi : développer une offre "chatbot d'équipe Slack natif" en tier Enterprise. Karpathy appelle ça la "3e révolution UX des LLMs" — les DSI corporate vont le demander dans les 3 mois.
+- **AI Act Art. 50 applicable le 2 août 2026 — action urgente** — Tous les chatbots H'appi doivent afficher une mention claire "Vous interagissez avec une IA" avant cette date. Fines réelles constatées : 30K€ (telecom) et 80K€ (clinique). Action immédiate : ajouter ce disclaimer dans le kit de déploiement standard et l'argument "conformité AI Act certifiée" dans les pitchs commerciaux.
+- **firecrawl/firecrawl +867 stars : signal fort pour les projets RAG H'appi** — L'API de scraping web à grande échelle pour alimenter les LLMs est en explosion. À intégrer dans les chatbots RAG nécessitant des données web temps réel (veille produits, FAQ dynamiques, données concurrentielles). Remplace des solutions ad-hoc et ouvre un segment "chatbot veille automatique" pour les clients.
+- **Voice AI 2026 : la parité humaine est atteinte, accélérer le positionnement** — Latence < 300ms, 42% des entreprises déploient des agents vocaux, 70% des appels entrants routiniers gérés par IA. Pour H'appi : mettre à jour tous les pitchs et landing pages avec ces chiffres 2026. L'argument "indiscernable d'un humain" est désormais crédible et vendable aux PME françaises.
+- **WebSearch débloqué — veille multi-sources restaurée après 7 jours** — Accès WebSearch fonctionnel pour la première fois depuis le début de la veille. HackerNews, DEV.to et The New Stack restent inaccessibles directement. Recommandation : maintenir WebSearch comme source principale ; demander le déblocage réseau des autres domaines pour une couverture complète.
