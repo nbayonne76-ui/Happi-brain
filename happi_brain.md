@@ -2767,3 +2767,33 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **firecrawl/firecrawl +867 stars : signal fort pour les projets RAG H'appi** — L'API de scraping web à grande échelle pour alimenter les LLMs est en explosion. À intégrer dans les chatbots RAG nécessitant des données web temps réel (veille produits, FAQ dynamiques, données concurrentielles). Remplace des solutions ad-hoc et ouvre un segment "chatbot veille automatique" pour les clients.
 - **Voice AI 2026 : la parité humaine est atteinte, accélérer le positionnement** — Latence < 300ms, 42% des entreprises déploient des agents vocaux, 70% des appels entrants routiniers gérés par IA. Pour H'appi : mettre à jour tous les pitchs et landing pages avec ces chiffres 2026. L'argument "indiscernable d'un humain" est désormais crédible et vendable aux PME françaises.
 - **WebSearch débloqué — veille multi-sources restaurée après 7 jours** — Accès WebSearch fonctionnel pour la première fois depuis le début de la veille. HackerNews, DEV.to et The New Stack restent inaccessibles directement. Recommandation : maintenir WebSearch comme source principale ; demander le déblocage réseau des autres domaines pour une couverture complète.
+
+---
+## 📰 Veille Tech — 2026-07-08
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Cowork s'étend au mobile et web — start on desk, finish on phone, MS365 write tools intégrés](https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/) | TechCrunch | #Claude #chatbot |
+| [Claude Science — workbench IA pour chercheurs, workflows end-to-end, accès HPC via NVIDIA BioNeMo](https://www.anthropic.com/news/claude-science-ai-workbench) | Anthropic | #Claude #LLM |
+| [Alibaba interdit Anthropic à ses employés suite à "distillation attack" — géopolitique IA](https://www.cnbc.com/2026/07/06/alibaba-anthropic-ai-ban-claude-china.html) | CNBC | #Claude #LLM |
+| [Anthropic : Claude utilise un espace interne pour "penser sans mots" — recherche conscience IA](https://www.axios.com/2026/07/06/anthropic-claude-ai-conscious) | Axios | #Claude #LLM |
+| [CNIL publie nouvelles recommandations IA & RGPD — innovation responsable, obligations AIPD](https://www.cnil.fr/fr/ia-et-rgpd-la-cnil-publie-ses-nouvelles-recommandations-pour-accompagner-une-innovation-responsable) | CNIL | #RGPD |
+| [Chatbot RGPD 2026 : obligations légales, registre traitements, sanctions jusqu'à 20M€](https://www.webotit.ai/blog/ia-conversationnelle/generalites/chatbot-et-rgpd-respectez-les-droits-des-personnes-avec-les-conseils-de-la-cnil) | Webotit.ai | #RGPD #chatbot |
+| [Vapi lève 50M$ Série B — revenus x10, clients Amazon/Intuit/NY Life — voice AI devenu mainstream](https://www.voiceaispace.com/news/voice-ai-news-2026-07-06) | VoiceAISpace | #VoiceAI |
+| [xAI lance Voice Agent Builder beta — no-code, agent vocal en < 2 min, téléphonie + MCPs intégrés](https://x.ai/news/grok-voice-agent-builder) | xAI | #VoiceAI |
+| [Voice AI : marché 18,39B$ en 2025 → 61,71B$ en 2031 (CAGR 22,38%) — 87,5% des builders actifs](https://www.assemblyai.com/blog/voice-ai-in-2026-series-1) | AssemblyAI | #VoiceAI |
+| [FastAPI vs Node.js pour backends IA 2026 — FastAPI + Python 3.13 + pgvector recommandés pour RAG](https://www.marsdevs.com/compare/fastapi-vs-nodejs-for-ai-backends) | MarsDevs | #FastAPI |
+| [kyutai-labs/pocket-tts (🔥 trending) — TTS qui tourne sur CPU, idéal pour déploiements edge/offline](https://github.com/kyutai-labs/pocket-tts) | GitHub Trending 🐍 | #VoiceAI |
+| [langbot-app/LangBot (🔥 trending) — plateforme bot multi-plateforme : Discord, Slack, Telegram, WeChat](https://github.com/langbot-app/LangBot) | GitHub Trending 🐍 | #chatbot |
+| [TencentCloud/TencentDB-Agent-Memory (🔥 +610 stars) — mémoire long-terme locale pour agents IA sans API externe](https://github.com/TencentCloud/TencentDB-Agent-Memory) | GitHub Trending TS | #LLM #chatbot |
+| [diegosouzapw/OmniRoute (🔥 +640 stars — 4e jour consécutif) — AI gateway 231+ providers, smart fallback](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [n8n-io/n8n (195k stars) — workflow automation open-source avec capacités IA natives intégrées](https://github.com/n8n-io/n8n) | GitHub Trending TS | #SaaS |
+
+### 💡 Insights clés
+- **Claude Cowork mobile/web + MS365 : nouvel argument commercial enterprise H'appi** — Claude Cowork est disponible depuis mobile et web avec écriture d'emails, gestion calendriers et fichiers OneDrive/SharePoint. Pour H'appi : pitcher "assistant IA d'équipe disponible partout" auprès des DSI. L'intégration MS365 ouvre la porte des PME françaises déjà sur Office 365 — à intégrer dans le tier Enterprise.
+- **Vapi $50M Série B + revenus x10 : le Voice AI B2B explose** — Vapi, partenaire clé de la stack H'appi (téléphonie), lève 50M$ avec des clients Amazon, Intuit, NY Life. Pour H'appi : argument commercial direct — "infrastructure identique aux géants". Marché Voice AI à 61,71B$ en 2031 valide l'investissement dans cette offre. Mettre à jour les pitchs avec ces chiffres immédiatement.
+- **CNIL nouvelles recommandations + sanctions jusqu'à 20M€ : action immédiate** — La CNIL impose une AIPD pour les usages IA à risque élevé. Pour H'appi : intégrer systématiquement "registre des traitements" et "AIPD" dans chaque livraison client. C'est un argument commercial différenciant fort — les concurrents génériques ne font pas ce travail. Mettre à jour le kit de déploiement standard.
+- **xAI Voice Agent Builder no-code : surveiller la commoditisation** — Grok permet de créer un agent vocal sans code en < 2 minutes. Pour H'appi : notre valeur ajoutée reste l'intégration profonde (PostgreSQL, CRM, webhooks) et la conformité RGPD. Articuler clairement "chatbot H'appi ≠ no-code" dans les pitchs pour se différencier et justifier le prix premium.
+- **TencentDB-Agent-Memory +610 stars : mémoire agent locale sans cloud = argument RGPD** — Mémoire long-terme pour agents IA sans dépendance API externe. Pour H'appi : à tester pour les chatbots qui retiennent le contexte client multi-sessions sans cloud (données hébergées France). Réduit les coûts dev sur les projets avec mémoire persistante et renforce l'argument RGPD souverain.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack, Anthropic.com) — 8e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. WebSearch reste fonctionnel et couvre l'essentiel des actualités pertinentes. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
