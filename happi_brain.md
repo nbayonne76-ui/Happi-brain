@@ -2797,3 +2797,32 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **xAI Voice Agent Builder no-code : surveiller la commoditisation** — Grok permet de créer un agent vocal sans code en < 2 minutes. Pour H'appi : notre valeur ajoutée reste l'intégration profonde (PostgreSQL, CRM, webhooks) et la conformité RGPD. Articuler clairement "chatbot H'appi ≠ no-code" dans les pitchs pour se différencier et justifier le prix premium.
 - **TencentDB-Agent-Memory +610 stars : mémoire agent locale sans cloud = argument RGPD** — Mémoire long-terme pour agents IA sans dépendance API externe. Pour H'appi : à tester pour les chatbots qui retiennent le contexte client multi-sessions sans cloud (données hébergées France). Réduit les coûts dev sur les projets avec mémoire persistante et renforce l'argument RGPD souverain.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack, Anthropic.com) — 8e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. WebSearch reste fonctionnel et couvre l'essentiel des actualités pertinentes. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-09
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Sonnet 5 — nouveau modèle par défaut Free & Pro, contexte 1M tokens, pricing intro $2/$10/Mtok jusqu'au 31 août](https://releasebot.io/updates/anthropic/claude) | Anthropic / Releasebot | #Claude #LLM |
+| [Claude Cowork mobile & web + MS365 — email, calendrier, OneDrive/SharePoint depuis app/browser](https://9to5mac.com/2026/07/07/anthropic-expanding-claude-cowork-to-mobile-and-web-details-here/) | 9to5Mac | #Claude |
+| [Claude for Government disponible en beta — déploiements secteur public officiellement lancés](https://www.anthropic.com/news) | Anthropic | #Claude #SaaS |
+| [Vercel Services — Docker + multi-backend (FastAPI, Go, Rails…) dans un seul projet, annonce semaine du 6 juillet](https://community.vercel.com/t/vercel-weekly-2026-07-06/45111) | Vercel Community | #Vercel #Docker #FastAPI |
+| [Railway starter Next.js + FastAPI + PostgreSQL + Redis — monorepo production prêt à l'emploi](https://railway.com/deploy/nextjs-fastapi-full-stack-starter) | Railway | #FastAPI #Railway #PostgreSQL |
+| [ElevenLabs en pourparlers pour valorisation à 22B$ — leader TTS vocal en pleine expansion](https://www.voiceaispace.com/news/voice-ai-news-2026-07-06) | VoiceAISpace | #VoiceAI |
+| [SoundHound acquiert LivePerson pour accélérer sa présence enterprise en Voice AI](https://www.voiceaispace.com/news/voice-ai-news-2026-07-06) | VoiceAISpace | #VoiceAI |
+| [AI Act août 2026 — obligations systèmes IA haut risque applicables dans ~6 semaines](https://www.leto.legal/guides/ai-act-conformite) | Leto.legal | #RGPD |
+| [Guide conformité chatbot RGPD 2026 — AIPD, base légale, droits utilisateurs, CNIL](https://heeya.fr/blog/chatbot-rgpd-guide-conformite-cnil) | Heeya.fr | #RGPD #chatbot |
+| [bradautomates/claude-video (🔥 +951 stars) — Claude analyse des vidéos : extraction frames + transcription](https://github.com/bradautomates/claude-video) | GitHub Trending 🐍 | #Claude #LLM |
+| [kyutai-labs/pocket-tts (🔥 +655 stars) — TTS qui tourne sur CPU, idéal déploiement edge/offline](https://github.com/kyutai-labs/pocket-tts) | GitHub Trending 🐍 | #VoiceAI |
+| [TencentCloud/TencentDB-Agent-Memory (🔥 trending) — mémoire long-terme locale pour agents IA, zéro dépendance API externe](https://github.com/TencentCloud/TencentDB-Agent-Memory) | GitHub Trending TS | #LLM #chatbot |
+| [wonderwhy-er/DesktopCommanderMCP (6.4k⭐) — MCP server : contrôle terminal + filesystem + diff editing pour Claude](https://github.com/wonderwhy-er/DesktopCommanderMCP) | GitHub Trending TS | #Claude |
+| [prisma/prisma (46.6k⭐) — ORM PostgreSQL/MySQL/MongoDB next-gen pour Node.js & TypeScript, en trending](https://github.com/prisma/prisma) | GitHub Trending TS | #PostgreSQL |
+
+### 💡 Insights clés
+- **Claude Sonnet 5 = nouveau standard API + pricing agressif jusqu'au 31 août** — Claude Sonnet 5 est le modèle par défaut depuis le 1er juillet (fenêtre 1M tokens, pricing $2/$10 par Mtok en promo). Pour H'appi : migrer les projets clients de Sonnet 4.6 vers Sonnet 5 en priorité pour réduire les coûts d'API et gagner en performance. Deadline budgétaire : avant fin août pour profiter du pricing intro.
+- **AI Act haut risque applicable en août 2026 : alerte commerciale et opérationnelle** — Dans ~6 semaines, les obligations sur les systèmes IA à haut risque deviennent contraignantes. Pour H'appi : vérifier si les chatbots déployés tombent dans les catégories haut risque (RH, crédit, sécurité). Préparer les dossiers de conformité AI Act dès maintenant — argument commercial différenciant fort pour les clients en compliance.
+- **ElevenLabs 22B$ + SoundHound/LivePerson : consolidation Voice AI enterprise** — Le marché vocal se consolide autour de quelques acteurs valorisés à des niveaux extrêmes. Pour H'appi : l'intégration Vapi (stack actuelle) reste un choix solide. Surveiller les évolutions tarifaires si ElevenLabs entre en bourse — prévoir alternatives open-source (pocket-tts) pour les clients cost-sensitive.
+- **Vercel Services + Docker multi-backend : stack H'appi nativisée** — Vercel supporte maintenant Docker + FastAPI + Next.js dans un seul projet. Pour H'appi : la stack Next.js/FastAPI/PostgreSQL peut être déployée entièrement sur Vercel (simplifie DevOps) ou Railway (starter prêt à l'emploi avec Redis). Tester le template Railway pour les nouvelles livraisons clients.
+- **claude-video trending +951 stars : ingestion vidéo pour Claude** — Extraction de frames + transcription pour analyser des vidéos avec Claude. Pour H'appi : cas d'usage chatbot formation/e-learning (analyser des tutos vidéo) et support client (analyser des screen recordings). À proposer en module add-on aux clients des secteurs éducation et RH.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 9e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
