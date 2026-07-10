@@ -2826,3 +2826,34 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **Vercel Services + Docker multi-backend : stack H'appi nativisée** — Vercel supporte maintenant Docker + FastAPI + Next.js dans un seul projet. Pour H'appi : la stack Next.js/FastAPI/PostgreSQL peut être déployée entièrement sur Vercel (simplifie DevOps) ou Railway (starter prêt à l'emploi avec Redis). Tester le template Railway pour les nouvelles livraisons clients.
 - **claude-video trending +951 stars : ingestion vidéo pour Claude** — Extraction de frames + transcription pour analyser des vidéos avec Claude. Pour H'appi : cas d'usage chatbot formation/e-learning (analyser des tutos vidéo) et support client (analyser des screen recordings). À proposer en module add-on aux clients des secteurs éducation et RH.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 9e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-10
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Opus 4.8 — modèle le plus puissant d'Anthropic, contexte 1M tokens natif, dispo API/Bedrock/Vertex](https://releasebot.io/updates/anthropic/claude) | Anthropic / Releasebot | #Claude #LLM |
+| [Anthropic découvre le "J-Space" chez Claude : espace interne de réflexion sans mots — similitudes avec conscience humaine](https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/) | MIT Technology Review | #Claude #LLM |
+| [Claude Cowork passe au cloud & mobile — sessions à distance, fichiers synchronisés, disponible hors-ligne](https://www.nbcnews.com/tech/tech-news/anthropic-will-make-claude-cowork-available-users-cloud-rcna353218) | NBC News | #Claude #SaaS |
+| [Claude : 9,2% de part de marché chatbot mondial en mai 2026, +855% sur un an — 2e croissance la plus rapide](https://firstpagesage.com/reports/top-generative-ai-chatbots/) | First Page Sage | #Claude #LLM |
+| [OpenAI lance GPT-Live — voix full-duplex (parole + écoute simultanées), remplace Advanced Voice Mode](https://openai.com/index/introducing-gpt-live/) | OpenAI | #VoiceAI |
+| [ElevenLabs en négociation pour valorisation à 22B$ — doublement de valeur en quelques mois](https://www.voiceaispace.com/news/voice-ai-news-2026-07-06) | VoiceAISpace | #VoiceAI |
+| [jamiepine/voicebox (🔥 +1146 stars) — studio vocal IA open-source : clonage de voix, dictée, création audio](https://github.com/jamiepine/voicebox) | GitHub Trending TS | #VoiceAI |
+| [Graphify-Labs/graphify (🔥 +909 stars) — convertit un repo en knowledge graph queryable pour assistants IA](https://github.com/Graphify-Labs/graphify) | GitHub Trending 🐍 | #LLM |
+| [TencentCloud/TencentDB-Agent-Memory (🔥 +581 stars) — mémoire long-terme locale 4 niveaux pour agents IA, zéro API externe](https://github.com/TencentCloud/TencentDB-Agent-Memory) | GitHub Trending TS | #LLM #chatbot |
+| [microsoft/SkillOpt (🔥 +276 stars) — optimise des skills LLM réutilisables par trajectory-driven edits sur agents gelés](https://github.com/microsoft/SkillOpt) | GitHub Trending 🐍 | #LLM |
+| [unclecode/crawl4ai (🔥 +215 stars) — web crawler open-source optimisé pour LLMs, scraping structuré](https://github.com/unclecode/crawl4ai) | GitHub Trending 🐍 | #LLM |
+| [langfuse/langfuse (🔥 +94 stars) — plateforme open-source LLM engineering : observabilité, evals, prompt management](https://github.com/langfuse/langfuse) | GitHub Trending TS | #LLM #SaaS |
+| [Vercel Services — Docker + FastAPI/Go/Rails dans un seul projet Vercel, annonce semaine du 6 juillet](https://community.vercel.com/t/vercel-weekly-2026-07-06/45111) | Vercel Community | #Vercel #Docker #FastAPI |
+| [RGPD + AI Act double conformité 2026 — guide complet obligations chatbot IA pour entreprises françaises](https://ayinedjimi-consultants.fr/articles/rgpd-ai-act-double-conformite-guide) | Ayi Nedjimi Consultants | #RGPD #chatbot |
+| [Chatbot RGPD France 2026 — DPA, base légale, AIPD, droits utilisateurs, obligations CNIL à jour](https://www.agentsia.fr/chatbot-rgpd-france-2026/) | Agentsia.fr | #RGPD #chatbot |
+
+### 💡 Insights clés
+- **Claude Opus 4.8 + J-Space : nouveau levier commercial et R&D pour H'appi** — Anthropic lance Opus 4.8 (1M tokens natif) et publie une recherche sur le "J-Space", espace interne de raisonnement chez Claude. Pour H'appi : Opus 4.8 ouvre des cas d'usage très longs (analyse de contrats, knowledge bases larges) — à intégrer dans le tier Enterprise. La recherche J-Space est un argument de crédibilité scientifique dans les pitchs.
+- **OpenAI GPT-Live full-duplex : la référence Voice AI change — surveiller de près** — GPT-Live (parole + écoute simultanées) est maintenant le standard par défaut pour les voix ChatGPT. Pour H'appi : notre stack Vapi reste solide pour la téléphonie B2B, mais GPT-Live fixe un nouveau standard d'expérience utilisateur. Anticiper des demandes clients pour ce type de fluidité dans les agents vocaux — évaluer l'intégration GPT-Live-1 mini (tier free) comme alternative future.
+- **Claude part de marché +855% YoY : argument commercial fort pour l'écosystème Anthropic** — Claude est le chatbot à la croissance la plus rapide en 2026 (9,2% marché, 952M visites mensuelles). Pour H'appi : "nous bâtissons sur la plateforme à la croissance la plus forte du marché" est un argument de crédibilité auprès des investisseurs et DSI. À intégrer dans les decks commerciaux.
+- **voicebox +1146 stars : studio vocal IA open-source à surveiller** — Clone de voix + dictée open-source en TypeScript. Pour H'appi : alternative open-source à ElevenLabs pour les clients cost-sensitive ou RGPD-strict (hébergement local). Tester sur un projet pilote avant de s'engager sur ElevenLabs à $22B de valorisation.
+- **graphify +909 stars : knowledge graph de code pour IA = productivité dev H'appi** — Convertit un repo en graphe queryable pour assistants IA. Pour H'appi : accélérer onboarding des chatbots clients (graphify le code legacy du client → l'IA comprend la base de code plus vite). Tester en interne sur les projets les plus complexes.
+- **Double conformité RGPD + AI Act : argument commercial différenciant clé en juillet 2026** — Les obligations AI Act haut risque entrent en vigueur imminemment. Pour H'appi : packager systématiquement "conformité RGPD + AI Act" dans chaque livraison — DPA, AIPD, registre des traitements. C'est un différenciateur fort face aux solutions génériques. Mettre à jour les CGV et contrats clients avant fin juillet.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 10e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
