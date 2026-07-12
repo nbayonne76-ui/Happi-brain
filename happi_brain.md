@@ -2886,3 +2886,33 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **Stack Next.js + FastAPI + Dokploy : alternative PaaS souveraine à Railway/Vercel** — Dokploy est un PaaS self-hosted open-source déployable sur VPS à coût fixe (vs Railway à la consommation). Pour H'appi : évaluer Dokploy pour les projets avec hébergement souverain français requis (secteur public, santé, finance RGPD strict). Benchmark Railway vs Dokploy sur le prochain projet.
 - **CNIL recommandations IA 2026 publiées : mettre à jour le template livrable conformité H'appi** — Nouvelle guidance CNIL spécifique IA : base légale obligatoire, minimisation des données, AIPD pour les traitements à risque, gestion des sous-traitants IA, durée de conservation. Pour H'appi : créer et livrer systématiquement un "Dossier Conformité RGPD + AI Act" avec chaque déploiement chatbot — différenciateur commercial clé, protège le client et H'appi en cas de contrôle CNIL.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 11e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-12
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Sonnet 5 — le plus agentique à ce jour, proche d'Opus 4.8, tarif réduit jusqu'au 31 août](https://www.anthropic.com/news) | Anthropic | #LLM #Claude |
+| [Claude Cowork migre vers le cloud — exécution en arrière-plan multi-appareils, beta Max](https://www.nbcnews.com/tech/tech-news/anthropic-will-make-claude-cowork-available-users-cloud-rcna353218) | NBC / Anthropic | #Claude #SaaS |
+| [wonderwhy-er/DesktopCommanderMCP — MCP server terminal + FS pour Claude (+909 stars/jour)](https://github.com/wonderwhy-er/DesktopCommanderMCP) | GitHub Trending TS | #LLM |
+| [pydantic/pydantic-ai — AI Agent Framework by Pydantic (trending Python)](https://github.com/pydantic/pydantic-ai) | GitHub Trending 🐍 | #LLM #chatbot |
+| [Shubhamsaboo/awesome-llm-apps — 100+ apps LLM & RAG à cloner et déployer](https://github.com/Shubhamsaboo/awesome-llm-apps) | GitHub Trending 🐍 | #LLM #chatbot |
+| [HuggingFace smolagents v1.26.0 — agents qui écrivent et exécutent du Python directement](https://huggingface.co/docs/smolagents/en/index) | HuggingFace | #LLM |
+| [ICML 2026 Séoul — record 23 918 soumissions, 60 workshops agentic AI](https://alicelabs.ai/en/insights/best-ai-agent-frameworks-2026) | ICML / AliceLabs | #LLM |
+| [Pipecat — Voice AI open-source, sub-250ms latency, 70+ langues, WebRTC](https://www.assemblyai.com/blog/orchestration-tools-ai-voice-agents) | AssemblyAI | #VoiceAI #chatbot |
+| [FastAPI vs Next.js : quel backend pour un AI SaaS en 2026 ?](https://hassanr.com/blogs/fastapi-vs-nextjs-ai-saas-backend-2026.html) | hassanr.com | #FastAPI #Next.js #SaaS |
+| [Déployer FastAPI + Next.js sur Vercel — guide 2026](https://nemanjamitic.com/blog/2026-02-22-vercel-deploy-fastapi-nextjs/) | nemanjamitic.com | #FastAPI #Next.js #Vercel |
+| [louislam/dockge — gestionnaire Docker Compose self-hosted réactif (+17 stars/jour)](https://github.com/louislam/dockge) | GitHub Trending TS | #Docker |
+| [Chatbot IA & RGPD 2026 : DPA obligatoire, AIPD, AI Act — guide conformité CNIL](https://heeya.fr/blog/chatbot-rgpd-guide-conformite-cnil) | heeya.fr | #RGPD #chatbot |
+| [MervinPraison/PraisonAI — agents IA autonomes auto-améliorants en 5 lignes, mémoire + RAG](https://github.com/MervinPraison/PraisonAI) | GitHub Trending 🐍 | #LLM #chatbot |
+| [Infisical — secrets & certificats open-source, +40 stars/jour, alternative à HashiCorp Vault](https://github.com/Infisical/infisical) | GitHub Trending TS | #SaaS #Docker |
+| [gitroomhq/postiz-app — scheduling social media agentique open-source (+76 stars/jour)](https://github.com/gitroomhq/postiz-app) | GitHub Trending TS | #SaaS |
+
+### 💡 Insights clés
+- **Claude Sonnet 5 disponible : migrer nos intégrations Anthropic dès maintenant** — Lancé le 30 juin, Sonnet 5 est le défaut pour tous les utilisateurs Claude depuis le 1er juillet. Il surpasse Sonnet 4.6 sur les tâches agentiques, approche Opus 4.8, et est à tarif réduit jusqu'au 31 août. Pour H'appi : remplacer claude-sonnet-4-6 par claude-sonnet-5 dans nos chatbots clients — gain de performance immédiat, coût similaire ou inférieur pendant la période promo.
+- **Claude Cowork cloud = shift vers les agents en arrière-plan — nouveau cas d'usage H'appi** — Anthropic déplace Cowork vers le cloud : les agents tournent même quand l'appareil est éteint. C'est le signal que les agents autonomes longue durée deviennent mainstream. Pour H'appi : proposer des "chatbots backgroundés" capables de surveiller des flux, d'envoyer des rapports, de monitorer des données — package "Agent Veille Automatisée" à ajouter à notre catalogue.
+- **DesktopCommanderMCP +909 stars/jour : l'outillage MCP terminal explose** — Ce MCP server donne à Claude le contrôle du terminal et du filesystem — meilleur score journalier de la semaine sur GitHub TS. Pour H'appi : intégrer des MCP servers spécialisés dans nos chatbots enterprise (terminal, BDD, CRM) pour passer du chatbot passif à l'agent actif — argument commercial décisif en démo client.
+- **Pipecat sub-250ms : Voice AI production-ready, open-source, souverain** — Framework Python, sub-250ms end-to-end, WebRTC natif, 70+ langues, auto-hébergeable. Rival direct de Vapi mais sans API tiers. Pour H'appi : benchmarker Pipecat vs Vapi sur un projet pilote — si latence OK, Pipecat devient notre stack Voice AI RGPD-compliant pour clients santé et secteur public.
+- **RGPD + AI Act 2026 : DPA désormais obligatoire pour TOUT chatbot IA** — Les dernières directives juridiques d'avril 2026 rendent le DPA obligatoire pour toute intégration IA conversationnelle, même en B2B. Sanctions jusqu'à 20M€ ou 4% du CA mondial. Pour H'appi : ajouter le DPA en annexe standard de chaque contrat client chatbot + livrer systématiquement un template AIPD — protège H'appi et valorise notre expertise conformité face aux concurrents.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 12e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
