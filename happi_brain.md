@@ -2916,3 +2916,33 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **Pipecat sub-250ms : Voice AI production-ready, open-source, souverain** — Framework Python, sub-250ms end-to-end, WebRTC natif, 70+ langues, auto-hébergeable. Rival direct de Vapi mais sans API tiers. Pour H'appi : benchmarker Pipecat vs Vapi sur un projet pilote — si latence OK, Pipecat devient notre stack Voice AI RGPD-compliant pour clients santé et secteur public.
 - **RGPD + AI Act 2026 : DPA désormais obligatoire pour TOUT chatbot IA** — Les dernières directives juridiques d'avril 2026 rendent le DPA obligatoire pour toute intégration IA conversationnelle, même en B2B. Sanctions jusqu'à 20M€ ou 4% du CA mondial. Pour H'appi : ajouter le DPA en annexe standard de chaque contrat client chatbot + livrer systématiquement un template AIPD — protège H'appi et valorise notre expertise conformité face aux concurrents.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 12e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-13
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic J-Space : Claude a un espace de raisonnement interne silencieux (J-lens)](https://www.anthropic.com/research/global-workspace) | Anthropic Research | #LLM #Claude |
+| [Claude Cowork cloud & mobile : agents actifs même appareil éteint](https://www.fingerlakes1.com/2026/07/09/claude-cowork-ai-agent-launches-as-anthropic-expands-ai-assistant-to-cloud-and-mobile/) | Fingerlakes1 / Anthropic | #Claude #SaaS |
+| [Anthropic vaut plus qu'OpenAI — Claude à 17% du marché mobile chatbot US](https://fatjoe.com/blog/claude-ai-stats/) | FatJoe | #Claude #LLM |
+| [EU AI Act Art. 50 : disclosure chatbot obligatoire dès le 2 août 2026](https://www.techtimes.com/articles/320101/20260710/eu-ai-act-enforcement-here-chatbot-rules-live-high-risk-ai-delay-now-binding-law.htm) | TechTimes | #RGPD #chatbot |
+| [Chatbot & AI Act : guide conformité 2026 pour opérateurs](https://heeya.fr/en/blog/eu-ai-act-chatbot-compliance-2026) | Heeya.fr | #RGPD #chatbot |
+| [Next.js 16.3 : Turbopack persistent cache, Rust React Compiler, import.meta.glob](https://releasebot.io/updates/vercel/next-js) | Releasebot / Vercel | #Next.js #Vercel |
+| [Vercel Services : FastAPI + Docker dans un projet full-stack unique](https://community.vercel.com/t/vercel-weekly-2026-07-06/45111) | Vercel Community | #Vercel #FastAPI #Docker |
+| [Railway $41/mo vs Vercel $1 010/mo — benchmark Next.js 2026](https://www.13labs.au/compare/railway-vs-vercel) | 13labs.au | #Railway #Vercel #Next.js |
+| [ElevenLabs vise $22B de valorisation — Voice AI devient mainstream](https://www.voiceaispace.com/news/voice-ai-news-2026-07-06) | VoiceAISpace | #VoiceAI |
+| [xAI lance Grok Voice Builder pour créer des agents vocaux](https://www.voiceaispace.com/news/voice-ai-news-2026-07-06) | VoiceAISpace | #VoiceAI #chatbot |
+| [davila7/claude-code-templates — CLI Claude Code trending (+274 étoiles/jour)](https://github.com/davila7/claude-code-templates) | GitHub Trending 🐍 | #Claude #LLM |
+| [wonderwhy-er/DesktopCommanderMCP — MCP terminal + FS pour Claude (8K stars)](https://github.com/wonderwhy-er/DesktopCommanderMCP) | GitHub Trending TS | #LLM #Claude |
+| [ColeMurray/background-agents — agents IA en arrière-plan open-source](https://github.com/ColeMurray/background-agents) | GitHub Trending TS | #LLM #SaaS |
+| [heygen-com/hyperframes — écrire du HTML pour produire de la vidéo, conçu pour les agents](https://github.com/heygen-com/hyperframes) | GitHub Trending TS | #LLM #SaaS |
+| [Shubhamsaboo/awesome-llm-apps — 100+ apps LLM & RAG à déployer (+408 étoiles/jour)](https://github.com/Shubhamsaboo/awesome-llm-apps) | GitHub Trending 🐍 | #LLM #chatbot |
+
+### 💡 Insights clés
+- **J-Space : Anthropic peut lire les "pensées" silencieuses de Claude — game changer en transparence IA** — Le J-lens révèle les raisonnements internes de Claude sans qu'il les exprime. Implication double : (1) sécurité IA renforcée (détecter un plan nuisible avant exécution) ; (2) transparence commerciale (montrer aux clients enterprise comment leur chatbot raisonne). Pour H'appi : positionner l'argument "interprétabilité Claude" dans nos démos — différenciateur fort face aux solutions black-box.
+- **AI Act Article 50 applicable le 2 août 2026 — J-20 jours, action urgente sur tous les chatbots clients** — Obligation légale : informer l'utilisateur en début de conversation qu'il interagit avec une IA. Sanction jusqu'à 4% du CA mondial en cas de non-conformité. Pour H'appi : patcher IMMÉDIATEMENT tous les chatbots déployés avec un message d'accueil "Vous interagissez avec un assistant IA". Priorité absolue avant toute autre feature.
+- **Vercel Services = FastAPI + Docker + Next.js dans un seul projet — full-stack unifié** — Vercel brise son silos frontend : déploiement d'une app full-stack (Next.js + FastAPI + Docker) dans un projet unique. Pour H'appi : tester Vercel Services sur le prochain projet avant de valider Railway comme défaut. Si l'expérience DX est bonne, Vercel devient notre plateforme unique.
+- **Railway $41/mo vs Vercel $1 010/mo pour la même Next.js app — benchmark choc** — Pour les projets clients à fort trafic, Railway est 25× moins cher que Vercel. Pour H'appi : avoir ce chiffre prêt en démo pour les clients sensibles au coût d'hosting. Positionnement : Vercel pour early-stage (DX, vitesse), Railway pour maturité (coût, Docker natif).
+- **ElevenLabs $22B + Grok Voice Builder : Voice AI entre dans la phase mainstream** — En quelques jours : ElevenLabs devient l'une des 10 startups IA les mieux valorisées, xAI lance un constructeur d'agents vocaux grand public. Pour H'appi : l'offre Voice AI n'est plus optionnelle — les clients vont la demander par défaut. Structurer un module Voice AI (Pipecat ou Vapi) dans notre catalogue standard.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 13e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
