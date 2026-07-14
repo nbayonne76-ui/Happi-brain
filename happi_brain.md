@@ -2946,3 +2946,33 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **Railway $41/mo vs Vercel $1 010/mo pour la même Next.js app — benchmark choc** — Pour les projets clients à fort trafic, Railway est 25× moins cher que Vercel. Pour H'appi : avoir ce chiffre prêt en démo pour les clients sensibles au coût d'hosting. Positionnement : Vercel pour early-stage (DX, vitesse), Railway pour maturité (coût, Docker natif).
 - **ElevenLabs $22B + Grok Voice Builder : Voice AI entre dans la phase mainstream** — En quelques jours : ElevenLabs devient l'une des 10 startups IA les mieux valorisées, xAI lance un constructeur d'agents vocaux grand public. Pour H'appi : l'offre Voice AI n'est plus optionnelle — les clients vont la demander par défaut. Structurer un module Voice AI (Pipecat ou Vapi) dans notre catalogue standard.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 13e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-14
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude for Government — Anthropic ouvre Claude aux collectivités (Californie -50%, formation gratuite, portail SIT)](https://www.anthropic.com/news) | Anthropic | #LLM #Claude #SaaS |
+| [Vercel AI SDK v6.0 — API unifiée 25+ providers IA, changer de modèle en 2 lignes de code](https://tech-insider.org/vercel-ai-sdk-tutorial-chatbot-nextjs-2026/) | Tech-Insider | #Next.js #Vercel #chatbot |
+| [Building a Hybrid AI Chatbot with Next.js 16 — Partial Prerendering + AI SDK (GitNation)](https://gitnation.com/contents/building-a-hybrid-ai-chatbot-with-nextjs-16) | GitNation | #Next.js #chatbot |
+| [How to Add an AI Chatbot to Your React Native App (FastAPI Backend) — guide production Simplico](https://simplico.net/2026/06/21/ai-chatbot-react-native-fastapi/) | Simplico | #chatbot #FastAPI |
+| [LiveKit Agents — Voice AI open-source WebRTC natif, auto-hébergeable, zéro lock-in tiers](https://livekit.com/) | LiveKit | #VoiceAI #chatbot |
+| [bolna-ai/bolna — framework end-to-end open-source pour agents vocaux LLM production-ready](https://github.com/bolna-ai/bolna) | GitHub | #VoiceAI #chatbot |
+| [AI Act : application intégrale le 2 août 2026 — J-19, sanctions jusqu'à €35M ou 7% du CA](https://www.donneespersonnelles.fr/actualite-ia-2026) | DonnéesPersonnelles.fr | #RGPD #chatbot |
+| [AI Act obligations 2026 : calendrier complet, amendes, European AI Registry — guide Leto Legal](https://www.leto.legal/guides/ai-act-conformite) | Leto Legal | #RGPD |
+| [Docker vs Vercel pour le déploiement SaaS en 2026 — guide StarterPick](https://starterpick.com/guides/docker-vs-vercel-deployment-strategies-2026) | StarterPick | #Docker #Vercel #SaaS |
+| [Railway : déploiement PostgreSQL en un clic, SSL natif, backups managés](https://docs.railway.com/databases/postgresql) | Railway Docs | #PostgreSQL #Railway |
+| [ARUNAGIRINATHAN-K/awesome-ai-agents-2026 — 300+ agents IA : Voice, Enterprise, Research, Frameworks](https://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026) | GitHub | #LLM #chatbot |
+| [ruvnet/ruflo (🔥 trending TS) — agent meta-harness multi-player, mémoire adaptative + RAG intégrés](https://github.com/ruvnet/ruflo) | GitHub Trending TS | #LLM #SaaS |
+| [Graphify-Labs/graphify (🔥 trending 🐍) — transformer code + schemas + docs en graphe queryable pour Claude](https://github.com/Graphify-Labs/graphify) | GitHub Trending 🐍 | #LLM #Claude |
+| [YishenTu/claudian (🔥 trending TS) — plugin Obsidian intégrant Claude AI comme collaborateur dans le vault](https://github.com/YishenTu/claudian) | GitHub Trending TS | #Claude #SaaS |
+
+### 💡 Insights clés
+- **Claude for Government = nouveau marché B2G pour H'appi** — Anthropic déploie Claude dans les collectivités publiques (Californie en beta, -50% + formation gratuite). Signal fort que le secteur public va accélérer l'adoption de chatbots IA. Pour H'appi : préparer une offre "Chatbot Secteur Public" spécifique (souveraineté hébergement, conformité RGPD & AI Act, accessibilité RGAA) — positionner auprès des mairies, établissements de santé, services RH publics.
+- **Vercel AI SDK v6.0 — portabilité fournisseur LLM en 2 lignes : à adopter dans tous nos projets** — Le SDK unifie 25+ providers (Claude, GPT, Gemini, Mistral…) derrière une API identique. Pour H'appi : intégrer Vercel AI SDK dans nos projets Next.js dès maintenant — on peut switcher de Claude à GPT-4o en modifiant 2 lignes, argument clé face aux clients qui veulent éviter le vendor lock-in Anthropic.
+- **LiveKit + Bolna : 3 frameworks Voice AI open-source production-ready — souveraineté totale** — Pipecat (sub-250ms, WebRTC), LiveKit (WebRTC natif, self-hosted), Bolna (end-to-end LLM voice). Pour H'appi : la souveraineté Voice AI est désormais accessible — construire un comparatif Vapi vs Pipecat vs LiveKit sur latence, coût, conformité RGPD avant le prochain projet vocal.
+- **AI Act J-19 — €35M de sanctions au 2 août : audit chatbot urgent** — Les sanctions ont été confirmées : jusqu'à €35M ou 7% du CA mondial pour les systèmes interdits, €7,5M pour non-respect de transparence. L'European AI Registry est maintenant exigible pour certains systèmes. Pour H'appi : (1) vérifier le message "vous interagissez avec une IA" sur TOUS les chatbots déployés, (2) vérifier l'éligibilité à l'enregistrement dans l'AI Registry, (3) livrer un rapport de conformité AI Act aux clients à risque avant le 1er août.
+- **Graphify trending : rendre le code legacy d'un client queryable par Claude — onboarding 10× plus rapide** — Graphify convertit un repo entier (code + schemas + docs) en graphe de connaissance queryable par une IA. Pour H'appi : utiliser Graphify lors de l'onboarding des chatbots clients sur des bases de code complexes (ERP, legacy Java/PHP). Réduction drastique du temps de contextualisation de Claude sur le domaine client.
+- **Ruflo meta-harness + Claudian : l'écosystème TS autour de Claude s'industrialise** — Ruflo orchestre des swarms d'agents avec mémoire adaptative ; Claudian intègre Claude comme collaborateur dans Obsidian. Pour H'appi : l'outillage multi-agent TS est mature — structurer un module "agent workflow" dans nos projets basé sur Ruflo pour les clients qui ont des processus métier complexes à automatiser.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 14e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
