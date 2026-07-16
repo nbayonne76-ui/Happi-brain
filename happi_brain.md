@@ -3007,3 +3007,31 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **Vercel vs Railway vs Hetzner 2026 — la règle d'or confirmée pour H'appi** — Consensus des analyses 2026 : Vercel pour le frontend Next.js (edge, DX), Railway pour le backend FastAPI + PostgreSQL (flexibilité, coût), Hetzner pour les charges à fort volume (bare metal, autonomie totale). Pour H'appi : standardiser cette architecture tri-layer pour nos projets SaaS clients à partir de maintenant — clarté pour les devis et les handoff ops.
 - **Google AI Overviews à 55% des recherches — le SEO classique est mort, place au SEO conversationnel** — 69% des recherches Google se terminent sans un clic sur un site. Les chatbots IA capturent l'intention là où le site web ne peut plus. Pour H'appi : intégrer l'argument "votre chatbot IA remplace votre trafic organique perdu" dans les démos commerciales — c'est désormais une réalité mesurable, pas une projection.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 15e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines API directs dans la politique réseau de l'environnement remote.
+
+---
+## 📰 Veille Tech — 2026-07-16
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Shubhamsaboo/awesome-llm-apps — 100+ AI Agent & RAG apps clonables et déployables (1 236 ⭐ aujourd'hui)](https://github.com/Shubhamsaboo/awesome-llm-apps) | GitHub Trending 🐍 | #LLM #chatbot |
+| [HKUDS/nanobot — Agent IA léger open-source pour outils, chats et workflows](https://github.com/HKUDS/nanobot) | GitHub Trending 🐍 | #chatbot #LLM |
+| [HKUDS/Vibe-Trading — Personal Trading AI Agent (915 ⭐ aujourd'hui)](https://github.com/HKUDS/Vibe-Trading) | GitHub Trending 🐍 | #LLM |
+| [vllm-project/vllm — Moteur d'inférence LLM haute performance + memory-efficient (104 ⭐ aujourd'hui)](https://github.com/vllm-project/vllm) | GitHub Trending 🐍 | #LLM |
+| [moeru-ai/airi — AI companion self-hosted avec voice chat intégré (42 653 ⭐)](https://github.com/moeru-ai/airi) | GitHub Trending TS | #VoiceAI #chatbot |
+| [earendil-works/pi — Toolkit agent IA : API LLM unifiée, agent loop, TUI, CLI coding agent (71 576 ⭐)](https://github.com/earendil-works/pi) | GitHub Trending TS | #LLM #chatbot |
+| [heygen-com/hyperframes — Write HTML. Render video. Built for agents. (35 527 ⭐)](https://github.com/heygen-com/hyperframes) | GitHub Trending TS | #LLM #SaaS |
+| [browseros-ai/BrowserOS — Navigateur agentique alternatif à ChatGPT Atlas (12 233 ⭐)](https://github.com/browseros-ai/BrowserOS) | GitHub Trending TS | #LLM #chatbot |
+| [PeterH0323/Streamer-Sales — LLM + TTS + ASR + FastAPI + Docker-compose (3 734 ⭐, màj 16/07)](https://github.com/PeterH0323/Streamer-Sales) | GitHub Search | #VoiceAI #FastAPI #Docker |
+| [AleksNeStu/ai-real-estate-assistant — FastAPI + Next.js + ChromaDB + RAG (279 ⭐, màj 14/07)](https://github.com/AleksNeStu/ai-real-estate-assistant) | GitHub Search | #FastAPI #Next.js #chatbot |
+| [adrianhajdin/saas-app — SaaS LMS Next.js 15 + Vapi AI voice agent + Stripe (431 ⭐)](https://github.com/adrianhajdin/saas-app) | GitHub Search | #VoiceAI #SaaS #Next.js |
+| [Anil-matcha/AI-Voice-Agent — Self-hosted AI voice agent (Next.js + TTS, 158 ⭐)](https://github.com/Anil-matcha/AI-Voice-Agent) | GitHub Search | #VoiceAI #Next.js |
+| [paulpierre/RasaGPT — LLM chatbot headless FastAPI + Langchain + pgvector (2 464 ⭐)](https://github.com/paulpierre/RasaGPT) | GitHub Search | #chatbot #FastAPI #PostgreSQL |
+
+### 💡 Insights clés
+- **awesome-llm-apps — 1 236 ⭐ en une journée : la bibliothèque de référence RAG + agents à intégrer dans notre onboarding** — Ce repo concentre 100+ applications AI Agent et RAG clonables et immédiatement déployables. Il est devenu la ressource communautaire de référence pour les patterns LLM. Pour H'appi : indexer ce repo dans notre base de patterns. Quand un client demande un use case (chatbot doc, agent CRM, assistant vocal), aller y chercher le template le plus proche plutôt que de repartir de zéro — économise 2-3 jours de setup.
+- **Hyperframes "Write HTML. Render video. Built for agents" — la prochaine génération de chatbots génère du contenu vidéo interactif** — HeyGen lance un framework TypeScript où les agents écrivent du HTML qui est ensuite rendu en vidéo. Cela signale une transition : les chatbots vont au-delà du texte vers des livrables visuels automatisés (présentations, démos produit, tutoriels générés). Pour H'appi : explorer un cas d'usage "chatbot qui génère une vidéo de présentation produit" pour les clients e-commerce — différenciateur fort à prix premium.
+- **airi + AI-Voice-Agent + saas-app Vapi : le Voice AI self-hosted est devenu un pattern mature** — Trois projets GitHub indépendants convergent vers le même stack : Next.js + Vapi.ai + TTS + self-hosting. Ce n'est plus expérimental — c'est un pattern reproductible. Pour H'appi : notre intégration Vapi.ai dans le boilerplate est alignée avec la communauté. Accélérer la documentation du pattern "Voice Agent self-hosted RGPD-compliant" pour le proposer comme prestation packagée.
+- **RasaGPT + pgvector — notre choix FastAPI + PostgreSQL + pgvector est validé par 2 464 ⭐** — RasaGPT utilise exactement notre stack (FastAPI + Langchain + pgvector + ngrok) pour un chatbot LLM headless. C'est une validation communautaire forte. Pour H'appi : lire le code de RasaGPT pour s'en inspirer sur la gestion des sessions de dialogue et l'architecture headless — il peut aussi servir de référence technique dans les pitchs clients.
+- **vllm — inférence LLM haute performance : pertinent pour les clients enterprise à fort volume** — vllm est le moteur d'inférence le plus utilisé pour déployer des LLM open-source à grande échelle. Pour H'appi : pour les clients qui demandent du LLM on-premise (données sensibles, RGPD strict), vllm + Hetzner est la réponse. À mentionner dans les devis enterprise comme option "full souveraineté des données".
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack, Anthropic.com) — 16e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending + GitHub Search API. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
