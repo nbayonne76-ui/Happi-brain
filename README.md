@@ -18,12 +18,14 @@ projects/               ← Fiche détaillée de chaque projet
   happi-website.md               ← Site vitrine H'appi
   demos-clients.md               ← 18 démos HTML clients (multi-secteurs)
   toptiercollection.md           ← Site e-commerce Top Tier Collection
+  microsoft-sales-app.md         ← Sales intelligence + agents autonomes (pattern SaaS réutilisable)
 
 memory/                 ← Index mémoire Claude
   MEMORY_global.md
   MEMORY_quality_tracking.md
   project_dropos.md
   project_happi_foundry.md
+  project_microsoft_sales_app.md
 
 claude-config/
   CLAUDE.md             ← Instructions globales Claude Code
@@ -46,6 +48,7 @@ claude-config/
 | [Quality Tracking App](projects/quality-tracking-app.md) | App mobile | Production |
 | [Top Tier Collection](projects/toptiercollection.md) | E-commerce | Active |
 | [H'appi Website](projects/happi-website.md) | Site vitrine | Live |
+| [Microsoft Sales App](projects/microsoft-sales-app.md) | Sales intelligence (agents + KB, multi-tenant) | Production |
 
 ## Démos clients (18 showcases HTML)
 

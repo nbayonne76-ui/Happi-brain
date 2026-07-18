@@ -239,8 +239,13 @@ Ces projets sont des démos/présentations pour convaincre les clients. Stack : 
 
 ### Microsoft Sales App
 - **Repo** : `microsoft-sales-app`
-- **Type** : Application commerciale (ancienne)
-- **Stack** : JavaScript
+- **Type** : Sales intelligence + agents autonomes (multi-tenant depuis 07/2026)
+- **Stack** : Next.js 15 + Prisma + Neon Postgres + NextAuth + GPT-4o-mini + Tavily
+- **Pattern clé** : watchlist compte → signaux externes (Tavily/DDG) → scoring regex → synthèse
+  GPT ancrée KB → persistance par utilisateur → brief périodique. Réutilisable pour un futur
+  SaaS de sales intelligence (catégorie ZoomInfo/Klue, PAS un CDP type D365 Customer Insights)
+  en remplaçant la KB et les signaux par ceux d'un autre client/secteur.
+- **Détails complets** : voir [projects/microsoft-sales-app.md](projects/microsoft-sales-app.md)
 
 ---
 
