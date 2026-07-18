@@ -1,6 +1,6 @@
 # H'appi Global Memory
 
-## HAPPI BRAIN — Index thématique (8 fichiers)
+## HAPPI BRAIN — Index thématique (10 fichiers)
 
 - [happi_brain_core](happi_brain_core.md) — Identité H'appi · stack tech · env dev WSL2 · deploy Railway/Vercel/Docker · règles qualité universelles FastAPI + Next.js
 - [happi_brain_chatbots](happi_brain_chatbots.md) — Projets chatbots (SAV-Bot MDF, INnatural, Secretary Vapi) · 18 showcases HTML clients · secteurs couverts · patterns widget/full-stack/vocal

@@ -1,6 +1,6 @@
 ---
 name: happi-brain-platforms
-description: "Plateformes H'appi — DropOS (SaaS dropshipping), Quality Tracking App (Expo+FastAPI multi-rôle), TopTier (e-commerce), Microsoft Sales App (67 solutions D365/Azure bilingues, KB enrichissement en cours juillet 2026, 6 solutions 100%, Foundry+Blueprints nouveaux)"
+description: "Plateformes H'appi — DropOS (SaaS dropshipping), Quality Tracking App (Expo+FastAPI multi-rôle), TopTier (e-commerce), Microsoft Sales App (67 solutions D365/Azure bilingues, multi-tenant depuis 18/07/2026, 6 agents sur Postgres partagé, pattern sales-intelligence réutilisable)"
 metadata: 
   node_type: memory
   type: project
@@ -615,3 +615,58 @@ b01cfe6  fix: recatégorisation — 4 solutions déplacées vers development
 ---
 
 *Mis à jour : 2026-07-17 — Session KB enrichissement + nouvelles solutions Foundry+Blueprints + recatégorisation*
+
+---
+
+## MICROSOFT SALES APP — Mise à jour majeure 14-18 Juillet 2026
+
+### ⚠️ Correction — la section "Architecture Agents" du 13 juillet ci-dessus est dépassée
+
+Le tableau "Agents manuels/auto → `localStorage`" (lignes ~413-425 ci-dessus) **ne reflète plus
+l'état réel** : les 6 agents ont été migrés de `localStorage`/`/tmp` vers **Postgres partagé**
+(voir ci-dessous). Cette section reste comme historique de la session du 13/07, mais ne pas s'y
+fier pour l'état actuel.
+
+### État de l'app (18 juillet 2026)
+- Persistance des 6 agents migrée de `localStorage`/`/tmp` → **table `AgentRun` Postgres**
+  (modèle `AgentRun` : `agent`, `status`, `summary` Json, `details` Json, `userId` nullable,
+  index `[agent, runAt]`) — corrige le vrai bug rapporté par l'utilisateur : données ajoutées
+  sur un ordinateur invisibles sur un autre (localStorage est par navigateur, /tmp n'est pas
+  partagé entre instances serverless)
+- **Multi-tenant ajouté** : l'app était en pratique mono-utilisateur malgré NextAuth déjà en
+  place (aucune route ne vérifiait de session, aucun `SessionProvider` monté). Watchlist
+  (`WatchedAccount`) et Weekly Brief scopés par `userId` ; les 5 agents "infra" (Health,
+  KB Drift, Article Quality, Article Quality Fix, MS Watcher) restent globaux/partagés
+- **Buying Signal Monitor** : scraping DuckDuckGo/Jina remplacé par l'API Tavily (déjà utilisée
+  ailleurs dans l'app) — signaux nettement plus fiables
+- **Health Monitor** : alerte Slack en temps réel sur statut DOWN (webhook)
+- **KB Drift Detector** : nouvelle catégorie "prix non vérifiés" — tout `$X/user/mo` absent du
+  registre de prix est remonté séparément (124 trouvés en prod), au lieu d'être invisible
+- **Article Quality Fix Agent** (nouveau, CI GitHub Actions) : le détecteur Vercel ne pouvait
+  que logger un score (filesystem read-only) ; le vrai fix tourne maintenant en CI. Garde-fou :
+  fix structurel (CTA/bilingue/slug) → commit direct ; fix touchant contenu/prix (risque
+  d'hallucination IA) → PR pour relecture humaine, jamais mergée automatiquement
+- **Onboarding** : bannière de bienvenue dismissible au 1er login + état vide watchlist
+  actionnable (formulaire d'ajout auto-ouvert)
+- **Vercel Analytics** installé (`@vercel/analytics/next` dans `app/layout.tsx`)
+
+### Architecture agents — état réel (18 juillet 2026)
+
+**Agents partagés** (globaux, `userId` null, cron automatique via orchestrateur 5h UTC pour 3
+d'entre eux) : Health Monitor, KB Drift Detector, Article Quality, Article Quality Fix (CI),
+MS Watcher.
+
+**Agents personnels** (scopés `userId`, déclenchement manuel uniquement, jamais dans le cron
+automatique) : Buying Signal Monitor, Weekly Brief.
+
+### Détails techniques complets
+
+Voir [projects/microsoft-sales-app.md](../projects/microsoft-sales-app.md) — architecture
+complète + le constat stratégique : ce pattern (watchlist → signal externe → scoring →
+synthèse GPT ancrée KB → persistance par tenant) est réutilisable comme base SaaS de sales
+intelligence pour de futurs clients, **mais n'est PAS l'équivalent d'un CDP type Dynamics 365
+Customer Insights** (voir le fichier pour la distinction précise).
+
+---
+
+*Mis à jour : 2026-07-18 — Session multi-tenant + persistance DB des 6 agents + Tavily + garde-fou auto-fix + Vercel Analytics*
