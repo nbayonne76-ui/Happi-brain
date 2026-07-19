@@ -25,6 +25,32 @@ futur produit SaaS de sales/marketing intelligence**, pas juste un outil interne
   filesystem read-only sauf `/tmp` (éphémère, non partagé entre instances)
 - **CI génération de contenu** : GitHub Actions (accès écriture réel au repo, pas de limite 60s)
 
+## Inventaire complet des agents (18 juillet 2026)
+
+### A. Agents autonomes de fond (6, persistés en Postgres via `AgentRun`)
+| Agent | Rôle | Déclenchement |
+|---|---|---|
+| **KB Drift Detector** | Scanne la KB Markdown contre un registre de prix connus ; détecte les prix obsolètes + une catégorie "non vérifié" (prix rencontrés mais absents du registre) | Auto (orchestrateur, 5h UTC) |
+| **Health Monitor** | Ping de 7 routes critiques de l'app, alerte Slack temps réel si DOWN | Auto (orchestrateur) |
+| **Article Quality Agent** | Score structurel des articles de blog générés par IA (bilingue, sections, CTA...) | Auto (orchestrateur) |
+| **Buying Signal Monitor** | Watchlist de comptes cibles → recherche Tavily + API gouv.fr → détection de signaux (recrutement IT, appel d'offres, nouveau dirigeant...) → score → synthèse GPT d'un angle de vente | Manuel (bouton dashboard), personnel par utilisateur |
+| **Weekly Sales Brief** | Assemble signaux + articles récents + actu Microsoft + extrait KB prix → brief hebdo GPT-4o-mini | Manuel, personnel par utilisateur |
+| **MS Announcement Watcher** | Suit 5 flux RSS Microsoft officiels, détecte l'impact sur la KB (changement de prix, nouveau plan, GA, sécurité...), génère des TODOs de mise à jour priorisés | Manuel (bouton KB) |
+
+### B. Agents de génération de contenu blog (16, GitHub Actions — accès écriture réel, pas de limite 60s)
+Pipeline commun : RSS + Exa → Jina → Tavily fallback → scorer mots-clés → GPT-4o-mini générateur → `data/blog-articles.json` + KB.
+Un agent par verticale : **Azure, Dynamics, Modern Work, Copilot, Sécurité, Retail, Healthcare,
+Energy, Government, Manufacturing, Tech, Finance, Telecom, Media** (inclus dans le cron
+quotidien 6h UTC) + **Hospitality, Restauration** (test, déclenchement manuel uniquement).
+
+Plus **Article Fix Agent** (nouveau, 18/07) : corrige réellement les articles sous le seuil
+qualité — fix structurel → commit direct ; fix contenu/prix → PR de relecture humaine (jamais
+mergée automatiquement). Voir section dédiée plus bas.
+
+### C. Agent interactif (chat, à la demande)
+**Microsoft AI Agent** (`/ai-agent`) — commandes `/brief`, `/pitch`, `/swot`, `/prix`, répond
+exclusivement depuis la Knowledge Base (anti-hallucination).
+
 ## Le pattern central : agents autonomes + KB-grounding + multi-tenant
 
 ### 1. Orchestrateur unique (contrainte Vercel Hobby)
