@@ -3142,3 +3142,35 @@ Aucun problème détecté
 
 ### 4. Fichiers potentiellement obsolètes (non modifiés depuis 60+ jours)
 Aucun problème détecté
+
+---
+## 📰 Veille Tech — 2026-07-20
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [bojieli/ai-agent-book (🔥 +1 734 stars) — Guide open-source "深入理解 AI Agent" : comprendre les agents IA en profondeur](https://github.com/bojieli/ai-agent-book) | GitHub Trending 🐍 | #LLM |
+| [rohitg00/ai-engineering-from-scratch (🔥 +501 stars) — Ressource complète d'ingénierie IA de zéro à la production](https://github.com/rohitg00/ai-engineering-from-scratch) | GitHub Trending 🐍 | #LLM |
+| [MoonshotAI/kimi-cli (🔥 +410 stars) — Outil CLI agent IA par MoonshotAI](https://github.com/MoonshotAI/kimi-cli) | GitHub Trending 🐍 | #LLM |
+| [PostHog/posthog (🔥 +411 stars) — Plateforme SaaS AI observabilité, analytics et session replay](https://github.com/PostHog/posthog) | GitHub Trending 🐍 | #SaaS #LLM |
+| [tirth8205/code-review-graph (🔥 +663 stars) — Code intelligence graph local-first pour MCP et CLI IA](https://github.com/tirth8205/code-review-graph) | GitHub Trending 🐍 | #LLM #Claude |
+| [kvcache-ai/ktransformers (🔥 +360 stars) — Framework flexible pour optimisation d'inférence et fine-tuning LLM](https://github.com/kvcache-ai/ktransformers) | GitHub Trending 🐍 | #LLM |
+| [topoteretes/cognee (🔥 +303 stars) — Plateforme de mémoire IA open-source pour agents, avec PostgreSQL natif](https://github.com/topoteretes/cognee) | GitHub Trending 🐍 | #LLM #chatbot #PostgreSQL |
+| [AstrBotDevs/AstrBot (🔥 +83 stars) — Agent IA multi-plateforme : WhatsApp, Telegram, WeChat, Discord, 200+ LLMs](https://github.com/AstrBotDevs/AstrBot) | GitHub Trending 🐍 | #chatbot #LLM #Docker |
+| [Canner/WrenAI (🔥 +121 stars) — Plateforme GenBI text-to-SQL open-source](https://github.com/Canner/WrenAI) | GitHub Trending 🐍 | #LLM #SaaS |
+| [diegosouzapw/OmniRoute (🔥 +1 343 stars) — AI gateway MIT gratuit : 268+ providers, 500+ modèles](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [jamiepine/voicebox (🔥 +610 stars) — Studio vocal IA open-source : clonage de voix, dictée, création audio](https://github.com/jamiepine/voicebox) | GitHub Trending TS | #VoiceAI |
+| [KnockOutEZ/wigolo (🔥 +595 stars) — Interface web pour agents de coding IA avec recherche local-first](https://github.com/KnockOutEZ/wigolo) | GitHub Trending TS | #LLM |
+| [garrytan/gstack (🔥 +330 stars) — Setup exact de Claude Code par Garry Tan (Y Combinator) : 23 outils configurés](https://github.com/garrytan/gstack) | GitHub Trending TS | #Claude #Anthropic |
+| [SigNoz/signoz (🔥 +345 stars) — Observabilité OpenTelemetry-native pour agents IA : APM, traces, logs](https://github.com/SigNoz/signoz) | GitHub Trending TS | #LLM #SaaS |
+| [firecrawl/open-lovable (🔥 +34 stars) — Cloner n'importe quel site en app React moderne en quelques secondes](https://github.com/firecrawl/open-lovable) | GitHub Trending TS | #Next.js #SaaS |
+
+### 💡 Insights clés
+- **OmniRoute atteint +1 343 stars/jour — record du jour sur GitHub TS** — OmniRoute unifie 268+ providers (500+ modèles) derrière un endpoint OpenAI-compatible, MIT et gratuit. Il revient en tête du trending TS. Pour H'appi : l'adopter comme couche de résilience dans la stack de référence — fallback automatique Claude → GPT → Gemini si quota ou panne, sans refactoring backend. La progression de stars confirme que le multi-provider routing devient un standard de production en 2026.
+- **topoteretes/cognee : mémoire IA native PostgreSQL — alignement parfait avec la stack H'appi** — Cognee est une plateforme de mémoire IA open-source pour agents avec PostgreSQL comme store natif (pgvector + knowledge graph). Pour H'appi : à intégrer dans les chatbots clients nécessitant une mémoire multi-sessions persistante — Cognee gère automatiquement les couches de mémoire (épisodique, sémantique, procédurale) sans développement custom. Alignment direct avec notre stack Railway + PostgreSQL + pgvector.
+- **garrytan/gstack : le setup Claude Code de Garry Tan (Y Combinator) publié en open-source** — Le patron de Y Combinator publie ses 23 outils et configurations Claude Code. Pour H'appi : auditer ce setup pour identifier les outils manquants dans notre propre workflow Claude Code — les pratiques YC sont des indicateurs avancés des standards d'ingénierie qui vont devenir mainstream dans les 6-12 prochains mois.
+- **jamiepine/voicebox +610 stars : studio vocal IA open-source complet — 2e apparition en veille** — Voicebox couvre le clonage de voix, la dictée et la création audio en TypeScript. Pour H'appi : alternative open-source gratuite à ElevenLabs pour les clients RGPD-strict ou cost-sensitive. À benchmarker sur la qualité vocale et la latence avant de le proposer comme option souveraine dans les mandats voice AI (surtout pertinent post-valorisation $22B ElevenLabs).
+- **AstrBot multi-plateforme (WhatsApp, Telegram, Discord, WeChat, 200+ LLMs) — un seul agent, tous les canaux** — AstrBot est le framework le plus complet pour les chatbots multi-canal avec Docker natif. Pour H'appi : à évaluer pour les clients qui veulent un chatbot présent sur plusieurs canaux sans multiplier les déploiements. Architecture RGPD-compliant avec hébergement souverain possible.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 19e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
