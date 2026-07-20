@@ -3126,3 +3126,19 @@ Sans ça, `docker compose up` ne fonctionne pas depuis le terminal WSL.
 - **SigNoz trending fort (+432 ⭐) : l'observabilité IA est la prochaine attente des clients enterprise** — SigNoz est une alternative open-source self-hostable à Datadog/New Relic, orientée OpenTelemetry. Pour H'appi : proposer SigNoz dans notre offre chatbots enterprise comme dashboard d'observabilité (latences, erreurs, coûts tokens, volume sessions) — différenciant fort vs. concurrents sans monitoring structuré.
 - **Anthropic J-space : l'explicabilité LLM progresse, argument commercial pour les secteurs réglementés** — La découverte d'un espace de raisonnement interne dans Claude ouvre la voie à une meilleure auditabilité. Pour H'appi : utiliser cette recherche comme argument client — "nos chatbots Claude sont les plus auditables du marché" — particulièrement pour santé, finance et juridique où l'explicabilité est une exigence AI Act.
 - **WebSearch débloqué (1er jour) — sources enrichies : Anthropic, OpenAI, Vercel, RGPD, VoiceAI** — Première veille avec accès WebSearch en complément de GitHub Trending. HackerNews, DEV.to API et The New Stack restent bloqués. Recommandation : débloquer ces domaines pour une couverture maximale.
+
+## 🩺 Happi Brain Health Check — 2026-07-20
+
+### 1. Fichiers absents de l'index
+Aucun problème détecté
+
+### 2. Liens cassés
+- memory/MEMORY_global.md:3 -> happi_brain.md (résolu en `memory/happi_brain.md`, inexistant — le fichier existe seulement à la racine, le lien devrait être `../happi_brain.md`)
+- memory/MEMORY_quality_tracking.md:67 -> audit-details.md (résolu en `memory/audit-details.md`, fichier introuvable dans tout le repo)
+- memory/MEMORY_quality_tracking.md:73 -> happi_brain.md (résolu en `memory/happi_brain.md`, inexistant — même problème que ci-dessus, devrait être `../happi_brain.md`)
+
+### 3. Doublons / quasi-doublons potentiels
+- `memory/project_microsoft_sales_app.md` vs `projects/microsoft-sales-app.md` : les deux fichiers ont été créés dans le même commit (0ab3dd9), mais seul `projects/microsoft-sales-app.md` a été mis à jour depuis (commit 96cffb6, ajout de l'inventaire complet des agents). Le fichier `memory/` renvoie d'ailleurs explicitement vers `projects/microsoft-sales-app.md` pour "les détails techniques complets" — probable snapshot devenu partiellement obsolète par rapport à la version curée dans `projects/`.
+
+### 4. Fichiers potentiellement obsolètes (non modifiés depuis 60+ jours)
+Aucun problème détecté
