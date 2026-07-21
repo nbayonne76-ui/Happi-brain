@@ -3174,3 +3174,30 @@ Aucun problème détecté
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 19e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
 
 ---
+
+## 📰 Veille Tech — 2026-07-21
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [bojieli/ai-agent-book (🔥 +4 434 stars) — Guide open-source "深入理解 AI Agent" : 3e jour consécutif en tête du trending Python](https://github.com/bojieli/ai-agent-book) | GitHub Trending 🐍 | #LLM |
+| [tirth8205/code-review-graph (🔥 +1 833 stars) — Code intelligence local-first pour MCP et CLI IA (×2.7 vs hier)](https://github.com/tirth8205/code-review-graph) | GitHub Trending 🐍 | #LLM #Claude |
+| [rohitg00/ai-engineering-from-scratch (🔥 +823 stars) — Ressource complète d'ingénierie IA de zéro à la production](https://github.com/rohitg00/ai-engineering-from-scratch) | GitHub Trending 🐍 | #LLM |
+| [kvcache-ai/ktransformers (🔥 +458 stars) — Framework pour optimisation d'inférence hétérogène et fine-tuning LLM](https://github.com/kvcache-ai/ktransformers) | GitHub Trending 🐍 | #LLM |
+| [topoteretes/cognee (🔥 +234 stars) — Plateforme de mémoire IA open-source pour agents avec PostgreSQL natif](https://github.com/topoteretes/cognee) | GitHub Trending 🐍 | #LLM #chatbot #PostgreSQL |
+| [Canner/WrenAI (🔥 +321 stars) — Plateforme GenBI text-to-SQL open-source, 20+ sources de données](https://github.com/Canner/WrenAI) | GitHub Trending 🐍 | #LLM #SaaS |
+| [PrefectHQ/fastmcp (🔥 +96 stars) — 🆕 La façon Pythonic de construire des MCP servers et clients](https://github.com/PrefectHQ/fastmcp) | GitHub Trending 🐍 | #LLM #Claude |
+| [diegosouzapw/OmniRoute (🔥 +1 107 stars) — AI gateway MIT gratuit : 268+ providers, 500+ modèles IA](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [jamiepine/voicebox (🔥 +821 stars) — Studio vocal IA open-source : clonage de voix, dictée, création audio](https://github.com/jamiepine/voicebox) | GitHub Trending TS | #VoiceAI |
+| [humanlayer/12-factor-agents (🔥 +49 stars) — 🆕 Les 12 facteurs de production pour les applications LLM](https://github.com/humanlayer/12-factor-agents) | GitHub Trending TS | #LLM |
+| [QwenLM/qwen-code (🔥 +52 stars) — Agent de coding IA open-source qui vit dans le terminal](https://github.com/QwenLM/qwen-code) | GitHub Trending TS | #LLM |
+| [traycerai/traycer (🔥 +59 stars) — 🆕 Centre de commandement pour les opérations agentiques de coding](https://github.com/traycerai/traycer) | GitHub Trending TS | #LLM |
+
+### 💡 Insights clés
+- **🆕 fastmcp — la façon Pythonic de construire des MCP servers, alignement direct avec la stack H'appi** — fastmcp apparaît pour la première fois dans la veille avec +96 stars aujourd'hui. Syntaxe type FastAPI, courbe d'apprentissage quasi nulle pour l'équipe H'appi. Pour H'appi : à adopter pour exposer nos APIs chatbot comme MCP servers natifs — les clients utilisant Claude Desktop ou Cursor peuvent ainsi brancher directement le chatbot H'appi dans leur environnement sans développement intermédiaire. Levier commercial différenciant.
+- **🆕 humanlayer/12-factor-agents — la référence architecturale LLM de production à intégrer dans notre checklist** — Inspiré des 12-factor apps de Heroku, ce guide couvre la gestion d'erreurs LLM, l'observabilité et la résilience multi-provider. Pour H'appi : à transformer en checklist de validation pré-déploiement client — chaque chatbot livré devrait respecter ces 12 facteurs pour garantir la qualité de service SLA. Référence à partager avec l'équipe dès maintenant.
+- **code-review-graph : +1 833 stars aujourd'hui (×2.7 vs hier) — accélération qui signale une adoption de masse** — Ce niveau de croissance en J+2 indique une adoption rapide par les développeurs IA. Pour H'appi : à intégrer dans notre pipeline de revue de code sur les projets chatbot clients — améliore la précision des reviews IA sur de larges codebases sans exploser le contexte Claude. Compatible MCP.
+- **ai-agent-book maintient +4 434 stars/jour — record absolu 3e jour consécutif** — Le livre open-source sur les agents IA continue de dominer GitHub Python avec une accélération (+2 700 stars vs J-1). Pour H'appi : la persistance en tête confirme une demande massive de ressources structurées sur les architectures agentiques. À proposer comme référence de formation interne — chapitres sur les memory systems et l'orchestration multi-agent directement applicables.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 20e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
