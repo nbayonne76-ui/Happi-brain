@@ -3201,3 +3201,34 @@ Aucun problème détecté
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 20e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
 
 ---
+
+## 📰 Veille Tech — 2026-07-22
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Sonnet 5 lancé le 30 juin 2026 — nouveau modèle par défaut Anthropic, context 1M tokens, $2/M input (intro jusqu'au 31 août)](https://www.anthropic.com/news/claude-sonnet-5) | WebSearch | #Claude #Anthropic #LLM |
+| [bojieli/ai-agent-book (🔥 +4 624 stars) — Guide open-source "深入理解 AI Agent" : 4e jour consécutif en tête du trending Python](https://github.com/bojieli/ai-agent-book) | GitHub Trending 🐍 | #LLM |
+| [diegosouzapw/OmniRoute (🔥 +2 034 stars) — AI gateway MIT gratuit : 268+ providers, 500+ modèles IA — record TypeScript du jour](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [tirth8205/code-review-graph (🔥 +1 925 stars) — Code intelligence local-first pour MCP et CLI IA](https://github.com/tirth8205/code-review-graph) | GitHub Trending 🐍 | #LLM #Claude |
+| [rohitg00/ai-engineering-from-scratch (🔥 +1 007 stars) — Ressource complète d'ingénierie IA de zéro à la production](https://github.com/rohitg00/ai-engineering-from-scratch) | GitHub Trending 🐍 | #LLM |
+| [stablyai/orca (🔥 +1 356 stars) — ADE pour flotte d'agents parallèles (TypeScript)](https://github.com/stablyai/orca) | GitHub Trending TS | #LLM #chatbot |
+| [AstrBotDevs/AstrBot (🔥 +416 stars) — Framework chatbot multi-canal (WhatsApp, Telegram, Discord, WeChat, 200+ LLMs)](https://github.com/AstrBotDevs/AstrBot) | GitHub Trending 🐍 | #chatbot #LLM |
+| [topoteretes/cognee (🔥 +358 stars) — Mémoire IA open-source pour agents avec PostgreSQL natif (pgvector + knowledge graph)](https://github.com/topoteretes/cognee) | GitHub Trending 🐍 | #LLM #chatbot #PostgreSQL |
+| [Alishahryar1/free-claude-code (🔥 +354 stars) — Utiliser Claude Code en accès libre depuis terminal/IDE/téléphone](https://github.com/Alishahryar1/free-claude-code) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [Pipecat — framework Python open-source n°1 Voice AI 2026 (STT + LLM + TTS, real-time)](https://techsy.io/en/blog/best-open-source-voice-agent-frameworks) | WebSearch | #VoiceAI |
+| [Dokploy/dokploy (🔥 +64 stars) — Alternative open-source à Vercel, Netlify et Heroku (Docker natif)](https://github.com/Dokploy/dokploy) | GitHub Trending TS | #Docker #SaaS |
+| [Canner/WrenAI (🔥 +88 stars) — GenBI text-to-SQL open-source, 20+ sources de données dont PostgreSQL](https://github.com/Canner/WrenAI) | GitHub Trending 🐍 | #PostgreSQL #LLM |
+| [CISA CVE-2026-42271 — RCE critique dans LiteLLM AI Gateway via endpoints MCP (unauthenticated)](https://aiweekly.co/ai-news-today/anthropic-news) | WebSearch | #LLM #RGPD |
+| [Vercel + Railway 2026 : combinaison recommandée pour SaaS Next.js — Vercel frontend, Railway backend/workers](https://designrevision.com/blog/vercel-vs-railway) | WebSearch | #Vercel #Railway #SaaS |
+| [langgenius/dify (🔥 +157 stars) — Workflows agentiques + pipelines RAG avec support 150+ LLMs](https://github.com/langgenius/dify) | GitHub Trending TS | #chatbot #LLM |
+
+### 💡 Insights clés
+- **Claude Sonnet 5 — migrer les chatbots clients avant le 1er septembre 2026 (hausse de prix imminente)** — Lancé le 30 juin, Sonnet 5 est maintenant le modèle par défaut pour tous les plans Anthropic. Tarif intro $2/M input tokens jusqu'au 31 août, puis $3/M. Adaptive thinking activé par défaut, context 1M tokens, performances agentiques nettement supérieures. Pour H'appi : planifier la migration de tous les chatbots clients vers `claude-sonnet-5` avant le 1er septembre pour profiter du tarif intro — coût réduit à identifier dans les contrats de maintenance Pro/Enterprise.
+- **OmniRoute +2 034 stars (record TypeScript du jour) — AI gateway multi-provider pour résilience SLA** — OmniRoute permet de router dynamiquement entre Claude, GPT, Gemini et 265+ autres providers sans changement de code. Pour H'appi : à intégrer comme couche de fallback dans les chatbots à SLA élevé — si l'API Anthropic est dégradée, le basculement automatique évite les incidents clients. Architecture MIT, déployable sur Railway en 10 minutes.
+- **Pipecat — framework Voice AI open-source à évaluer comme alternative à Vapi.ai pour clients RGPD** — Pipecat s'impose en 2026 comme le framework Python de référence pour les voice agents temps-réel (STT + LLM + TTS comme frame processors modulaires). Compatible Deepgram + ElevenLabs + Claude — alignement parfait avec notre stack. Pour H'appi : benchmarker Pipecat vs Vapi.ai sur latence et coût total pour les clients voice RGPD-strict qui veulent un hébergement souverain sur Railway.
+- **CISA CVE-2026-42271 : RCE via MCP dans LiteLLM — documenter dans nos guidelines sécurité** — Vecteur d'attaque nouveau : les endpoints MCP mal sécurisés dans les AI gateways permettent un RCE non authentifié. Notre stack FastAPI + Anthropic SDK directe n'est pas impactée, mais tout ajout de LiteLLM ou d'endpoints MCP exposés doit être audité. À intégrer dans la checklist RGPD/ISO 27001 de validation pré-déploiement.
+- **Vercel+Railway : confirmation du consensus 2026 pour notre stack de déploiement** — Le marché converge vers le pattern que H'appi utilise déjà : Vercel pour le frontend Next.js (DX, preview environments, edge), Railway pour le backend FastAPI + PostgreSQL + workers. À valoriser explicitement dans les proposals clients comme preuve d'alignement avec les standards d'ingénierie 2026.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 21e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch (Anthropic, Vercel, Railway, Voice AI). Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
