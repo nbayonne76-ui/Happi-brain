@@ -3232,3 +3232,33 @@ Aucun problème détecté
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 21e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch (Anthropic, Vercel, Railway, Voice AI). Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
 
 ---
+
+## 📰 Veille Tech — 2026-07-23
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Science — workbench IA pour scientifiques lancé par Anthropic : jusqu'à $30k de crédits, 50 projets soutenus](https://www.anthropic.com/news/claude-science-ai-workbench) | WebSearch | #Claude #Anthropic |
+| [Claude for Teachers (14 juil. 2026) — accès Claude gratuit pour enseignants vérifiés, expansion verticale Anthropic](https://www.anthropic.com/news) | WebSearch | #Claude #Anthropic |
+| [ComposioHQ/awesome-claude-skills (🔥 68 983 étoiles, trending) — liste curatée Claude Skills pour personnaliser les workflows IA](https://github.com/ComposioHQ/awesome-claude-skills) | GitHub Trending 🐍 | #Claude #LLM |
+| [Voice AI startup Rime lève $24M Series A (M13 Ventures) — boom des agents voice enterprise, juillet 2026](https://assindo.com/news/ai-assistant-news-july-2026) | WebSearch | #VoiceAI |
+| [OpenAI GPT-5.6 (Luna/Terra/Sol) — pricing $1–5/M tokens, concurrent direct de Claude Sonnet 5 (9 juil. 2026)](https://llm-stats.com/ai-news) | WebSearch | #LLM |
+| [earendil-works/pi (🔥 +919 étoiles) — AI agent toolkit : unified LLM API + agent loop + TUI + coding agent CLI](https://github.com/earendil-works/pi) | GitHub Trending TS | #LLM |
+| [koala73/worldmonitor (🔥 +4 139 étoiles — record TS du jour) — dashboard IA temps réel : agrégation news + monitoring géopolitique](https://github.com/koala73/worldmonitor) | GitHub Trending TS | #LLM #SaaS |
+| [jamiepine/voicebox (🔥 +557 étoiles) — studio vocal IA open-source : clonage de voix, dictée, création audio](https://github.com/jamiepine/voicebox) | GitHub Trending TS | #VoiceAI |
+| [diegosouzapw/OmniRoute (🔥 +1 651 étoiles) — AI gateway 500+ modèles, 5e jour consécutif en trending TypeScript](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [unclecode/crawl4ai (🔥 74 282 étoiles, trending) — web scraper open-source LLM-friendly pour enrichir les bases de connaissances](https://github.com/unclecode/crawl4ai) | GitHub Trending 🐍 | #LLM |
+| [dottxt-ai/outlines (🔥 trending) — Structured Outputs pour LLMs : forcer les sorties modèle en JSON/Regex/Grammaire](https://github.com/dottxt-ai/outlines) | GitHub Trending 🐍 | #LLM |
+| [stablyai/orca (🔥 +1 271 étoiles) — ADE pour flotte d'agents parallèles, 4e jour consécutif en trending TypeScript](https://github.com/stablyai/orca) | GitHub Trending TS | #LLM #chatbot |
+| [oblien/openship (🔥 +1 302 étoiles) — 🆕 plateforme de déploiement self-hosted, alternative open-source à Vercel/Railway](https://github.com/oblien/openship) | GitHub Trending TS | #Docker #SaaS |
+| [FastAPI vs Next.js AI SaaS 2026 — les deux frameworks confirmés complémentaires en production, consensus établi](https://hassanr.com/blogs/fastapi-vs-nextjs-ai-saas-backend-2026.html) | WebSearch | #FastAPI #SaaS |
+| [bojieli/ai-agent-book (🔥 5e jour consécutif en tête) — guide open-source agents IA, persistance record en trending Python](https://github.com/bojieli/ai-agent-book) | GitHub Trending 🐍 | #LLM |
+
+### 💡 Insights clés
+- **🆕 awesome-claude-skills (ComposioHQ, 68k étoiles) — bibliothèque directement réutilisable pour accélérer les chatbots H'appi** — Apparaît pour la 1ère fois en trending Python. Recense les meilleurs Skills Claude disponibles : customer support, scheduling, document analysis, data extraction. Pour H'appi : à éplucher avant chaque nouveau projet chatbot client — permet de brancher des capacités avancées sans les coder de zéro. Levier de vitesse de livraison immédiat, surtout pour les propositions rapides.
+- **Claude Science (Anthropic) — expansion verticale IA vers les marchés scientifiques et académiques à surveiller** — Anthropic cible maintenant les chercheurs avec un workbench dédié ($30k crédits, 50 projets). Signal stratégique : les verticaux spécialisés (R&D, santé, éducation) sont le prochain terrain d'expansion Anthropic. Pour H'appi : positionner nos chatbots sur ces secteurs pour surfer sur l'effet plateforme — les clients scientifiques cherchent déjà des intégrations Claude clés en main.
+- **Rime $24M Series A — Voice AI enterprise est LE marché chaud de l'été 2026, PME françaises encore libres** — Selon Assindo : "presque tout l'argent et les talents vont vers l'enterprise US, le segment consumer reste ouvert". Pour H'appi : notre stack Vapi.ai + ElevenLabs + Deepgram nous place idéalement pour cibler les PME françaises avec des voice agents — les acteurs US négligent ce segment. Accélérer les propositions voice avant qu'ils y arrivent.
+- **GPT-5.6 Luna à $1/M tokens — pression prix sur le marché LLM, différenciation Claude à bien argumenter** — OpenAI compresse les prix avec trois tiers de modèle. Pour H'appi : Claude reste justifié (qualité agentique supérieure, context 1M tokens, conformité RGPD, Adaptive Thinking) mais l'argument prix doit être préparé pour les clients cost-sensitive. OmniRoute (5e jour en trending) offre un fallback multi-provider sans refonte architecturale — à mentionner dans les proposals Enterprise.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 22e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch (Anthropic, Voice AI, LLM, FastAPI). Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
