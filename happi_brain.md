@@ -3262,3 +3262,33 @@ Aucun problème détecté
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 22e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch (Anthropic, Voice AI, LLM, FastAPI). Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
 
 ---
+
+## 📰 Veille Tech — 2026-07-24
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Anthropic donne MCP à la Linux Foundation — Agentic AI Foundation créée, 10 000+ serveurs MCP actifs](https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation) | WebSearch | #LLM #chatbot |
+| [Claude : 9,2% de parts de marché mondial, +855% YoY, #1 App Store début 2026 — croissance record](https://momenticmarketing.com/blog/top-ai-chatbots) | WebSearch | #Claude #Anthropic |
+| [Anthropic : règlement $1,5 milliard approuvé (21 juil.) — livres piratés utilisés pour entraîner Claude](https://blog.mean.ceo/anthropic-claude-news-july-2026/) | WebSearch | #Claude #Anthropic |
+| [Vercel AI Gateway : voix temps réel + STT/TTS intégrés, Claude Sonnet 5 supporté (juillet 2026)](https://releasebot.io/updates/vercel) | WebSearch | #Vercel #VoiceAI |
+| [Vercel Postgres supprimé → Neon / Supabase / Prisma Postgres comme remplaçants officiels](https://kuberns.com/blogs/vercel-postgres-dead-what-replaced-it/) | WebSearch | #Vercel #PostgreSQL |
+| [EU AI Act 2026 : amendes jusqu'à €35M ou 7% du CA — 84% des orgs ne passeraient pas un audit IA](https://aetherlink.ai/en/blog/ai-chatbots-voice-agents-eu-ai-act-compliance-in-2026-amsterdam) | WebSearch | #RGPD |
+| [Vapi : 62 millions d'appels/mois, SLA 99,99%, $0,05/min + coûts provider — leader Voice AI dev](https://www.retellai.com/blog/vapi-vs-elevenlabs) | WebSearch | #VoiceAI |
+| [ElevenLabs Flash v2.5 + partenariat IBM watsonx (mars 2026) — expansion enterprise contact center](https://www.goodcall.com/voice-ai/vapi-vs-elevenlabs) | WebSearch | #VoiceAI |
+| [oraios/serena (🔥 26 818 étoiles) — MCP toolkit puissant pour coding : retrieval sémantique et édition](https://github.com/oraios/serena) | GitHub Trending 🐍 | #LLM #chatbot |
+| [AstrBotDevs/AstrBot (🔥 37 969 étoiles) — AI Agent multi-IM (Discord, Telegram…) + LLMs + plugins](https://github.com/AstrBotDevs/AstrBot) | GitHub Trending 🐍 | #chatbot #LLM |
+| [microsoft/SkillOpt (🔥 14 821 étoiles) — optimiseur text-space pour entraîner des capacités NL réutilisables sur agents LLM](https://github.com/microsoft/SkillOpt) | GitHub Trending 🐍 | #LLM |
+| [stablyai/orca (🔥 27 736 étoiles) — ADE agents parallèles, desktop + mobile, 5e jour en trending TS](https://github.com/stablyai/orca) | GitHub Trending TS | #LLM #SaaS |
+| [diegosouzapw/OmniRoute (🔥 27 695 étoiles) — AI gateway MIT 290+ providers, auto-fallback quota-aware, compression tokens](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [Dokploy : alternative open-source à Vercel/Heroku, builds Docker automatiques pour Next.js + FastAPI](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | WebSearch | #Docker #FastAPI #SaaS |
+| [THU-MAIC/OpenMAIC (🔥 20 100 étoiles) — Multi-Agent Interactive Classroom, expérience IA multi-agents en 1 clic](https://github.com/THU-MAIC/OpenMAIC) | GitHub Trending TS | #LLM #chatbot |
+
+### 💡 Insights clés
+- **MCP → Linux Foundation (Agentic AI Foundation) : l'écosystème IA se standardise, 10 000+ serveurs actifs** — Anthropic cède MCP en open governance — ChatGPT, Gemini, Copilot, VS Code l'ont tous adopté. Pour H'appi : proposer des chatbots "MCP-ready" devient un argument commercial différenciateur. Les entreprises clientes voudront connecter leur chatbot H'appi à leurs outils internes via MCP — à intégrer dans les proposals dès maintenant.
+- **Vercel AI Gateway avec voix temps réel + Claude Sonnet 5 — notre stack peut faire du Voice AI sans changer de provider** — Vercel unifie maintenant STT, TTS, routage vocal et observabilité dans un seul gateway. Pour H'appi : notre architecture Vercel (frontend) + Railway (backend FastAPI) peut intégrer une couche vocale directement via Vercel AI Gateway, simplifiant la stack et réduisant les dépendances Vapi pour les projets simples.
+- **EU AI Act : 84% des organisations ne passeraient pas un audit IA — notre conformité RGPD est un argument de vente critique** — Les amendes montent à €35M ou 7% du CA global. 84% des orgs admettent qu'elles échoueraient à un audit IA agent. Pour H'appi : notre positionnement RGPD + hébergement France/Europe (Scaleway, Hetzner) + ISO 27001 devient un argument commercial majeur, surtout face aux solutions US. À mettre en avant systématiquement dans les proposals comme avantage concurrentiel mesurable.
+- **Vercel Postgres sunset → Neon/Supabase : migration à documenter si des projets clients l'utilisaient** — Vercel Postgres est mort depuis juin 2025. Pour H'appi : si des projets client tournent encore sur Vercel Postgres, planifier une migration vers Neon ou Supabase via le Vercel Marketplace. Notre stack Railway + PostgreSQL direct n'est pas impactée.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 23e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch (Anthropic, Voice AI, LLM, FastAPI, RGPD). Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
