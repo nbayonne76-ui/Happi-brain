@@ -4,7 +4,7 @@
 
 - [happi_brain_core](happi_brain_core.md) — Identité H'appi · stack tech · env dev WSL2 · deploy Railway/Vercel/Docker · règles qualité universelles FastAPI + Next.js
 - [happi_brain_chatbots](happi_brain_chatbots.md) — Projets chatbots (SAV-Bot MDF, INnatural, Secretary Vapi) · 18 showcases HTML clients · secteurs couverts · patterns widget/full-stack/vocal
-- [happi_brain_platforms](happi_brain_platforms.md) — DropOS · Quality Tracking App · TopTier · Microsoft Sales App (67 solutions, enrichissement KB juillet 2026, Foundry+Blueprints nouveaux, catégorie development, protocole enrichissement 2 URLs→auto sub-pages)
+- [happi_brain_platforms](happi_brain_platforms.md) — DropOS · Quality Tracking App · TopTier · Microsoft Sales App (67 solutions, enrichissement KB juillet 2026, Foundry+Blueprints nouveaux, catégorie development, usage tracking, fix définitif inscription validée → panneau admin in-app)
 - [happi_brain_crm](happi_brain_crm.md) — Happi CRM complet : 28+ sprints, 130+ endpoints, AI Intelligence Suite (9 outils : predict-win, next-action, research, extract-contact…), intégrations Vapi/SAP/Generix, MCP Phases 1-7, deploy Railway+Vercel
 - [happi_brain_scraper](happi_brain_scraper.md) — ERP Scraper UK : **23 scrapers**, fingerprint rotation 9 profils, Scrapfly ASP anti-bot, Linkup source, self-healing Claude (healer.py), webhook score≥9, /api/metrics · Football Predictor (port 8003)
 - [happi_brain_website](happi_brain_website.md) — H'appi Website : blog bilingue (next-intl v4, articles React components, pas MDX), agrégateur RSS live 15 sources ISR 1h

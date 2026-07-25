@@ -129,6 +129,57 @@ Marketing) sales-intelligence tool + un générateur de contenu IA ancré KB —
 entreprise. Le potentiel SaaS est réel (le pattern est généralisable), mais positionné comme
 "sales intelligence pour équipes commerciales B2B", pas comme concurrent de Customer Insights.
 
+## Inscription validée par admin — incident et fix (24-25 juillet 2026)
+
+### Le système
+Inscription libre (self-signup) → `User.status = 'pending'` → l'admin (Nicolas) approuve ou
+refuse → l'utilisateur peut se connecter une fois `approved`. Construit initialement autour
+d'un email envoyé à l'admin à chaque inscription, avec deux liens signés HMAC (`approve` /
+`reject`) menant à une route publique (`/api/auth/approve`) qui met à jour le statut.
+
+### L'incident
+Deux inscriptions distinctes n'ont jamais généré d'email visible côté admin :
+1. **Avec Gmail SMTP** (`nodemailer` + App Password) : un premier cas s'est avéré être du
+   spam-filtering Gmail sur un envoi self-to-self (résolu, email bien reçu après vérification
+   du dossier spam). Un second cas (inscription réelle d'un tiers) a nécessité un renvoi manuel
+   de l'email pour être traité.
+2. **Après migration vers Resend** (sender sandbox `onboarding@resend.dev`, pas de domaine
+   vérifié) : une nouvelle inscription (« Kadria ») n'a de nouveau généré aucun email reçu,
+   sans erreur visible nulle part — la fonction `sendMail`/`resend.emails.send()` n'était même
+   pas vérifiée pour un champ `error` dans sa réponse (bug silencieux confirmé, même classe
+   d'erreur que déjà rencontrée sur h-appi-website).
+3. **Vérification en base** : dans les deux cas, l'utilisateur existait bel et bien avec
+   `status = 'pending'` depuis le départ — **aucune inscription n'a jamais été perdue**, seule
+   la notification à l'admin échouait silencieusement.
+
+### Le fix (définitif, pas un changement de fournisseur)
+Changer de fournisseur email (Gmail → Resend) n'a pas réglé le problème — preuve que le bug
+n'était pas spécifique à un fournisseur mais au *design* (dépendre d'un email pour qu'un admin
+sache qu'une action l'attend). Solution retenue :
+- **Suppression complète de la dépendance email côté admin** : `app/api/auth/register/route.js`
+  n'envoie plus aucun email à l'admin à l'inscription.
+- **Panneau admin in-app** : `GET /api/admin/pending-users` (liste les `status = 'pending'`
+  directement depuis Prisma) + `PATCH /api/admin/users/[id]` (approuve/refuse, même effet
+  que l'ancien lien HMAC) + page `/admin/pending-users` (boutons Approuver/Refuser).
+- **Badge de compteur dans la nav** (`components/Navigation.jsx`) : fetché au montage et à
+  chaque changement de page pour un utilisateur `role === 'admin'`, rend le panneau visible
+  sans action de consultation volontaire.
+- **Suppression du code mort** : route `/api/auth/approve` (lien email HMAC), fonctions
+  `generateApprovalToken`/`verifyApprovalToken`/`sendAdminApprovalEmail` — plus aucun email ne
+  générant ces liens, la route et les tokens n'avaient plus de raison d'exister.
+- **Conservé** : les 2 emails de confirmation envoyés à l'utilisateur final une fois
+  approuvé/refusé (`sendUserApprovedEmail`/`sendUserRejectedEmail`, toujours via Resend) — pas
+  la source du problème, et un échec ponctuel a un impact mineur (l'utilisateur retente juste
+  de se connecter) contrairement à l'email admin qui bloquait tout le pipeline.
+
+### À retenir pour tout futur projet H'appi avec inscription/souscription à valider
+Voir la règle générale extraite dans
+[memory/happi_brain_core.md § Inscriptions / souscriptions à valider par un admin](../memory/happi_brain_core.md) :
+ne jamais construire un flux d'approbation admin qui dépend *uniquement* d'un email — toujours
+prévoir dès le départ un panneau in-app basé sur une requête DB directe (fiable à 100 %, aucune
+dépendance tierce) avec badge de compteur, et garder l'email comme canal secondaire (best
+effort) plutôt que comme seul moyen d'action.
+
 ## Contraintes Vercel Hobby à retenir pour tout futur projet similaire
 - 2 crons max, 60s maxDuration par fonction serverless
 - Filesystem read-only sauf `/tmp`, et `/tmp` n'est PAS partagé entre instances/cold starts

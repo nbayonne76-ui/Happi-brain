@@ -204,6 +204,36 @@ Mobile    → React Native (Expo SDK 54)
 3. **Docker** : `output: "standalone"` dans `next.config.ts` pour le build Docker.
 4. **Suspense** : toute page utilisant `useSearchParams()` doit être enveloppée dans `<Suspense>`.
 
+### Inscriptions / souscriptions à valider par un admin (tous stacks)
+> Leçon tirée d'un incident réel sur microsoft-sales-app (juillet 2026) — voir
+> [project_microsoft_sales_app.md](project_microsoft_sales_app.md) pour le détail complet.
+
+1. **Ne jamais faire dépendre l'admin d'un email pour être informé d'une action à traiter**
+   (nouvelle inscription à valider, alerte critique...). Les emails transactionnels (SMTP
+   Gmail, Resend en mode sandbox `onboarding@resend.dev`, etc.) peuvent échouer silencieusement
+   sans qu'aucune erreur ne remonte à personne. Vécu **deux fois de suite** sur
+   microsoft-sales-app avec deux fournisseurs différents (Gmail SMTP puis Resend) : deux
+   inscriptions jamais notifiées côté admin, alors que les comptes existaient bien en base
+   dès le départ — rien n'était perdu, seule la notification échouait.
+2. **Le vrai fix n'est pas "changer de fournisseur email"** (Gmail → Resend n'a pas résolu le
+   problème) — **c'est arrêter de dépendre d'un email pour ce cas d'usage précis**. Toujours
+   prévoir un fallback in-app consultable directement en base : une page admin listant l'état
+   `pending` via une requête DB directe est fiable à 100 %, sans tiers, sans risque de filtre
+   spam ni de restriction sandbox.
+3. **Rendre ce fallback visible sans action** : badge de compteur dans le menu (fetché au
+   montage + à chaque changement de page pour un admin connecté), pas juste une page qu'il faut
+   penser à aller consulter.
+4. **Ne PAS supprimer les emails côté utilisateur final** (confirmation d'approbation/refus) —
+   ceux-là restent utiles et un échec ponctuel a un impact mineur (l'utilisateur retente juste
+   de se connecter), contrairement à l'email admin dont l'échec bloque tout le pipeline si
+   personne d'autre ne peut voir la demande en attente.
+5. **Pattern à répliquer tel quel** pour tout futur projet H'appi avec inscription/souscription
+   à valider : DB status enum (`pending/approved/rejected`) + route API `GET` protégée
+   (`requireRole(['admin'])` ou équivalent) qui liste les `pending` + petite UI avec boutons
+   Approuver/Refuser + badge de compteur dans la nav. **Ne pas construire un flux "email-only"
+   avec lien signé (HMAC) comme unique moyen d'action** — c'est exactement le design initial
+   qui a causé l'incident.
+
 ---
 
-*Mis à jour : 2026-05-31 — extrait de happi_brain.md v22*
+*Mis à jour : 2026-07-25 — ajout règle "inscriptions/souscriptions à valider" (incident microsoft-sales-app)*

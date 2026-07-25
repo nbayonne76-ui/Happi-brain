@@ -669,4 +669,39 @@ Customer Insights** (voir le fichier pour la distinction précise).
 
 ---
 
-*Mis à jour : 2026-07-18 — Session multi-tenant + persistance DB des 6 agents + Tavily + garde-fou auto-fix + Vercel Analytics*
+## MICROSOFT SALES APP — Mise à jour 24-25 Juillet 2026
+
+### Suivi d'usage + admin
+Nouveau modèle `PageView` (Prisma) + composant client `PageTracker` qui poste `{path}` vers
+`/api/track` à chaque changement de route pour un utilisateur connecté + page
+`/admin/usage` (agrégations Prisma `groupBy` : top pages, top utilisateurs, activité récente).
+Renommage "Microsoft Partner Hub" → "Microsoft Sales Hub" sur les pages signin/signup.
+
+### Enrichissement KB — 8 solutions "thin"
+Audit des 67 solutions contre le protocole d'enrichissement (7 champs, seuils : 8 features /
+5 benefits / 3 use cases) : 8 solutions repérées sous le seuil sur un seul champ ou une seule
+langue (Azure AI Search, Azure AI Services, D365 Customer Voice/Guides/Remote Assist, Finance
+Agent, D365 Connected Store, D365 Product Visualize). Plutôt que refaire une recherche web
+complète, **traduction depuis la langue sœur déjà complète et vérifiée** (EN↔FR) — plus fiable
+qu'une nouvelle recherche (zéro risque d'hallucination, cohérence garantie entre langues). Pour
+les 2 produits retirés (Connected Store, Product Visualize), le champ court côté FR était en
+réalité un avis de retrait *volontairement* concis — pas un vrai trou de contenu ; complété en
+gardant l'avis de retrait en tête de liste puis en ajoutant les fonctionnalités historiques
+traduites (utile pour orienter un client vers les alternatives), plutôt que d'inventer de
+fausses features "actuelles" pour un produit mort.
+
+### Système d'inscription validée — incident et fix définitif
+**Voir la section dédiée dans
+[projects/microsoft-sales-app.md](../projects/microsoft-sales-app.md#inscription-validée-par-admin--incident-et-fix-24-25-juillet-2026)**
+et la règle générale extraite dans
+[happi_brain_core.md](happi_brain_core.md#inscriptions--souscriptions-à-valider-par-un-admin-tous-stacks).
+Résumé : Gmail SMTP puis Resend ont chacun échoué à notifier l'admin d'une inscription (deux
+incidents distincts, deux fournisseurs). Root cause : dépendre d'un email pour qu'un admin
+sache qu'une action l'attend est fragile par design, pas un problème de fournisseur. Fix :
+panneau in-app `/admin/pending-users` (liste DB directe des `status = 'pending'`) + badge de
+compteur dans la nav, plus aucune dépendance email côté admin. Emails de confirmation à
+l'utilisateur final conservés (impact mineur en cas d'échec).
+
+---
+
+*Mis à jour : 2026-07-25 — usage tracking, enrichissement KB 8 solutions, fix définitif du système d'inscription validée (panneau in-app, plus de dépendance email admin)*

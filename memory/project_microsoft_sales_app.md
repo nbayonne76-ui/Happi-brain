@@ -29,3 +29,14 @@ générique à réutiliser pour tout agent de correction de contenu généré pa
 Insights" à un client, vérifier qu'il parle bien de sales intelligence sur des prospects (bon
 fit pour ce pattern) et non d'unification de données clients existants à l'échelle (mauvais
 fit — nécessiterait une vraie architecture CDP, pas ce pattern agents+KB).
+
+**Incident inscription/approbation (24-25/07/2026)** : le système d'inscription validée par
+Nicolas (email → approuver/refuser) a échoué à notifier l'admin deux fois de suite, avec deux
+fournisseurs email différents (Gmail SMTP puis Resend sandbox). Root cause acceptée : dépendre
+d'un email pour qu'un admin sache qu'une action l'attend est structurellement fragile, quel que
+soit le fournisseur. Fix : panneau admin in-app (`/admin/pending-users`) qui liste les
+inscriptions `pending` directement depuis la DB, avec badge de compteur dans la nav — plus
+aucune dépendance email côté admin. Règle générale extraite dans
+[happi_brain_core.md § Inscriptions / souscriptions à valider](happi_brain_core.md#inscriptions--souscriptions-à-valider-par-un-admin-tous-stacks),
+détail technique complet dans
+[projects/microsoft-sales-app.md](../projects/microsoft-sales-app.md).
