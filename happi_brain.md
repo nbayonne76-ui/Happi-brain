@@ -3292,3 +3292,30 @@ Aucun problème détecté
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 23e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch (Anthropic, Voice AI, LLM, FastAPI, RGPD). Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
 
 ---
+
+## 📰 Veille Tech — 2026-07-25
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [ComposioHQ/awesome-claude-skills (663⭐/j) — Liste curatée de Skills Claude, outils et ressources pour personnaliser les workflows IA](https://github.com/ComposioHQ/awesome-claude-skills) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [Panniantong/Agent-Reach (477⭐/j) — Donnez à votre agent IA accès à Twitter, Reddit, YouTube, GitHub — 0 frais API](https://github.com/Panniantong/Agent-Reach) | GitHub Trending 🐍 | #LLM #chatbot |
+| [browser-use/browser-use (264⭐/j) — Rendez les sites web accessibles aux agents IA — automatisation web pour LLMs](https://github.com/browser-use/browser-use) | GitHub Trending 🐍 | #LLM #chatbot |
+| [calesthio/OpenMontage (333⭐/j) — Système agentique open-source de production vidéo : 12 pipelines, 100+ outils, 700+ agent skills](https://github.com/calesthio/OpenMontage) | GitHub Trending 🐍 | #LLM |
+| [dottxt-ai/outlines — Structured Outputs pour LLMs — sorties JSON/Pydantic cohérentes depuis n'importe quel modèle](https://github.com/dottxt-ai/outlines) | GitHub Trending 🐍 | #LLM |
+| [unclecode/crawl4ai (302⭐/j) — Web Crawler open-source optimisé LLM — scraping intelligent pour pipelines RAG](https://github.com/unclecode/crawl4ai) | GitHub Trending 🐍 | #LLM |
+| [rohitg00/ai-engineering-from-scratch (303⭐/j) — AI engineering de zéro : patterns, architecture, déploiement production](https://github.com/rohitg00/ai-engineering-from-scratch) | GitHub Trending 🐍 | #LLM #SaaS |
+| [langgenius/dify (150k⭐, +155/j) — Workflows agentiques + pipelines RAG multi-modèles sur workspace collaboratif](https://github.com/langgenius/dify) | GitHub Trending TS | #LLM #SaaS #chatbot |
+| [earendil-works/pi (+781⭐/j) — Toolkit AI agent avec API LLM unifiée et CLI coding agent](https://github.com/earendil-works/pi) | GitHub Trending TS | #LLM |
+| [koala73/worldmonitor (+2 184⭐/j) — Dashboard Next.js temps réel avec agrégation de news IA et monitoring géopolitique](https://github.com/koala73/worldmonitor) | GitHub Trending TS | #SaaS #Next.js |
+| [diegosouzapw/OmniRoute (+1 841⭐/j) — AI gateway 290+ providers, auto-fallback quota-aware — 6e+ jour consécutif en trending TS](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [CoreBunch/Instatic (+201⭐/j) — Alternative open-source à Webflow avec CMS visuel agentique, built with Next.js](https://github.com/CoreBunch/Instatic) | GitHub Trending TS | #SaaS #Next.js |
+
+### 💡 Insights clés
+- **awesome-claude-skills (Composio, 663⭐/j) — L'écosystème Claude Skills s'organise en communauté open-source** — Composio (acteur MCP/tool-use de référence) publie une curated list de Claude Skills. Signal fort : les Skills Claude deviennent un standard de marché indépendant d'Anthropic. Pour H'appi : inventorier les Claude Skills disponibles avant de développer des fonctionnalités custom sur nos prochains projets — gain estimé 30-50% sur les chatbots standards.
+- **browser-use + Agent-Reach en trending simultané — les agents IA "avec yeux" deviennent mainstream** — Deux repos en forte traction permettent aux LLMs de naviguer le web autonomement (browser-use : contrôle navigateur headless, Agent-Reach : accès Twitter/Reddit/YouTube/GitHub sans API fees). Pour H'appi : nouvelle verticale commerciale à créuser — "agent de veille concurrentielle" ou "monitoring réputation en temps réel" pour PME françaises, dans notre wheelhouse technique.
+- **worldmonitor explose (+2 184⭐/j) — le pattern Next.js + agrégation IA temps réel s'impose comme référence SaaS** — Dashboard Next.js avec news aggregation IA, le plus dynamique du jour en TypeScript. Architecture très proche de ce que ferait H'appi pour un SaaS B2B de veille marché. Pour H'appi : ce pattern (Next.js + LLM streaming + dashboard temps réel) est à recycler directement dans les proposals SaaS enterprise. L'élan communautaire valide le besoin.
+- **dottxt-ai/outlines — Structured Outputs critique pour nos pipelines FastAPI + Claude** — outlines garantit des sorties JSON/Pydantic strictes depuis n'importe quel LLM, sans hallucination de format. Pour H'appi : à intégrer dans nos backends FastAPI partout où Claude retourne des données structurées (tickets SAV, formulaires CRM, synthèses). Réduit drastiquement les bugs de parsing en production et renforce la fiabilité des chatbots.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 24e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
