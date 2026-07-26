@@ -1,6 +1,6 @@
 # H'appi Global Memory
 
-## HAPPI BRAIN — Index thématique (10 fichiers)
+## HAPPI BRAIN — Index thématique (11 fichiers)
 
 - [happi_brain_core](happi_brain_core.md) — Identité H'appi · stack tech · env dev WSL2 · deploy Railway/Vercel/Docker · règles qualité universelles FastAPI + Next.js
 - [happi_brain_chatbots](happi_brain_chatbots.md) — Projets chatbots (SAV-Bot MDF, INnatural, Secretary Vapi) · 18 showcases HTML clients · secteurs couverts · patterns widget/full-stack/vocal
@@ -12,3 +12,4 @@
 - [happi_brain_inspiration](happi_brain_inspiration.md) — Veille GitHub (juin 2026) : Twenty CRM (49k⭐), Dify (145k⭐), Chatwoot (30k⭐), Basjoo, Vapi — patterns RAG pgvector, BullMQ, Vercel AI SDK, CSAT, Pre-Chat Forms, Langfuse, roadmap enrichissement P0→P2
 - [happi_brain_microsoft_kb](happi_brain_microsoft_kb.md) — Catalogue 67 solutions Microsoft Sales App : statut enrichissement, pricing 2026, Foundry/Blueprints/AVD/Policy/M365 Copilot features clés, protocole enrichissement KB
 - [happi_brain_automate](happi_brain_automate.md) — H'appi Automate (comparable Azure Logic Apps) : roadmap MVP 4 sprints, stack FastAPI+ReactFlow+Celery, modèle données complet, 20+ nodes (Claude/Email/CRM/HTTP), système templates, pricing €29-199/mois
+- [happi_brain_architecture](happi_brain_architecture.md) — Veille Architecture & Blueprints : architectures de référence, design patterns agents/RAG/multi-tenant issus de sources fiables (cloud providers, engineering blogs reconnus), avec applicabilité concrète aux projets H'appi
