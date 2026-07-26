@@ -3319,3 +3319,30 @@ Aucun problème détecté
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 24e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
 
 ---
+## 📰 Veille Tech — 2026-07-26
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [diegosouzapw/OmniRoute (+1 381⭐/j, 30 248 total) — AI gateway MIT 290+ providers, auto-fallback quota-aware — 7e jour consécutif en trending TS](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [koala73/worldmonitor (+1 041⭐/j, 74 313 total) — Dashboard Next.js temps réel avec agrégation de news IA et monitoring géopolitique](https://github.com/koala73/worldmonitor) | GitHub Trending TS | #SaaS #Next.js |
+| [earendil-works/pi (+523⭐/j, 77 695 total) — AI agent toolkit : unified LLM API, agent loop, TUI, coding agent CLI](https://github.com/earendil-works/pi) | GitHub Trending TS | #LLM |
+| [ComposioHQ/awesome-claude-skills (+577⭐/j, 70 724 total) — Liste curatée de Claude Skills, ressources et outils pour personnaliser les workflows IA Claude](https://github.com/ComposioHQ/awesome-claude-skills) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [CoreBunch/Instatic (+426⭐/j, 5 222 total) — Alternative open-source à Webflow, Framer et WordPress — built with Next.js](https://github.com/CoreBunch/Instatic) | GitHub Trending TS | #SaaS #Next.js |
+| [MadsLorentzen/ai-job-search (+464⭐/j, 26 939 total) — Framework de candidature IA built on Claude Code — agent autonome de recherche d'emploi](https://github.com/MadsLorentzen/ai-job-search) | GitHub Trending TS | #Claude #chatbot |
+| [Alishahryar1/free-claude-code (+213⭐/j, 42 319 total) — Terminal et IDE tool pour accéder aux capacités Claude depuis la ligne de commande](https://github.com/Alishahryar1/free-claude-code) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [heygen-com/hyperframes (+183⭐/j, 37 688 total) — Write HTML. Render video. Built for agents — pipeline HTML→vidéo pour agents LLM](https://github.com/heygen-com/hyperframes) | GitHub Trending TS | #LLM #VoiceAI |
+| [n8n-io/n8n (+170⭐/j, 198 033 total) — Plateforme d'automation workflow open-source avec capacités IA natives (198k étoiles)](https://github.com/n8n-io/n8n) | GitHub Trending TS | #LLM #SaaS |
+| [VectifyAI/PageIndex (+180⭐/j, 34 592 total) — Indexation de documents pour systèmes de retrieval basés sur le raisonnement (RAG)](https://github.com/VectifyAI/PageIndex) | GitHub Trending 🐍 | #LLM |
+| [different-ai/openwork (+49⭐/j, 17 190 total) — Alternative open-source à Claude Cowork — workspace agentique collaboratif](https://github.com/different-ai/openwork) | GitHub Trending TS | #Claude #SaaS |
+| [andrewyng/aisuite (+77⭐/j, 15 273 total) — Interface unifiée pour multiples providers IA (Andrew Ng) — abstraction multi-LLM](https://github.com/andrewyng/aisuite) | GitHub Trending 🐍 | #LLM #SaaS |
+| [mksglu/context-mode (+49⭐/j, 19 329 total) — Optimisation de la fenêtre de contexte pour agents IA coding](https://github.com/mksglu/context-mode) | GitHub Trending TS | #LLM |
+
+### 💡 Insights clés
+- **OmniRoute : 7e jour consécutif en trending (+1 381⭐/j) — L'AI gateway devient infrastructure critique** — 290+ providers, 500+ modèles, fallback automatique. Pour H'appi : intégrer une logique de routage LLM similaire dans notre backend FastAPI permettrait de basculer automatiquement entre Claude, GPT-4 et modèles open-source selon le coût/SLA, sans changer le code applicatif — argument de résilience fort pour les proposals enterprise.
+- **HeyGen Hyperframes (+183⭐/j) : HTML→vidéo pour agents — le Voice AI évolue vers le "Visual AI"** — HeyGen (leader voice/video AI) lance un pipeline pour que les agents LLM génèrent des vidéos directement depuis du HTML. Pour H'appi : nouveau cas d'usage à explorer — génération de vidéos de réponse personnalisées ou tutoriels automatiques pour les chatbots client allant au-delà du texte.
+- **n8n dépasse 198k étoiles avec AI natif — workflow automation + LLM devient la demande de référence** — n8n s'impose comme le "Zapier open-source" avec IA native. Pour H'appi : les clients voudront connecter leurs chatbots H'appi à leurs workflows n8n. Préparer un connecteur ou une documentation d'intégration n8n ↔ H'appi — c'est une demande croissante à anticiper.
+- **Constellation Claude Code (free-claude-code + ai-job-search + openwork) — l'écosystème Claude Code s'industrialise** — Trois repos distincts en trending aujourd'hui sont built on Claude Code ou des alternatives à ses outils. Pour H'appi : Claude Code n'est plus un outil de niche — c'est une plateforme sur laquelle se construisent des produits. Notre maîtrise de l'écosystème Claude (API + Code + Skills) est un avantage concurrentiel croissant à valoriser dans les proposals.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 25e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
