@@ -3362,3 +3362,27 @@ Aucun problème détecté — les paires de fichiers au nommage proche (`memory/
 
 ### 4. Fichiers potentiellement obsolètes (non modifiés depuis 60+ jours)
 Aucun problème détecté — tous les fichiers `projects/*.md` et `memory/happi_brain_*.md` ont été modifiés au plus tard le 2026-06-15, soit moins de 60 jours avant la date de ce check.
+
+---
+
+## 📰 Veille Tech — 2026-07-27
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [ComposioHQ/awesome-claude-skills (+440⭐/j) — Liste curatée de Skills Claude, outils et ressources pour personnaliser les workflows IA Claude](https://github.com/ComposioHQ/awesome-claude-skills) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [huggingface/speech-to-speech (+81⭐/j) — Construisez des agents vocaux locaux avec des modèles open-source](https://github.com/huggingface/speech-to-speech) | GitHub Trending 🐍 | #VoiceAI |
+| [VectifyAI/PageIndex (+102⭐/j) — Index de documents pour RAG basé sur le raisonnement, sans vectorisation](https://github.com/VectifyAI/PageIndex) | GitHub Trending 🐍 | #LLM |
+| [andrewyng/aisuite (+187⭐/j) — Interface unifiée pour multiples providers IA generatifs (Andrew Ng)](https://github.com/andrewyng/aisuite) | GitHub Trending 🐍 | #LLM #SaaS |
+| [OpenDCAI/DataFlow (+38⭐/j) — Préparation de données facile avec des opérateurs et pipelines basés sur LLMs](https://github.com/OpenDCAI/DataFlow) | GitHub Trending 🐍 | #LLM |
+| [CoreBunch/Instatic (+888⭐/j) — Alternative open-source à Webflow, Framer et WordPress — CMS visuel agentique built with Next.js](https://github.com/CoreBunch/Instatic) | GitHub Trending TS | #SaaS #Next.js |
+| [BuilderIO/agent-native (+89⭐/j) — Framework pour construire des applications agent-native](https://github.com/BuilderIO/agent-native) | GitHub Trending TS | #LLM #chatbot |
+| [browseros-ai/BrowserOS (+70⭐/j) — Navigateur agentique open-source ; alternative à ChatGPT Atlas, Perplexity Comet](https://github.com/browseros-ai/BrowserOS) | GitHub Trending TS | #LLM |
+| [tashfeenahmed/freellmapi (+116⭐/j) — Proxy OpenAI-compatible combinant les tiers gratuits de providers LLM (~4B tokens/mois)](https://github.com/tashfeenahmed/freellmapi) | GitHub Trending TS | #LLM #SaaS |
+| [777genius/agent-teams-ai (+25⭐/j) — Framework multi-agent IA supportant 200+ modèles et 75+ providers LLM](https://github.com/777genius/agent-teams-ai) | GitHub Trending TS | #LLM #chatbot |
+
+### 💡 Insights clés
+- **CoreBunch/Instatic : meilleure progression du jour (+888⭐/j) — Les CMS agentiques Next.js supplantent Webflow dans le B2B** — Instatic (open-source, MIT) génère des pages statiques propres via workflow agentique. Pour H'appi : notre happi-webcreator suit la même trajectoire — à positionner explicitement comme "alternative agentique à Webflow" dans les proposals web. L'appétit du marché pour des CMS visuels + IA est confirmé au plus haut niveau.
+- **freellmapi (+116⭐/j) — L'accès LLM gratuit se démocratise : pression sur nos marges API à anticiper** — Proxy OpenAI-compatible agrégeant ~4B tokens/mois gratuits depuis les tiers providers. Pour H'appi : les clients voudront potentiellement "payer moins pour les tokens" — notre réponse est la valeur de la personnalisation, l'intégration, le support et la conformité RGPD que ces proxies gratuits ne peuvent pas offrir.
+- **BuilderIO/agent-native + BrowserOS — L'"agentic browser" change la façon dont les chatbots H'appi peuvent interagir avec le web** — agent-native fournit un framework pour applis agent-native ; BrowserOS donne aux agents un vrai navigateur autonome. Pour H'appi : combinés à notre stack FastAPI + Claude, ces outils permettent de construire des agents qui naviguent les sites clients (ex: SAV automatisé avec accès au catalogue produits live) — nouveau argument commercial différenciateur.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 26e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
