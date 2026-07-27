@@ -39,3 +39,34 @@
 
 ### 🔧 À creuser en priorité
 Activer PostgreSQL RLS (`FORCE ROW LEVEL SECURITY`) comme défense en profondeur sur Happi CRM et Microsoft Sales App est une action concrète et peu coûteuse à évaluer court-terme, en complément du filtrage applicatif par tenant_id existant.
+
+---
+## 🏛️ Veille Architecture — 2026-07-27
+> Mis à jour automatiquement par Happi Brain Agent (Architecture & Blueprints)
+
+**Effective Context Engineering for AI Agents** — [lien](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+*Source* : Anthropic, engineering blog, publié le 29 septembre 2025, toujours cité comme référence canonique en 2026
+*Le pattern* : traite la fenêtre de contexte comme une ressource finie et précieuse plutôt qu'un espace à remplir. Recommande la récupération "just-in-time" (charger les outils/documents seulement quand nécessaire plutôt que tout pré-charger), la compaction (résumer/élaguer l'historique de conversation à l'approche des limites), la prise de notes structurée (mémoire externalisée hors contexte) et l'isolation de sous-agents pour cloisonner un contexte spécialisé.
+*Pourquoi cette source est fiable* : documentation officielle d'Anthropic, issue de retours d'expérience directs sur des agents Claude en production à grande échelle.
+*Applicabilité H'appi* : directement actionnable sur l'AI Intelligence Suite du CRM (9 outils) et les futurs nodes de H'appi Automate (20+ nodes) — charger les définitions d'outils à la demande plutôt qu'au démarrage de chaque appel Claude, et appliquer une compaction sur les longues conversations SAV/secrétariat vocal pour éviter la dégradation de qualité et l'explosion de coût token.
+
+**How Stripe uses graph search and state machines to auto-remediate a global database fleet** — [lien](https://stripe.dev/blog/how-stripe-uses-graph-search-and-state-machines-to-auto-remediate-a-global-database-fleet)
+*Source* : Stripe, Stripe Dot Dev Blog (Pragya Mehta & Sai Samant), publié le 16 juillet 2026
+*Le pattern* : modélise l'infrastructure de base de données (flotte MongoDB) comme un graphe traversable où chaque état (sain/dégradé) est un nœud et chaque action de remédiation une arête. En cas d'incident, un algorithme de pathfinding calcule dynamiquement la séquence d'actions la plus courte pour revenir à un état sain, exécutée via une state machine — plutôt qu'un arbre de décision codé en dur par type de panne.
+*Pourquoi cette source est fiable* : retour d'expérience direct et chiffré d'une équipe d'ingénierie ayant déployé le système en production (−30% de pages d'astreinte, −12 jours de shards dégradés/an).
+*Applicabilité H'appi* : formalisation intéressante pour le système self-healing du ERP Scraper UK (healer.py) — remplacer/compléter la logique de remédiation cas par cas par un graphe d'états + pathfinding généraliserait la capacité à gérer de nouveaux modes de panne sans code spécifique ; le même principe est transposable aux futurs nodes de reprise sur erreur de H'appi Automate.
+
+**Sequential Pipeline Architecture for Voice Agents** — [lien](https://livekit.com/blog/sequential-pipeline-architecture-voice-agents)
+*Source* : LiveKit, engineering blog (infrastructure temps réel voix/vidéo de référence du secteur), publié le 23 mars 2026
+*Le pattern* : détaille l'architecture cascadée STT → LLM → TTS qui équipe la majorité des voice agents en production, avec chaque étage remplaçable indépendamment, et la distingue des modèles speech-to-speech natifs (audio-in/audio-out direct, plus rapides mais moins débogables). Donne des budgets de latence concrets par étage et des cibles de production 2026 (p50 < 400ms stack standard, p95 < 800ms).
+*Pourquoi cette source est fiable* : LiveKit est l'infrastructure WebRTC temps réel utilisée par une large part de l'écosystème voice AI (dont des déploiements OpenAI Realtime) ; retour d'expérience direct sur des pipelines en production.
+*Applicabilité H'appi* : correspond exactement à l'architecture du produit Secrétariat IA vocal (Vapi) — grille de lecture utile pour arbitrer cascadé (transparence, débogage, adapté aux secteurs réglementés) vs speech-to-speech (latence minimale), et benchmarks de latence pour auditer le pipeline vocal existant.
+
+**RAG reference architectures (catalogue)** — [lien](https://docs.cloud.google.com/architecture/rag-reference-architectures)
+*Source* : Google Cloud Architecture Center, documentation officielle, maintenue en continu (dernières mises à jour mars 2026)
+*Le pattern* : catalogue de variantes d'architecture RAG selon le niveau de contrôle voulu — plateforme managée clé-en-main, pipeline custom avec vector store dédié (dont une variante AlloyDB for PostgreSQL + pgvector), et GraphRAG combinant recherche vectorielle et graphe de connaissances pour les requêtes multi-hop où la seule similarité vectorielle perd le contexte relationnel.
+*Pourquoi cette source est fiable* : documentation d'architecture officielle d'un cloud provider majeur, orientée arbitrages techniques plutôt que promotion produit.
+*Applicabilité H'appi* : la variante pgvector est le pendant direct de la stack PostgreSQL de H'appi (hors GCP, transposable à Railway) pour le RAG des chatbots SAV/e-commerce sur base de connaissance client ; la variante GraphRAG mérite d'être évaluée pour le CRM, où les données sont fortement relationnelles (contacts/deals/interactions) et pas seulement documentaires.
+
+### 🔧 À creuser en priorité
+Évaluer une formalisation du healer.py (ERP Scraper UK) en graphe d'états + pathfinding façon Stripe serait le gain le plus concret à court terme : cela généraliserait le self-healing existant à de nouveaux modes de panne sans code spécifique par cas.
