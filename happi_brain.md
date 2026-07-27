@@ -3346,3 +3346,19 @@ Aucun problème détecté
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 25e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
 
 ---
+
+## 🩺 Happi Brain Health Check — 2026-07-27
+
+### 1. Fichiers absents de l'index
+- `memory/happi_brain_veille_digest.md` — existe sur disque, actif (dernière modif 2026-07-27) mais n'est référencé ni dans `README.md` ni dans `memory/MEMORY.md`.
+
+### 2. Liens cassés
+- `memory/MEMORY_global.md:3 -> happi_brain.md` — le lien relatif résout vers `memory/happi_brain.md`, qui n'existe pas (le fichier réel est à la racine, `../happi_brain.md`).
+- `memory/MEMORY_quality_tracking.md:67 -> audit-details.md` — résout vers `memory/audit-details.md`, introuvable nulle part dans le dépôt.
+- `memory/MEMORY_quality_tracking.md:73 -> happi_brain.md` — même problème que ci-dessus, résout vers `memory/happi_brain.md` au lieu de la racine.
+
+### 3. Doublons / quasi-doublons potentiels
+Aucun problème détecté — les paires de fichiers au nommage proche (`memory/project_dropos.md` / `projects/dropos.md`, `memory/project_happi_foundry.md` / `projects/happi-foundry.md`, `memory/project_microsoft_sales_app.md` / `projects/microsoft-sales-app.md`, `memory/MEMORY_quality_tracking.md` / `projects/quality-tracking-app.md`) ont un contenu très peu partagé (moins de 20% de lignes communes) : ce sont des fiches projet curées vs. des notes de mémoire de session, un doublage intentionnel de rôle et non de contenu.
+
+### 4. Fichiers potentiellement obsolètes (non modifiés depuis 60+ jours)
+Aucun problème détecté — tous les fichiers `projects/*.md` et `memory/happi_brain_*.md` ont été modifiés au plus tard le 2026-06-15, soit moins de 60 jours avant la date de ce check.
