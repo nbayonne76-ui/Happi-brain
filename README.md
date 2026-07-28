@@ -8,6 +8,11 @@
 happi_brain.md          ← Cerveau historique : sections 1-13 (stack, patterns, clients, règles
                            Claude) + ~90 sections "Veille Tech" ajoutées chaque jour depuis avril
                            2026 par l'agent automatique — toujours actif, ne pas archiver
+PLAYBOOK-COMMERCIAL.md  ← Document de vente pour un commercial : pitch, secteurs, cas client
+                           Mobilier de France, sécurité, modèle économique, zoom CRM/Secretary/
+                           DropOS, objections fréquentes. Rien n'est sur happi-bot.com — c'est
+                           ici, et seulement ici, pour ne pas exposer publiquement ce niveau de
+                           détail commercial.
 README.md               ← Ce fichier
 
 projects/               ← Fiche détaillée de chaque projet (curées à la main)
@@ -88,8 +93,9 @@ Sources : HackerNews · DEV.to · GitHub Trending · The New Stack · InfoQ
 1. Claude Code charge automatiquement `~/CLAUDE.md` → pointe vers ce brain
 2. Pour l'état le plus récent d'un projet : commencer par `memory/MEMORY.md`, puis le fichier
    thématique correspondant (ex. `memory/happi_brain_platforms.md` pour Microsoft Sales App)
-3. Après chaque nouveau projet terminé, dis à Claude : **"mets à jour le Happi Brain"**
-4. Faire un `git pull` dans le repo local pour récupérer la veille du matin
+3. Pour préparer un rendez-vous prospect ou une prospection : `PLAYBOOK-COMMERCIAL.md`
+4. Après chaque nouveau projet terminé, dis à Claude : **"mets à jour le Happi Brain"**
+5. Faire un `git pull` dans le repo local pour récupérer la veille du matin
 
 ---
 *H'appi — happi-bot.com | Franco-égyptienne, chatbots IA sur-mesure*
