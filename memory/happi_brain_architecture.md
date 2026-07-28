@@ -70,3 +70,34 @@ Activer PostgreSQL RLS (`FORCE ROW LEVEL SECURITY`) comme défense en profondeur
 
 ### 🔧 À creuser en priorité
 Évaluer une formalisation du healer.py (ERP Scraper UK) en graphe d'états + pathfinding façon Stripe serait le gain le plus concret à court terme : cela généraliserait le self-healing existant à de nouveaux modes de panne sans code spécifique par cas.
+
+---
+## 🏛️ Veille Architecture — 2026-07-28
+> Mis à jour automatiquement par Happi Brain Agent (Architecture & Blueprints)
+
+**Building Reliable Agentic AI Systems (retour d'expérience Bayer/PRINCE)** — [lien](https://martinfowler.com/articles/reliable-llm-bayer.html)
+*Source* : martinfowler.com, article co-écrit par les équipes Bayer AG et Thoughtworks, publié le 16 juin 2026
+*Le pattern* : retour d'expérience complet sur PRINCE, une plateforme d'agentic RAG + Text-to-SQL en production pharma, qui détaille les briques nécessaires pour passer d'un prototype à un système fiable : gestion d'erreurs robuste, persistance d'état, fallbacks LLM en cascade, citations granulaires pour l'explicabilité, et évaluation/monitoring continu de la qualité des réponses.
+*Pourquoi cette source est fiable* : retour d'expérience direct et documenté d'une équipe (Bayer + Thoughtworks) ayant conçu et exploité le système en production sur un cas d'usage réglementé, publié sur martinfowler.com, référence reconnue en architecture logicielle.
+*Applicabilité H'appi* : grille de lecture concrète pour tout chatbot SAV/e-commerce en agentic RAG — en particulier la nécessité de citations granulaires (traçabilité des réponses vers les sources) et de fallbacks LLM en cascade, deux points souvent négligés en V1 mais critiques dès que le chatbot touche à des réponses engageantes (SAV, facturation).
+
+**How we built our multi-agent research system** — [lien](https://www.anthropic.com/engineering/built-multi-agent-research-system)
+*Source* : Anthropic, engineering blog, publié le 13 juin 2025, toujours cité comme référence canonique du pattern orchestrator-workers en 2026
+*Le pattern* : architecture où un agent "lead" décompose une requête complexe en sous-tâches et déploie des subagents spécialisés en parallèle, chacun avec un objectif précis, un format de sortie attendu, et des limites de périmètre explicites. L'article détaille aussi les pièges rencontrés en production (subagents qui explorent 50 pistes pour une requête simple, agents qui se distraient mutuellement à force de mises à jour, coût en tokens ~15x un simple appel de chat) et comment les corriger par un prompting plus strict des rôles.
+*Pourquoi cette source est fiable* : documentation officielle d'Anthropic issue de l'exploitation réelle de ce système de recherche multi-agent en production, avec des chiffres concrets sur les échecs rencontrés et leurs correctifs.
+*Applicabilité H'appi* : complète le pattern orchestrator-workers déjà noté (Azure, 2026-07-26) avec des garde-fous concrets à appliquer sur l'AI Intelligence Suite du CRM ou un futur node "recherche" de H'appi Automate : borner explicitement le nombre de subagents et leur périmètre pour éviter l'explosion de coût token observée par Anthropic elle-même.
+
+**Scaling PostgreSQL to power 800 million ChatGPT users** — [lien](https://openai.com/index/scaling-postgresql/)
+*Source* : OpenAI, blog officiel, publié le 22 janvier 2026 par Bohan Zhang (Member of Technical Staff)
+*Le pattern* : ChatGPT tourne sur une seule instance PostgreSQL primaire (écritures) épaulée par près de 50 réplicas de lecture répartis par région, avec PgBouncer devant chaque réplica (temps de connexion divisé par 10) et une couche de cache qui absorbe la majorité du trafic de lecture avant même d'atteindre un réplica. OpenAI a délibérément évité le sharding (coût de migration applicatif trop élevé) et a plutôt minimisé la charge sur le primaire en déportant écritures et lectures non critiques.
+*Pourquoi cette source est fiable* : retour d'expérience direct et chiffré (p99 en dizaines de ms, cinq neuf de disponibilité, charge x10 en un an) publié sur le blog officiel d'OpenAI par l'ingénieur ayant conduit le projet.
+*Applicabilité H'appi* : preuve qu'on peut repousser très loin les limites d'un PostgreSQL "classique" (Happi CRM, Quality Tracking App, Microsoft Sales App) avant d'envisager du sharding — la priorité concrète reste PgBouncer devant les réplicas et une couche de cache applicative, bien avant toute réécriture d'architecture.
+
+**Durable execution pour agents IA (pattern human-in-the-loop)** — [lien](https://docs.temporal.io/ai-cookbook/human-in-the-loop-python)
+*Source* : documentation officielle Temporal (plateforme de durable execution/orchestration de référence du secteur, levée de 300M$ en février 2026)
+*Le pattern* : les workflows d'agents IA sont modélisés comme des séquences d'étapes dont l'état complet est journalisé — en cas de crash, l'exécution reprend à l'étape exacte où elle s'est arrêtée plutôt que de repartir de zéro. Le pattern human-in-the-loop est natif : un workflow peut se mettre en pause (attente d'une validation humaine) pendant des heures ou des jours sans consommer de ressources, et reprendre exactement là où il s'était arrêté au signal reçu.
+*Pourquoi cette source est fiable* : documentation officielle d'un éditeur spécialisé et reconnu en orchestration de workflows durables, avec des intégrations actives citées avec LangGraph et OpenAI Agents SDK.
+*Applicabilité H'appi* : correspond précisément au besoin de H'appi Automate (orchestrateur type Azure Logic Apps) pour les nodes longue durée ou nécessitant une validation humaine (ex: un node CRM qui attend l'approbation d'un commercial avant d'envoyer un email) — le pattern signal/pause/reprise évite de devoir réinventer une machine à états maison pour ce cas.
+
+### 🔧 À creuser en priorité
+Sur Happi CRM et Microsoft Sales App, vérifier si PgBouncer est déjà en place devant PostgreSQL — sinon, c'est l'action la plus simple et la moins chère à évaluer avant toute question de sharding, avec un signal clair d'OpenAI que ça encaisse une charge x10.
