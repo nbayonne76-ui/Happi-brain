@@ -3386,3 +3386,32 @@ Aucun problème détecté — tous les fichiers `projects/*.md` et `memory/happi
 - **freellmapi (+116⭐/j) — L'accès LLM gratuit se démocratise : pression sur nos marges API à anticiper** — Proxy OpenAI-compatible agrégeant ~4B tokens/mois gratuits depuis les tiers providers. Pour H'appi : les clients voudront potentiellement "payer moins pour les tokens" — notre réponse est la valeur de la personnalisation, l'intégration, le support et la conformité RGPD que ces proxies gratuits ne peuvent pas offrir.
 - **BuilderIO/agent-native + BrowserOS — L'"agentic browser" change la façon dont les chatbots H'appi peuvent interagir avec le web** — agent-native fournit un framework pour applis agent-native ; BrowserOS donne aux agents un vrai navigateur autonome. Pour H'appi : combinés à notre stack FastAPI + Claude, ces outils permettent de construire des agents qui naviguent les sites clients (ex: SAV automatisé avec accès au catalogue produits live) — nouveau argument commercial différenciateur.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 26e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
+## 📰 Veille Tech — 2026-07-28
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Sonnet 5 — Modèle le plus agentique d'Anthropic, proche d'Opus 4.8, prix réduit jusqu'au 31/08](https://releasebot.io/updates/anthropic/claude) | Anthropic / Releasebot | #Claude #Anthropic #chatbot |
+| [Voice agents now on Vercel — Speech, transcription & realtime live sur AI Gateway (AI SDK 7)](https://community.vercel.com/t/vercel-weekly-2026-07-06/45111) | Vercel Community | #VoiceAI #Vercel #SaaS |
+| [Vercel Services : déploiement full-stack avec support Docker pour FastAPI, Rails, Go dans un seul projet](https://community.vercel.com/t/vercel-weekly-2026-07-06/45111) | Vercel Community | #Docker #Vercel #FastAPI |
+| [FastAPI + Next.js 15 : The Full-Stack Nobody's Building — Guide complet de l'intégration](https://dev.to/alexmayhewdev/fastapi-nextjs-15-the-full-stack-nobodys-building-1hl9) | DEV.to | #FastAPI #Next.js |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy — Retour d'expérience déploiement IA](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #Next.js #SaaS #Docker |
+| [Build a Self-Hosted RAG with Postgres pgvector — Guide 2026 complet (Linux/macOS/Docker)](https://www.digitalapplied.com/blog/build-self-hosted-rag-postgres-pgvector-tutorial-2026) | Digital Applied | #PostgreSQL #LLM |
+| [bradautomates/claude-video — Donner à Claude la capacité de regarder et analyser des vidéos](https://github.com/bradautomates/claude-video) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [andrewyng/aisuite — Interface unifiée vers multiples providers LLM (Andrew Ng)](https://github.com/andrewyng/aisuite) | GitHub Trending 🐍 | #LLM #SaaS |
+| [arc53/DocsGPT — Plateforme IA privée : agents, assistants, recherche entreprise, multi-modèles](https://github.com/arc53/DocsGPT) | GitHub Trending 🐍 | #chatbot #LLM |
+| [ruvnet/ruflo — Meta-harness agent pour swarms multi-agents avec mémoire adaptative et RAG](https://github.com/ruvnet/ruflo) | GitHub Trending TS | #LLM #chatbot |
+| [different-ai/openwork — Alternative open-source à Claude Cowork pour développement IA collaboratif](https://github.com/different-ai/openwork) | GitHub Trending TS | #Claude #chatbot |
+| [777genius/agent-teams-ai — Orchestration multi-agents : 200+ modèles, 75+ providers LLM](https://github.com/777genius/agent-teams-ai) | GitHub Trending TS | #LLM #chatbot |
+| [moeru-ai/airi — Companion vocal IA self-hosted avec voice chat](https://github.com/moeru-ai/airi) | GitHub Trending TS | #VoiceAI |
+| [Claude Code : Opus 5 par défaut + MCP amélioré + subagents imbriqués + sessions background](https://releasebot.io/updates/anthropic/claude-code) | Anthropic / Releasebot | #Claude #Anthropic |
+| [Claude Cowork mobile + Claude for Government en bêta — Expansion enterprise Anthropic](https://releasebot.io/updates/anthropic/claude) | Anthropic / Releasebot | #Claude #SaaS |
+
+### 💡 Insights clés
+- **Claude Sonnet 5 est désormais le modèle par défaut pour tous les utilisateurs Anthropic** — performant proche d'Opus 4.8 et moins cher que Sonnet 4.6 jusqu'au 31/08. Pour H'appi : migrer les chatbots clients vers Sonnet 5 réduit les coûts API tout en améliorant la qualité. À prioriser dans les prochaines mises à jour maintenance.
+- **Voice AI arrive sur Vercel (AI Gateway) avec useRealtime, generateSpeech & transcribe (AI SDK 7)** — Le stack H'appi (Vapi.ai + ElevenLabs + Deepgram) s'intègre encore plus simplement via Vercel. Pour H'appi : évaluer un pilot "voice chatbot" déployable sur Vercel comme différenciateur SaaS rapide à livrer.
+- **Vercel Services supporte Docker pour FastAPI en monorepo** — Notre stack standard (FastAPI + Next.js) peut être déployé en monorepo sur Vercel. Pour H'appi : tester pour simplifier le DevOps client et potentiellement remplacer Railway dans les projets légers.
+- **DocsGPT (arc53) et openwork (different-ai) s'imposent comme références open-source** — Pour H'appi : benchmarker DocsGPT contre notre stack RAG pour valider notre positionnement "sur-mesure > open-source générique" auprès des clients.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 27e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines dans la politique réseau remote pour diversifier les sources.
