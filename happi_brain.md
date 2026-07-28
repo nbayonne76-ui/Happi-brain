@@ -3319,3 +3319,99 @@ Aucun problème détecté
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 24e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
 
 ---
+## 📰 Veille Tech — 2026-07-26
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [diegosouzapw/OmniRoute (+1 381⭐/j, 30 248 total) — AI gateway MIT 290+ providers, auto-fallback quota-aware — 7e jour consécutif en trending TS](https://github.com/diegosouzapw/OmniRoute) | GitHub Trending TS | #LLM #SaaS |
+| [koala73/worldmonitor (+1 041⭐/j, 74 313 total) — Dashboard Next.js temps réel avec agrégation de news IA et monitoring géopolitique](https://github.com/koala73/worldmonitor) | GitHub Trending TS | #SaaS #Next.js |
+| [earendil-works/pi (+523⭐/j, 77 695 total) — AI agent toolkit : unified LLM API, agent loop, TUI, coding agent CLI](https://github.com/earendil-works/pi) | GitHub Trending TS | #LLM |
+| [ComposioHQ/awesome-claude-skills (+577⭐/j, 70 724 total) — Liste curatée de Claude Skills, ressources et outils pour personnaliser les workflows IA Claude](https://github.com/ComposioHQ/awesome-claude-skills) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [CoreBunch/Instatic (+426⭐/j, 5 222 total) — Alternative open-source à Webflow, Framer et WordPress — built with Next.js](https://github.com/CoreBunch/Instatic) | GitHub Trending TS | #SaaS #Next.js |
+| [MadsLorentzen/ai-job-search (+464⭐/j, 26 939 total) — Framework de candidature IA built on Claude Code — agent autonome de recherche d'emploi](https://github.com/MadsLorentzen/ai-job-search) | GitHub Trending TS | #Claude #chatbot |
+| [Alishahryar1/free-claude-code (+213⭐/j, 42 319 total) — Terminal et IDE tool pour accéder aux capacités Claude depuis la ligne de commande](https://github.com/Alishahryar1/free-claude-code) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [heygen-com/hyperframes (+183⭐/j, 37 688 total) — Write HTML. Render video. Built for agents — pipeline HTML→vidéo pour agents LLM](https://github.com/heygen-com/hyperframes) | GitHub Trending TS | #LLM #VoiceAI |
+| [n8n-io/n8n (+170⭐/j, 198 033 total) — Plateforme d'automation workflow open-source avec capacités IA natives (198k étoiles)](https://github.com/n8n-io/n8n) | GitHub Trending TS | #LLM #SaaS |
+| [VectifyAI/PageIndex (+180⭐/j, 34 592 total) — Indexation de documents pour systèmes de retrieval basés sur le raisonnement (RAG)](https://github.com/VectifyAI/PageIndex) | GitHub Trending 🐍 | #LLM |
+| [different-ai/openwork (+49⭐/j, 17 190 total) — Alternative open-source à Claude Cowork — workspace agentique collaboratif](https://github.com/different-ai/openwork) | GitHub Trending TS | #Claude #SaaS |
+| [andrewyng/aisuite (+77⭐/j, 15 273 total) — Interface unifiée pour multiples providers IA (Andrew Ng) — abstraction multi-LLM](https://github.com/andrewyng/aisuite) | GitHub Trending 🐍 | #LLM #SaaS |
+| [mksglu/context-mode (+49⭐/j, 19 329 total) — Optimisation de la fenêtre de contexte pour agents IA coding](https://github.com/mksglu/context-mode) | GitHub Trending TS | #LLM |
+
+### 💡 Insights clés
+- **OmniRoute : 7e jour consécutif en trending (+1 381⭐/j) — L'AI gateway devient infrastructure critique** — 290+ providers, 500+ modèles, fallback automatique. Pour H'appi : intégrer une logique de routage LLM similaire dans notre backend FastAPI permettrait de basculer automatiquement entre Claude, GPT-4 et modèles open-source selon le coût/SLA, sans changer le code applicatif — argument de résilience fort pour les proposals enterprise.
+- **HeyGen Hyperframes (+183⭐/j) : HTML→vidéo pour agents — le Voice AI évolue vers le "Visual AI"** — HeyGen (leader voice/video AI) lance un pipeline pour que les agents LLM génèrent des vidéos directement depuis du HTML. Pour H'appi : nouveau cas d'usage à explorer — génération de vidéos de réponse personnalisées ou tutoriels automatiques pour les chatbots client allant au-delà du texte.
+- **n8n dépasse 198k étoiles avec AI natif — workflow automation + LLM devient la demande de référence** — n8n s'impose comme le "Zapier open-source" avec IA native. Pour H'appi : les clients voudront connecter leurs chatbots H'appi à leurs workflows n8n. Préparer un connecteur ou une documentation d'intégration n8n ↔ H'appi — c'est une demande croissante à anticiper.
+- **Constellation Claude Code (free-claude-code + ai-job-search + openwork) — l'écosystème Claude Code s'industrialise** — Trois repos distincts en trending aujourd'hui sont built on Claude Code ou des alternatives à ses outils. Pour H'appi : Claude Code n'est plus un outil de niche — c'est une plateforme sur laquelle se construisent des produits. Notre maîtrise de l'écosystème Claude (API + Code + Skills) est un avantage concurrentiel croissant à valoriser dans les proposals.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 25e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
+
+## 🩺 Happi Brain Health Check — 2026-07-27
+
+### 1. Fichiers absents de l'index
+- `memory/happi_brain_veille_digest.md` — existe sur disque, actif (dernière modif 2026-07-27) mais n'est référencé ni dans `README.md` ni dans `memory/MEMORY.md`.
+
+### 2. Liens cassés
+- `memory/MEMORY_global.md:3 -> happi_brain.md` — le lien relatif résout vers `memory/happi_brain.md`, qui n'existe pas (le fichier réel est à la racine, `../happi_brain.md`).
+- `memory/MEMORY_quality_tracking.md:67 -> audit-details.md` — résout vers `memory/audit-details.md`, introuvable nulle part dans le dépôt.
+- `memory/MEMORY_quality_tracking.md:73 -> happi_brain.md` — même problème que ci-dessus, résout vers `memory/happi_brain.md` au lieu de la racine.
+
+### 3. Doublons / quasi-doublons potentiels
+Aucun problème détecté — les paires de fichiers au nommage proche (`memory/project_dropos.md` / `projects/dropos.md`, `memory/project_happi_foundry.md` / `projects/happi-foundry.md`, `memory/project_microsoft_sales_app.md` / `projects/microsoft-sales-app.md`, `memory/MEMORY_quality_tracking.md` / `projects/quality-tracking-app.md`) ont un contenu très peu partagé (moins de 20% de lignes communes) : ce sont des fiches projet curées vs. des notes de mémoire de session, un doublage intentionnel de rôle et non de contenu.
+
+### 4. Fichiers potentiellement obsolètes (non modifiés depuis 60+ jours)
+Aucun problème détecté — tous les fichiers `projects/*.md` et `memory/happi_brain_*.md` ont été modifiés au plus tard le 2026-06-15, soit moins de 60 jours avant la date de ce check.
+
+---
+
+## 📰 Veille Tech — 2026-07-27
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [ComposioHQ/awesome-claude-skills (+440⭐/j) — Liste curatée de Skills Claude, outils et ressources pour personnaliser les workflows IA Claude](https://github.com/ComposioHQ/awesome-claude-skills) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [huggingface/speech-to-speech (+81⭐/j) — Construisez des agents vocaux locaux avec des modèles open-source](https://github.com/huggingface/speech-to-speech) | GitHub Trending 🐍 | #VoiceAI |
+| [VectifyAI/PageIndex (+102⭐/j) — Index de documents pour RAG basé sur le raisonnement, sans vectorisation](https://github.com/VectifyAI/PageIndex) | GitHub Trending 🐍 | #LLM |
+| [andrewyng/aisuite (+187⭐/j) — Interface unifiée pour multiples providers IA generatifs (Andrew Ng)](https://github.com/andrewyng/aisuite) | GitHub Trending 🐍 | #LLM #SaaS |
+| [OpenDCAI/DataFlow (+38⭐/j) — Préparation de données facile avec des opérateurs et pipelines basés sur LLMs](https://github.com/OpenDCAI/DataFlow) | GitHub Trending 🐍 | #LLM |
+| [CoreBunch/Instatic (+888⭐/j) — Alternative open-source à Webflow, Framer et WordPress — CMS visuel agentique built with Next.js](https://github.com/CoreBunch/Instatic) | GitHub Trending TS | #SaaS #Next.js |
+| [BuilderIO/agent-native (+89⭐/j) — Framework pour construire des applications agent-native](https://github.com/BuilderIO/agent-native) | GitHub Trending TS | #LLM #chatbot |
+| [browseros-ai/BrowserOS (+70⭐/j) — Navigateur agentique open-source ; alternative à ChatGPT Atlas, Perplexity Comet](https://github.com/browseros-ai/BrowserOS) | GitHub Trending TS | #LLM |
+| [tashfeenahmed/freellmapi (+116⭐/j) — Proxy OpenAI-compatible combinant les tiers gratuits de providers LLM (~4B tokens/mois)](https://github.com/tashfeenahmed/freellmapi) | GitHub Trending TS | #LLM #SaaS |
+| [777genius/agent-teams-ai (+25⭐/j) — Framework multi-agent IA supportant 200+ modèles et 75+ providers LLM](https://github.com/777genius/agent-teams-ai) | GitHub Trending TS | #LLM #chatbot |
+
+### 💡 Insights clés
+- **CoreBunch/Instatic : meilleure progression du jour (+888⭐/j) — Les CMS agentiques Next.js supplantent Webflow dans le B2B** — Instatic (open-source, MIT) génère des pages statiques propres via workflow agentique. Pour H'appi : notre happi-webcreator suit la même trajectoire — à positionner explicitement comme "alternative agentique à Webflow" dans les proposals web. L'appétit du marché pour des CMS visuels + IA est confirmé au plus haut niveau.
+- **freellmapi (+116⭐/j) — L'accès LLM gratuit se démocratise : pression sur nos marges API à anticiper** — Proxy OpenAI-compatible agrégeant ~4B tokens/mois gratuits depuis les tiers providers. Pour H'appi : les clients voudront potentiellement "payer moins pour les tokens" — notre réponse est la valeur de la personnalisation, l'intégration, le support et la conformité RGPD que ces proxies gratuits ne peuvent pas offrir.
+- **BuilderIO/agent-native + BrowserOS — L'"agentic browser" change la façon dont les chatbots H'appi peuvent interagir avec le web** — agent-native fournit un framework pour applis agent-native ; BrowserOS donne aux agents un vrai navigateur autonome. Pour H'appi : combinés à notre stack FastAPI + Claude, ces outils permettent de construire des agents qui naviguent les sites clients (ex: SAV automatisé avec accès au catalogue produits live) — nouveau argument commercial différenciateur.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 26e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
+
+---
+## 📰 Veille Tech — 2026-07-28
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Claude Sonnet 5 — Modèle le plus agentique d'Anthropic, proche d'Opus 4.8, prix réduit jusqu'au 31/08](https://releasebot.io/updates/anthropic/claude) | Anthropic / Releasebot | #Claude #Anthropic #chatbot |
+| [Voice agents now on Vercel — Speech, transcription & realtime live sur AI Gateway (AI SDK 7)](https://community.vercel.com/t/vercel-weekly-2026-07-06/45111) | Vercel Community | #VoiceAI #Vercel #SaaS |
+| [Vercel Services : déploiement full-stack avec support Docker pour FastAPI, Rails, Go dans un seul projet](https://community.vercel.com/t/vercel-weekly-2026-07-06/45111) | Vercel Community | #Docker #Vercel #FastAPI |
+| [FastAPI + Next.js 15 : The Full-Stack Nobody's Building — Guide complet de l'intégration](https://dev.to/alexmayhewdev/fastapi-nextjs-15-the-full-stack-nobodys-building-1hl9) | DEV.to | #FastAPI #Next.js |
+| [How I built an AI SaaS with Next.js, FastAPI, and Dokploy — Retour d'expérience déploiement IA](https://dev.to/julykk/how-i-built-an-ai-saas-with-nextjs-fastapi-and-dokploy-52eo) | DEV.to | #FastAPI #Next.js #SaaS #Docker |
+| [Build a Self-Hosted RAG with Postgres pgvector — Guide 2026 complet (Linux/macOS/Docker)](https://www.digitalapplied.com/blog/build-self-hosted-rag-postgres-pgvector-tutorial-2026) | Digital Applied | #PostgreSQL #LLM |
+| [bradautomates/claude-video — Donner à Claude la capacité de regarder et analyser des vidéos](https://github.com/bradautomates/claude-video) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [andrewyng/aisuite — Interface unifiée vers multiples providers LLM (Andrew Ng)](https://github.com/andrewyng/aisuite) | GitHub Trending 🐍 | #LLM #SaaS |
+| [arc53/DocsGPT — Plateforme IA privée : agents, assistants, recherche entreprise, multi-modèles](https://github.com/arc53/DocsGPT) | GitHub Trending 🐍 | #chatbot #LLM |
+| [ruvnet/ruflo — Meta-harness agent pour swarms multi-agents avec mémoire adaptative et RAG](https://github.com/ruvnet/ruflo) | GitHub Trending TS | #LLM #chatbot |
+| [different-ai/openwork — Alternative open-source à Claude Cowork pour développement IA collaboratif](https://github.com/different-ai/openwork) | GitHub Trending TS | #Claude #chatbot |
+| [777genius/agent-teams-ai — Orchestration multi-agents : 200+ modèles, 75+ providers LLM](https://github.com/777genius/agent-teams-ai) | GitHub Trending TS | #LLM #chatbot |
+| [moeru-ai/airi — Companion vocal IA self-hosted avec voice chat](https://github.com/moeru-ai/airi) | GitHub Trending TS | #VoiceAI |
+| [Claude Code : Opus 5 par défaut + MCP amélioré + subagents imbriqués + sessions background](https://releasebot.io/updates/anthropic/claude-code) | Anthropic / Releasebot | #Claude #Anthropic |
+| [Claude Cowork mobile + Claude for Government en bêta — Expansion enterprise Anthropic](https://releasebot.io/updates/anthropic/claude) | Anthropic / Releasebot | #Claude #SaaS |
+
+### 💡 Insights clés
+- **Claude Sonnet 5 est désormais le modèle par défaut pour tous les utilisateurs Anthropic** — performant proche d'Opus 4.8 et moins cher que Sonnet 4.6 jusqu'au 31/08. Pour H'appi : migrer les chatbots clients vers Sonnet 5 réduit les coûts API tout en améliorant la qualité. À prioriser dans les prochaines mises à jour maintenance.
+- **Voice AI arrive sur Vercel (AI Gateway) avec useRealtime, generateSpeech & transcribe (AI SDK 7)** — Le stack H'appi (Vapi.ai + ElevenLabs + Deepgram) s'intègre encore plus simplement via Vercel. Pour H'appi : évaluer un pilot "voice chatbot" déployable sur Vercel comme différenciateur SaaS rapide à livrer.
+- **Vercel Services supporte Docker pour FastAPI en monorepo** — Notre stack standard (FastAPI + Next.js) peut être déployé en monorepo sur Vercel. Pour H'appi : tester pour simplifier le DevOps client et potentiellement remplacer Railway dans les projets légers.
+- **DocsGPT (arc53) et openwork (different-ai) s'imposent comme références open-source** — Pour H'appi : benchmarker DocsGPT contre notre stack RAG pour valider notre positionnement "sur-mesure > open-source générique" auprès des clients.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 27e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines dans la politique réseau remote pour diversifier les sources.
