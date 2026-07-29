@@ -101,3 +101,40 @@ Activer PostgreSQL RLS (`FORCE ROW LEVEL SECURITY`) comme défense en profondeur
 
 ### 🔧 À creuser en priorité
 Sur Happi CRM et Microsoft Sales App, vérifier si PgBouncer est déjà en place devant PostgreSQL — sinon, c'est l'action la plus simple et la moins chère à évaluer avant toute question de sharding, avec un signal clair d'OpenAI que ça encaisse une charge x10.
+
+---
+## 🏛️ Veille Architecture — 2026-07-29
+> Mis à jour automatiquement par Happi Brain Agent (Architecture & Blueprints)
+
+**Ask DoorDash — assistant shopping conversationnel multi-agent** — [lien](https://www.infoq.com/news/2026/07/doordash-ai-ask-assistant/)
+*Source* : InfoQ, reportage sur l'équipe engineering DoorDash, juillet 2026
+*Le pattern* : "Ask DoorDash" n'est pas un simple wrapper autour d'un LLM mais un système multi-agent construit sur Google Agent Development Kit, avec trois couches de mémoire persistante (court terme, préférences, historique), un ancrage temps réel sur le catalogue produit via des outils MCP, et un framework d'évaluation LLM-as-judge tournant sur plus de 2000 évaluations automatisées par jour.
+*Pourquoi cette source est fiable* : retour d'expérience chiffré d'une équipe produit en production (+24% de conversion panier, +17% de panier moyen, -35% de latence après migration de modèle validée par les évals).
+*Applicabilité H'appi* : blueprint quasi directement transposable aux chatbots SAV/e-commerce H'appi — la mémoire à plusieurs couches et l'ancrage catalogue via MCP correspondent exactement au besoin d'un chatbot qui doit se souvenir du client et rester factuellement exact sur un catalogue produit qui change.
+
+**Skipper — moteur de workflow embarqué chez Airbnb** — [lien](https://medium.com/airbnb-engineering/skipper-building-airbnbs-embedded-workflow-engine-f6c34552146f)
+*Source* : Airbnb Engineering & Data Science, blog officiel, avril 2026
+*Le pattern* : plutôt que de dépendre d'un cluster d'orchestration externe (type Temporal) pour les services critiques (Tier-0), Airbnb a construit une bibliothèque de durable execution embarquable directement dans chaque service — sans nouvelle dépendance d'infrastructure critique — au prix d'un compromis explicite sur les garanties exactly-once par rapport à un moteur externe dédié.
+*Pourquoi cette source est fiable* : retour d'expérience direct d'une équipe ayant conçu et déployé le système en production sur plusieurs domaines (assurance, paiements, traitement média, automatisation infra).
+*Applicabilité H'appi* : point de comparaison concret pour H'appi Automate face au pattern Temporal déjà noté (2026-07-28) — si l'infra Railway de H'appi doit rester légère, une librairie de workflow embarquée (plutôt qu'un cluster d'orchestration externe supplémentaire à opérer) peut être le bon compromis pour les nodes longue durée qui n'exigent pas des garanties exactly-once strictes.
+
+**Design a Secure Multitenant RAG Inferencing Solution** — [lien](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/secure-multitenant-rag)
+*Source* : Azure Architecture Center, Microsoft Learn, documentation officielle, révision 2026
+*Le pattern* : guide dédié à l'intersection RAG + multi-tenant — arbitrage entre index vectoriels dédiés par tenant et index partagé avec filtres tenant par requête, avec l'exigence que la couche de retrieval ne renvoie jamais un document qu'un tenant n'est pas autorisé à voir, et que l'orchestration route vers le bon store de données avant même de construire le prompt.
+*Pourquoi cette source est fiable* : documentation d'architecture officielle d'un cloud provider majeur, focalisée sur les arbitrages sécurité plutôt que la promotion produit.
+*Applicabilité H'appi* : angle plus précis et plus actionnable que le catalogue RAG général déjà noté (Google Cloud, 2026-07-27) — directement pertinent pour les chatbots SAV/e-commerce multi-clients de H'appi, où une fuite de contexte RAG entre deux clients (ex: base de connaissance d'un client visible par un autre) serait une faille RGPD critique à éliminer par construction, pas seulement par filtrage applicatif.
+
+**Cart Assistant — agent de shopping agentique chez Uber Eats** — [lien](https://www.uber.com/us/en/blog/uber-cart-assistant/)
+*Source* : Uber Engineering, blog officiel, 16 juin 2026
+*Le pattern* : même problème que DoorDash (agent conversationnel de shopping) mais résolu avec une architecture différente — un state-graph explicite plutôt qu'un système multi-agent, choisi délibérément pour la contrôlabilité et l'inspectabilité — associé à un flux d'évaluation qui compare baseline vs candidat et inspecte les traces étape par étape, à la fois avant mise en prod et en continu sur trafic réel.
+*Pourquoi cette source est fiable* : retour d'expérience direct d'une équipe d'ingénierie ayant conçu et exploité le système en production.
+*Applicabilité H'appi* : à lire en contraste avec DoorDash ci-dessus — pour un chatbot SAV/e-commerce H'appi, le choix entre "state-graph explicite" (plus simple à déboguer et à auditer, bon défaut pour un premier produit réglementé) et "multi-agent avec mémoire" (plus flexible mais plus coûteux à maintenir) est un arbitrage concret à trancher projet par projet plutôt qu'un choix universel.
+
+**Multi-Provider Generative AI Gateway (architecture de référence)** — [lien](https://aws.amazon.com/blogs/machine-learning/streamline-ai-operations-with-the-multi-provider-generative-ai-gateway-reference-architecture/)
+*Source* : AWS Machine Learning Blog / AWS Solutions Library, architecture de référence, 2026
+*Le pattern* : passerelle centralisée (construite sur LiteLLM) placée devant tous les appels vers des providers LLM, avec gestion centralisée du rate limiting, de l'authentification, de l'observabilité (logs/coûts par produit) et de la bascule entre providers, plutôt que chaque produit qui appelle son LLM directement en dur.
+*Pourquoi cette source est fiable* : architecture de référence documentée officiellement par un cloud provider majeur, orientée gouvernance/coût plutôt que promotion produit.
+*Applicabilité H'appi* : H'appi opère plusieurs produits IA (chatbots, secrétariat vocal, CRM, sales intelligence) qui appellent tous l'API Claude indépendamment — une gateway interne légère (même auto-hébergée sur Railway plutôt que sur AWS) permettrait de centraliser le rate limiting, l'attribution des coûts par produit/client et un futur fallback multi-provider, sans dupliquer cette logique dans chaque codebase.
+
+### 🔧 À creuser en priorité
+Le pattern "Secure Multitenant RAG" (Azure) mérite un audit court-terme sur les chatbots SAV/e-commerce H'appi existants : vérifier que l'isolation tenant au niveau du retrieval RAG est garantie par construction (index/filtre obligatoire) et pas seulement par un filtrage applicatif optionnel.
