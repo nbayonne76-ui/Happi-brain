@@ -3415,3 +3415,28 @@ Aucun problème détecté — tous les fichiers `projects/*.md` et `memory/happi
 - **Vercel Services supporte Docker pour FastAPI en monorepo** — Notre stack standard (FastAPI + Next.js) peut être déployé en monorepo sur Vercel. Pour H'appi : tester pour simplifier le DevOps client et potentiellement remplacer Railway dans les projets légers.
 - **DocsGPT (arc53) et openwork (different-ai) s'imposent comme références open-source** — Pour H'appi : benchmarker DocsGPT contre notre stack RAG pour valider notre positionnement "sur-mesure > open-source générique" auprès des clients.
 - **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 27e jour consécutif** — Veille appuyée sur GitHub Trending + WebSearch. Recommandation maintenue : débloquer les domaines dans la politique réseau remote pour diversifier les sources.
+
+---
+## 📰 Veille Tech — 2026-07-29
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [bradautomates/claude-video (+988⭐/j, 2e jour) — Donner à Claude la capacité d'analyser des vidéos frame par frame](https://github.com/bradautomates/claude-video) | GitHub Trending 🐍 | #Claude #Anthropic #chatbot |
+| [virgiliojr94/book-to-skill (+423⭐/j) — Convertir des PDF techniques en compétences Claude Code](https://github.com/virgiliojr94/book-to-skill) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [huggingface/speech-to-speech (+227⭐/j) — Construire des agents vocaux locaux avec des modèles open-source](https://github.com/huggingface/speech-to-speech) | GitHub Trending 🐍 | #VoiceAI #chatbot |
+| [microsoft/agent-governance-toolkit (+46⭐/j) — Gouvernance IA : zero-trust identity, OWASP Agentic Top 10, reliability engineering](https://github.com/microsoft/agent-governance-toolkit) | GitHub Trending 🐍 | #LLM #RGPD |
+| [moeru-ai/airi (+797⭐/j) — Companion IA vocal self-hosted avec voice chat et gaming](https://github.com/moeru-ai/airi) | GitHub Trending TS | #VoiceAI #chatbot |
+| [firecrawl/firecrawl (+523⭐/j) — Web scraping et interaction API à grande échelle pour agents LLM](https://github.com/firecrawl/firecrawl) | GitHub Trending TS | #LLM #chatbot #SaaS |
+| [microsoft/flint-chart (+115⭐/j) — Langage de visualisation IA : générer des charts depuis des specs naturelles](https://github.com/microsoft/flint-chart) | GitHub Trending TS | #LLM |
+| [BuilderIO/agent-native (+112⭐/j) — Framework pour construire des applications agent-native](https://github.com/BuilderIO/agent-native) | GitHub Trending TS | #chatbot #LLM |
+| [basketikun/infinite-canvas (+67⭐/j) — Canvas open-source avec génération d'images IA et collaboration multi-agent](https://github.com/basketikun/infinite-canvas) | GitHub Trending TS | #chatbot #LLM |
+| [humanlayer/12-factor-agents (+49⭐/j, 24K⭐ total) — Les 12 principes pour des logiciels LLM production-ready](https://github.com/humanlayer/12-factor-agents) | GitHub Trending TS | #LLM #SaaS |
+| [NanmiCoder/cc-haha (+37⭐/j) — Workspace desktop pour Claude Code : multi-agents, git, collaboration](https://github.com/NanmiCoder/cc-haha) | GitHub Trending TS | #Claude #Anthropic |
+
+### 💡 Insights clés
+- **claude-video atteint +988⭐/j pour le 2e jour consécutif — Claude devient la référence pour l'analyse vidéo IA** — Le projet bradautomates/claude-video (12K+ étoiles) est le plus rapide du jour en Python. Pour H'appi : "Chatbot + analyse vidéo" est un différenciateur immédiat pour les secteurs retail (analyse du parcours client), RH (CV vidéo) et SAV (diagnostic vidéo). À prototyper avec notre stack FastAPI + Claude.
+- **Voice AI open-source s'accélère (huggingface/speech-to-speech +227, moeru-ai/airi +797)** — Les agents vocaux locaux sans dépendance cloud émergent en force. Pour H'appi : notre stack Vapi.ai + ElevenLabs + Deepgram doit se positionner sur la valeur "clé-en-main + support + RGPD" face aux solutions DIY. Proposer une architecture hybride cloud/local comme option premium.
+- **microsoft/agent-governance-toolkit — La gouvernance agentique devient un standard d'entreprise** — OWASP Agentic Top 10, zero-trust identity et reliability engineering sont désormais des attentes enterprise. Pour H'appi : notre conformité RGPD + hébergement France est une longueur d'avance sur les startups. Intégrer les critères OWASP Agentic dans nos audits de sécurité pre-livraison comme argument commercial différenciateur.
+- **humanlayer/12-factor-agents (24K⭐) s'impose comme manifeste de référence pour les LLM en prod** — Les "12 facteurs" (stateless, async, observable, testable…) codifient les bonnes pratiques LLM. Pour H'appi : auditer notre stack FastAPI + Claude contre ces 12 principes et en faire un argument de qualité dans les proposals — "architecture 12-factor-agents certifiée" comme gage de maintenabilité long terme.
+- **Blocage réseau persistant (HackerNews, DEV.to API, The New Stack) — 28e jour consécutif** — Veille appuyée exclusivement sur GitHub Trending. Recommandation maintenue : débloquer les domaines dans la politique réseau de l'environnement remote pour diversifier les sources.
