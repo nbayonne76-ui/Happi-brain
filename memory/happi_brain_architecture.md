@@ -138,3 +138,34 @@ Sur Happi CRM et Microsoft Sales App, vérifier si PgBouncer est déjà en place
 
 ### 🔧 À creuser en priorité
 Le pattern "Secure Multitenant RAG" (Azure) mérite un audit court-terme sur les chatbots SAV/e-commerce H'appi existants : vérifier que l'isolation tenant au niveau du retrieval RAG est garantie par construction (index/filtre obligatoire) et pas seulement par un filtrage applicatif optionnel.
+
+---
+## 🏛️ Veille Architecture — 2026-07-30
+> Mis à jour automatiquement par Happi Brain Agent (Architecture & Blueprints)
+
+**We replaced Redis with MySQL for inventory reservations — and it scaled** — [lien](https://shopify.engineering/scaling-inventory-reservations)
+*Source* : Shopify Engineering, blog officiel, publié le 12 mai 2026
+*Le pattern* : plutôt qu'une colonne quantité par article, Shopify modélise chaque unité vendable comme une ligne SQL distincte (10 unités en stock = 10 lignes) et utilise `SELECT ... FOR UPDATE SKIP LOCKED` pour réserver des lignes disponibles sans bloquer sur celles déjà verrouillées par une transaction concurrente, avec un pool borné (max 1000 lignes par article/localisation) pour éviter la dégradation de perf à grande échelle.
+*Pourquoi cette source est fiable* : retour d'expérience direct et chiffré d'une équipe ayant migré un système critique en production, validé sous la charge réelle du Black Friday 2025 ($5,1M de ventes/minute) — -50% de lectures, -33% de transactions, zéro survente.
+*Applicabilité H'appi* : `SKIP LOCKED` existe nativement en PostgreSQL (donc directement utilisable, pas seulement en MySQL) — pattern concret pour tout futur système de réservation/allocation de ressources sous contention dans le CRM ou un chatbot e-commerce (ex: gestion de stock, créneaux de rendez-vous secrétariat vocal), en évitant d'ajouter une dépendance Redis supplémentaire pour un problème que PostgreSQL seul sait résoudre proprement.
+
+**Logic Apps Automation** — [lien](https://www.infoq.com/news/2026/06/azure-logic-apps-automation/)
+*Source* : InfoQ, couverture de l'annonce Microsoft Build 2026, juin 2026 (documentation complémentaire sur techcommunity.microsoft.com)
+*Le pattern* : nouvelle offre Azure packageant workflows, agents IA et accès modèles dans un SaaS managé — agents intégrés via orchestration en boucle et sandbox managée, RAG entièrement managé ("Knowledge as a Service"), et surtout un serveur MCP qui expose chaque workflow Logic Apps existant comme un outil découvrable et invocable par un agent.
+*Pourquoi cette source est fiable* : annonce produit officielle relayée et contextualisée par InfoQ, publication technique établie, avec documentation officielle Microsoft en complément.
+*Applicabilité H'appi* : concurrent direct positionné exactement sur le créneau de H'appi Automate (orchestrateur "type Azure Logic Apps") — le choix d'exposer chaque workflow comme outil MCP plutôt que via une API propriétaire est un signal de marché fort à répliquer : les futurs nodes de H'appi Automate gagneraient à être nativement invocables par un agent Claude via MCP, pas seulement déclenchables par une UI de workflow.
+
+**How We Contain Claude Across Products** — [lien](https://www.infoq.com/news/2026/07/anthropic-claude-containment/)
+*Source* : Anthropic, article technique du 28 mai 2026 (Max McGuinness, Mikaela Grace, Jiri De Jonghe, Jake Eaton, Abel Ribbink), relayé par InfoQ en juillet 2026
+*Le pattern* : la sécurité d'un agent doit reposer sur des limites déterministes au niveau du système de fichiers, du réseau et de l'environnement d'exécution (containment à la frontière), et non sur des prompts de permission ou des garde-fous côté modèle. Trois implémentations différentes selon le produit : conteneurs gVisor éphémères pour claude.ai, sandboxing OS (Seatbelt/bubblewrap) pour Claude Code, isolation VM complète pour Claude Cowork — le niveau d'isolation est choisi selon le blast radius acceptable, pas uniformément.
+*Pourquoi cette source est fiable* : documentation technique directe d'Anthropic sur ses propres systèmes en production, incluant un exercice de red-team interne chiffré (phishing réussi 24 fois sur 25 tentatives) qui illustre concrètement pourquoi le containment prime sur la confiance dans le comportement du modèle.
+*Applicabilité H'appi* : principe directement actionnable pour tout produit H'appi qui donne à un agent Claude un accès outils (scraper self-healing, futurs nodes H'appi Automate avec exécution de code, secrétariat vocal avec accès CRM) — isoler par défaut (sandbox/conteneur dédié, accès réseau et filesystem minimal) plutôt que de compter sur le prompt système pour empêcher les actions dangereuses, en particulier vu l'exigence RGPD/hébergement Europe de H'appi.
+
+**Keep the Terminal Relevant: Patterns for AI Agent Driven CLIs** — [lien](https://www.infoq.com/articles/ai-agent-cli/)
+*Source* : InfoQ, article de Sachin Joglekar, 2026
+*Le pattern* : tout outil qui produit une sortie structurée destinée à être consommée par un agent publie de fait un contrat d'API — les formats de sortie doivent donc être versionnés sémantiquement et validés par schéma à chaque changement, avec des codes de sortie sémantiques et des flags dédiés à l'automatisation. Recommandation centrale : adopter le protocole MCP pour l'intégration d'agents dès la conception plutôt qu'en couche ajoutée après coup.
+*Pourquoi cette source est fiable* : publication technique établie (InfoQ), auteur signé, alignée avec la donation de MCP par Anthropic à la Linux Foundation (Agentic AI Foundation) en décembre 2025 qui en fait un standard de facto.
+*Applicabilité H'appi* : directement pertinent pour tout outil interne H'appi exposé à un agent Claude (scrapers, endpoints CRM, nodes d'Automate) — traiter chaque sortie JSON d'API/CLI comme un contrat versionné évite de casser silencieusement un agent en production lors d'une évolution de schéma, un risque concret vu le nombre d'outils déjà connectés à l'AI Intelligence Suite du CRM.
+
+### 🔧 À creuser en priorité
+Logic Apps Automation (Microsoft) valide un choix d'architecture à trancher tôt pour H'appi Automate : exposer chaque node comme outil MCP dès la conception plutôt qu'après coup, en cohérence avec le pattern InfoQ sur les contrats d'API/CLI ci-dessus.
