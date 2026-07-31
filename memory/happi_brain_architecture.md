@@ -169,3 +169,34 @@ Le pattern "Secure Multitenant RAG" (Azure) mérite un audit court-terme sur les
 
 ### 🔧 À creuser en priorité
 Logic Apps Automation (Microsoft) valide un choix d'architecture à trancher tôt pour H'appi Automate : exposer chaque node comme outil MCP dès la conception plutôt qu'après coup, en cohérence avec le pattern InfoQ sur les contrats d'API/CLI ci-dessus.
+
+---
+## 🏛️ Veille Architecture — 2026-07-31
+> Mis à jour automatiquement par Happi Brain Agent (Architecture & Blueprints)
+
+**The new rules of context engineering for Claude 5 generation models** — [lien](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models)
+*Source* : Anthropic, blog officiel (Thariq Shihipar, Member of Technical Staff), publié le 24 juillet 2026
+*Le pattern* : l'équipe Claude Code a supprimé plus de 80% du system prompt de Claude Code pour les modèles Claude 5 (Opus 5, Fable 5) sans perte mesurable sur les évaluations de code. Les règles défensives accumulées pour contenir les faiblesses des générations de modèles précédentes deviennent une taxe sur les modèles récents : des instructions contradictoires font perdre des tokens de raisonnement au modèle pour arbitrer entre elles. Anthropic recommande de réauditer régulièrement system prompts, Skills et fichiers de mémoire/contexte à chaque nouvelle génération de modèle plutôt que d'empiler les garde-fous au fil du temps.
+*Pourquoi cette source est fiable* : retour d'expérience direct de l'équipe Anthropic ayant conçu et mesuré ce changement sur Claude Code en production, publié sur le blog officiel.
+*Applicabilité H'appi* : actionnable immédiatement sur tous les prompts système des produits IA H'appi (chatbots SAV/e-commerce, secrétariat vocal, AI Intelligence Suite du CRM) — à chaque montée de version de Claude, auditer et alléger les instructions défensives héritées plutôt que les accumuler, ce qui réduit à la fois la latence et le coût token sans dégrader la qualité.
+
+**Agentic AI Architecture Framework for Enterprises** — [lien](https://www.infoq.com/minibooks/agentic-ai-architecture/)
+*Source* : InfoQ, minibook (Subash Natarajan & Ahilan Ponnusamy), 2026
+*Le pattern* : structure la maturité d'un système agentique en 3 paliers progressifs — Foundation Tier (confiance et gouvernance : orchestration d'outils, transparence du raisonnement, cycle de vie des données), Workflow Tier (automatisation via 5 patterns : prompt chaining, routing, parallelization, evaluator-optimizer, orchestrator-workers) et Autonomous Tier (planification orientée objectif). L'argument central : la confiance et la gouvernance doivent précéder l'autonomie, pas l'inverse.
+*Pourquoi cette source est fiable* : publication technique établie (InfoQ), minibook signé par des auteurs identifiés, synthétisant des patterns déjà documentés individuellement par les cloud providers (dont Azure, déjà noté le 2026-07-26).
+*Applicabilité H'appi* : grille utile pour situer où en est chaque produit IA H'appi sur cette échelle de maturité — le CRM et les chatbots SAV sont probablement au Workflow Tier (patterns type routing/orchestrator-workers), tandis qu'un futur node autonome de H'appi Automate (ex: résolution de ticket SAV de bout en bout sans validation humaine) basculerait vers l'Autonomous Tier et exigerait de solidifier d'abord la gouvernance du Foundation Tier (traçabilité, permissions, cycle de vie des données) avant d'y aller.
+
+**How API changes flow into Stripe's developer products** — [lien](https://stripe.dev/blog/how-api-changes-flow-into-stripes-developer-products)
+*Source* : Stripe, Stripe Dot Dev Blog, blog d'ingénierie officiel, 2026
+*Le pattern* : Stripe ne conçoit pas son API directement via OpenAPI, mais génère automatiquement à partir des changements d'API tous les artefacts dérivés — SDKs, mock servers, collection Postman, documentation — pour éviter que ces produits développeurs dérivent de l'API réelle. Chaque changement passe par une revue croisée (API Review) avant merge, puis un pipeline automatisé propage le changement à l'ensemble des surfaces développeur.
+*Pourquoi cette source est fiable* : retour d'expérience direct de l'équipe plateforme développeur de Stripe, référence reconnue en design d'API, publié sur son blog d'ingénierie officiel.
+*Applicabilité H'appi* : pertinent pour l'API FastAPI backend de H'appi dès qu'elle sert plusieurs consommateurs (CRM, widgets chatbot embarqués chez les clients, futurs SDKs H'appi Automate) — générer la doc et les schémas clients depuis l'OpenAPI de FastAPI (déjà natif) plutôt que de les maintenir à la main, et faire passer les changements de contrat par une revue explicite avant merge, réduirait le risque de rupture silencieuse pour les intégrations clients.
+
+**How Outtake built a cyber investigator on Claude** — [lien](https://claude.com/blog/how-outtake-built-a-cyber-investigator-on-claude)
+*Source* : Anthropic, blog officiel, publié le 22 juillet 2026, en co-publication avec Outtake (client)
+*Le pattern* : Outtake a construit un agent autonome longue durée ("Recon Agent") sur Claude Code et l'Agent SDK, capable de partir d'un seul indicateur de menace et de remonter, en quelques minutes et sans supervision continue, tout le réseau adverse associé (faux profils, sites clonés, apps frauduleuses). L'architecture repose sur une exécution longue et autonome plutôt qu'un enchaînement de prompts courts, avec l'agent qui pilote lui-même ses outils d'investigation successifs jusqu'à un objectif final plutôt qu'une tâche unitaire.
+*Pourquoi cette source est fiable* : retour d'expérience direct co-publié par Anthropic et l'équipe produit d'Outtake sur un système déployé en production pour des clients (labs IA, hedge funds, agences fédérales).
+*Applicabilité H'appi* : blueprint concret pour tout agent H'appi qui doit exécuter une investigation ou une tâche longue sans intervention humaine à chaque étape — pertinent pour un futur mode "autonome" du scraper self-healing (diagnostiquer et corriger une panne de bout en bout) ou pour un node de monitoring de H'appi Automate qui doit creuser une anomalie sur plusieurs étapes avant de conclure, plutôt que de se limiter à des appels Claude ponctuels et isolés.
+
+### 🔧 À creuser en priorité
+Réauditer les system prompts des produits IA H'appi (chatbots, secrétariat vocal, CRM) à chaque montée de version de Claude, en s'inspirant directement du retour d'expérience Anthropic sur Claude Code : alléger les garde-fous hérités plutôt que les empiler réduit latence et coût token sans perte de qualité.
