@@ -231,3 +231,34 @@ Réauditer les system prompts des produits IA H'appi (chatbots, secrétariat voc
 
 ### 🔧 À creuser en priorité
 Évaluer le Programmatic Tool Calling (Anthropic) sur les outils de l'AI Intelligence Suite du CRM qui font des appels répétés/parallélisables (ex: scoring de plusieurs deals) est l'action la plus concrète et la moins coûteuse à tester court-terme, avec un gain de coût token déjà chiffré par Anthropic (~38%).
+
+---
+## 🏛️ Veille Architecture — 2026-08-04
+> Mis à jour automatiquement par Happi Brain Agent (Architecture & Blueprints)
+
+**Jump Start Solution: Generative AI RAG with Cloud SQL** — [lien](https://docs.cloud.google.com/architecture/ai-ml/generative-ai-rag)
+*Source* : Google Cloud Architecture Center, documentation officielle
+*Le pattern* : architecture de référence pour un RAG complet bâti entièrement sur PostgreSQL — les documents sources sont chargés dans une base Cloud SQL for PostgreSQL, les embeddings sont générés puis stockés comme vecteurs dans cette même base via l'extension `pgvector`, et une recherche de similarité s'exécute directement en SQL avant l'appel au LLM (Cloud Run en frontend/backend, pas de vector DB dédiée séparée).
+*Pourquoi cette source est fiable* : architecture de référence officielle d'un cloud provider majeur, pensée explicitement comme point de départ "coût réduit" plutôt que comme démonstration marketing.
+*Applicabilité H'appi* : directement transposable au stack H'appi (PostgreSQL + SQLAlchemy déjà en place) — activer `pgvector` sur la base Postgres existante (Railway) pour tout futur besoin RAG (ex: base de connaissances d'un chatbot SAV, mémoire longue du secrétariat vocal) évite d'introduire une vector DB séparée (Pinecone, Weaviate) et le coût opérationnel/RGPD associé à un service tiers hors Europe.
+
+**Row Level Security for Tenants in Postgres** — [lien](https://www.crunchydata.com/blog/row-level-security-for-tenants-in-postgres)
+*Source* : Crunchy Data, blog d'ingénierie officiel (éditeur PostgreSQL entreprise reconnu)
+*Le pattern* : plutôt que de créer un rôle Postgres par client (coûteux à gérer et incompatible avec le pooling de connexions), la base garde un seul rôle applicatif et une policy RLS compare une colonne `tenant_id`/`org_id` à une variable de session (`current_setting('rls.org_id')`) positionnée à chaque connexion — la base filtre alors automatiquement toutes les requêtes (SELECT/INSERT/UPDATE/DELETE) sans dépendre d'un `WHERE tenant_id = ...` ajouté manuellement côté application.
+*Pourquoi cette source est fiable* : éditeur PostgreSQL entreprise établi, contenu technique orienté implémentation (avec tutoriel interactif associé) plutôt que promotionnel.
+*Applicabilité H'appi* : filet de sécurité pertinent pour tout produit H'appi multi-clients sur base partagée (CRM, chatbots SAV) — la RLS garantit l'isolation des données au niveau base même si un bug applicatif SQLAlchemy oublie un filtre tenant, un risque concret vu le nombre de produits/clients servis sur une infra commune ; attention documentée au piège du pooling en mode transaction, qui exige de repositionner la variable de session à chaque transaction (`set_config(..., true)`) plutôt qu'à la connexion.
+
+**Context engineering (Technology Radar Vol. 34)** — [lien](https://www.thoughtworks.com/radar/techniques/context-engineering)
+*Source* : ThoughtWorks, Technology Radar Vol. 34, publié en avril 2026
+*Le pattern* : le context engineering devient une préoccupation architecturale à part entière plutôt qu'une optimisation de prompt — le contexte fourni à un agent est traité comme une surface de conception à part entière. Pour éviter le "context rot" (dégradation du raisonnement quand on charge tout en avance), le pattern recommandé est la divulgation progressive du contexte : l'agent démarre avec un index léger de ce qui est disponible et ne charge que ce dont il a besoin à l'étape en cours, plutôt qu'un prompt monolithique statique contenant tout par avance.
+*Pourquoi cette source est fiable* : publication de référence en architecture logicielle établie depuis 2010, radar collégial issu de l'expérience terrain de centaines de consultants ThoughtWorks sur des missions clients réelles.
+*Applicabilité H'appi* : rejoint directement le Tool Search Tool d'Anthropic déjà noté (2026-08-01) — principe applicable à la conception des prompts système et de la mémoire des agents H'appi (AI Intelligence Suite du CRM, secrétariat vocal) : structurer les fichiers de contexte/mémoire en index léger + chargement à la demande plutôt qu'en un unique gros fichier system prompt, pour limiter la dégradation de raisonnement à mesure que le nombre d'outils et de produits H'appi augmente.
+
+**Sequential Pipeline Architecture for Voice Agents** — [lien](https://livekit.com/blog/sequential-pipeline-architecture-voice-agents)
+*Source* : LiveKit, blog d'ingénierie officiel (infrastructure temps réel/WebRTC utilisée en production par de nombreux produits voice AI)
+*Le pattern* : pipeline séquentiel STT → LLM → TTS pour un agent vocal, avec une gestion explicite du barge-in (interruption) : un détecteur d'activité vocale (VAD) qui capte la voix de l'utilisateur pendant que l'agent parle déclenche l'arrêt immédiat de la lecture TTS, le vidage de l'audio en file d'attente, et le redémarrage du pipeline depuis le STT — avec des cas limites documentés (faux déclenchements par écho/bruit de fond, interruption en plein milieu d'un appel d'outil par le LLM).
+*Pourquoi cette source est fiable* : blog d'ingénierie officiel d'une entreprise d'infrastructure temps réel spécialisée, contenu technique détaillé sur des cas limites réels plutôt qu'un tutoriel générique.
+*Applicabilité H'appi* : directement actionnable pour le produit de secrétariat vocal IA de H'appi — le pipeline séquentiel STT→LLM→TTS (plutôt qu'un modèle speech-to-speech intégré) reste le choix par défaut en production pour la transparence et la capacité à remplacer un composant (ex: changer de provider TTS) sans toucher au reste ; la gestion du barge-in et des interruptions pendant un appel d'outil (ex: création de rendez-vous en cours) est un cas limite concret à couvrir explicitement dans la conception de l'agent vocal H'appi.
+
+### 🔧 À creuser en priorité
+Activer `pgvector` sur la base PostgreSQL existante (Railway) plutôt que d'introduire une vector DB tierce est l'option la plus directement testable pour tout futur besoin RAG H'appi (base de connaissances chatbot SAV, mémoire secrétariat vocal), en cohérence avec le stack et les contraintes RGPD/Europe déjà en place.
