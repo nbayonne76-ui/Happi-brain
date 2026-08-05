@@ -16,3 +16,17 @@
 
 ### 📅 À ne pas manquer
 RAS — aucune deadline identifiée sous 30 jours cette semaine.
+
+---
+## 🗺️ Veille Marché & Concurrence — 2026-08-05
+> Rapport généré automatiquement — signaux business France, à valider manuellement avant toute action commerciale.
+
+### Concurrence
+- **Entrée en application de l'article 50 de l'AI Act — obligation de transparence pour tous les chatbots** — [Journal du Net, 02/08/2026](https://www.journaldunet.com/intelligence-artificielle/1553327-ai-act-a-compter-du-2-aout-2026-le-droit-de-savoir-qui-ou-quoi-a-produit-l-information/) — depuis le 2 août 2026, toute entreprise utilisant un chatbot doit informer explicitement ses utilisateurs qu'ils échangent avec une IA (sauf si c'est déjà évident), sous peine de sanctions pouvant atteindre 15 M€ ou 3% du CA mondial. C'est un signal réglementaire majeur qui touche directement H'appi (obligation à vérifier sur ses propres déploiements chatbots) et l'ensemble de ses concurrents positionnés CX/secrétariat IA — un point de conformité à intégrer sans délai dans le discours commercial et les livrables clients.
+- Pas de nouveau mouvement concurrentiel (levée de fonds, nouvel entrant, lancement produit) identifié cette semaine sur les créneaux chatbot PME, secrétariat vocal IA ou supply chain — RAS au-delà du point réglementaire ci-dessus.
+
+### Opportunités
+RAS cette semaine — aucune opportunité commerciale/financement avec deadline ou source vérifiable identifiée au-delà de ce qui a déjà été signalé précédemment (NRF Big Show Europe, 15-17/09/2026 ; Tech For Retail, 30/11-01/12/2026).
+
+### 📅 À ne pas manquer
+RAS — aucune deadline d'opportunité identifiée sous 30 jours cette semaine (l'obligation AI Act ci-dessus est déjà en vigueur depuis le 2 août, pas une échéance à venir).
