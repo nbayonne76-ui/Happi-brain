@@ -287,3 +287,28 @@ Activer `pgvector` sur la base PostgreSQL existante (Railway) plutôt que d'intr
 
 ### 🔧 À creuser en priorité
 Packager un premier playbook SAV récurrent (ex: procédure de remboursement/réclamation e-commerce) en Agent Skill plutôt qu'en instructions system prompt dupliquées est le test le plus rapide à mener pour valider si ce pattern réduit la duplication entre les chatbots SAV de plusieurs clients H'appi.
+
+---
+## 🏛️ Veille Architecture — 2026-08-06
+> Mis à jour automatiquement par Happi Brain Agent (Architecture & Blueprints)
+
+**Architecting Portable Systems on Open Standards for Digital Sovereignty** — [lien](https://www.infoq.com/articles/portable-systems-sovereignty/)
+*Source* : InfoQ, article signé (Kyle Howard, Christian Johansen, Dana Katzenelson, Brian Rhoten, Warren Gray), publié le 23 mars 2026
+*Le pattern* : la souveraineté numérique se construit par l'architecture, pas par le choix d'un hébergeur — un système "portable par construction" repose sur des interfaces standards (APIs ouvertes type OIDC/KMS), des formats de paquetage standards et des dépendances disponibles chez plusieurs fournisseurs, de sorte qu'un changement de prix, de licence ou de viabilité d'un fournisseur n'oblige pas à réécrire l'application pour en changer.
+*Pourquoi cette source est fiable* : publication technique établie (InfoQ), article signé par cinq auteurs identifiés, qui formalise un principe déjà repris indépendamment par plusieurs cloud providers et éditeurs (IBM, SUSE) au premier semestre 2026.
+*Applicabilité H'appi* : directement pertinent vu la contrainte d'hébergement France/Europe (RGPD) déjà structurante pour H'appi — construire une fine couche d'abstraction devant l'API Claude et devant le choix d'hébergeur (Railway/Vercel aujourd'hui) permettrait de basculer vers un hébergeur souverain (OVHcloud, Scaleway) si un client l'exige un jour, sans réécrire les produits ; principe à appliquer en particulier au futur H'appi Automate, qui risque sinon de figer ses nodes sur les spécificités d'un seul fournisseur.
+
+**Coding Is No Longer the Constraint: Scaling Developer Experience to Teams and Agents at Spotify** — [lien](https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint)
+*Source* : Spotify Engineering, blog officiel (Niklas Gustavsson, Chief Architect & VP Engineering), juin 2026
+*Le pattern* : Spotify a construit "Honk", un agent de code en arrière-plan bâti sur le Claude Agent SDK, branché directement sur ses plateformes internes existantes — Fleetshift (migrations de code en masse sur des milliers de dépôts) et Backstage (catalogue de services interne) — plutôt que de le faire tourner comme un outil isolé. Les développeurs déclenchent l'agent en langage naturel via l'infrastructure de messagerie interne ; l'agent hérite du contexte du catalogue de services pour agir correctement à travers un très grand nombre de dépôts.
+*Pourquoi cette source est fiable* : retour d'expérience direct et signé du Chief Architect de Spotify sur un système en production, avec des métriques d'adoption chiffrées (plus de 99% des ingénieurs l'utilisent chaque semaine, +76% de fréquence de pull requests).
+*Applicabilité H'appi* : pattern transposable à la pratique d'ingénierie interne de H'appi elle-même, pas seulement aux produits clients — brancher le Claude Agent SDK sur les dépôts/déploiements des multiples instances de chatbots clients (plutôt qu'un usage ponctuel poste par poste) pour industrialiser des tâches répétitives à travers les projets (mises à jour de dépendances, corrections de bugs récurrents, migrations de schéma), à mesure que le nombre de clients/dépôts H'appi augmente.
+
+**AWS Agent Registry (Amazon Bedrock AgentCore)** — [lien](https://www.infoq.com/news/2026/04/aws-agent-registry-preview/)
+*Source* : AWS (annonce officielle, avril 2026), couverture InfoQ de la preview
+*Le pattern* : catalogue privé centralisé pour découvrir et gouverner agents, outils, skills et serveurs MCP à travers une organisation, structuré autour de 3 rôles — Admin (configure le registre et les workflows d'approbation), Publisher (soumet une ressource en état DRAFT puis la propose à l'approbation), Consumer (découvre par recherche sémantique/mot-clé et invoque la ressource approuvée). Le workflow d'approbation peut brancher un scanner de sécurité tiers, et chaque transition d'état émet un événement d'audit traçable ; le registre lui-même s'expose comme un endpoint compatible MCP.
+*Pourquoi cette source est fiable* : documentation produit officielle d'un cloud provider majeur, complétée par la couverture factuelle de l'annonce par InfoQ.
+*Applicabilité H'appi* : prolonge concrètement le pattern d'exposition des workflows en outils MCP déjà noté (Logic Apps, 2026-07-30) — à mesure que H'appi Automate accumule des nodes/outils et que l'AI Intelligence Suite du CRM connecte de plus en plus d'outils, un registre léger équivalent (même une simple table de ressources avec statut DRAFT/APPROVED et une revue avant qu'un outil soit invocable par un agent) éviterait la prolifération incontrôlée d'outils exposés à des agents Claude, en cohérence avec le principe de containment déjà noté (2026-07-30).
+
+### 🔧 À creuser en priorité
+Le pattern Spotify (Honk sur Claude Agent SDK branché sur le catalogue de dépôts) est le plus directement actionnable court-terme pour H'appi elle-même : évaluer un agent de maintenance en arrière-plan sur les dépôts des multiples instances de chatbots clients, plutôt que sur les seuls produits internes.
