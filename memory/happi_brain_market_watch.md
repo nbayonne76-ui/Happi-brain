@@ -30,3 +30,16 @@ RAS cette semaine — aucune opportunité commerciale/financement avec deadline 
 
 ### 📅 À ne pas manquer
 RAS — aucune deadline d'opportunité identifiée sous 30 jours cette semaine (l'obligation AI Act ci-dessus est déjà en vigueur depuis le 2 août, pas une échéance à venir).
+
+---
+## 🗺️ Veille Marché & Concurrence — 2026-08-12
+> Rapport généré automatiquement — signaux business France, à valider manuellement avant toute action commerciale.
+
+### Concurrence
+RAS cette semaine — recherches menées sur chatbot PME, secrétariat vocal IA, CX/SAV, CRM IA et supply chain/traçabilité : aucun mouvement concurrent français nouveau et suffisamment sourcé cette semaine. Les mouvements identifiés sont soit déjà couverts précédemment (entrée en application de l'AI Act, cf. semaine du 05/08), soit hors périmètre (Salesforce rachète Fin/ex-Intercom pour 3,6 Md$ — acteur global, opération de mi-juin 2026, pas un signal frais cette semaine ; Smallest.ai lève 13 M$ — startup indienne, pas positionnée sur le marché français).
+
+### Opportunités
+RAS cette semaine — recherches menées sur BOAMP/marchés publics IA, appels à projets Bpifrance/France 2030 et subventions PME. Les dispositifs ouverts identifiés (i-Démo, clôture 09/09/2026 ; PIIEC IA, clôture 09/09/2026) ciblent des projets collaboratifs à partir de 2 à 4 M€ de dépenses, hors échelle PME pertinente pour H'appi — non retenus. Aucune nouvelle opportunité avec deadline ou source vérifiable adaptée cette semaine.
+
+### 📅 À ne pas manquer
+RAS — aucune deadline d'opportunité pertinente identifiée sous 30 jours cette semaine.
