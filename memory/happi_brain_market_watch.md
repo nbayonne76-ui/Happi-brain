@@ -43,3 +43,16 @@ RAS cette semaine — recherches menées sur BOAMP/marchés publics IA, appels �
 
 ### 📅 À ne pas manquer
 RAS — aucune deadline d'opportunité pertinente identifiée sous 30 jours cette semaine.
+
+---
+## 🗺️ Veille Marché & Concurrence — 2026-08-19
+> Rapport généré automatiquement — signaux business France, à valider manuellement avant toute action commerciale.
+
+### Concurrence
+RAS cette semaine — recherches menées sur chatbot IA PME, secrétariat vocal IA, CX/service client et CRM IA en France. Les mouvements identifiés dans les résultats sont soit hors fenêtre temporelle (rachat de Dydu par Zaion, mars 2026 ; rachat de Mayday par l'allemand USU, janvier 2026 ; levée de Vocca.ai, secrétariat médical, septembre 2025), soit hors segment pertinent (Cigno, 1,5 M€ pour l'IA dédiée au conseil en management). Aucun mouvement concurrentiel frais et suffisamment sourcé cette semaine sur les créneaux de H'appi.
+
+### Opportunités
+RAS cette semaine — recherches menées sur BOAMP/marchés publics IA, appels à projets Bpifrance/France 2030, aides France Num et salons retail/CX/supply chain. Aucune nouvelle opportunité avec deadline ou source vérifiable identifiée : les prochains salons pertinents restent ceux déjà signalés (NRF Big Show Europe, 15-17/09/2026 ; Tech For Retail Paris, 30/11-01/12/2026). Une mention de "Tech For Retail Lyon" le 24/09/2026 trouvée dans une première recherche s'est révélée être une confusion avec un autre événement (GO Entrepreneurs Lyon, non spécifique au secteur de H'appi) après vérification — non retenue.
+
+### 📅 À ne pas manquer
+RAS — aucune deadline d'opportunité pertinente identifiée sous 30 jours cette semaine.
