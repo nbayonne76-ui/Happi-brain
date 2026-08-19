@@ -3797,3 +3797,30 @@ Aucun problème détecté — tous les fichiers `projects/*.md` et `memory/happi
 - **liustack/modlens (+441★/jour) — vision multi-modale pour agents text-only via image-to-JSON** : modlens ajoute la capacité de traiter des images à n'importe quel agent LLM text-only, en convertissant visuels en JSON structuré. Pour H'appi : extension directe pour les chatbots SAV qui reçoivent des photos de produits défectueux ou des bons de commande — permettre aux bots Claude existants de traiter des visuels sans changer de modèle.
 - **Vague de fine-tuning démocratisé (Unsloth +739★/jour, Soup +172★/jour)** : deux outils de fine-tuning LLM très accessibles dominent simultanément le trending Python. Ce signal fort indique que le fine-tuning sur-mesure devient accessible aux PME, pas seulement aux labs. Pour H'appi : opportunité de proposer une offre "chatbot fine-tuné sur votre corpus" — différenciation forte face aux solutions génériques, nouveau levier commercial Q4 2026.
 - **Blocage réseau persistant (HackerNews Firebase API, DEV.to API, The New Stack) — 41e jour consécutif** — Veille appuyée sur GitHub Trending uniquement. Recommandation maintenue : débloquer ces domaines dans la politique réseau de l'environnement remote Claude Code pour enrichir les sources.
+
+---
+## 📰 Veille Tech — 2026-08-19
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [mukul975/Anthropic-Cybersecurity-Skills — 817 compétences cybersécurité structurées pour agents Claude, mappées MITRE/NIST/OWASP (+730★/jour)](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [anthropics/claude-code — L'outil de coding agentique Anthropic : terminal, compréhension codebase, workflows git (+139★/jour)](https://github.com/anthropics/claude-code) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [volcengine/OpenViking — Base de contexte auto-évolutive pour agents IA : mémoire unifiée, RAG et skills (+213★/jour)](https://github.com/volcengine/OpenViking) | GitHub Trending 🐍 | #LLM #chatbot |
+| [unslothai/unsloth — UI locale de fine-tuning et d'inférence de LLMs : Qwen, Kimi, DeepSeek, FLUX (+449★/jour)](https://github.com/unslothai/unsloth) | GitHub Trending 🐍 | #LLM |
+| [cactus-compute/needle — Modèle fondationnel 14MB pour appareils edge : téléphones, wearables, robots, chatbots offline (+364★/jour)](https://github.com/cactus-compute/needle) | GitHub Trending 🐍 | #LLM |
+| [jundot/omlx — Serveur d'inférence LLM avec batching continu et cache SSD pour Apple Silicon (+370★/jour)](https://github.com/jundot/omlx) | GitHub Trending 🐍 | #LLM |
+| [RVC-Project/Retrieval-based-Voice-Conversion-WebUI — Entraîner un modèle de voice conversion avec moins de 10 min de données audio (+65★/jour)](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) | GitHub Trending 🐍 | #Voice AI |
+| [docling-project/docling — Préparer des documents (PDF, Word, HTML) pour l'IA générative et les pipelines RAG (+152★/jour)](https://github.com/docling-project/docling) | GitHub Trending 🐍 | #LLM |
+| [mvanhorn/last30days-skill — Agent skill : synthétiser Reddit, X, YouTube, HN, Polymarket en résumés fondés (+144★/jour)](https://github.com/mvanhorn/last30days-skill) | GitHub Trending 🐍 | #LLM |
+| [browser-use/video-use — Éditer des vidéos avec des coding agents : commandes en langage naturel (+125★/jour)](https://github.com/browser-use/video-use) | GitHub Trending 🐍 | #LLM |
+| [pipeshub-ai/pipeshub-ai — Couche IA open-source pour unifier les données métier : search explainable et automatisation agentic (+48★/jour)](https://github.com/pipeshub-ai/pipeshub-ai) | GitHub Trending 🐍 | #LLM #SaaS |
+| [chaitanyagiri/munder-difflin — Multi-agent harness local : orchestrer des agents en parallèle sur machine (+306★/jour)](https://github.com/chaitanyagiri/munder-difflin) | GitHub Trending TS | #LLM |
+| [MadsLorentzen/ai-job-search — Framework de candidature IA basé sur Claude Code : automatiser la recherche d'emploi (+167★/jour)](https://github.com/MadsLorentzen/ai-job-search) | GitHub Trending TS | #Claude #LLM |
+
+### 💡 Insights clés
+- **mukul975/Anthropic-Cybersecurity-Skills rebondit à +730★/jour (vs +198★ hier)** : l'adoption s'accélère fortement — 817 compétences cybersécurité mappées MITRE/NIST/OWASP et intégrées nativement avec Claude Code. Pour H'appi : déjà signalé hier mais l'accélération d'adoption confirme l'urgence de l'intégrer dans les chatbots secteurs réglementés. À prioriser pour le prochain projet banque ou santé — argumentaire RGPD et ISO 27001 prêt à l'emploi.
+- **RVC-Project/Retrieval-based-Voice-Conversion-WebUI entre en trending (+65★/jour) — voice conversion avec moins de 10 min de données** : un client peut désormais cloner sa propre voix ou créer une voix de marque à partir de très peu d'enregistrements. Pour H'appi Voice : combiner RVC avec notre stack Vapi.ai + ElevenLabs pour proposer une offre "voix de marque personnalisée" — différenciation forte sur le marché des chatbots vocaux sans production audio coûteuse.
+- **browser-use/video-use (+125★/jour) — les coding agents s'attaquent au montage vidéo** : video-use étend le paradigme browser-use à l'édition vidéo via agents. Pour H'appi : signal que les coding agents généralisent leur périmètre au-delà du code — à surveiller pour des use cases comme la génération automatique de démos produit ou de tutoriels vidéo pour les clients chatbot.
+- **pipeshub-ai (+48★/jour) — couche IA open-source pour unifier les données d'entreprise** : pipeshub-ai crée une couche d'abstraction entre les données métier éparses (ERP, CRM, docs) et les agents IA. Pour H'appi : alternative open-source légère à des solutions comme Glean pour les clients PME — à évaluer comme fondation pour les chatbots qui doivent répondre sur plusieurs silos de données sans ETL lourd.
+- **Blocage réseau persistant (HackerNews Firebase API, DEV.to API, The New Stack) — 42e jour consécutif** — Veille appuyée sur GitHub Trending uniquement. Recommandation maintenue : débloquer ces domaines dans la politique réseau de l'environnement remote Claude Code pour enrichir les sources.
