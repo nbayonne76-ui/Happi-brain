@@ -3824,3 +3824,30 @@ Aucun problème détecté — tous les fichiers `projects/*.md` et `memory/happi
 - **browser-use/video-use (+125★/jour) — les coding agents s'attaquent au montage vidéo** : video-use étend le paradigme browser-use à l'édition vidéo via agents. Pour H'appi : signal que les coding agents généralisent leur périmètre au-delà du code — à surveiller pour des use cases comme la génération automatique de démos produit ou de tutoriels vidéo pour les clients chatbot.
 - **pipeshub-ai (+48★/jour) — couche IA open-source pour unifier les données d'entreprise** : pipeshub-ai crée une couche d'abstraction entre les données métier éparses (ERP, CRM, docs) et les agents IA. Pour H'appi : alternative open-source légère à des solutions comme Glean pour les clients PME — à évaluer comme fondation pour les chatbots qui doivent répondre sur plusieurs silos de données sans ETL lourd.
 - **Blocage réseau persistant (HackerNews Firebase API, DEV.to API, The New Stack) — 42e jour consécutif** — Veille appuyée sur GitHub Trending uniquement. Recommandation maintenue : débloquer ces domaines dans la politique réseau de l'environnement remote Claude Code pour enrichir les sources.
+
+---
+## 📰 Veille Tech — 2026-08-20
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [volcengine/OpenViking — Base de contexte auto-évolutive pour agents IA : mémoire persistante, RAG et skills unifiés (+804★/jour)](https://github.com/volcengine/OpenViking) | GitHub Trending 🐍 | #LLM #chatbot |
+| [mukul975/Anthropic-Cybersecurity-Skills — 817 compétences cybersécurité structurées pour agents Claude, mappées MITRE ATT&CK/NIST/OWASP (+766★/jour)](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [NousResearch/hermes-agent — Framework agentique ultra-flexible et adaptable pour orchestration d'agents LLM (+558★/jour)](https://github.com/NousResearch/hermes-agent) | GitHub Trending 🐍 | #LLM #chatbot |
+| [jundot/omlx — Serveur d'inférence LLM avec batching continu et cache SSD pour Apple Silicon (+472★/jour)](https://github.com/jundot/omlx) | GitHub Trending 🐍 | #LLM |
+| [Graphify-Labs/graphify — Transformer un codebase + docs + configs en graphe de connaissances requêtable (+470★/jour)](https://github.com/Graphify-Labs/graphify) | GitHub Trending 🐍 | #LLM |
+| [DrewThomasson/ebook2audiobook — Générer des audiobooks depuis des e-books avec voice cloning en 1158+ langues (+141★/jour)](https://github.com/DrewThomasson/ebook2audiobook) | GitHub Trending 🐍 | #Voice AI |
+| [PostHog/posthog — Analytics, session replay, feature flags et expérimentations pour SaaS (+41★/jour)](https://github.com/PostHog/posthog) | GitHub Trending 🐍 | #SaaS |
+| [chaitanyagiri/munder-difflin — Harness multi-agent local : orchestrer des agents LLM en parallèle sur machine (+795★/jour)](https://github.com/chaitanyagiri/munder-difflin) | GitHub Trending TS | #LLM |
+| [heygen-com/hyperframes — Écrire du HTML, rendre de la vidéo : pipeline de génération vidéo conçu pour les agents (+163★/jour)](https://github.com/heygen-com/hyperframes) | GitHub Trending TS | #LLM |
+| [simstudioai/sim — Workspace collaboratif pour builder, déployer et monitorer des agents et workflows IA (+12★/jour)](https://github.com/simstudioai/sim) | GitHub Trending TS | #LLM #SaaS |
+| [letta-ai/letta-code — Agents stateful "comme des humains" : mémoire persistante, identité et apprentissage continu (+16★/jour)](https://github.com/letta-ai/letta-code) | GitHub Trending TS | #LLM #chatbot |
+| [wonderwhy-er/DesktopCommanderMCP — Serveur MCP accordant à Claude contrôle terminal, recherche fichiers et édition de diffs (+5★/jour)](https://github.com/wonderwhy-er/DesktopCommanderMCP) | GitHub Trending TS | #Claude |
+| [rmyndharis/OpenWA — Gateway WhatsApp API open-source, gratuit et auto-hébergé (+43★/jour)](https://github.com/rmyndharis/OpenWA) | GitHub Trending TS | #chatbot |
+
+### 💡 Insights clés
+- **ebook2audiobook +141★/jour — le voice cloning multilingue se démocratise massivement** : générer des audiobooks avec voice cloning en 1158 langues depuis un simple e-book. Pour H'appi Voice : signal fort que le clonage vocal devient une commodité accessible — à intégrer dans l'offre "voix de marque" avec notre stack Vapi.ai + ElevenLabs, en ajoutant la promesse de personnalisation multilingue pour les clients internationaux.
+- **letta-code & OpenViking convergent sur la mémoire persistante des agents** : deux projets très actifs (letta-code : agents "avec mémoire et identité", OpenViking : base de contexte auto-évolutive) signalent que la statefulness des chatbots devient l'enjeu central. Pour H'appi : la mémoire conversationnelle longue durée est un différenciateur clé à proposer en 2026 — les clients veulent un chatbot qui "se souvient" des échanges passés sans re-prompt systématique.
+- **OpenWA +43★/jour — WhatsApp API gateway self-hosted réapparaît en trending** : solution gratuite et open-source pour exposer une API WhatsApp sans coût Twilio. Pour H'appi : opportunité commerciale directe — proposer un canal WhatsApp aux chatbots existants à coût marginal très bas, avec hébergement EU pour la conformité RGPD. Permet d'adresser les clients qui veulent du support client WhatsApp sans budget méta.
+- **Graphify +470★/jour — les knowledge graphs sur codebase entrent dans le mainstream** : graphify transforme tout codebase + docs en graphe requêtable. Pour H'appi : à combiner avec notre stack RAG pour les chatbots techniques B2B — un client peut déployer un chatbot sur sa base de code interne ou sa documentation technique sans ETL lourd.
+- **Blocage réseau persistant (HackerNews Firebase API, DEV.to API, The New Stack) — 43e jour consécutif** — Veille appuyée sur GitHub Trending uniquement. Recommandation maintenue : débloquer ces domaines dans la politique réseau de l'environnement remote Claude Code pour enrichir les sources.
