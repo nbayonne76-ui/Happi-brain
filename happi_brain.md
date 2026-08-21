@@ -3851,3 +3851,30 @@ Aucun problème détecté — tous les fichiers `projects/*.md` et `memory/happi
 - **OpenWA +43★/jour — WhatsApp API gateway self-hosted réapparaît en trending** : solution gratuite et open-source pour exposer une API WhatsApp sans coût Twilio. Pour H'appi : opportunité commerciale directe — proposer un canal WhatsApp aux chatbots existants à coût marginal très bas, avec hébergement EU pour la conformité RGPD. Permet d'adresser les clients qui veulent du support client WhatsApp sans budget méta.
 - **Graphify +470★/jour — les knowledge graphs sur codebase entrent dans le mainstream** : graphify transforme tout codebase + docs en graphe requêtable. Pour H'appi : à combiner avec notre stack RAG pour les chatbots techniques B2B — un client peut déployer un chatbot sur sa base de code interne ou sa documentation technique sans ETL lourd.
 - **Blocage réseau persistant (HackerNews Firebase API, DEV.to API, The New Stack) — 43e jour consécutif** — Veille appuyée sur GitHub Trending uniquement. Recommandation maintenue : débloquer ces domaines dans la politique réseau de l'environnement remote Claude Code pour enrichir les sources.
+
+---
+## 📰 Veille Tech — 2026-08-21
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [Osmantic/ODS — Transformer un PC en serveur IA complet : inférence LLM, chat UI, voice, agents et RAG (+4 602★)](https://github.com/Osmantic/ODS) | GitHub Trending 🐍 | #LLM #Voice AI #chatbot |
+| [HKUDS/LightRAG — RAG simple et ultra-rapide, primé à EMNLP2025 (39 041★)](https://github.com/HKUDS/LightRAG) | GitHub Trending 🐍 | #LLM |
+| [pipecat-ai/pipecat — Framework open-source pour agents vocaux, apps multimodales et IA temps réel (14 373★)](https://github.com/pipecat-ai/pipecat) | GitHub Trending 🐍 | #Voice AI #chatbot |
+| [Tencent/AI-Infra-Guard — Plateforme AI Red Teaming full-stack : scan d'agents et évaluation de jailbreaks LLM (5 102★)](https://github.com/Tencent/AI-Infra-Guard) | GitHub Trending 🐍 | #LLM |
+| [goauthentik/authentik — La colle d'authentification universelle : IdP open-source, SSO, OAuth2, SAML (25 037★)](https://github.com/goauthentik/authentik) | GitHub Trending 🐍 | #RGPD #SaaS |
+| [volcengine/OpenViking — Base de contexte auto-évolutive pour agents IA : mémoire unifiée, RAG et skills (31 239★)](https://github.com/volcengine/OpenViking) | GitHub Trending 🐍 | #LLM #chatbot |
+| [anthropics/claude-code — Outil de coding agentique Anthropic : terminal, compréhension codebase, workflows git (142 196★)](https://github.com/anthropics/claude-code) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [browser-use/browser-use — Rendre les sites accessibles aux agents IA pour automatiser des tâches en ligne (109 927★)](https://github.com/browser-use/browser-use) | GitHub Trending 🐍 | #LLM #chatbot |
+| [tashfeenahmed/freellmapi — Proxy OpenAI-compatible agrégeant les tiers gratuits de 28 fournisseurs LLM (~4B tokens/mois) (19 178★)](https://github.com/tashfeenahmed/freellmapi) | GitHub Trending TS | #LLM |
+| [cline/cline — Agent de coding autonome disponible en SDK, extension IDE et CLI (66 570★)](https://github.com/cline/cline) | GitHub Trending TS | #LLM #Claude |
+| [magnitudedev/magnitude — Agent open-source avec modèles locaux : 100 % privé et offline (1 462★)](https://github.com/magnitudedev/magnitude) | GitHub Trending TS | #LLM #RGPD |
+| [pingdotgg/t3code — Framework TypeScript full-stack combinant Next.js, React et tooling moderne (19 822★)](https://github.com/pingdotgg/t3code) | GitHub Trending TS | #Next.js |
+
+### 💡 Insights clés
+- **Osmantic/ODS — l'IA locale all-in-one sur un simple PC** : inférence LLM, interface chat, voice, agents et RAG sans cloud. Pour H'appi : signal fort que les clients sensibles (santé, finance, juridique) vont exiger des offres 100 % on-premise. Positionner dès maintenant une offre "H'appi Private" hébergée chez le client avec ODS ou équivalent — argument RGPD et souveraineté des données imparable.
+- **magnitudedev/magnitude — agents locaux fully private s'imposent comme catégorie** : 1 462★ en montant rapidement sur un projet "offline-first". Pour H'appi : cohérence avec la tendance ODS ci-dessus — la confidentialité des agents devient un critère d'achat, pas un bonus. Capitaliser sur notre hébergement EU (Scaleway/Hetzner) et proposer une option air-gapped pour les secteurs très réglementés.
+- **tashfeenahmed/freellmapi — 28 LLM providers, un seul endpoint, ~4B tokens/mois gratuits** : proxy OpenAI-compatible qui empile les free tiers. Pour H'appi : outil de prototypage et de cost optimization — utiliser freellmapi pour les demos clients avant de basculer sur un provider payant en production. Aussi utile pour tester la robustesse des prompts sur plusieurs modèles simultanément.
+- **pipecat 14K★ — les voice agents open-source atteignent la maturité prod** : pipecat intègre nativement STT, TTS, LLM et transport temps réel. Pour H'appi Voice : évaluer pipecat comme alternative ou complément à Vapi.ai pour les projets où le client veut maîtriser la stack vocale — moins de vendor lock-in, déploiement EU facilité.
+- **LightRAG + OpenViking — le RAG intelligent devient la norme** : LightRAG (39K★, primé EMNLP2025) et OpenViking (31K★) convergent sur un RAG plus rapide et auto-apprenant. Pour H'appi : mettre à jour notre stack RAG interne avec LightRAG pour les chatbots documentaires — les benchmarks EMNLP2025 indiquent des gains significatifs sur la pertinence des réponses.
+- **Blocage réseau persistant (HackerNews Firebase API, DEV.to API, The New Stack) — 44e jour consécutif** — Veille appuyée sur GitHub Trending uniquement. Recommandation maintenue : débloquer ces domaines dans la politique réseau de l'environnement remote Claude Code pour enrichir les sources.
