@@ -3878,3 +3878,30 @@ Aucun problème détecté — tous les fichiers `projects/*.md` et `memory/happi
 - **pipecat 14K★ — les voice agents open-source atteignent la maturité prod** : pipecat intègre nativement STT, TTS, LLM et transport temps réel. Pour H'appi Voice : évaluer pipecat comme alternative ou complément à Vapi.ai pour les projets où le client veut maîtriser la stack vocale — moins de vendor lock-in, déploiement EU facilité.
 - **LightRAG + OpenViking — le RAG intelligent devient la norme** : LightRAG (39K★, primé EMNLP2025) et OpenViking (31K★) convergent sur un RAG plus rapide et auto-apprenant. Pour H'appi : mettre à jour notre stack RAG interne avec LightRAG pour les chatbots documentaires — les benchmarks EMNLP2025 indiquent des gains significatifs sur la pertinence des réponses.
 - **Blocage réseau persistant (HackerNews Firebase API, DEV.to API, The New Stack) — 44e jour consécutif** — Veille appuyée sur GitHub Trending uniquement. Recommandation maintenue : débloquer ces domaines dans la politique réseau de l'environnement remote Claude Code pour enrichir les sources.
+
+---
+## 📰 Veille Tech — 2026-08-22
+> Mis à jour automatiquement par Happi Brain Agent
+
+| Article | Source | Tag |
+|---------|--------|-----|
+| [anthropics/claude-code — Outil de coding agentique Anthropic : terminal, compréhension codebase, workflows git](https://github.com/anthropics/claude-code) | GitHub Trending 🐍 | #Claude #Anthropic |
+| [vllm-project/vllm — Moteur d'inférence LLM haute performance et memory-efficient pour la production](https://github.com/vllm-project/vllm) | GitHub Trending 🐍 | #LLM |
+| [PostHog/posthog — Plateforme SaaS self-hosted : analytics, session replay, feature flags et AI observability](https://github.com/PostHog/posthog) | GitHub Trending 🐍 | #SaaS |
+| [Alishahryar1/free-claude-code — Interface terminal donnant accès gratuit à Claude Code avec support voice](https://github.com/Alishahryar1/free-claude-code) | GitHub Trending 🐍 | #Claude #Voice AI |
+| [volcengine/OpenViking — Base de contexte auto-évolutive pour agents IA : mémoire, RAG et skills unifiés](https://github.com/volcengine/OpenViking) | GitHub Trending 🐍 | #LLM #chatbot |
+| [anthropics/claude-quickstarts — Templates de démarrage pour builder des apps déployables avec l'API Claude](https://github.com/anthropics/claude-quickstarts) | GitHub Trending TS | #Claude #Anthropic |
+| [n8n-io/n8n — Automatisation de workflows avec capacités IA natives et 400+ intégrations](https://github.com/n8n-io/n8n) | GitHub Trending TS | #chatbot #SaaS |
+| [stablyai/orca — Environnement de développement d'agents multi-plateforme : desktop, mobile et VPS](https://github.com/stablyai/orca) | GitHub Trending TS | #LLM |
+| [ruvnet/ruflo — Plateforme d'orchestration multi-agents avec mémoire adaptive et intégration RAG](https://github.com/ruvnet/ruflo) | GitHub Trending TS | #LLM #chatbot |
+| [cursor/plugins — Spécification et plugins officiels pour agents IA dans l'éditeur Cursor](https://github.com/cursor/plugins) | GitHub Trending TS | #LLM |
+| [payloadcms/payload — CMS headless TypeScript avec panel admin intégré, idéal pour Next.js](https://github.com/payloadcms/payload) | GitHub Trending TS | #Next.js #SaaS |
+| [apache/maka — Workspace d'agents IA local-first : messages et interactions enregistrés en logs append-only](https://github.com/apache/maka) | GitHub Trending TS | #LLM #chatbot |
+
+### 💡 Insights clés
+- **Anthropic domine le trending GitHub sur deux fronts simultanément** : claude-code (agentic coding) et claude-quickstarts (templates API) apparaissent en trending Python et TypeScript le même jour. Pour H'appi : signal fort que l'écosystème Claude continue de s'étoffer — les claude-quickstarts sont une ressource directe pour accélérer nos développements chatbot en réutilisant des patterns validés par Anthropic.
+- **n8n +193★/jour — l'automatisation IA no-code s'impose comme canal d'intégration CRM** : n8n avec ses capacités IA natives et 400+ connecteurs (dont HubSpot, Pipedrive, Zapier) s'impose comme le hub d'orchestration privilégié. Pour H'appi : proposer n8n comme couche d'intégration CRM aux clients peu techniques — alternative self-hostable à Make/Zapier, hébergeable EU pour la conformité RGPD, et nativement compatible avec notre stack FastAPI/webhooks.
+- **stablyai/orca +724★/jour — les environnements d'agents multi-plateforme explosent** : orca supporte le développement d'agents en parallèle sur desktop, mobile et VPS. Pour H'appi : à surveiller pour l'offre React Native — si orca simplifie le déploiement d'agents sur mobile, il peut accélérer notre time-to-market sur les chatbots embarqués dans les apps clients.
+- **Alishahryar1/free-claude-code — voice + Claude Code gratuit signale une tension sur les coûts d'inférence** : projet qui contourne les coûts Claude en agrégeant des accès gratuits avec support voice. Pour H'appi : indicateur que le voice AI couplé à Claude devient attendu comme standard, pas comme premium. Renforcer l'argument "voix incluse" dans les offres Maintenance Pro et Enterprise dès maintenant.
+- **payloadcms/payload — CMS headless TypeScript avec Next.js s'impose comme backbone éditorial pour SaaS** : payload offre un backend complet (API, admin, auth) en une seule dépendance TypeScript. Pour H'appi : à évaluer comme alternative à un backend FastAPI custom pour les projets clients nécessitant un CMS + chatbot — réduction du temps de dev front-office significative sur les projets e-commerce ou portails clients.
+- **Blocage réseau persistant (HackerNews Firebase API, DEV.to API, The New Stack) — 45e jour consécutif** — Veille appuyée sur GitHub Trending uniquement. Recommandation maintenue : débloquer ces domaines dans la politique réseau de l'environnement remote Claude Code pour enrichir les sources.
